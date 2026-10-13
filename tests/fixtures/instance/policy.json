@@ -1,0 +1,31 @@
+{
+  "_comment": "Quality policy of this instance (dqv:QualityPolicy). Set by the data owner; every change is a commit, so the policy itself is audited. Defaults from the SOFTENG 2026 paper (weights, cutoff) and the qualification (alert bands), plus the Layer 5 extension: integrity factor, evidence validity, interval for partial coverage. See README, section 'How the score works'. unrecorded_change: what bytes that changed with no record in the metadata do to the older evaluation: 'finding' (it still counts, flagged as an earlier version, and cannot reach the cutoff) or 'supersede' (it stops counting).",
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+    "L1": 0.3,
+    "L2": 0.3,
+    "L3": 0.2,
+    "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+    "RETRO_ALTER"
+  ],
+  "scope_types": [
+    "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+    "L1": 7,
+    "L2": 7,
+    "L3": 31,
+    "L4": 0.25
+  },
+  "validity_multiplier": 2,
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+}

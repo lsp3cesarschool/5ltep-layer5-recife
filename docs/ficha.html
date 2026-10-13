@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5L-TEP Layer 5 · Dataset record</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- A printable, citable record of one dataset (?d=<dataset name>). The browser saves it as PDF. -->
+<nav class="topbar">
+  <a id="dash-link" href="./" data-i18n="dash">← Dashboard</a>
+  <span class="lang-switch">
+    <a id="lang-en" href="?lang=en">English</a>
+    <span class="muted">·</span>
+    <a id="lang-pt" href="?lang=pt" lang="pt">Português</a>
+  </span>
+</nav>
+
+<header>
+  <div>
+    <p class="eyebrow" data-i18n="eyebrow">5L-TEP · Layer 5 · Dataset record</p>
+    <h1 id="title" data-i18n="loading">Loading…</h1>
+    <p class="muted" id="subtitle"></p>
+  </div>
+  <div class="actions">
+    <button class="button" id="print" type="button" data-i18n="print">Print / save as PDF</button>
+    <a class="button secondary" id="json-link" data-i18n="json">Download JSON</a>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="section-head"><h2 data-i18n="id_h">Identification</h2></div>
+    <dl class="kv" id="ident"></dl>
+  </section>
+  <section>
+    <div class="section-head"><h2 data-i18n="qs_h">Quality score</h2></div>
+    <div id="qs"></div>
+  </section>
+  <section>
+    <div class="section-head"><h2 data-i18n="layers_h">Evidence of each layer</h2></div>
+    <div class="table-wrap"><table id="layers"></table></div>
+  </section>
+  <section>
+    <div class="section-head"><h2 data-i18n="check_h">What can already be checked</h2></div>
+    <ul class="findings" id="findings"></ul>
+  </section>
+  <section>
+    <div class="section-head"><h2 data-i18n="outcomes_h">After the report: what was observed</h2></div>
+    <p class="muted small" data-i18n="outcomes_note"></p>
+    <ul class="findings" id="outcomes"></ul>
+  </section>
+  <section>
+    <div class="section-head"><h2 data-i18n="sources_h">Sources and policy</h2></div>
+    <ul class="findings" id="sources"></ul>
+    <dl class="kv" id="policy"></dl>
+  </section>
+  <div class="notice" id="notice"></div>
+</main>
+<footer class="muted small" id="footer"></footer>
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+<script src="common.js"></script>
+<script src="ficha.js"></script>
+</body>
+</html>

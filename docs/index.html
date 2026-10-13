@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5L-TEP Layer 5 · Governance and Publication</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Every element with data-i18n is filled by app.js (English / Portuguese). -->
+<nav class="topbar">
+  <a id="repo-link" data-i18n="back" href="https://github.com/lsp3cesarschool/5ltep-layer5">← Back to the repository</a>
+  <span class="muted">·</span>
+  <a id="readme-link" href="https://github.com/lsp3cesarschool/5ltep-layer5#readme">README</a>
+  <span class="muted">·</span>
+  <a id="leiame-link" href="https://github.com/lsp3cesarschool/5ltep-layer5/blob/main/LEIAME.md" lang="pt">LEIAME</a>
+  <span class="lang-switch">
+    <a id="lang-en" href="?lang=en">English</a>
+    <span class="muted">·</span>
+    <a id="lang-pt" href="?lang=pt" lang="pt">Português</a>
+  </span>
+</nav>
+
+<header>
+  <div>
+    <p class="eyebrow" data-i18n="eyebrow">5L-TEP · Layer 5 · Governance and Publication</p>
+    <h1 id="title" data-i18n="loading">Loading…</h1>
+    <p class="muted" id="subtitle"></p>
+  </div>
+  <div class="actions">
+    <a class="button" id="run-link" target="_blank" rel="noopener" data-i18n="run">Aggregate now ↗</a>
+    <a class="button secondary" id="policy-link" target="_blank" rel="noopener" data-i18n="policy_btn">Policy ↗</a>
+  </div>
+</header>
+<p class="intro" data-i18n="intro"></p>
+
+<main>
+  <div class="notice" id="notice"></div>
+  <section class="tiles" id="tiles" aria-label="Key numbers"></section>
+
+  <section id="formula">
+    <div class="section-head"><h2 data-i18n="formula_h">How the score (Qs) is reached</h2></div>
+    <div class="formula" id="formula-terms" role="math"></div>
+    <dl class="kv formula-params" id="formula-params"></dl>
+    <div class="example" id="formula-example"></div>
+    <h3 class="sub" data-i18n="readings_h">Result in this portal</h3>
+    <div class="table-wrap"><table id="readings-table"></table></div>
+  </section>
+
+  <section id="sources">
+    <div class="section-head"><h2 data-i18n="sources_h">Layers and their evidence</h2></div>
+    <p class="muted" data-i18n="sources_note"></p>
+    <div class="table-wrap"><table id="sources-table"></table></div>
+  </section>
+
+  <section id="coverage">
+    <div class="section-head"><h2 data-i18n="coverage_h">How far each layer reaches</h2></div>
+    <p class="muted" data-i18n="coverage_note"></p>
+    <div id="coverage-chart"></div>
+    <ul class="legend" id="coverage-legend"></ul>
+    <details class="more"><summary data-i18n="table_view">Table view</summary>
+      <div class="table-wrap"><table id="coverage-table"></table></div></details>
+  </section>
+
+  <section id="combos">
+    <div class="section-head"><h2 data-i18n="combos_h">Which layers meet on each dataset</h2></div>
+    <p class="muted" data-i18n="combos_note"></p>
+    <div id="combos-chart"></div>
+  </section>
+
+  <section id="matrix">
+    <div class="section-head">
+      <h2 data-i18n="matrix_h">Datasets × layers</h2>
+      <div class="filters">
+        <input type="search" id="search" data-i18n-placeholder="search" placeholder="Search datasets">
+        <select id="kind-filter">
+          <option value="" data-i18n="f_all">All datasets</option>
+          <option value="complete" data-i18n="f_complete">Complete (four layers)</option>
+          <option value="partial" data-i18n="f_partial">Partial</option>
+          <option value="none" data-i18n="f_none">No content evaluation</option>
+          <option value="findings" data-i18n="f_findings">With something to check</option>
+          <option value="integrity" data-i18n="f_integrity">With an integrity alert</option>
+        </select>
+        <select id="sort">
+          <option value="coverage" data-i18n="s_coverage">Most evidence first</option>
+          <option value="worst" data-i18n="s_worst">Lowest score first</option>
+          <option value="name" data-i18n="s_name">By name</option>
+        </select>
+      </div>
+    </div>
+    <p class="muted" data-i18n="matrix_note"></p>
+    <ul class="legend" id="matrix-legend"></ul>
+    <div class="table-wrap"><table id="matrix-table"></table></div>
+    <button class="showmore" id="matrix-more" hidden></button>
+    <p class="muted small" data-i18n="click_note">Click a dataset to open its record.</p>
+  </section>
+
+  <section id="check">
+    <div class="section-head">
+      <h2 data-i18n="check_h">What can already be checked</h2>
+      <div class="filters"><select id="check-filter"><option value="" data-i18n="all_kinds">All kinds</option></select></div>
+    </div>
+    <p class="muted" data-i18n="check_note"></p>
+    <div class="table-wrap"><table id="check-table"></table></div>
+    <button class="showmore" id="check-more" hidden></button>
+  </section>
+
+  <section id="outcomes">
+    <div class="section-head"><h2 data-i18n="outcomes_h">After the report: what was observed</h2></div>
+    <p class="muted" data-i18n="outcomes_note"></p>
+    <div class="two">
+      <div class="panel"><h3 data-i18n="outcomes_open">Signals followed</h3><dl class="kv" id="outcomes-open"></dl></div>
+      <div class="panel"><h3 data-i18n="hitl_h">Human review (HitL)</h3><dl class="kv" id="hitl"></dl></div>
+    </div>
+  </section>
+
+  <section id="policy">
+    <div class="section-head"><h2 data-i18n="policy_h">How the score works</h2></div>
+    <p class="muted" data-i18n="policy_note"></p>
+    <dl class="kv" id="policy-kv"></dl>
+  </section>
+</main>
+
+<footer class="muted small" id="footer"></footer>
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+<script src="common.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

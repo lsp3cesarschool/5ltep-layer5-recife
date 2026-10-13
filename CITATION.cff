@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+message: "If you use this software or its records, please cite it as below, together with the SOFTENG 2026 paper that defines the framework."
+title: "5LTEP-L5: 5L-TEP Layer 5 Governance and Publication (Recife instance)"
+abstract: >-
+  Reference implementation of Layer 5 (Governance and Publication) of the
+  Five-Layer Trust Engineering Pyramid (5L-TEP, SOFTENG 2026) for open
+  government data on CKAN portals. Every day it reads the public summaries of
+  Layers 1-4 and, per dataset, shows how far each layer reaches, the global
+  quality score of the paper where the four layers meet, an interval where they
+  do not, an integrity factor for undocumented metadata changes, and what can
+  already be checked. It informs and never decides: each dataset has a
+  printable, citable record identified by the SHA-256 of its content, quality
+  measurements are published in W3C DQV with PROV provenance, and the outcome
+  after a report is only observed. Three files (portal, sources, policy) adapt
+  it to another portal.
+type: software
+authors:
+  - family-names: Pinheiro
+    given-names: Luciano Santos
+    affiliation: "CESAR School, Recife, Brazil"
+    email: lsp3@cesar.school
+repository-code: "https://github.com/lsp3cesarschool/5ltep-layer5-recife"
+url: "https://lsp3cesarschool.github.io/5ltep-layer5-recife/"
+license: MIT
+version: 0.1.0
+keywords:
+  - data governance
+  - data quality
+  - trust engineering
+  - open government data
+  - CKAN
+  - W3C DQV
+  - W3C PROV
+  - FAIR
+references:
+  - type: conference-paper
+    title: "Towards Trust Engineering in Open Data Systems: A Layered Conceptual Framework Integrating Quality Assurance and Governance Perspectives"
+    authors:
+      - family-names: Pinheiro
+        given-names: Luciano Santos
+    collection-title: "SOFTENG 2026"
+    publisher:
+      name: IARIA
+    start: 21
+    end: 28
+    year: 2026
+  - type: conference-paper
+    title: "5LTEP-L4: An Open-Source CKAN Toolkit for Provenance-Enabled Observability of Open Government Data"
+    authors:
+      - family-names: Pinheiro
+        given-names: Luciano Santos
+      - family-names: Sérgio
+        given-names: Anderson Tenório
+    collection-title: "Anais Estendidos do WebMedia 2026: XXV Workshop de Ferramentas e Aplicações (WFA)"
+    year: 2026
+  - type: thesis
+    thesis-type: "Master's thesis"
+    title: "Engenharia da Confiança (5L-TEP) Aplicada a Dados Abertos do IBAMA: Automação, Inteligência Artificial e Human-in-the-Loop para Avaliação da Qualidade de Big Data através da Plataforma CUPIM"
+    authors:
+      - family-names: Pinheiro
+        given-names: Luciano Santos
+    institution:
+      name: "CESAR School, Programa de Pós-Graduação em Engenharia de Software"
+      city: Recife
+      country: BR
+    year: 2027
+    notes: "In preparation."

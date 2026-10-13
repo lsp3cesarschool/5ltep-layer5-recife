@@ -1,0 +1,2 @@
+# No runtime dependencies: Layer 5 uses only the Python standard library.
+# Tests: pip install pytest

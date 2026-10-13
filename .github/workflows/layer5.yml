@@ -1,0 +1,82 @@
+name: 5L-TEP Layer 5 Governance
+on:
+  schedule:
+    # Daily at 05:10 UTC: after the Layer 4 cross-check (03:30), clear of Layer 1 (Mondays 03:30)
+    # and Layer 2 (Wednesdays 04:30). Layer 5 reads the last published summary of each layer; it
+    # never waits for one (no L1 -> L5 pipeline).
+    - cron: '10 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: layer5
+  cancel-in-progress: false
+
+jobs:
+  aggregate:
+    # Reads the public files of the other layers: read-only token, hands over an artifact only.
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Aggregate the summaries of Layers 1-4
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python main.py --out build
+
+      - name: Hand over the outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: layer5
+          path: build/
+          retention-days: 7
+
+  publish:
+    # Writes to the repository, reads nothing external: accepts only the expected files.
+    needs: aggregate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Receive the outputs
+        uses: actions/download-artifact@v4
+        with:
+          name: layer5
+          path: build
+
+      - name: Accept the outputs (expected paths, valid JSON, safe names, bounded sizes)
+        run: python -m src.accept build .
+
+      - name: Commit dashboard data, records, badges and history
+        run: |
+          git config user.name "5L-TEP L5 Bot"
+          git config user.email "5ltep-l5-bot@users.noreply.github.com"
+          git add docs/data results
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: layer 5 aggregate [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Fail on a new integrity alert or an unusable summary (GitHub e-mails the maintainer)
+        run: python -m src.alerts docs/data/layer5.json

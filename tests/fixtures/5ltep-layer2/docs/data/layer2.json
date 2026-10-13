@@ -1,0 +1,5712 @@
+{
+ "layer": 2,
+ "run_id": "37937363972",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2/actions/runs/37937363972",
+ "generated_at": "2026-10-09T13:35:26+00:00",
+ "started_at": "2026-10-09T13:30:59+00:00",
+ "totals": {
+  "rules": 35,
+  "evaluated": 35,
+  "not_evaluated": 0,
+  "sources": 20,
+  "sources_ok": 20,
+  "signals": 1923185,
+  "checks": 21428607,
+  "l2_rate": 0.9103
+ },
+ "rules": [
+  {
+   "id": "appendix-i-wild-commercial",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "cites/appendix-i-wild-commercial.yaml",
+   "folder": "cites",
+   "language": "pt-BR",
+   "title": "Licença CITES de espécie do Apêndice I, origem silvestre, para fins comerciais",
+   "title_translations": {
+    "en": "CITES permit for an Appendix I species of wild origin for commercial purposes"
+   },
+   "text": "Sinaliza licenças não canceladas em que ANEXO = I, origem W (silvestre) e finalidade comercial aparecem juntos.\n",
+   "justification": "A Convenção CITES, art. III, não admite comércio de espécimes do Apêndice I retirados da natureza para fins primariamente comerciais; a Res. Conf. 12.3 define os códigos de origem (W, silvestre) e de finalidade (T, comercial). A combinação é sinal para conferir regime, finalidade e exceções (reexportação, pré-convenção), não declaração de comércio proibido.\n",
+   "exceptions": [
+    "Certificados pré-convenção e reexportações seguem regras próprias.",
+    "Licenças canceladas ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Apêndice II, origem W, fins comerciais",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Apêndice I, origem C (criação), fins comerciais",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Apêndice I, origem W, fins comerciais",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "ibama_siscites",
+   "timeline": "ibama_siscites.DAT_EMISSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_siscites",
+     "label": "dadosabertos.ibama.gov.br › siscites-licencas-de-fauna-e-flora-emitidas › Siscites"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:23+00:00",
+   "total": 258580,
+   "counts": {
+    "match": 243809,
+    "mismatch": 403,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 14368
+   },
+   "signals": 403,
+   "signals_by_outcome": {
+    "mismatch": 403,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/appendix-i-wild-commercial.json"
+  },
+  {
+   "id": "wild-commercial-threatened-species",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "cites/wild-commercial-threatened-species.yaml",
+   "folder": "cites",
+   "language": "pt-BR",
+   "title": "Licença CITES comercial de espécime silvestre de espécie da lista de fauna ameaçada",
+   "title_translations": {
+    "en": "Commercial CITES permit for a wild specimen of a threatened Brazilian fauna species"
+   },
+   "text": "Sinaliza licenças não canceladas, de origem silvestre (W) e finalidade comercial, cuja espécie consta da lista de fauna ameaçada do MMA (2021).\n",
+   "justification": "Espécies da fauna ameaçada têm captura e comércio restritos (Portaria MMA 148/2022 e lista de 2021 publicada pelo MMA). Uma licença comercial de espécime retirado da natureza de espécie da lista pede conferência de regime, origem e autorização. Compara gênero e espécie (as duas primeiras palavras), em minúsculas. A lista do MMA inclui espécies que saíram da categoria de ameaça em 2021; o sinal é informativo.\n",
+   "exceptions": [
+    "A lista do MMA traz também espécies que deixaram de ser ameaçadas em 2021 (categoria LC).",
+    "Espécies estrangeiras não constam da lista nacional e nunca são sinalizadas por esta regra."
+   ],
+   "examples": [
+    {
+     "case": "Licença comercial W de Arapaima gigas (fora da lista)",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Licença comercial W de espécie da lista do MMA",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_siscites",
+   "timeline": "ibama_siscites.DAT_EMISSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_siscites",
+     "label": "dadosabertos.ibama.gov.br › siscites-licencas-de-fauna-e-flora-emitidas › Siscites"
+    },
+    {
+     "source": "mma_fauna_ameacada",
+     "label": "dados.mma.gov.br › especies-ameacadas › FAUNA - Lista de Espécies Ameaçadas - 2021.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:23+00:00",
+   "total": 258580,
+   "counts": {
+    "match": 103594,
+    "mismatch": 1714,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 153272
+   },
+   "signals": 1714,
+   "signals_by_outcome": {
+    "mismatch": 1714,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/wild-commercial-threatened-species.json"
+  },
+  {
+   "id": "embargo-date-implausible",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "embargo/embargo-date-implausible.yaml",
+   "folder": "embargo",
+   "language": "pt-BR",
+   "title": "Data do embargo fora de faixa plausível",
+   "title_translations": {
+    "en": "Embargo date outside a plausible range"
+   },
+   "text": "Sinaliza termos de embargo com data anterior à criação do IBAMA (22/02/1989) ou posterior ao dia da rodada.\n",
+   "justification": "O IBAMA foi criado pela Lei 7.735, de 22/02/1989; um embargo do IBAMA não pode ser anterior a essa data nem estar no futuro. Datas assim indicam erro de digitação do ano (os gráficos mostraram embargos em 1667 e 2063). É sinal para revisão.\n",
+   "exceptions": [
+    "Termos herdados de órgãos anteriores ao IBAMA, se existirem, teriam data anterior a 1989."
+   ],
+   "examples": [
+    {
+     "case": "Embargo em 2015-03-10",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Embargo em 1667-05-04",
+     "expected": "Sinalizar"
+    },
+    {
+     "case": "Embargo em 2063-01-20",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "ibama_embargo",
+   "timeline": "ibama_embargo.DAT_EMBARGO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_embargo",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-embargo › Termos de embargo"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:24+00:00",
+   "total": 116763,
+   "counts": {
+    "match": 116755,
+    "mismatch": 8,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 8,
+   "signals_by_outcome": {
+    "mismatch": 8,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/embargo-date-implausible.json"
+  },
+  {
+   "id": "lifted-before-embargo",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "embargo/lifted-before-embargo.yaml",
+   "folder": "embargo",
+   "language": "pt-BR",
+   "title": "Desembargo anterior ao embargo",
+   "title_translations": {
+    "en": "Embargo lifted before it was imposed"
+   },
+   "text": "Confere se a data de desembargo não é anterior à data do embargo, no mesmo termo.\n",
+   "justification": "Um embargo só pode ser levantado depois de imposto; a ordem inversa indica erro de data. É sinal para revisão, não veredito sobre o termo.\n",
+   "exceptions": [
+    "Termos sem desembargo (a maioria, ainda embargados) ficam fora do escopo: é o comportamento esperado."
+   ],
+   "examples": [
+    {
+     "case": "Embargo em 2018-05-01, desembargo em 2019-02-01",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Embargo em 2018-05-01, desembargo em 2017-12-01",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_embargo",
+   "timeline": "ibama_embargo.DAT_EMBARGO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_embargo",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-embargo › Termos de embargo"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:24+00:00",
+   "total": 116763,
+   "counts": {
+    "match": 19667,
+    "mismatch": 16,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 97080
+   },
+   "signals": 16,
+   "signals_by_outcome": {
+    "mismatch": 16,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/lifted-before-embargo.json"
+  },
+  {
+   "id": "stock-balance",
+   "rule_version": "0.2.0",
+   "origin": "expert",
+   "file": "fauna/stock-balance.yaml",
+   "folder": "fauna",
+   "language": "pt-BR",
+   "title": "Balanço do plantel divergente",
+   "title_translations": {
+    "en": "Breeding stock balance does not add up"
+   },
+   "text": "Confere, em cada declaração, se plantel anterior + total de entradas − total de saídas = plantel atual.\n",
+   "justification": "O plantel atual resulta do anterior somado às entradas e diminuído das saídas; diferença indica erro de declaração ou de cálculo. Usa os totais (Total, Total de Entradas, Total de Saídas, Total geral) para não contar nascimentos duas vezes. Valores com vírgula decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "Declarações retificadoras substituem a anterior e podem ter balanço próprio."
+   ],
+   "examples": [
+    {
+     "case": "Anterior 10, entradas 3, saídas 2, atual 11",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Anterior 10, entradas 3, saídas 2, atual 15",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "ibama_plantel",
+   "timeline": "ibama_plantel.Período",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_plantel",
+     "label": "dadosabertos.ibama.gov.br › sisfauna-plantel-exato › Sisfauna - Plantel Exato"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:25+00:00",
+   "total": 173747,
+   "counts": {
+    "match": 173747,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/stock-balance.json"
+  },
+  {
+   "id": "incident-milestones-order",
+   "rule_version": "0.2.0",
+   "origin": "expert",
+   "file": "fire/incident-milestones-order.yaml",
+   "folder": "fire",
+   "language": "pt-BR",
+   "title": "Marcos do incêndio fora de ordem",
+   "title_translations": {
+    "en": "Fire incident milestones out of order"
+   },
+   "text": "Confere, em cada registro de ocorrência de incêndio, a ordem início ≤ detecção ≤ primeiro ataque ≤ controle ≤ extinção. Marcos vazios são ignorados.\n",
+   "justification": "O combate segue uma sequência; um marco anterior ao que o precede indica erro de data ou hora. É uma hipótese de processo, não impossibilidade universal: fases podem se sobrepor em registros consolidados. É sinal para revisão.\n",
+   "exceptions": [
+    "Incêndio detectado antes do início estimado pode ocorrer quando o início é estimado depois.",
+    "Registros com menos de dois marcos ficam sem informação."
+   ],
+   "examples": [
+    {
+     "case": "Início 10:00, detecção 10:30, ataque 11:00, controle 15:00, extinção 18:00",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Extinção às 09:00 com início às 10:00 no mesmo dia",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_roi",
+   "timeline": "ibama_roi.DATA/HORA DETECCAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_roi",
+     "label": "dadosabertos.ibama.gov.br › sisfogo-roi › ROI formato csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:29+00:00",
+   "total": 418525,
+   "counts": {
+    "match": 417807,
+    "mismatch": 359,
+    "key_not_found": 0,
+    "missing_value": 359,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 718,
+   "signals_by_outcome": {
+    "mismatch": 359,
+    "key_not_found": 0,
+    "missing_value": 359,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/incident-milestones-order.json"
+  },
+  {
+   "id": "exploration-outside-validity",
+   "rule_version": "0.2.0",
+   "origin": "expert",
+   "file": "forest/exploration-outside-validity.yaml",
+   "folder": "forest",
+   "language": "pt-BR",
+   "title": "Exploração fora da validade da autorização",
+   "title_translations": {
+    "en": "Harvest outside the authorisation's validity"
+   },
+   "text": "Confere se a data da exploração está entre a emissão e a validade da autorização (limites inclusivos).\n",
+   "justification": "A exploração só é permitida durante a vigência da autorização; data fora do intervalo indica erro de registro ou exploração sem autorização vigente. As datas usam ano com dois dígitos. É sinal para revisão.\n",
+   "exceptions": [
+    "Prorrogações e renovações não publicadas aqui podem estender a validade."
+   ],
+   "examples": [
+    {
+     "case": "Emissão 01/02/20, exploração 15/06/20, validade 01/02/21",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Emissão 01/02/20, exploração 15/03/21, validade 01/02/21",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_if100",
+   "timeline": "ibama_if100.DATA_DA_EXPLORACAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_if100",
+     "label": "dadosabertos.ibama.gov.br › volumes-explorados-if-100 › Volumes Explorados - IF 100%"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:39+00:00",
+   "total": 2386115,
+   "counts": {
+    "match": 2326024,
+    "mismatch": 60091,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 60091,
+   "signals_by_outcome": {
+    "mismatch": 60091,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/exploration-outside-validity.json"
+  },
+  {
+   "id": "explored-volume-above-authorized",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "forest/explored-volume-above-authorized.yaml",
+   "folder": "forest",
+   "language": "pt-BR",
+   "title": "Volume explorado acima do autorizado",
+   "title_translations": {
+    "en": "Harvested volume above the authorised volume"
+   },
+   "text": "Confere, em cada árvore do inventário 100%, se o volume explorado não passa do volume autorizado.\n",
+   "justification": "A exploração se limita ao volume autorizado para a árvore; volume explorado maior indica erro de registro ou exploração acima do autorizado (Resolução CONAMA 406/2009). Neste caso o sinal pode ser a própria situação irregular observada, e não um defeito dos dados: a regra aponta o registro sem decidir entre as duas hipóteses. O volume autorizado é estimado no inventário, então pequenos excessos são comuns. Os volumes usam ponto como separador decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "Produtos diferentes da mesma árvore ou unidades diferentes (m³, st) não são distinguidos aqui."
+   ],
+   "examples": [
+    {
+     "case": "Autorizado 3.5, explorado 3.2",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Autorizado 3.5, explorado 4.1",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "ibama_if100",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_if100",
+     "label": "dadosabertos.ibama.gov.br › volumes-explorados-if-100 › Volumes Explorados - IF 100%"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:40+00:00",
+   "total": 2386115,
+   "counts": {
+    "match": 1513707,
+    "mismatch": 872408,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 872408,
+   "signals_by_outcome": {
+    "mismatch": 872408,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/explored-volume-above-authorized.json"
+  },
+  {
+   "id": "pmfs-intensity-manual-over-10",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "forest/pmfs-intensity-manual-over-10.yaml",
+   "folder": "forest",
+   "language": "pt-BR",
+   "title": "Intensidade de corte acima de 10 m³/ha em manejo sem máquinas no arraste",
+   "title_translations": {
+    "en": "Cutting intensity above 10 m³/ha in forest management without machines for skidding"
+   },
+   "text": "Confere se a intensidade de corte dos planos de manejo da Amazônia Legal sem máquinas no arraste não passa de 10 m³/ha.\n",
+   "justification": "A Resolução CONAMA 406/2009, art. 5º, limita a intensidade de corte na Amazônia a 30 m³/ha com máquinas no arraste e a 10 m³/ha sem máquinas, salvo estudos que justifiquem outro valor. Valores acima indicam erro de unidade ou de registro, ou plano que precisa dessa justificativa. Intensidade com ponto decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "A norma admite intensidade diferente com estudos técnicos aprovados.",
+    "Planos sem método de extração informado ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Intensidade 6.5 m³/ha",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Intensidade 25.0 m³/ha",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "ibama_pmfs",
+   "timeline": "ibama_pmfs.DATA_DE_EMISSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_pmfs",
+     "label": "dadosabertos.ibama.gov.br › sinaflor-pmfs-amazonia-legal › PMFS Amazônia Legal"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:40+00:00",
+   "total": 10099,
+   "counts": {
+    "match": 57,
+    "mismatch": 28,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 10014
+   },
+   "signals": 28,
+   "signals_by_outcome": {
+    "mismatch": 28,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/pmfs-intensity-manual-over-10.json"
+  },
+  {
+   "id": "pmfs-intensity-mechanized-over-30",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "forest/pmfs-intensity-mechanized-over-30.yaml",
+   "folder": "forest",
+   "language": "pt-BR",
+   "title": "Intensidade de corte acima de 30 m³/ha em manejo com arraste mecanizado",
+   "title_translations": {
+    "en": "Cutting intensity above 30 m³/ha in forest management with mechanized skidding"
+   },
+   "text": "Confere se a intensidade de corte dos planos de manejo da Amazônia Legal com arraste mecanizado não passa de 30 m³/ha.\n",
+   "justification": "A Resolução CONAMA 406/2009, art. 5º, limita a intensidade de corte na Amazônia a 30 m³/ha com máquinas no arraste e a 10 m³/ha sem máquinas, salvo estudos que justifiquem outro valor. Valores acima indicam erro de unidade ou de registro, ou plano que precisa dessa justificativa. Intensidade com ponto decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "A norma admite intensidade diferente com estudos técnicos aprovados.",
+    "Planos sem método de extração informado ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Intensidade 26.5 m³/ha",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Intensidade 45.0 m³/ha",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "ibama_pmfs",
+   "timeline": "ibama_pmfs.DATA_DE_EMISSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_pmfs",
+     "label": "dadosabertos.ibama.gov.br › sinaflor-pmfs-amazonia-legal › PMFS Amazônia Legal"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:40+00:00",
+   "total": 10099,
+   "counts": {
+    "match": 4808,
+    "mismatch": 87,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 5204
+   },
+   "signals": 87,
+   "signals_by_outcome": {
+    "mismatch": 87,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/pmfs-intensity-mechanized-over-30.json"
+  },
+  {
+   "id": "species-not-in-commercial-timber-list",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "forest/species-not-in-commercial-timber-list.yaml",
+   "folder": "forest",
+   "language": "pt-BR",
+   "title": "Espécie explorada fora da lista de espécies madeireiras comerciais",
+   "title_translations": {
+    "en": "Harvested species missing from the list of commercial timber species"
+   },
+   "text": "Confere se o nome científico de cada árvore explorada (inventário 100%) consta da lista de espécies florestais madeireiras comerciais do Serviço Florestal Brasileiro.\n",
+   "justification": "A lista do SFB (Laboratório de Produtos Florestais, nomes conferidos na Flora e Funga do Brasil) reúne as espécies madeireiras comerciais. Nome explorado fora dela pode indicar erro de grafia, sinonímia não resolvida ou espécie pouco comercializada. Compara gênero e espécie, em minúsculas. O sinal é informativo: estar fora da lista não torna a exploração irregular.\n",
+   "exceptions": [
+    "Sinônimos e nomes populares registrados como científicos aparecem como não encontrados.",
+    "Espécies legítimas não incluídas na lista comercial também aparecem."
+   ],
+   "examples": [
+    {
+     "case": "Manilkara huberi",
+     "expected": "Conforme (na lista como Manilkara huberi (Ducke) A.Chev.)"
+    },
+    {
+     "case": "Nome científico com erro de grafia",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_if100",
+   "timeline": "ibama_if100.DATA_DA_EXPLORACAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_if100",
+     "label": "dadosabertos.ibama.gov.br › volumes-explorados-if-100 › Volumes Explorados - IF 100%"
+    },
+    {
+     "source": "sfb_madeireiras",
+     "label": "dados.florestal.gov.br › especies-florestais-madeireiras-comerciais › Dados_abertos_especies_madeireiras_SNIF_fonte_LPF_SFB"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:42+00:00",
+   "total": 2386115,
+   "counts": {
+    "match": 1581314,
+    "mismatch": 0,
+    "key_not_found": 804797,
+    "missing_value": 4,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 804801,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 804797,
+    "missing_value": 4,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/species-not-in-commercial-timber-list.json"
+  },
+  {
+   "id": "act-end-before-start",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "infraction/act-end-before-start.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Fim do ato inequívoco anterior ao início",
+   "title_translations": {
+    "en": "Unequivocal act ending before it starts"
+   },
+   "text": "Confere se a data de fim do ato inequívoco não é anterior à data de início, no mesmo auto.\n",
+   "justification": "Um intervalo termina depois de começar; fim antes do início indica datas trocadas ou erro de digitação. É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "Autos sem início ou sem fim do ato ficam fora do escopo; os campos só são preenchidos a partir de 2019."
+   ],
+   "examples": [
+    {
+     "case": "Início 2019-01-01, fim 2019-02-01",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Início 2019-02-01, fim 2019-01-01",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_autos",
+   "timeline": "ibama_autos.DT_INICIO_ATO_INEQUIVOCO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:49+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 85661,
+    "mismatch": 634,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 625631
+   },
+   "signals": 634,
+   "signals_by_outcome": {
+    "mismatch": 634,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/act-end-before-start.json"
+  },
+  {
+   "id": "biomes-without-infraction",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "infraction/biomes-without-infraction.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Registro de bioma sem auto de infração correspondente",
+   "title_translations": {
+    "en": "Biome record without a matching infraction notice"
+   },
+   "text": "Confere se o SEQ_AUTO_INFRACAO de cada registro de bioma existe no extrato de autos de infração.\n",
+   "justification": "Os extratos de bioma complementam o auto; um registro filho sem auto correspondente indica vínculo quebrado ou extratos de coberturas diferentes. A comparação usa a chave sequencial, não o número impresso. É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "Extratos publicados em datas diferentes podem ter coberturas diferentes.",
+    "Registro sem SEQ_AUTO_INFRACAO fica sem informação."
+   ],
+   "examples": [
+    {
+     "case": "Registro com SEQ_AUTO_INFRACAO presente no extrato de autos",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Registro com SEQ_AUTO_INFRACAO ausente do extrato de autos",
+     "expected": "Sinalizar: vínculo sem correspondência"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_filhos",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_filhos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - biomas"
+    },
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:50+00:00",
+   "total": 294563,
+   "counts": {
+    "match": 271330,
+    "mismatch": 0,
+    "key_not_found": 14462,
+    "missing_value": 8771,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 23233,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 14462,
+    "missing_value": 8771,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/biomes-without-infraction.json"
+  },
+  {
+   "id": "embargo-link-without-term",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "infraction/embargo-link-without-term.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Termo de embargo citado no auto e não publicado",
+   "title_translations": {
+    "en": "Embargo term cited by the notice but not published"
+   },
+   "text": "Confere se cada termo citado em CD_TERMOS_EMBARGOS (número-série, separados por vírgula) existe no extrato de termos de embargo.\n",
+   "justification": "O auto lista os termos de embargo lavrados com ele; um termo citado e ausente do extrato indica vínculo quebrado ou extrato incompleto. Compara número e série impressos (NUM_TAD-SER_TAD). É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "Autos sem termos de embargo citados ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Auto cita 654321-C e o termo 654321 série C está publicado",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Auto cita 654321-C e o termo não está publicado",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_autos",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    },
+    {
+     "source": "ibama_embargo",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-embargo › Termos de embargo"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:50+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 75223,
+    "mismatch": 0,
+    "key_not_found": 21538,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 615165
+   },
+   "signals": 21538,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 21538,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/embargo-link-without-term.json"
+  },
+  {
+   "id": "fact-after-issue",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "infraction/fact-after-issue.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Fato infracional posterior à lavratura do auto",
+   "title_translations": {
+    "en": "Offence dated after the infraction notice was issued"
+   },
+   "text": "Confere se a data do fato infracional não é posterior à data de lavratura do auto, comparando por dia.\n",
+   "justification": "O auto registra um fato já ocorrido; fato datado depois da lavratura indica erro de data ou de registro. As duas datas são comparadas por dia, porque parte dos autos traz só a data. É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "A data do fato só passou a ser preenchida em 2019 (era do AI-e); autos sem ela ficam fora do escopo.",
+    "Autos migrados ou corrigidos podem ter datas reescritas; a regra não distingue esses casos."
+   ],
+   "examples": [
+    {
+     "case": "Fato em 2020-03-01 e lavratura em 2020-03-05",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Fato em 2020-03-09 e lavratura em 2020-03-05",
+     "expected": "Sinalizar: fato posterior à lavratura"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_autos",
+   "timeline": "ibama_autos.DAT_HORA_AUTO_INFRACAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:51+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 84192,
+    "mismatch": 2108,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 625626
+   },
+   "signals": 2108,
+   "signals_by_outcome": {
+    "mismatch": 2108,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/fact-after-issue.json"
+  },
+  {
+   "id": "infraction-coordinates-missing-or-zero",
+   "rule_version": "0.2.0",
+   "origin": "expert",
+   "file": "infraction/infraction-coordinates-missing-or-zero.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Auto de infração sem coordenada ou em (0,0)",
+   "title_translations": {
+    "en": "Infraction notice without coordinates or at (0,0)"
+   },
+   "text": "Sinaliza autos lavrados a partir de 2011 sem latitude ou longitude, ou com as duas iguais a zero.\n",
+   "justification": "O ponto (0,0) fica no Atlântico, no golfo da Guiné: não é um local de autuação no Brasil, e sim um valor padrão de sistema. A regra começa em 2011, quando o auto passou a ter coordenada em quase todos os registros; antes disso a ausência é a regra, não exceção. Coordenadas usam vírgula decimal. É sinal para revisão: o auto pode ter localização em outro campo ou documento.\n",
+   "exceptions": [
+    "Autos anteriores a 2011 ficam fora do escopo (o campo quase não era preenchido).",
+    "A localização pode estar no recurso de coordenadas ou na geometria, e não nestes campos."
+   ],
+   "examples": [
+    {
+     "case": "Auto de 2015 em (-3,1; -60,0)",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Auto de 2012 em (0; 0)",
+     "expected": "Sinalizar"
+    },
+    {
+     "case": "Auto de 2020 sem latitude",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "ibama_autos",
+   "timeline": "ibama_autos.DAT_HORA_AUTO_INFRACAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:51+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 217776,
+    "mismatch": 28345,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 465805
+   },
+   "signals": 28345,
+   "signals_by_outcome": {
+    "mismatch": 28345,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/infraction-coordinates-missing-or-zero.json"
+  },
+  {
+   "id": "issued-over-five-years-after-fact",
+   "rule_version": "0.4.0",
+   "origin": "expert",
+   "file": "infraction/issued-over-five-years-after-fact.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Lavratura mais de cinco anos depois do fato",
+   "title_translations": {
+    "en": "Notice issued more than five years after the offence"
+   },
+   "text": "Sinaliza autos lavrados mais de cinco anos depois do fato infracional.\n",
+   "justification": "O Decreto 6.514/2008, art. 21, fixa em cinco anos a prescrição da ação punitiva, contados do fato. O lapso é hipótese de triagem para exame jurídico: interrupções, infração permanente e outras hipóteses mudam a contagem. A regra não declara prescrição.\n",
+   "exceptions": [
+    "Infração permanente ou continuada conta o prazo do fim da conduta.",
+    "Atos que interrompem a prescrição não aparecem nestes dados.",
+    "Autos sem data do fato (anteriores a 2019, quase todos) ficam fora do escopo.",
+    "Autos com o fato posterior à lavratura ficam fora do escopo: são contados pela regra fact-after-issue."
+   ],
+   "examples": [
+    {
+     "case": "Fato em 2010-01-01, lavratura em 2014-12-31",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Fato em 2010-01-01, lavratura em 2016-01-02",
+     "expected": "Sinalizar: mais de cinco anos"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_autos",
+   "timeline": "ibama_autos.DAT_HORA_AUTO_INFRACAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:52+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 82596,
+    "mismatch": 1596,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 627734
+   },
+   "signals": 1596,
+   "signals_by_outcome": {
+    "mismatch": 1596,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/issued-over-five-years-after-fact.json"
+  },
+  {
+   "id": "legal-basis-without-infraction",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "infraction/legal-basis-without-infraction.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Registro de enquadramento sem auto de infração correspondente",
+   "title_translations": {
+    "en": "Legal basis record without a matching infraction notice"
+   },
+   "text": "Confere se o SEQ_AUTO_INFRACAO de cada registro de enquadramento existe no extrato de autos de infração.\n",
+   "justification": "Os extratos de enquadramento complementam o auto; um registro filho sem auto correspondente indica vínculo quebrado ou extratos de coberturas diferentes. A comparação usa a chave sequencial, não o número impresso. É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "Extratos publicados em datas diferentes podem ter coberturas diferentes.",
+    "Registro sem SEQ_AUTO_INFRACAO fica sem informação."
+   ],
+   "examples": [
+    {
+     "case": "Registro com SEQ_AUTO_INFRACAO presente no extrato de autos",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Registro com SEQ_AUTO_INFRACAO ausente do extrato de autos",
+     "expected": "Sinalizar: vínculo sem correspondência"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_filhos",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_filhos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - enquadramento legal"
+    },
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:53+00:00",
+   "total": 689929,
+   "counts": {
+    "match": 655178,
+    "mismatch": 0,
+    "key_not_found": 24148,
+    "missing_value": 10603,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 34751,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 24148,
+    "missing_value": 10603,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/legal-basis-without-infraction.json"
+  },
+  {
+   "id": "notice-before-issue",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "infraction/notice-before-issue.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Ciência do autuado anterior à lavratura",
+   "title_translations": {
+    "en": "Offender notified before the notice was issued"
+   },
+   "text": "Confere se a data de ciência da autuação não é anterior à data de lavratura do auto, comparando por dia.\n",
+   "justification": "A ciência pressupõe um auto já lavrado; ciência datada antes da lavratura indica erro de data ou de encadeamento do processo. É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "Autos sem data de ciência (ainda não notificados, ou antigos) ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Lavratura em 2021-06-10 e ciência em 2021-06-10",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Lavratura em 2021-06-10 e ciência em 2021-06-01",
+     "expected": "Sinalizar: ciência anterior à lavratura"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_autos",
+   "timeline": "ibama_autos.DAT_HORA_AUTO_INFRACAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:54+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 431173,
+    "mismatch": 1093,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 279660
+   },
+   "signals": 1093,
+   "signals_by_outcome": {
+    "mismatch": 1093,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/notice-before-issue.json"
+  },
+  {
+   "id": "notice-date-implausible",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "infraction/notice-date-implausible.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Data de lavratura do auto fora de faixa plausível",
+   "title_translations": {
+    "en": "Infraction notice date outside a plausible range"
+   },
+   "text": "Sinaliza autos com data de lavratura anterior a 1970 ou posterior ao dia da rodada.\n",
+   "justification": "O extrato traz autos desde 1977 (órgãos que antecederam o IBAMA); data de lavratura anterior a 1970 ou no futuro indica erro de digitação do ano. É sinal para revisão.\n",
+   "exceptions": [
+    "Autos de órgãos antecessores podem ter datas antigas legítimas a partir da década de 1970."
+   ],
+   "examples": [
+    {
+     "case": "Lavratura em 1998-07-01",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Lavratura em 2098-07-01",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "ibama_autos",
+   "timeline": "ibama_autos.DAT_HORA_AUTO_INFRACAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:54+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 711926,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/notice-date-implausible.json"
+  },
+  {
+   "id": "seizure-link-without-term",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "infraction/seizure-link-without-term.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Termo de apreensão citado no auto e não publicado",
+   "title_translations": {
+    "en": "Seizure term cited by the notice but not published"
+   },
+   "text": "Confere se cada termo citado em CD_TERMOS_APREENSAO (número-série, separados por vírgula) existe no extrato de termos de apreensão.\n",
+   "justification": "O auto lista os termos de apreensão lavrados com ele; um termo citado e ausente do extrato indica vínculo quebrado ou extrato incompleto. Compara número e série impressos (CD_TAD-CD_SERIE_TAD), o mesmo formato do campo do auto. É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "Autos sem termos de apreensão citados ficam fora do escopo.",
+    "Termos cancelados continuam publicados no extrato e contam como existentes."
+   ],
+   "examples": [
+    {
+     "case": "Auto cita 123456-A e o termo 123456 série A está publicado",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Auto cita 123456-A,234567-B e só o primeiro está publicado",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_autos",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    },
+    {
+     "source": "ibama_apreensao",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-apreensao › Termo de apreensão"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:55+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 98925,
+    "mismatch": 0,
+    "key_not_found": 10633,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 602368
+   },
+   "signals": 10633,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 10633,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/seizure-link-without-term.json"
+  },
+  {
+   "id": "species-without-infraction",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "infraction/species-without-infraction.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Registro de espécime sem auto de infração correspondente",
+   "title_translations": {
+    "en": "Specimen record without a matching infraction notice"
+   },
+   "text": "Confere se o SEQ_AUTO_INFRACAO de cada registro de espécime existe no extrato de autos de infração.\n",
+   "justification": "Os extratos de espécime complementam o auto; um registro filho sem auto correspondente indica vínculo quebrado ou extratos de coberturas diferentes. A comparação usa a chave sequencial, não o número impresso. É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "Extratos publicados em datas diferentes podem ter coberturas diferentes.",
+    "Registro sem SEQ_AUTO_INFRACAO fica sem informação."
+   ],
+   "examples": [
+    {
+     "case": "Registro com SEQ_AUTO_INFRACAO presente no extrato de autos",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Registro com SEQ_AUTO_INFRACAO ausente do extrato de autos",
+     "expected": "Sinalizar: vínculo sem correspondência"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_filhos",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_filhos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - espécimes"
+    },
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:34:56+00:00",
+   "total": 38056,
+   "counts": {
+    "match": 34661,
+    "mismatch": 0,
+    "key_not_found": 7,
+    "missing_value": 3388,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 3395,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 7,
+    "missing_value": 3388,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/species-without-infraction.json"
+  },
+  {
+   "id": "declared-areas-above-property",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "land/declared-areas-above-property.yaml",
+   "folder": "land",
+   "language": "pt-BR",
+   "title": "APP e reserva legal líquida acima da área do imóvel",
+   "title_translations": {
+    "en": "Permanent protection and net legal reserve above the property area"
+   },
+   "text": "Confere se APP + reserva legal líquida (descontada a sobreposição) não passam da área total do imóvel declarada no ADA.\n",
+   "justification": "As áreas declaradas são partes do imóvel; APP somada à reserva legal líquida maior que a área total indica erro de declaração ou de unidade. Usa a reserva legal líquida porque a APP pode ser computada na reserva legal (Lei 12.651/2012, art. 15). Áreas em hectares, com ponto decimal; campo vazio conta como zero. É sinal para revisão.\n",
+   "exceptions": [
+    "Se a reserva legal líquida não descontar toda a sobreposição com APP, a soma pode exceder sem erro."
+   ],
+   "examples": [
+    {
+     "case": "ATI 100 ha, APP 10 ha, reserva líquida 20 ha",
+     "expected": "Conforme"
+    },
+    {
+     "case": "ATI 100 ha, APP 60 ha, reserva líquida 50 ha",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "ibama_ada",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_ada",
+     "label": "dadosabertos.ibama.gov.br › ato-declaratorio-ambiental-ada › Ato Declaratório Ambiental (ADA)"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:18+00:00",
+   "total": 6206666,
+   "counts": {
+    "match": 6160160,
+    "mismatch": 29980,
+    "key_not_found": 0,
+    "missing_value": 16526,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 46506,
+   "signals_by_outcome": {
+    "mismatch": 29980,
+    "key_not_found": 0,
+    "missing_value": 16526,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/declared-areas-above-property.json"
+  },
+  {
+   "id": "expiry-before-issue",
+   "rule_version": "0.2.0",
+   "origin": "expert",
+   "file": "licensing/expiry-before-issue.yaml",
+   "folder": "licensing",
+   "language": "pt-BR",
+   "title": "Vencimento da licença anterior à emissão",
+   "title_translations": {
+    "en": "Licence expiring before it was issued"
+   },
+   "text": "Confere se a data de vencimento da licença não é anterior à data de emissão.\n",
+   "justification": "Uma licença vence depois de emitida; a ordem inversa indica erro de data. É sinal para revisão.\n",
+   "exceptions": [
+    "Licenças sem vencimento informado ficam sem informação."
+   ],
+   "examples": [
+    {
+     "case": "Emissão 10/01/2020, vencimento 10/01/2024",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Emissão 10/01/2020, vencimento 10/01/2019",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_licencas",
+   "timeline": "ibama_licencas.DAT_EMISSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_licencas",
+     "label": "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ..."
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:18+00:00",
+   "total": 14302,
+   "counts": {
+    "match": 14242,
+    "mismatch": 52,
+    "key_not_found": 0,
+    "missing_value": 8,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 60,
+   "signals_by_outcome": {
+    "mismatch": 52,
+    "key_not_found": 0,
+    "missing_value": 8,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/expiry-before-issue.json"
+  },
+  {
+   "id": "installation-licence-over-six-years",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "licensing/installation-licence-over-six-years.yaml",
+   "folder": "licensing",
+   "language": "pt-BR",
+   "title": "Licença de Instalação com validade acima de seis anos",
+   "title_translations": {
+    "en": "Installation licence valid for more than 6 years"
+   },
+   "text": "Confere se a Licença de Instalação vence no máximo 6 anos depois da emissão.\n",
+   "justification": "A Resolução CONAMA 237/1997, art. 18, limita a validade da Licença de Instalação a 6 anos. A Lei 15.190/2025 (arts. 6º e 7º) passou a reger licenças emitidas na sua vigência, com faixas próprias; a regra usa o limite da CONAMA 237 e é hipótese de triagem, não conclusão sobre a licença.\n",
+   "exceptions": [
+    "Licenças emitidas sob a Lei 15.190/2025 podem ter limite diferente.",
+    "Renovações, prorrogações e retificações têm tipo próprio e ficam fora do escopo.",
+    "Licença com vencimento anterior à emissão fica fora do escopo: é contada pela regra expiry-before-issue."
+   ],
+   "examples": [
+    {
+     "case": "Licença de Instalação emitida em 01/01/2015, vence em 01/01/2021",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Licença de Instalação emitida em 01/01/2015, vence em 02/01/2021",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_licencas",
+   "timeline": "ibama_licencas.DAT_EMISSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_licencas",
+     "label": "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ..."
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:18+00:00",
+   "total": 14302,
+   "counts": {
+    "match": 1429,
+    "mismatch": 5,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 12868
+   },
+   "signals": 5,
+   "signals_by_outcome": {
+    "mismatch": 5,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/installation-licence-over-six-years.json"
+  },
+  {
+   "id": "operation-licence-over-ten-years",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "licensing/operation-licence-over-ten-years.yaml",
+   "folder": "licensing",
+   "language": "pt-BR",
+   "title": "Licença de Operação com validade acima de dez anos",
+   "title_translations": {
+    "en": "Operating licence valid for more than 10 years"
+   },
+   "text": "Confere se a Licença de Operação vence no máximo 10 anos depois da emissão.\n",
+   "justification": "A Resolução CONAMA 237/1997, art. 18, limita a validade da Licença de Operação a 10 anos. A Lei 15.190/2025 (arts. 6º e 7º) passou a reger licenças emitidas na sua vigência, com faixas próprias; a regra usa o limite da CONAMA 237 e é hipótese de triagem, não conclusão sobre a licença.\n",
+   "exceptions": [
+    "Licenças emitidas sob a Lei 15.190/2025 podem ter limite diferente.",
+    "Renovações, prorrogações e retificações têm tipo próprio e ficam fora do escopo.",
+    "Licença com vencimento anterior à emissão fica fora do escopo: é contada pela regra expiry-before-issue."
+   ],
+   "examples": [
+    {
+     "case": "Licença de Operação emitida em 01/01/2015, vence em 01/01/2025",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Licença de Operação emitida em 01/01/2015, vence em 02/01/2025",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_licencas",
+   "timeline": "ibama_licencas.DAT_EMISSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_licencas",
+     "label": "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ..."
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:18+00:00",
+   "total": 14302,
+   "counts": {
+    "match": 1590,
+    "mismatch": 2,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 12710
+   },
+   "signals": 2,
+   "signals_by_outcome": {
+    "mismatch": 2,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/operation-licence-over-ten-years.json"
+  },
+  {
+   "id": "preliminary-licence-over-five-years",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "licensing/preliminary-licence-over-five-years.yaml",
+   "folder": "licensing",
+   "language": "pt-BR",
+   "title": "Licença Prévia com validade acima de cinco anos",
+   "title_translations": {
+    "en": "Preliminary licence valid for more than 5 years"
+   },
+   "text": "Confere se a Licença Prévia vence no máximo 5 anos depois da emissão.\n",
+   "justification": "A Resolução CONAMA 237/1997, art. 18, limita a validade da Licença Prévia a 5 anos. A Lei 15.190/2025 (arts. 6º e 7º) passou a reger licenças emitidas na sua vigência, com faixas próprias; a regra usa o limite da CONAMA 237 e é hipótese de triagem, não conclusão sobre a licença.\n",
+   "exceptions": [
+    "Licenças emitidas sob a Lei 15.190/2025 podem ter limite diferente.",
+    "Renovações, prorrogações e retificações têm tipo próprio e ficam fora do escopo.",
+    "Licença com vencimento anterior à emissão fica fora do escopo: é contada pela regra expiry-before-issue."
+   ],
+   "examples": [
+    {
+     "case": "Licença Prévia emitida em 01/01/2015, vence em 01/01/2020",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Licença Prévia emitida em 01/01/2015, vence em 02/01/2020",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_licencas",
+   "timeline": "ibama_licencas.DAT_EMISSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_licencas",
+     "label": "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ..."
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:18+00:00",
+   "total": 14302,
+   "counts": {
+    "match": 790,
+    "mismatch": 8,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 13504
+   },
+   "signals": 8,
+   "signals_by_outcome": {
+    "mismatch": 8,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/preliminary-licence-over-five-years.json"
+  },
+  {
+   "id": "appeal-before-main-judgment",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "payment/appeal-before-main-judgment.yaml",
+   "folder": "payment",
+   "language": "pt-BR",
+   "title": "Julgamento do recurso anterior ao julgamento principal",
+   "title_translations": {
+    "en": "Appeal judgment dated before the first-instance judgment"
+   },
+   "text": "Confere se a data do julgamento do recurso não é anterior à do julgamento principal.\n",
+   "justification": "O recurso é julgado depois da decisão recorrida; a ordem inversa indica erro de data ou de encadeamento. É sinal para revisão.\n",
+   "exceptions": [
+    "Autos sem recurso julgado ficam fora do escopo.",
+    "Contexto processual documentado pode alterar a ordem esperada (por exemplo, anulação e novo julgamento)."
+   ],
+   "examples": [
+    {
+     "case": "Principal em 01/06/2017, recurso em 01/03/2018",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Principal em 01/06/2017, recurso em 01/03/2017",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_julgamentos",
+   "timeline": "ibama_julgamentos.Data Julgamento Principal",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_julgamentos",
+     "label": "dadosabertos.ibama.gov.br › julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama › Volume de Julgamento de Auto de Infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:18+00:00",
+   "total": 2917,
+   "counts": {
+    "match": 490,
+    "mismatch": 115,
+    "key_not_found": 0,
+    "missing_value": 71,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 2241
+   },
+   "signals": 186,
+   "signals_by_outcome": {
+    "mismatch": 115,
+    "key_not_found": 0,
+    "missing_value": 71,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/appeal-before-main-judgment.json"
+  },
+  {
+   "id": "main-judgment-before-infraction",
+   "rule_version": "0.3.0",
+   "origin": "expert",
+   "file": "payment/main-judgment-before-infraction.yaml",
+   "folder": "payment",
+   "language": "pt-BR",
+   "title": "Julgamento principal anterior ao auto",
+   "title_translations": {
+    "en": "First-instance judgment dated before the notice"
+   },
+   "text": "Confere se a data do julgamento principal não é anterior à data do auto.\n",
+   "justification": "O julgamento decide sobre um auto já lavrado; a ordem inversa indica erro de data. É sinal para revisão.\n",
+   "exceptions": [
+    "Autos ainda não julgados ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Auto em 01/02/2016, julgamento em 01/06/2017",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Auto em 01/02/2016, julgamento em 01/06/2015",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_julgamentos",
+   "timeline": "ibama_julgamentos.Data Auto",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_julgamentos",
+     "label": "dadosabertos.ibama.gov.br › julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama › Volume de Julgamento de Auto de Infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:18+00:00",
+   "total": 2917,
+   "counts": {
+    "match": 1578,
+    "mismatch": 3,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 1336
+   },
+   "signals": 3,
+   "signals_by_outcome": {
+    "mismatch": 3,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/main-judgment-before-infraction.json"
+  },
+  {
+   "id": "paid-ten-times-original",
+   "rule_version": "0.2.0",
+   "origin": "expert",
+   "file": "payment/paid-ten-times-original.yaml",
+   "folder": "payment",
+   "language": "pt-BR",
+   "title": "Valor pago mais de 10 vezes o valor original do auto",
+   "title_translations": {
+    "en": "Amount paid more than 10 times the original fine"
+   },
+   "text": "Sinaliza parcelas cujo valor pago passa de 10 vezes o valor original do auto, só para autos em Real.\n",
+   "justification": "Uma parcela paga muito acima do valor original sugere erro de unidade (centavos, separador decimal) ou de vínculo. O fator 10 é escolha exploratória do autor, não limite legal: juros, multa de mora e correção existem, mas raramente multiplicam a dívida por dez. Os valores usam o padrão brasileiro: vírgula decimal e ponto de milhar. Autos em moedas antigas (Cruzeiro, BTN, UFIR...) ficam fora, porque o pagamento é em Real.\n",
+   "exceptions": [
+    "Débitos muito antigos, com décadas de correção, podem passar de 10 vezes legitimamente.",
+    "Autos em moeda anterior ao Real ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Auto de R$ 1.000, parcela paga de R$ 1.250,50",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Auto de R$ 1.000, parcela paga de R$ 125.050,00",
+     "expected": "Sinalizar: mais de 10 vezes"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "ibama_arrecadacao",
+   "timeline": "ibama_arrecadacao.Data Auto",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_arrecadacao",
+     "label": "dadosabertos.ibama.gov.br › arrecadacao-de-multas-ambientais-bens-tutelados › Arrecadação de Multas por Bens Tutelados"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:24+00:00",
+   "total": 1588335,
+   "counts": {
+    "match": 1584026,
+    "mismatch": 780,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 3529
+   },
+   "signals": 780,
+   "signals_by_outcome": {
+    "mismatch": 780,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/paid-ten-times-original.json"
+  },
+  {
+   "id": "payment-before-infraction",
+   "rule_version": "0.2.0",
+   "origin": "expert",
+   "file": "payment/payment-before-infraction.yaml",
+   "folder": "payment",
+   "language": "pt-BR",
+   "title": "Pagamento anterior ao auto",
+   "title_translations": {
+    "en": "Payment dated before the infraction notice"
+   },
+   "text": "Confere se a data de pagamento não é anterior à data do auto, em cada parcela arrecadada.\n",
+   "justification": "O pagamento de multa pressupõe o auto; pagamento datado antes do auto indica erro de data ou de vínculo. É sinal para revisão.\n",
+   "exceptions": [
+    "Pagamentos vinculados a outro débito do mesmo autuado podem aparecer associados ao auto."
+   ],
+   "examples": [
+    {
+     "case": "Auto em 10/03/2015, pagamento em 20/04/2015",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Auto em 10/03/2015, pagamento em 20/02/2015",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "ibama_arrecadacao",
+   "timeline": "ibama_arrecadacao.Data Auto",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_arrecadacao",
+     "label": "dadosabertos.ibama.gov.br › arrecadacao-de-multas-ambientais-bens-tutelados › Arrecadação de Multas por Bens Tutelados"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:25+00:00",
+   "total": 1588335,
+   "counts": {
+    "match": 1587550,
+    "mismatch": 785,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 785,
+   "signals_by_outcome": {
+    "mismatch": 785,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/payment-before-infraction.json"
+  },
+  {
+   "id": "ingredient-without-registered-technical-product",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "pesticides/ingredient-without-registered-technical-product.yaml",
+   "folder": "pesticides",
+   "language": "pt-BR",
+   "title": "Ingrediente ativo vendido sem produto técnico registrado no AGROFIT",
+   "title_translations": {
+    "en": "Active ingredient sold without a registered technical product in AGROFIT"
+   },
+   "text": "Confere, nas vendas de 2024 em diante, se o ingrediente ativo consta como ingrediente de algum produto técnico registrado no AGROFIT (MAPA).\n",
+   "justification": "A venda de agrotóxico pressupõe produto registrado; o AGROFIT lista os produtos técnicos com registro e seus ingredientes ativos. Ingrediente vendido sem produto técnico no registro atual pode indicar proibição, cancelamento, nome grafado de outro modo ou sal/éster registrado com outro nome. Compara o texto antes do primeiro parêntese, em minúsculas. Só vendas recentes, porque o AGROFIT é a foto atual do registro. É sinal para revisão.\n",
+   "exceptions": [
+    "Ingredientes registrados com outra grafia, sal ou éster aparecem como não encontrados.",
+    "Vendas anteriores a 2024 ficam fora do escopo (o registro pode ter mudado desde então)."
+   ],
+   "examples": [
+    {
+     "case": "Glifosato vendido em 2024",
+     "expected": "Conforme (há produto técnico registrado)"
+    },
+    {
+     "case": "Ingrediente vendido em 2025 sem produto técnico no AGROFIT",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_comercializacao",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_comercializacao",
+     "label": "dadosabertos.ibama.gov.br › relatorios-de-comercializacao-de-agrotoxicos › Dados - CSV"
+    },
+    {
+     "source": "mapa_agrofit",
+     "label": "dados.agricultura.gov.br › sistema-de-agrotoxicos-fitossanitarios-agrofit › Produto Técnico"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:25+00:00",
+   "total": 124299,
+   "counts": {
+    "match": 13218,
+    "mismatch": 0,
+    "key_not_found": 2247,
+    "missing_value": 57,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 108777
+   },
+   "signals": 2304,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 2247,
+    "missing_value": 57,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/ingredient-without-registered-technical-product.json"
+  },
+  {
+   "id": "seizure-coordinates-missing-or-zero",
+   "rule_version": "0.2.0",
+   "origin": "expert",
+   "file": "seizure/seizure-coordinates-missing-or-zero.yaml",
+   "folder": "seizure",
+   "language": "pt-BR",
+   "title": "Termo de apreensão sem coordenada ou em (0,0)",
+   "title_translations": {
+    "en": "Seizure term without coordinates or at (0,0)"
+   },
+   "text": "Sinaliza termos de apreensão lavrados a partir de 2013 sem latitude ou longitude, ou com as duas iguais a zero.\n",
+   "justification": "O ponto (0,0) não é um local de apreensão no Brasil, e sim um valor padrão de sistema. A regra começa em 2013, quando o termo passou a ter coordenada em quase todos os registros. Coordenadas usam ponto decimal (diferente do auto de infração). É sinal para revisão.\n",
+   "exceptions": [
+    "Termos anteriores a 2013 ficam fora do escopo (o campo quase não era preenchido)."
+   ],
+   "examples": [
+    {
+     "case": "Termo de 2016 em (-8.05; -34.9)",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Termo de 2013 em (0.0; 0.0)",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "ibama_apreensao",
+   "timeline": "ibama_apreensao.DT_APREENSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_apreensao",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-apreensao › Termo de apreensão"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:26+00:00",
+   "total": 157955,
+   "counts": {
+    "match": 54033,
+    "mismatch": 4103,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 99819
+   },
+   "signals": 4103,
+   "signals_by_outcome": {
+    "mismatch": 4103,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/seizure-coordinates-missing-or-zero.json"
+  },
+  {
+   "id": "term-without-infraction",
+   "rule_version": "0.2.0",
+   "origin": "cross_reference",
+   "file": "seizure/term-without-infraction.yaml",
+   "folder": "seizure",
+   "language": "pt-BR",
+   "title": "Termo de apreensão ligado a auto não publicado",
+   "title_translations": {
+    "en": "Seizure term linked to an unpublished infraction notice"
+   },
+   "text": "Confere se o SEQ_AUTO_INFRACAO informado em cada termo de apreensão existe no extrato de autos de infração.\n",
+   "justification": "O termo de apreensão aponta o auto a que pertence; um auto apontado e ausente do extrato indica vínculo quebrado ou extratos de coberturas diferentes. Direção distinta da verificação feita a partir do auto. É sinal para revisão, não veredito sobre o auto.\n",
+   "exceptions": [
+    "Termos sem SEQ_AUTO_INFRACAO ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Termo com SEQ_AUTO_INFRACAO presente no extrato de autos",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Termo com SEQ_AUTO_INFRACAO ausente do extrato de autos",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "lookup-exists",
+   "evaluated_source": "ibama_apreensao",
+   "timeline": "ibama_apreensao.DT_APREENSAO",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_apreensao",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-apreensao › Termo de apreensão"
+    },
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:26+00:00",
+   "total": 157955,
+   "counts": {
+    "match": 125274,
+    "mismatch": 0,
+    "key_not_found": 29,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 32652
+   },
+   "signals": 29,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 29,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/term-without-infraction.json"
+  },
+  {
+   "id": "municipality-state",
+   "rule_version": "0.4.0",
+   "origin": "cross_reference",
+   "file": "territory/municipality-state.yaml",
+   "folder": "territory",
+   "language": "pt-BR",
+   "title": "Código do município compatível com a UF do mesmo local",
+   "title_translations": {
+    "en": "Municipality code consistent with the state of the same place"
+   },
+   "text": "Para cada auto de infração, procura o código IBGE do município na tabela oficial de municípios publicada pelo TSE e confere se a UF do auto é a UF desse município.\n",
+   "justification": "Município e UF do mesmo registro precisam descrever o mesmo lugar. Uma divergência pode indicar erro de digitação, de codificação ou campos preenchidos com referências diferentes. É um sinal para revisão, não um veredito sobre o auto.\n",
+   "exceptions": [
+    "Código de município extinto ou criado depois da tabela do TSE aparece como não encontrado, não como divergência.",
+    "Código ou UF vazio fica sem informação e não é contado como conforme."
+   ],
+   "examples": [
+    {
+     "case": "COD_MUNICIPIO 2611606 (Recife) com UF PE",
+     "expected": "Conforme"
+    },
+    {
+     "case": "COD_MUNICIPIO 2611606 (Recife) com UF AL",
+     "expected": "Sinalizar: a tabela do TSE indica PE"
+    }
+   ],
+   "template": "lookup-equals",
+   "evaluated_source": "ibama_autos",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "ibama_autos",
+     "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração"
+    },
+    {
+     "source": "tse_municipios",
+     "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T13:35:26+00:00",
+   "total": 711926,
+   "counts": {
+    "match": 711112,
+    "mismatch": 0,
+    "key_not_found": 547,
+    "missing_value": 267,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 814,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 547,
+    "missing_value": 267,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/municipality-state.json"
+  }
+ ],
+ "sources": [
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "siscites-licencas-de-fauna-e-flora-emitidas",
+   "resource_name": "Siscites",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › siscites-licencas-de-fauna-e-flora-emitidas › Siscites",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "appendix-i-wild-commercial",
+    "wild-commercial-threatened-species"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.43
+   },
+   "dataset": {
+    "title": "Siscites - licenças de fauna e flora emitidas",
+    "organization": "Dados Abertos",
+    "license": "Creative Commons Atribuição",
+    "license_id": "cc-by",
+    "license_url": "http://www.opendefinition.org/licenses/cc-by",
+    "metadata_modified": "2026-05-26T13:12:40.267896"
+   },
+   "resource": {
+    "id": "dddd819f-275a-4653-9104-772dd7519e6a",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/CITES/licencas.csv",
+    "name": "Siscites",
+    "metadata_modified": "2026-05-26T13:12:04.055944",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25B579C6BAC1",
+    "last_modified": "Fri, 09 Oct 2026 03:29:07 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 106792303,
+    "sha256": "e320a1f12b98e2b86166b559a59ce2ec53417fa6fd0d4fe9b12720b8503f8051",
+    "seconds": 18.3,
+    "mb_per_s": 5.835
+   },
+   "files": [
+    {
+     "file": "licencas.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/CITES/licencas.csv",
+     "resource_id": "dddd819f-275a-4653-9104-772dd7519e6a",
+     "bytes": 106792303,
+     "sha256": "e320a1f12b98e2b86166b559a59ce2ec53417fa6fd0d4fe9b12720b8503f8051"
+    }
+   ]
+  },
+  {
+   "portal": "https://dados.mma.gov.br",
+   "dataset_name": "especies-ameacadas",
+   "resource_name": "FAUNA - Lista de Espécies Ameaçadas - 2021.csv",
+   "resource_format": "CSV",
+   "label": "dados.mma.gov.br › especies-ameacadas › FAUNA - Lista de Espécies Ameaçadas - 2021.csv",
+   "role": "secondary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "wild-commercial-threatened-species"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.87
+   },
+   "dataset": {
+    "title": "Espécies Ameaçadas",
+    "organization": "Ministério do Meio Ambiente e Mudança do Clima",
+    "license": "Creative Commons Atribuição",
+    "license_id": "cc-by",
+    "license_url": "http://www.opendefinition.org/licenses/cc-by",
+    "metadata_modified": "2023-08-23T18:36:19.537067"
+   },
+   "resource": {
+    "id": "544f9312-d4c6-4d12-b6ac-51bf3039bbb7",
+    "url": "https://dados.mma.gov.br/dataset/41a79b71-445f-4a6a-8c70-d46af991292a/resource/544f9312-d4c6-4d12-b6ac-51bf3039bbb7/download/fauna-ameacada-2021.csv",
+    "name": "FAUNA - Lista de Espécies Ameaçadas - 2021.csv",
+    "metadata_modified": null,
+    "last_modified": "2023-06-16T14:05:52.250257",
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1686924352.0-172311\"",
+    "last_modified": "Fri, 16 Jun 2023 14:05:52 GMT",
+    "content_type": "text/csv",
+    "served_by": "dados.mma.gov.br",
+    "bytes": 172311,
+    "sha256": "d05dda8ece1f7d62aabfa1326c4808d5b1738bf2e7d20e3cdf74b6cab1cd14ad",
+    "seconds": 0.85,
+    "mb_per_s": 0.203
+   },
+   "files": [
+    {
+     "file": "fauna-ameacada-2021.csv",
+     "url": "https://dados.mma.gov.br/dataset/41a79b71-445f-4a6a-8c70-d46af991292a/resource/544f9312-d4c6-4d12-b6ac-51bf3039bbb7/download/fauna-ameacada-2021.csv",
+     "resource_id": "544f9312-d4c6-4d12-b6ac-51bf3039bbb7",
+     "bytes": 172311,
+     "sha256": "d05dda8ece1f7d62aabfa1326c4808d5b1738bf2e7d20e3cdf74b6cab1cd14ad"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "fiscalizacao-termo-de-embargo",
+   "resource_name": "Termos de embargo",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-embargo › Termos de embargo",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "embargo-date-implausible",
+    "embargo-link-without-term",
+    "lifted-before-embargo"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.38
+   },
+   "dataset": {
+    "title": "Fiscalização - termo de embargo",
+    "organization": "Dados Abertos",
+    "license": "Outra (Aberta)",
+    "license_id": "other-open",
+    "license_url": null,
+    "metadata_modified": "2026-10-07T19:32:21.034682"
+   },
+   "resource": {
+    "id": "8f88b43e-287a-470b-a730-db440f9e37fa",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO/termo_de_embargo.csv",
+    "name": "Termos de embargo",
+    "metadata_modified": "2026-10-07T19:31:48.206513",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25B9035242B3",
+    "last_modified": "Fri, 09 Oct 2026 03:54:26 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 209767829,
+    "sha256": "92f06836d90106c805c682f32d856bb7df2c995f7a430504364e0e251e2a24a5",
+    "seconds": 48.73,
+    "mb_per_s": 4.304
+   },
+   "files": [
+    {
+     "file": "termo_de_embargo.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/TERMOS_DE_EMBARGO/TERMO_EMBARGO/termo_de_embargo.csv",
+     "resource_id": "8f88b43e-287a-470b-a730-db440f9e37fa",
+     "bytes": 209767829,
+     "sha256": "92f06836d90106c805c682f32d856bb7df2c995f7a430504364e0e251e2a24a5"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "sisfauna-plantel-exato",
+   "resource_name": "Sisfauna - Plantel Exato",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › sisfauna-plantel-exato › Sisfauna - Plantel Exato",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "stock-balance"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.23
+   },
+   "dataset": {
+    "title": "Sisfauna - Plantel Exato",
+    "organization": "Dados Abertos",
+    "license": "Other (Public Domain)",
+    "license_id": "other-pd",
+    "license_url": null,
+    "metadata_modified": "2021-09-18T12:47:31.305830"
+   },
+   "resource": {
+    "id": "a271ddd8-aac6-4b58-9017-37b57b3b80dd",
+    "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPlantelExato/relatorio.csv",
+    "name": "Sisfauna - Plantel Exato",
+    "metadata_modified": "2021-09-16T13:56:50.961213",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"45dbabd-650f2cc5f0840\"",
+    "last_modified": "Mon, 04 May 2026 00:13:21 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.ibama.gov.br",
+    "bytes": 73251517,
+    "sha256": "26250d38da458413546d7f981ebc115f80c0d278aa5edef3304f372ff075ab8e",
+    "seconds": 1.39,
+    "mb_per_s": 52.564
+   },
+   "files": [
+    {
+     "file": "relatorio.csv",
+     "url": "https://dadosabertos.ibama.gov.br/dados/RAPP/sisfaunaPlantelExato/relatorio.csv",
+     "resource_id": "a271ddd8-aac6-4b58-9017-37b57b3b80dd",
+     "bytes": 73251517,
+     "sha256": "26250d38da458413546d7f981ebc115f80c0d278aa5edef3304f372ff075ab8e"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "sisfogo-roi",
+   "resource_name": "ROI formato csv",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › sisfogo-roi › ROI formato csv",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "incident-milestones-order"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.27
+   },
+   "dataset": {
+    "title": "Sisfogo - ROI",
+    "organization": "Dados Abertos",
+    "license": "Creative Commons Atribuição",
+    "license_id": "cc-by",
+    "license_url": "http://www.opendefinition.org/licenses/cc-by",
+    "metadata_modified": "2025-11-13T12:32:39.128641"
+   },
+   "resource": {
+    "id": "c2ac514d-3701-4255-9b47-fcbb042fb9b2",
+    "url": "https://dadosabertos.ibama.gov.br/dados/SISFOGO/ROI.csv",
+    "name": "ROI formato csv",
+    "metadata_modified": "2021-11-18T11:55:55.660266",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"10ef6e6a-650f3e6d0b263\"",
+    "last_modified": "Mon, 04 May 2026 01:32:19 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.ibama.gov.br",
+    "bytes": 284126826,
+    "sha256": "252aa380626d9377c0e24b9fbcc8a0c7572e5e7ee8acab0c152b1888ad0ebc91",
+    "seconds": 7.37,
+    "mb_per_s": 38.542
+   },
+   "files": [
+    {
+     "file": "ROI.csv",
+     "url": "https://dadosabertos.ibama.gov.br/dados/SISFOGO/ROI.csv",
+     "resource_id": "c2ac514d-3701-4255-9b47-fcbb042fb9b2",
+     "bytes": 284126826,
+     "sha256": "252aa380626d9377c0e24b9fbcc8a0c7572e5e7ee8acab0c152b1888ad0ebc91"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "volumes-explorados-if-100",
+   "resource_name": "Volumes Explorados - IF 100%",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › volumes-explorados-if-100 › Volumes Explorados - IF 100%",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "exploration-outside-validity",
+    "explored-volume-above-authorized",
+    "species-not-in-commercial-timber-list"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.22
+   },
+   "dataset": {
+    "title": "Volumes Explorados - IF 100%",
+    "organization": "Dados Abertos",
+    "license": "",
+    "license_id": "",
+    "license_url": null,
+    "metadata_modified": "2026-10-08T18:26:13.316334"
+   },
+   "resource": {
+    "id": "ac345e77-863b-472c-a06a-4f171263bc70",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumesExploradosIf100/volumes_explorados_if_100_csv.zip",
+    "name": "Volumes Explorados - IF 100%",
+    "metadata_modified": "2026-10-08T18:25:45.623139",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25C68BEC1F6C",
+    "last_modified": "Fri, 09 Oct 2026 05:31:19 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 51275494,
+    "sha256": "0f106ef75db9068fcd7f91adaf9d0ae890fb064137aadd1d2d82bd9b0a093ff3",
+    "seconds": 7.62,
+    "mb_per_s": 6.728
+   },
+   "files": [
+    {
+     "file": "volumes_explorados_if_100_csv.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/VolumesExploradosIf100/volumes_explorados_if_100_csv.zip",
+     "resource_id": "ac345e77-863b-472c-a06a-4f171263bc70",
+     "bytes": 51275494,
+     "sha256": "0f106ef75db9068fcd7f91adaf9d0ae890fb064137aadd1d2d82bd9b0a093ff3"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "sinaflor-pmfs-amazonia-legal",
+   "resource_name": "PMFS Amazônia Legal",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › sinaflor-pmfs-amazonia-legal › PMFS Amazônia Legal",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "pmfs-intensity-manual-over-10",
+    "pmfs-intensity-mechanized-over-30"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.25
+   },
+   "dataset": {
+    "title": "Sinaflor - PMFS Amazônia Legal",
+    "organization": "Dados Abertos",
+    "license": "Outra (Aberta)",
+    "license_id": "other-open",
+    "license_url": null,
+    "metadata_modified": "2026-07-08T14:25:10.129381"
+   },
+   "resource": {
+    "id": "fac201c9-8e09-49d5-9113-1608cf45b8c8",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/pmfs/AmazoniaLegal/pmfsAmazoniaLegal.csv",
+    "name": "PMFS Amazônia Legal",
+    "metadata_modified": "2026-07-08T14:24:45.875541",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25BA7F386B64",
+    "last_modified": "Fri, 09 Oct 2026 04:05:03 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 5790256,
+    "sha256": "99943a2b86734b7bbde22854a2731fe422530d34ebdb9fd9e2c7cc02f006caef",
+    "seconds": 0.61,
+    "mb_per_s": 9.425
+   },
+   "files": [
+    {
+     "file": "pmfsAmazoniaLegal.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SINAFLOR/pmfs/AmazoniaLegal/pmfsAmazoniaLegal.csv",
+     "resource_id": "fac201c9-8e09-49d5-9113-1608cf45b8c8",
+     "bytes": 5790256,
+     "sha256": "99943a2b86734b7bbde22854a2731fe422530d34ebdb9fd9e2c7cc02f006caef"
+    }
+   ]
+  },
+  {
+   "portal": "https://dados.florestal.gov.br",
+   "dataset_name": "especies-florestais-madeireiras-comerciais",
+   "resource_name": "Dados_abertos_especies_madeireiras_SNIF_fonte_LPF_SFB",
+   "resource_format": "CSV",
+   "label": "dados.florestal.gov.br › especies-florestais-madeireiras-comerciais › Dados_abertos_especies_madeireiras_SNIF_fonte_LPF_SFB",
+   "role": "secondary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "species-not-in-commercial-timber-list"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.71
+   },
+   "dataset": {
+    "title": "Espécies florestais madeireiras comerciais",
+    "organization": "Serviço Florestal Brasileiro",
+    "license": "Creative Commons Atribuição",
+    "license_id": "cc-by",
+    "license_url": "http://www.opendefinition.org/licenses/cc-by",
+    "metadata_modified": "2026-07-01T19:22:49.047094"
+   },
+   "resource": {
+    "id": "cc51c5d9-852b-4890-ba74-9665a720b246",
+    "url": "https://dados.florestal.gov.br/pt_BR/dataset/3b7340db-6f5e-4de4-8543-f75ee204a5e6/resource/cc51c5d9-852b-4890-ba74-9665a720b246/download/dados_abertos_especies_madeireiras_snif_fonte_lpf_sfb.csv",
+    "name": "Dados_abertos_especies_madeireiras_SNIF_fonte_LPF_SFB",
+    "metadata_modified": "2025-10-24T12:50:44.480424",
+    "last_modified": "2025-10-24T12:50:44.464057",
+    "size_declared": 52331
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1761310244.5363705-52331-2028540461\"",
+    "last_modified": "Fri, 24 Oct 2025 12:50:44 GMT",
+    "content_type": "text/csv",
+    "served_by": "dados.florestal.gov.br",
+    "bytes": 52331,
+    "sha256": "5ff3e04290644e5b739a354d1e452ca8c78a9ecb9a6b0e7c10df30f07d36f64d",
+    "seconds": 0.54,
+    "mb_per_s": 0.097
+   },
+   "files": [
+    {
+     "file": "dados_abertos_especies_madeireiras_snif_fonte_lpf_sfb.csv",
+     "url": "https://dados.florestal.gov.br/pt_BR/dataset/3b7340db-6f5e-4de4-8543-f75ee204a5e6/resource/cc51c5d9-852b-4890-ba74-9665a720b246/download/dados_abertos_especies_madeireiras_snif_fonte_lpf_sfb.csv",
+     "resource_id": "cc51c5d9-852b-4890-ba74-9665a720b246",
+     "bytes": 52331,
+     "sha256": "5ff3e04290644e5b739a354d1e452ca8c78a9ecb9a6b0e7c10df30f07d36f64d"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "fiscalizacao-auto-de-infracao",
+   "resource_name": "Autos de infração",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "act-end-before-start",
+    "biomes-without-infraction",
+    "embargo-link-without-term",
+    "fact-after-issue",
+    "infraction-coordinates-missing-or-zero",
+    "issued-over-five-years-after-fact",
+    "legal-basis-without-infraction",
+    "municipality-state",
+    "notice-before-issue",
+    "notice-date-implausible",
+    "seizure-link-without-term",
+    "species-without-infraction",
+    "term-without-infraction"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 1.03
+   },
+   "dataset": {
+    "title": "Fiscalização - auto de infração",
+    "organization": "Dados Abertos",
+    "license": "Outra (Aberta)",
+    "license_id": "other-open",
+    "license_url": null,
+    "metadata_modified": "2026-05-27T19:17:38.049734"
+   },
+   "resource": {
+    "id": "b2aba344-95df-43c0-b2ba-f4353cfd9a00",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/auto_infracao/auto_infracao_csv.zip",
+    "name": "Autos de infração",
+    "metadata_modified": "2026-05-27T18:01:46.734752",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25C091471D26",
+    "last_modified": "Fri, 09 Oct 2026 04:48:31 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 122900569,
+    "sha256": "5e65aba9b3b1ba08c3098b59da7031dadb78d876fc4f4d560ddc984eb1f381e0",
+    "seconds": 21.47,
+    "mb_per_s": 5.725
+   },
+   "files": [
+    {
+     "file": "auto_infracao_csv.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/auto_infracao/auto_infracao_csv.zip",
+     "resource_id": "b2aba344-95df-43c0-b2ba-f4353cfd9a00",
+     "bytes": 122900569,
+     "sha256": "5e65aba9b3b1ba08c3098b59da7031dadb78d876fc4f4d560ddc984eb1f381e0"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "fiscalizacao-auto-de-infracao",
+   "resource_name": "Autos de infração - biomas",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - biomas",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "biomes-without-infraction"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.68
+   },
+   "dataset": {
+    "title": "Fiscalização - auto de infração",
+    "organization": "Dados Abertos",
+    "license": "Outra (Aberta)",
+    "license_id": "other-open",
+    "license_url": null,
+    "metadata_modified": "2026-05-27T19:17:38.049734"
+   },
+   "resource": {
+    "id": "afe30a48-eb96-4915-8f13-c4e838dae033",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/bioma/bioma.csv",
+    "name": "Autos de infração - biomas",
+    "metadata_modified": "2026-05-27T18:04:02.767720",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25BBC5C6E58D",
+    "last_modified": "Fri, 09 Oct 2026 04:14:11 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 14276757,
+    "sha256": "00f3ab5fa1a009297c9f49e33f4c897a4ad8162f4d2295ac55d96c26f39aa572",
+    "seconds": 2.79,
+    "mb_per_s": 5.121
+   },
+   "files": [
+    {
+     "file": "bioma.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/bioma/bioma.csv",
+     "resource_id": "afe30a48-eb96-4915-8f13-c4e838dae033",
+     "bytes": 14276757,
+     "sha256": "00f3ab5fa1a009297c9f49e33f4c897a4ad8162f4d2295ac55d96c26f39aa572"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "fiscalizacao-auto-de-infracao",
+   "resource_name": "Autos de infração - enquadramento legal",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - enquadramento legal",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "legal-basis-without-infraction"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.3
+   },
+   "dataset": {
+    "title": "Fiscalização - auto de infração",
+    "organization": "Dados Abertos",
+    "license": "Outra (Aberta)",
+    "license_id": "other-open",
+    "license_url": null,
+    "metadata_modified": "2026-05-27T19:17:38.049734"
+   },
+   "resource": {
+    "id": "903120d7-9a73-46d2-8e22-93576f4f855b",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/enquadramento/enquadramento_csv.zip",
+    "name": "Autos de infração - enquadramento legal",
+    "metadata_modified": "2026-05-27T18:02:06.168436",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25B3DF50D114",
+    "last_modified": "Fri, 09 Oct 2026 03:17:38 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 8155680,
+    "sha256": "eebaca0eedfdd13836c9149283646c13ff1822da0e4e9f7b58b065c97e752878",
+    "seconds": 1.96,
+    "mb_per_s": 4.166
+   },
+   "files": [
+    {
+     "file": "enquadramento_csv.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/enquadramento/enquadramento_csv.zip",
+     "resource_id": "903120d7-9a73-46d2-8e22-93576f4f855b",
+     "bytes": 8155680,
+     "sha256": "eebaca0eedfdd13836c9149283646c13ff1822da0e4e9f7b58b065c97e752878"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "fiscalizacao-termo-de-apreensao",
+   "resource_name": "Termo de apreensão",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-apreensao › Termo de apreensão",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "seizure-coordinates-missing-or-zero",
+    "seizure-link-without-term",
+    "term-without-infraction"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.57
+   },
+   "dataset": {
+    "title": "Fiscalização - termo de apreensão",
+    "organization": "Dados Abertos",
+    "license": "Outra (Domínio Público)",
+    "license_id": "other-pd",
+    "license_url": null,
+    "metadata_modified": "2025-10-13T11:45:49.681782"
+   },
+   "resource": {
+    "id": "3364a902-067a-469a-bd9a-b865d234eed9",
+    "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_apreensao/apreensao/apreensao_csv.zip",
+    "name": "Termo de apreensão",
+    "metadata_modified": "2025-06-04T17:39:09.265547",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1c7670b-650f0fdb8bc61\"",
+    "last_modified": "Sun, 03 May 2026 22:03:59 GMT",
+    "content_type": "application/zip",
+    "served_by": "dadosabertos.ibama.gov.br",
+    "bytes": 29845259,
+    "sha256": "afd442f6d8af42303c6015154b26bd227eb240a778928e71063dfcf6a86db2dc",
+    "seconds": 0.54,
+    "mb_per_s": 55.427
+   },
+   "files": [
+    {
+     "file": "apreensao_csv.zip",
+     "url": "https://dadosabertos.ibama.gov.br/dados/SIFISC/termo_apreensao/apreensao/apreensao_csv.zip",
+     "resource_id": "3364a902-067a-469a-bd9a-b865d234eed9",
+     "bytes": 29845259,
+     "sha256": "afd442f6d8af42303c6015154b26bd227eb240a778928e71063dfcf6a86db2dc"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "fiscalizacao-auto-de-infracao",
+   "resource_name": "Autos de infração - espécimes",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - espécimes",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "species-without-infraction"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.43
+   },
+   "dataset": {
+    "title": "Fiscalização - auto de infração",
+    "organization": "Dados Abertos",
+    "license": "Outra (Aberta)",
+    "license_id": "other-open",
+    "license_url": null,
+    "metadata_modified": "2026-05-27T19:17:38.049734"
+   },
+   "resource": {
+    "id": "160b14e2-d7d8-40aa-b06c-295575a5fb9c",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/especime/especime.csv",
+    "name": "Autos de infração - espécimes",
+    "metadata_modified": "2026-05-27T18:03:22.235198",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25BA1918A39B",
+    "last_modified": "Fri, 09 Oct 2026 04:02:12 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 5291150,
+    "sha256": "04bd4e533ec1168115aa93631e487f5a7cc7e55eced65c9a40854209636b10ff",
+    "seconds": 1.33,
+    "mb_per_s": 3.986
+   },
+   "files": [
+    {
+     "file": "especime.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SIFISC/auto_infracao/especime/especime.csv",
+     "resource_id": "160b14e2-d7d8-40aa-b06c-295575a5fb9c",
+     "bytes": 5291150,
+     "sha256": "04bd4e533ec1168115aa93631e487f5a7cc7e55eced65c9a40854209636b10ff"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "ato-declaratorio-ambiental-ada",
+   "resource_name": "Ato Declaratório Ambiental (ADA)",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › ato-declaratorio-ambiental-ada › Ato Declaratório Ambiental (ADA)",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "declared-areas-above-property"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.19
+   },
+   "dataset": {
+    "title": "Ato Declaratório Ambiental (ADA)",
+    "organization": "Dados Abertos",
+    "license": "Creative Commons Atribuição",
+    "license_id": "cc-by",
+    "license_url": "http://www.opendefinition.org/licenses/cc-by",
+    "metadata_modified": "2026-07-08T20:23:25.937923"
+   },
+   "resource": {
+    "id": "09494a73-726a-4341-92ca-b97cf35914b2",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ADA/atoDeclaratorio/ADA_atoDeclaratorio_csv.zip",
+    "name": "Ato Declaratório Ambiental (ADA)",
+    "metadata_modified": "2026-07-08T20:22:30.700745",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF229727A0FF4C",
+    "last_modified": "Mon, 05 Oct 2026 04:14:31 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 401190660,
+    "sha256": "bce13cf9914a7061427a6aad77150dd08ab56053a6952240b43e1615bce7d909",
+    "seconds": 73.01,
+    "mb_per_s": 5.495
+   },
+   "files": [
+    {
+     "file": "ADA_atoDeclaratorio_csv.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ADA/atoDeclaratorio/ADA_atoDeclaratorio_csv.zip",
+     "resource_id": "09494a73-726a-4341-92ca-b97cf35914b2",
+     "bytes": 401190660,
+     "sha256": "bce13cf9914a7061427a6aad77150dd08ab56053a6952240b43e1615bce7d909"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama",
+   "resource_name": "Licenças ambientais de atividades e ...",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ...",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "expiry-before-issue",
+    "installation-licence-over-six-years",
+    "operation-licence-over-ten-years",
+    "preliminary-licence-over-five-years"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.2
+   },
+   "dataset": {
+    "title": "Licenças ambientais de atividades e empreendimentos licenciados pelo Ibama",
+    "organization": "Dados Abertos",
+    "license": "Outra (Domínio Público)",
+    "license_id": "other-pd",
+    "license_url": null,
+    "metadata_modified": "2026-05-29T14:52:56.059419"
+   },
+   "resource": {
+    "id": "9e4873d3-10d8-464f-a883-88be3b3abf06",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SISLIC/sislic-licencas.csv",
+    "name": "Licenças ambientais de atividades e ...",
+    "metadata_modified": "2026-05-29T14:52:20.514226",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25BA96555B68",
+    "last_modified": "Fri, 09 Oct 2026 04:05:42 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 3330364,
+    "sha256": "71b00317d5a0d49ab105b4a3321b42b6edc133e44c77e3ab6ef291115adb4357",
+    "seconds": 0.46,
+    "mb_per_s": 7.301
+   },
+   "files": [
+    {
+     "file": "sislic-licencas.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/SISLIC/sislic-licencas.csv",
+     "resource_id": "9e4873d3-10d8-464f-a883-88be3b3abf06",
+     "bytes": 3330364,
+     "sha256": "71b00317d5a0d49ab105b4a3321b42b6edc133e44c77e3ab6ef291115adb4357"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama",
+   "resource_name": "Volume de Julgamento de Auto de Infração",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama › Volume de Julgamento de Auto de Infração",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "appeal-before-main-judgment",
+    "main-judgment-before-infraction"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.21
+   },
+   "dataset": {
+    "title": "Julgamentos de Auto de Infração - Realizado no âmbito do IBAMA",
+    "organization": "Dados Abertos",
+    "license": "Other (Open)",
+    "license_id": "other-open",
+    "license_url": null,
+    "metadata_modified": "2021-09-18T13:07:31.127734"
+   },
+   "resource": {
+    "id": "6fe07a2f-718a-4d04-a386-2a1cd3e96afb",
+    "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Volume/volumeJulgamentoAI.csv",
+    "name": "Volume de Julgamento de Auto de Infração",
+    "metadata_modified": "2021-09-16T18:46:21.448610",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"9b6b3-64fd9dc94a36c\"",
+    "last_modified": "Mon, 20 Apr 2026 01:03:07 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.ibama.gov.br",
+    "bytes": 636595,
+    "sha256": "7780312127223a853a01ced2be76b9631850ce282fc32af0e72dbf8eae81004d",
+    "seconds": 0.2,
+    "mb_per_s": 3.219
+   },
+   "files": [
+    {
+     "file": "volumeJulgamentoAI.csv",
+     "url": "https://dadosabertos.ibama.gov.br/dados/SICAFI/AC/Volume/volumeJulgamentoAI.csv",
+     "resource_id": "6fe07a2f-718a-4d04-a386-2a1cd3e96afb",
+     "bytes": 636595,
+     "sha256": "7780312127223a853a01ced2be76b9631850ce282fc32af0e72dbf8eae81004d"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "arrecadacao-de-multas-ambientais-bens-tutelados",
+   "resource_name": "Arrecadação de Multas por Bens Tutelados",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › arrecadacao-de-multas-ambientais-bens-tutelados › Arrecadação de Multas por Bens Tutelados",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "paid-ten-times-original",
+    "payment-before-infraction"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.19
+   },
+   "dataset": {
+    "title": "Arrecadação de Multas Ambientais Bens tutelados",
+    "organization": "Dados Abertos",
+    "license": "Outra (Aberta)",
+    "license_id": "other-open",
+    "license_url": null,
+    "metadata_modified": "2026-08-26T15:05:57.278039"
+   },
+   "resource": {
+    "id": "cd55e477-2f11-43e5-b994-7be34e275561",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADACAO_DE_MULTAS_AMBIENTAIS_POR_BENS_TUTELADOS/arrecadacao_de_multas_ambientais_por_bens_tutelados_csv.zip",
+    "name": "Arrecadação de Multas por Bens Tutelados",
+    "metadata_modified": "2026-08-26T15:04:02.026297",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25E610681728",
+    "last_modified": "Fri, 09 Oct 2026 09:16:55 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 27939697,
+    "sha256": "7530141db46eded6c8795e77652f15cf6a220637816db8624d79997e29ef8dcc",
+    "seconds": 3.12,
+    "mb_per_s": 8.95
+   },
+   "files": [
+    {
+     "file": "arrecadacao_de_multas_ambientais_por_bens_tutelados_csv.zip",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/ARRECADACAO_DE_MULTAS_AMBIENTAIS_POR_BENS_TUTELADOS/arrecadacao_de_multas_ambientais_por_bens_tutelados_csv.zip",
+     "resource_id": "cd55e477-2f11-43e5-b994-7be34e275561",
+     "bytes": 27939697,
+     "sha256": "7530141db46eded6c8795e77652f15cf6a220637816db8624d79997e29ef8dcc"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.ibama.gov.br",
+   "dataset_name": "relatorios-de-comercializacao-de-agrotoxicos",
+   "resource_name": "Dados - CSV",
+   "resource_format": "CSV",
+   "label": "dadosabertos.ibama.gov.br › relatorios-de-comercializacao-de-agrotoxicos › Dados - CSV",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "ingredient-without-registered-technical-product"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.23
+   },
+   "dataset": {
+    "title": "Relatórios de Comercialização de Agrotóxicos",
+    "organization": "Dados Abertos",
+    "license": "",
+    "license_id": "",
+    "license_url": null,
+    "metadata_modified": "2026-08-17T13:55:43.962052"
+   },
+   "resource": {
+    "id": "5baa8719-cbc7-4a31-956c-d8d016ab5672",
+    "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AGROTOXICOS/RelatoriosdeComercializacaodeAgrotoxicos/relatorios_comercializacao_agrotoxicos.csv",
+    "name": "Dados - CSV",
+    "metadata_modified": "2026-08-17T13:54:52.498258",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "0x8DF25C0D2B9AF75",
+    "last_modified": "Fri, 09 Oct 2026 04:50:20 GMT",
+    "content_type": "application/octet-stream",
+    "served_by": "stibamadadosabertosprd.blob.core.windows.net",
+    "bytes": 13575765,
+    "sha256": "66731450daae45cae50ecf8f3a5d8e79e7fd42b670ee137e51eaf2643b357142",
+    "seconds": 1.78,
+    "mb_per_s": 7.607
+   },
+   "files": [
+    {
+     "file": "relatorios_comercializacao_agrotoxicos.csv",
+     "url": "https://stibamadadosabertosprd.blob.core.windows.net/dados-abertos/dados/AGROTOXICOS/RelatoriosdeComercializacaodeAgrotoxicos/relatorios_comercializacao_agrotoxicos.csv",
+     "resource_id": "5baa8719-cbc7-4a31-956c-d8d016ab5672",
+     "bytes": 13575765,
+     "sha256": "66731450daae45cae50ecf8f3a5d8e79e7fd42b670ee137e51eaf2643b357142"
+    }
+   ]
+  },
+  {
+   "portal": "https://dados.agricultura.gov.br",
+   "dataset_name": "sistema-de-agrotoxicos-fitossanitarios-agrofit",
+   "resource_name": "Produto Técnico",
+   "resource_format": ".CSV",
+   "label": "dados.agricultura.gov.br › sistema-de-agrotoxicos-fitossanitarios-agrofit › Produto Técnico",
+   "role": "secondary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "ingredient-without-registered-technical-product"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.86
+   },
+   "dataset": {
+    "title": "Sistema de Agrotóxicos Fitossanitários - Agrofit",
+    "organization": "Ministério da Agricultura e Pecuária",
+    "license": "Creative Commons Attribution",
+    "license_id": "cc-by",
+    "license_url": "http://www.opendefinition.org/licenses/cc-by",
+    "metadata_modified": "2026-10-09T12:30:14.162677"
+   },
+   "resource": {
+    "id": "a200c70b-e025-4a9a-be1b-ec7275d7921f",
+    "url": "https://dados.agricultura.gov.br/dataset/6c913699-e82e-4da3-a0a1-fb6c431e367f/resource/a200c70b-e025-4a9a-be1b-ec7275d7921f/download/agrofitprodutostecnicos.csv",
+    "name": "Produto Técnico",
+    "metadata_modified": null,
+    "last_modified": "2026-10-09T12:30:14.150372",
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1791549014.23-711715\"",
+    "last_modified": "Fri, 09 Oct 2026 12:30:14 GMT",
+    "content_type": "text/csv",
+    "served_by": "dados.agricultura.gov.br",
+    "bytes": 711715,
+    "sha256": "aa9fa90d6e7546067e343ec1649d46e55cef62497593ca22d41e42a0998835d6",
+    "seconds": 0.69,
+    "mb_per_s": 1.025
+   },
+   "files": [
+    {
+     "file": "agrofitprodutostecnicos.csv",
+     "url": "https://dados.agricultura.gov.br/dataset/6c913699-e82e-4da3-a0a1-fb6c431e367f/resource/a200c70b-e025-4a9a-be1b-ec7275d7921f/download/agrofitprodutostecnicos.csv",
+     "resource_id": "a200c70b-e025-4a9a-be1b-ec7275d7921f",
+     "bytes": 711715,
+     "sha256": "aa9fa90d6e7546067e343ec1649d46e55cef62497593ca22d41e42a0998835d6"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.tse.jus.br",
+   "dataset_name": "codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge",
+   "resource_name": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+   "resource_format": "CSV",
+   "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+   "role": "secondary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "municipality-state"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.38
+   },
+   "dataset": {
+    "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+    "organization": "TSE/SMG",
+    "license": "Creative Commons Attribution",
+    "license_id": "cc-by",
+    "license_url": "http://www.opendefinition.org/licenses/cc-by",
+    "metadata_modified": "2025-06-24T18:08:19.929672"
+   },
+   "resource": {
+    "id": "c6c767d7-f341-4256-8dff-010683a9c796",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
+    "name": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+    "metadata_modified": "2025-06-24T18:07:38.590296",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"21f0c-65d0283c5f821\"",
+    "last_modified": "Sun, 04 Oct 2026 12:00:42 GMT",
+    "content_type": "application/zip",
+    "served_by": "cdn.tse.jus.br",
+    "bytes": 139020,
+    "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712",
+    "seconds": 0.46,
+    "mb_per_s": 0.302
+   },
+   "files": [
+    {
+     "file": "municipio_tse_ibge.zip",
+     "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
+     "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
+     "bytes": 139020,
+     "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712"
+    }
+   ]
+  }
+ ],
+ "engine": {
+  "commit": "a0c14300e5b840754c73a2efc335e1675ef42eb2",
+  "uncommitted_changes": false,
+  "python": "3.12.15",
+  "duckdb": "1.5.6"
+ },
+ "rule_files": [
+  {
+   "id": "appendix-i-wild-commercial",
+   "rule_version": "0.1.0",
+   "file": "cites/appendix-i-wild-commercial.yaml",
+   "sha256": "35a4dbf6e0a4f21b55bc4eae23e66d5fb1ad61cca643982404be2d0fea6a72e5"
+  },
+  {
+   "id": "wild-commercial-threatened-species",
+   "rule_version": "0.1.0",
+   "file": "cites/wild-commercial-threatened-species.yaml",
+   "sha256": "8966196070906a108942ae047656ef4f38c5eed3742522f42fec867cd33ed417"
+  },
+  {
+   "id": "embargo-date-implausible",
+   "rule_version": "0.1.0",
+   "file": "embargo/embargo-date-implausible.yaml",
+   "sha256": "4a68df4e31d4b5fa3dec7930c1999693e7e071c0928901272267f5de004d0d86"
+  },
+  {
+   "id": "lifted-before-embargo",
+   "rule_version": "0.3.0",
+   "file": "embargo/lifted-before-embargo.yaml",
+   "sha256": "77b62b0338c0b386f3b9a7b80434891ce0937a109b71a577af78f933bf640b7c"
+  },
+  {
+   "id": "stock-balance",
+   "rule_version": "0.2.0",
+   "file": "fauna/stock-balance.yaml",
+   "sha256": "cde5b354cd3302a9cbf3929b731fdf591febb30085adaea7ac7ec15fe7dbfd4a"
+  },
+  {
+   "id": "incident-milestones-order",
+   "rule_version": "0.2.0",
+   "file": "fire/incident-milestones-order.yaml",
+   "sha256": "9c98c95bda83a390d49d8c99f657cd66cfa94c95cef7b3fdf124a3bc874015b9"
+  },
+  {
+   "id": "exploration-outside-validity",
+   "rule_version": "0.2.0",
+   "file": "forest/exploration-outside-validity.yaml",
+   "sha256": "5e212c381b10588f825ce54c0942187585c4afe92efe974e9bcf06e77c9524bc"
+  },
+  {
+   "id": "explored-volume-above-authorized",
+   "rule_version": "0.1.0",
+   "file": "forest/explored-volume-above-authorized.yaml",
+   "sha256": "b7d8ceefca35ee8b6238e5acdac75e546fddd2187441a63394dc80a399c14ee6"
+  },
+  {
+   "id": "pmfs-intensity-manual-over-10",
+   "rule_version": "0.1.0",
+   "file": "forest/pmfs-intensity-manual-over-10.yaml",
+   "sha256": "72e3e82943d7ba7d19db23caf3afdc279f79dc02b57d599c031fb65ddcc5a4d6"
+  },
+  {
+   "id": "pmfs-intensity-mechanized-over-30",
+   "rule_version": "0.1.0",
+   "file": "forest/pmfs-intensity-mechanized-over-30.yaml",
+   "sha256": "5ab65c205fc6b416170fcbf6c5910366d46c8b2e9db38f0db49d8ffbd63a2d58"
+  },
+  {
+   "id": "species-not-in-commercial-timber-list",
+   "rule_version": "0.1.0",
+   "file": "forest/species-not-in-commercial-timber-list.yaml",
+   "sha256": "a8f20b3116188076b923378687032de598d2766ab21e36211d8da85a35457f18"
+  },
+  {
+   "id": "act-end-before-start",
+   "rule_version": "0.3.0",
+   "file": "infraction/act-end-before-start.yaml",
+   "sha256": "9d9250340e82f14d044c0e60b57042ac4515e6353a1d7efcf67b60af2d285140"
+  },
+  {
+   "id": "biomes-without-infraction",
+   "rule_version": "0.1.0",
+   "file": "infraction/biomes-without-infraction.yaml",
+   "sha256": "389655aa4ac7bcf2c451cbf73ed539532a5d69755bbef5cd1f165a70b53f73ff"
+  },
+  {
+   "id": "embargo-link-without-term",
+   "rule_version": "0.1.0",
+   "file": "infraction/embargo-link-without-term.yaml",
+   "sha256": "61892bec6b5eba1a373690b93b693c3b14aac255591ead117853b63e2b5148be"
+  },
+  {
+   "id": "fact-after-issue",
+   "rule_version": "0.3.0",
+   "file": "infraction/fact-after-issue.yaml",
+   "sha256": "09a96d34e1b2fa98671baab77643acaddcee3fb127a4b4d36e5de8c7130721bb"
+  },
+  {
+   "id": "infraction-coordinates-missing-or-zero",
+   "rule_version": "0.2.0",
+   "file": "infraction/infraction-coordinates-missing-or-zero.yaml",
+   "sha256": "8ea3e2651b5d28106c834ea4e69b0922c9a429ab084ed2539ec2ba468b70c0cd"
+  },
+  {
+   "id": "issued-over-five-years-after-fact",
+   "rule_version": "0.4.0",
+   "file": "infraction/issued-over-five-years-after-fact.yaml",
+   "sha256": "707b25312396d1eaf336bc26566ccf3b458293c8f7dc0602beebc2991de294c5"
+  },
+  {
+   "id": "legal-basis-without-infraction",
+   "rule_version": "0.1.0",
+   "file": "infraction/legal-basis-without-infraction.yaml",
+   "sha256": "e0fbdee4df9b8592db490b9f751095ecf63c1a6f707603b7040f77d4ff62a5a1"
+  },
+  {
+   "id": "notice-before-issue",
+   "rule_version": "0.3.0",
+   "file": "infraction/notice-before-issue.yaml",
+   "sha256": "483c8ee2f1d152ef27fbb7cf39359929388f93f5079d246199ace1b0b1566a7f"
+  },
+  {
+   "id": "notice-date-implausible",
+   "rule_version": "0.1.0",
+   "file": "infraction/notice-date-implausible.yaml",
+   "sha256": "98d542df7d1e3c33650042df83242edabad44771fc0e63663edf37a2a6b762d2"
+  },
+  {
+   "id": "seizure-link-without-term",
+   "rule_version": "0.1.0",
+   "file": "infraction/seizure-link-without-term.yaml",
+   "sha256": "cba7ff9f8735e2178e48a960a36abef68cbbb455e84aa3361ed60925e73e8a55"
+  },
+  {
+   "id": "species-without-infraction",
+   "rule_version": "0.1.0",
+   "file": "infraction/species-without-infraction.yaml",
+   "sha256": "b4fa928b233b742c560b7ad8c35be8dc48620d92c117e9e068dadbd27be53722"
+  },
+  {
+   "id": "declared-areas-above-property",
+   "rule_version": "0.1.0",
+   "file": "land/declared-areas-above-property.yaml",
+   "sha256": "b639580e7f3959b7cd519a2af3160729e95b817c4424afa9f6f66ecc3bb38e43"
+  },
+  {
+   "id": "expiry-before-issue",
+   "rule_version": "0.2.0",
+   "file": "licensing/expiry-before-issue.yaml",
+   "sha256": "272d10e86ef0c0ae626bf22ae7f76d363e8784b52922e75f187fed9f87718679"
+  },
+  {
+   "id": "installation-licence-over-six-years",
+   "rule_version": "0.3.0",
+   "file": "licensing/installation-licence-over-six-years.yaml",
+   "sha256": "4117f8535984f3a94f2c2b1256d9d7302173931cbfbbf7d81eab001eaf139a3e"
+  },
+  {
+   "id": "operation-licence-over-ten-years",
+   "rule_version": "0.3.0",
+   "file": "licensing/operation-licence-over-ten-years.yaml",
+   "sha256": "80945fe4a68257518e6be604bd4290f87853142871d3b7d11de14683f8c5edcb"
+  },
+  {
+   "id": "preliminary-licence-over-five-years",
+   "rule_version": "0.3.0",
+   "file": "licensing/preliminary-licence-over-five-years.yaml",
+   "sha256": "be927e2305146931426aa28d2581d56acc57fce99ae83dcb2133e780b427b4c4"
+  },
+  {
+   "id": "appeal-before-main-judgment",
+   "rule_version": "0.3.0",
+   "file": "payment/appeal-before-main-judgment.yaml",
+   "sha256": "bfc2062fa6742011ee13e71a1c9f67ddde4c2726072d5ce60a15511e480f7ef9"
+  },
+  {
+   "id": "main-judgment-before-infraction",
+   "rule_version": "0.3.0",
+   "file": "payment/main-judgment-before-infraction.yaml",
+   "sha256": "9470a4bf8318a30f18c6d561bb814b4ea75896fe165507a6e92510ebd5021883"
+  },
+  {
+   "id": "paid-ten-times-original",
+   "rule_version": "0.2.0",
+   "file": "payment/paid-ten-times-original.yaml",
+   "sha256": "9382d02ce8012e8d6bda0267cec7e278f6f1854b4c9bc140abd084666117b0f4"
+  },
+  {
+   "id": "payment-before-infraction",
+   "rule_version": "0.2.0",
+   "file": "payment/payment-before-infraction.yaml",
+   "sha256": "94b2af0289e9526b79ac1b5fa4607060164ef16dee0435c65e4af85f22756087"
+  },
+  {
+   "id": "ingredient-without-registered-technical-product",
+   "rule_version": "0.1.0",
+   "file": "pesticides/ingredient-without-registered-technical-product.yaml",
+   "sha256": "08d6e058955aa2de2ca4a41df01483ebe8383be8e01a5efa4378c951735c1834"
+  },
+  {
+   "id": "seizure-coordinates-missing-or-zero",
+   "rule_version": "0.2.0",
+   "file": "seizure/seizure-coordinates-missing-or-zero.yaml",
+   "sha256": "cba388c40602769b2233cc08912bc86d57905be5b701f51f581a1e5609bd3d95"
+  },
+  {
+   "id": "term-without-infraction",
+   "rule_version": "0.2.0",
+   "file": "seizure/term-without-infraction.yaml",
+   "sha256": "a517d342cbdb7886e8b96e276a605e2af519d02d21aa1757bd0517597e446868"
+  },
+  {
+   "id": "municipality-state",
+   "rule_version": "0.4.0",
+   "file": "territory/municipality-state.yaml",
+   "sha256": "35c3e6370cf96e92cb88efbb8b380907f496915c4d033a614c500dff9b777535"
+  }
+ ],
+ "primary_portal": "https://dadosabertos.ibama.gov.br",
+ "download_speed": {
+  "primary": {
+   "resources": 16,
+   "bytes": 1358146721,
+   "seconds": 190.68,
+   "mb_per_s": 7.123
+  },
+  "secondary": {
+   "resources": 4,
+   "bytes": 1075377,
+   "seconds": 2.54,
+   "mb_per_s": 0.423
+  },
+  "processing": {
+   "bytes": 1359222098,
+   "seconds": 65.01,
+   "mb_per_s": 20.908
+  }
+ },
+ "timings": {
+  "download_s": 201.87,
+  "processing_s": 65.01,
+  "bytes_processed": 1359222098,
+  "outputs_s": 0.49
+ },
+ "portal": {
+  "portal_url": "https://dadosabertos.ibama.gov.br",
+  "name": "IBAMA",
+  "title": "IBAMA open data portal (Dados Abertos IBAMA)",
+  "repository": "lsp3cesarschool/5ltep-layer2"
+ },
+ "history": [
+  {
+   "run_id": "37917100799",
+   "environment": "github-actions",
+   "at": "2026-10-09T10:24:56+00:00",
+   "rules": {
+    "appendix-i-wild-commercial": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 258580,
+     "counts": {
+      "match": 243809,
+      "mismatch": 403,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 14368
+     }
+    },
+    "wild-commercial-threatened-species": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 258580,
+     "counts": {
+      "match": 103594,
+      "mismatch": 1714,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 153272
+     }
+    },
+    "embargo-date-implausible": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 116763,
+     "counts": {
+      "match": 116755,
+      "mismatch": 8,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "lifted-before-embargo": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 116763,
+     "counts": {
+      "match": 19667,
+      "mismatch": 16,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 97080
+     }
+    },
+    "stock-balance": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 173747,
+     "counts": {
+      "match": 173747,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "incident-milestones-order": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 418525,
+     "counts": {
+      "match": 417807,
+      "mismatch": 359,
+      "key_not_found": 0,
+      "missing_value": 359,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "exploration-outside-validity": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 2326024,
+      "mismatch": 60091,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "explored-volume-above-authorized": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 1513707,
+      "mismatch": 872408,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "pmfs-intensity-manual-over-10": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 10099,
+     "counts": {
+      "match": 57,
+      "mismatch": 28,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 10014
+     }
+    },
+    "pmfs-intensity-mechanized-over-30": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 10099,
+     "counts": {
+      "match": 4808,
+      "mismatch": 87,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 5204
+     }
+    },
+    "species-not-in-commercial-timber-list": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 1581314,
+      "mismatch": 0,
+      "key_not_found": 804797,
+      "missing_value": 4,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "act-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 85661,
+      "mismatch": 634,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 625631
+     }
+    },
+    "biomes-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 294563,
+     "counts": {
+      "match": 271330,
+      "mismatch": 0,
+      "key_not_found": 14462,
+      "missing_value": 8771,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "embargo-link-without-term": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 75223,
+      "mismatch": 0,
+      "key_not_found": 21538,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 615165
+     }
+    },
+    "fact-after-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 84192,
+      "mismatch": 2108,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 625626
+     }
+    },
+    "infraction-coordinates-missing-or-zero": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 217776,
+      "mismatch": 28345,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 465805
+     }
+    },
+    "issued-over-five-years-after-fact": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 82596,
+      "mismatch": 1596,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 627734
+     }
+    },
+    "legal-basis-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 689929,
+     "counts": {
+      "match": 655178,
+      "mismatch": 0,
+      "key_not_found": 24148,
+      "missing_value": 10603,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "notice-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 431173,
+      "mismatch": 1093,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 279660
+     }
+    },
+    "notice-date-implausible": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 711926,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "seizure-link-without-term": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 98925,
+      "mismatch": 0,
+      "key_not_found": 10633,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 602368
+     }
+    },
+    "species-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 38056,
+     "counts": {
+      "match": 34661,
+      "mismatch": 0,
+      "key_not_found": 7,
+      "missing_value": 3388,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "declared-areas-above-property": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 6206666,
+     "counts": {
+      "match": 6160160,
+      "mismatch": 29980,
+      "key_not_found": 0,
+      "missing_value": 16526,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "expiry-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 14242,
+      "mismatch": 52,
+      "key_not_found": 0,
+      "missing_value": 8,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "installation-licence-over-six-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 1429,
+      "mismatch": 5,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 12868
+     }
+    },
+    "operation-licence-over-ten-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 1590,
+      "mismatch": 2,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 12710
+     }
+    },
+    "preliminary-licence-over-five-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 790,
+      "mismatch": 8,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 13504
+     }
+    },
+    "appeal-before-main-judgment": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2917,
+     "counts": {
+      "match": 490,
+      "mismatch": 115,
+      "key_not_found": 0,
+      "missing_value": 71,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 2241
+     }
+    },
+    "main-judgment-before-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2917,
+     "counts": {
+      "match": 1578,
+      "mismatch": 3,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1336
+     }
+    },
+    "paid-ten-times-original": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1588335,
+     "counts": {
+      "match": 1584026,
+      "mismatch": 780,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 3529
+     }
+    },
+    "payment-before-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1588335,
+     "counts": {
+      "match": 1587550,
+      "mismatch": 785,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "ingredient-without-registered-technical-product": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 124299,
+     "counts": {
+      "match": 13218,
+      "mismatch": 0,
+      "key_not_found": 2247,
+      "missing_value": 57,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 108777
+     }
+    },
+    "seizure-coordinates-missing-or-zero": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 157955,
+     "counts": {
+      "match": 54033,
+      "mismatch": 4103,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 99819
+     }
+    },
+    "term-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 157955,
+     "counts": {
+      "match": 125274,
+      "mismatch": 0,
+      "key_not_found": 29,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 32652
+     }
+    },
+    "municipality-state": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 711112,
+      "mismatch": 0,
+      "key_not_found": 547,
+      "missing_value": 267,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    }
+   },
+   "sources": {
+    "dadosabertos.ibama.gov.br › siscites-licencas-de-fauna-e-flora-emitidas › Siscites": "ok",
+    "dados.mma.gov.br › especies-ameacadas › FAUNA - Lista de Espécies Ameaçadas - 2021.csv": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-embargo › Termos de embargo": "ok",
+    "dadosabertos.ibama.gov.br › sisfauna-plantel-exato › Sisfauna - Plantel Exato": "ok",
+    "dadosabertos.ibama.gov.br › sisfogo-roi › ROI formato csv": "ok",
+    "dadosabertos.ibama.gov.br › volumes-explorados-if-100 › Volumes Explorados - IF 100%": "ok",
+    "dadosabertos.ibama.gov.br › sinaflor-pmfs-amazonia-legal › PMFS Amazônia Legal": "ok",
+    "dados.florestal.gov.br › especies-florestais-madeireiras-comerciais › Dados_abertos_especies_madeireiras_SNIF_fonte_LPF_SFB": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - biomas": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - enquadramento legal": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-apreensao › Termo de apreensão": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - espécimes": "ok",
+    "dadosabertos.ibama.gov.br › ato-declaratorio-ambiental-ada › Ato Declaratório Ambiental (ADA)": "ok",
+    "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ...": "ok",
+    "dadosabertos.ibama.gov.br › julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama › Volume de Julgamento de Auto de Infração": "ok",
+    "dadosabertos.ibama.gov.br › arrecadacao-de-multas-ambientais-bens-tutelados › Arrecadação de Multas por Bens Tutelados": "ok",
+    "dadosabertos.ibama.gov.br › relatorios-de-comercializacao-de-agrotoxicos › Dados - CSV": "ok",
+    "dados.agricultura.gov.br › sistema-de-agrotoxicos-fitossanitarios-agrofit › Produto Técnico": "ok",
+    "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 16,
+     "bytes": 1358146721,
+     "seconds": 62.41,
+     "mb_per_s": 21.762
+    },
+    "secondary": {
+     "resources": 4,
+     "bytes": 1075441,
+     "seconds": 3.06,
+     "mb_per_s": 0.351
+    },
+    "processing": {
+     "bytes": 1359222162,
+     "seconds": 112.47,
+     "mb_per_s": 12.085
+    }
+   },
+   "timings": {
+    "download_s": 75.36,
+    "processing_s": 112.47,
+    "bytes_processed": 1359222162,
+    "outputs_s": 0.77
+   }
+  },
+  {
+   "run_id": "37927525860",
+   "environment": "github-actions",
+   "at": "2026-10-09T12:06:40+00:00",
+   "rules": {
+    "appendix-i-wild-commercial": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 258580,
+     "counts": {
+      "match": 243809,
+      "mismatch": 403,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 14368
+     }
+    },
+    "wild-commercial-threatened-species": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 258580,
+     "counts": {
+      "match": 103594,
+      "mismatch": 1714,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 153272
+     }
+    },
+    "embargo-date-implausible": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 116763,
+     "counts": {
+      "match": 116755,
+      "mismatch": 8,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "lifted-before-embargo": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 116763,
+     "counts": {
+      "match": 19667,
+      "mismatch": 16,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 97080
+     }
+    },
+    "stock-balance": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 173747,
+     "counts": {
+      "match": 173747,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "incident-milestones-order": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 418525,
+     "counts": {
+      "match": 417807,
+      "mismatch": 359,
+      "key_not_found": 0,
+      "missing_value": 359,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "exploration-outside-validity": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 2326024,
+      "mismatch": 60091,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "explored-volume-above-authorized": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 1513707,
+      "mismatch": 872408,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "pmfs-intensity-manual-over-10": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 10099,
+     "counts": {
+      "match": 57,
+      "mismatch": 28,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 10014
+     }
+    },
+    "pmfs-intensity-mechanized-over-30": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 10099,
+     "counts": {
+      "match": 4808,
+      "mismatch": 87,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 5204
+     }
+    },
+    "species-not-in-commercial-timber-list": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 1581314,
+      "mismatch": 0,
+      "key_not_found": 804797,
+      "missing_value": 4,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "act-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 85661,
+      "mismatch": 634,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 625631
+     }
+    },
+    "biomes-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 294563,
+     "counts": {
+      "match": 271330,
+      "mismatch": 0,
+      "key_not_found": 14462,
+      "missing_value": 8771,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "embargo-link-without-term": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 75223,
+      "mismatch": 0,
+      "key_not_found": 21538,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 615165
+     }
+    },
+    "fact-after-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 84192,
+      "mismatch": 2108,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 625626
+     }
+    },
+    "infraction-coordinates-missing-or-zero": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 217776,
+      "mismatch": 28345,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 465805
+     }
+    },
+    "issued-over-five-years-after-fact": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 82596,
+      "mismatch": 1596,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 627734
+     }
+    },
+    "legal-basis-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 689929,
+     "counts": {
+      "match": 655178,
+      "mismatch": 0,
+      "key_not_found": 24148,
+      "missing_value": 10603,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "notice-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 431173,
+      "mismatch": 1093,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 279660
+     }
+    },
+    "notice-date-implausible": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 711926,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "seizure-link-without-term": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 98925,
+      "mismatch": 0,
+      "key_not_found": 10633,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 602368
+     }
+    },
+    "species-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 38056,
+     "counts": {
+      "match": 34661,
+      "mismatch": 0,
+      "key_not_found": 7,
+      "missing_value": 3388,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "declared-areas-above-property": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 6206666,
+     "counts": {
+      "match": 6160160,
+      "mismatch": 29980,
+      "key_not_found": 0,
+      "missing_value": 16526,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "expiry-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 14242,
+      "mismatch": 52,
+      "key_not_found": 0,
+      "missing_value": 8,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "installation-licence-over-six-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 1429,
+      "mismatch": 5,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 12868
+     }
+    },
+    "operation-licence-over-ten-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 1590,
+      "mismatch": 2,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 12710
+     }
+    },
+    "preliminary-licence-over-five-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 790,
+      "mismatch": 8,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 13504
+     }
+    },
+    "appeal-before-main-judgment": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2917,
+     "counts": {
+      "match": 490,
+      "mismatch": 115,
+      "key_not_found": 0,
+      "missing_value": 71,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 2241
+     }
+    },
+    "main-judgment-before-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2917,
+     "counts": {
+      "match": 1578,
+      "mismatch": 3,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1336
+     }
+    },
+    "paid-ten-times-original": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1588335,
+     "counts": {
+      "match": 1584026,
+      "mismatch": 780,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 3529
+     }
+    },
+    "payment-before-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1588335,
+     "counts": {
+      "match": 1587550,
+      "mismatch": 785,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "ingredient-without-registered-technical-product": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 124299,
+     "counts": {
+      "match": 13218,
+      "mismatch": 0,
+      "key_not_found": 2247,
+      "missing_value": 57,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 108777
+     }
+    },
+    "seizure-coordinates-missing-or-zero": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 157955,
+     "counts": {
+      "match": 54033,
+      "mismatch": 4103,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 99819
+     }
+    },
+    "term-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 157955,
+     "counts": {
+      "match": 125274,
+      "mismatch": 0,
+      "key_not_found": 29,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 32652
+     }
+    },
+    "municipality-state": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 711112,
+      "mismatch": 0,
+      "key_not_found": 547,
+      "missing_value": 267,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    }
+   },
+   "sources": {
+    "dadosabertos.ibama.gov.br › siscites-licencas-de-fauna-e-flora-emitidas › Siscites": "ok",
+    "dados.mma.gov.br › especies-ameacadas › FAUNA - Lista de Espécies Ameaçadas - 2021.csv": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-embargo › Termos de embargo": "ok",
+    "dadosabertos.ibama.gov.br › sisfauna-plantel-exato › Sisfauna - Plantel Exato": "ok",
+    "dadosabertos.ibama.gov.br › sisfogo-roi › ROI formato csv": "ok",
+    "dadosabertos.ibama.gov.br › volumes-explorados-if-100 › Volumes Explorados - IF 100%": "ok",
+    "dadosabertos.ibama.gov.br › sinaflor-pmfs-amazonia-legal › PMFS Amazônia Legal": "ok",
+    "dados.florestal.gov.br › especies-florestais-madeireiras-comerciais › Dados_abertos_especies_madeireiras_SNIF_fonte_LPF_SFB": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - biomas": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - enquadramento legal": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-apreensao › Termo de apreensão": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - espécimes": "ok",
+    "dadosabertos.ibama.gov.br › ato-declaratorio-ambiental-ada › Ato Declaratório Ambiental (ADA)": "ok",
+    "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ...": "ok",
+    "dadosabertos.ibama.gov.br › julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama › Volume de Julgamento de Auto de Infração": "ok",
+    "dadosabertos.ibama.gov.br › arrecadacao-de-multas-ambientais-bens-tutelados › Arrecadação de Multas por Bens Tutelados": "ok",
+    "dadosabertos.ibama.gov.br › relatorios-de-comercializacao-de-agrotoxicos › Dados - CSV": "ok",
+    "dados.agricultura.gov.br › sistema-de-agrotoxicos-fitossanitarios-agrofit › Produto Técnico": "ok",
+    "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 16,
+     "bytes": 1358146721,
+     "seconds": 87.68,
+     "mb_per_s": 15.49
+    },
+    "secondary": {
+     "resources": 4,
+     "bytes": 1075441,
+     "seconds": 2.22,
+     "mb_per_s": 0.484
+    },
+    "processing": {
+     "bytes": 1359222162,
+     "seconds": 104.96,
+     "mb_per_s": 12.95
+    }
+   },
+   "timings": {
+    "download_s": 98.7,
+    "processing_s": 104.96,
+    "bytes_processed": 1359222162,
+    "outputs_s": 0.9
+   }
+  },
+  {
+   "run_id": "37936431563",
+   "environment": "github-actions",
+   "at": "2026-10-09T13:26:08+00:00",
+   "rules": {
+    "appendix-i-wild-commercial": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 258580,
+     "counts": {
+      "match": 243809,
+      "mismatch": 403,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 14368
+     }
+    },
+    "wild-commercial-threatened-species": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 258580,
+     "counts": {
+      "match": 103594,
+      "mismatch": 1714,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 153272
+     }
+    },
+    "embargo-date-implausible": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 116763,
+     "counts": {
+      "match": 116755,
+      "mismatch": 8,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "lifted-before-embargo": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 116763,
+     "counts": {
+      "match": 19667,
+      "mismatch": 16,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 97080
+     }
+    },
+    "stock-balance": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 173747,
+     "counts": {
+      "match": 173747,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "incident-milestones-order": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 418525,
+     "counts": {
+      "match": 417807,
+      "mismatch": 359,
+      "key_not_found": 0,
+      "missing_value": 359,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "exploration-outside-validity": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 2326024,
+      "mismatch": 60091,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "explored-volume-above-authorized": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 1513707,
+      "mismatch": 872408,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "pmfs-intensity-manual-over-10": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 10099,
+     "counts": {
+      "match": 57,
+      "mismatch": 28,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 10014
+     }
+    },
+    "pmfs-intensity-mechanized-over-30": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 10099,
+     "counts": {
+      "match": 4808,
+      "mismatch": 87,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 5204
+     }
+    },
+    "species-not-in-commercial-timber-list": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 1581314,
+      "mismatch": 0,
+      "key_not_found": 804797,
+      "missing_value": 4,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "act-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 85661,
+      "mismatch": 634,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 625631
+     }
+    },
+    "biomes-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 294563,
+     "counts": {
+      "match": 271330,
+      "mismatch": 0,
+      "key_not_found": 14462,
+      "missing_value": 8771,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "embargo-link-without-term": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 75223,
+      "mismatch": 0,
+      "key_not_found": 21538,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 615165
+     }
+    },
+    "fact-after-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 84192,
+      "mismatch": 2108,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 625626
+     }
+    },
+    "infraction-coordinates-missing-or-zero": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 217776,
+      "mismatch": 28345,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 465805
+     }
+    },
+    "issued-over-five-years-after-fact": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 82596,
+      "mismatch": 1596,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 627734
+     }
+    },
+    "legal-basis-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 689929,
+     "counts": {
+      "match": 655178,
+      "mismatch": 0,
+      "key_not_found": 24148,
+      "missing_value": 10603,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "notice-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 431173,
+      "mismatch": 1093,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 279660
+     }
+    },
+    "notice-date-implausible": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 711926,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "seizure-link-without-term": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 98925,
+      "mismatch": 0,
+      "key_not_found": 10633,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 602368
+     }
+    },
+    "species-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 38056,
+     "counts": {
+      "match": 34661,
+      "mismatch": 0,
+      "key_not_found": 7,
+      "missing_value": 3388,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "declared-areas-above-property": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 6206666,
+     "counts": {
+      "match": 6160160,
+      "mismatch": 29980,
+      "key_not_found": 0,
+      "missing_value": 16526,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "expiry-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 14242,
+      "mismatch": 52,
+      "key_not_found": 0,
+      "missing_value": 8,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "installation-licence-over-six-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 1429,
+      "mismatch": 5,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 12868
+     }
+    },
+    "operation-licence-over-ten-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 1590,
+      "mismatch": 2,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 12710
+     }
+    },
+    "preliminary-licence-over-five-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 790,
+      "mismatch": 8,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 13504
+     }
+    },
+    "appeal-before-main-judgment": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2917,
+     "counts": {
+      "match": 490,
+      "mismatch": 115,
+      "key_not_found": 0,
+      "missing_value": 71,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 2241
+     }
+    },
+    "main-judgment-before-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2917,
+     "counts": {
+      "match": 1578,
+      "mismatch": 3,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1336
+     }
+    },
+    "paid-ten-times-original": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1588335,
+     "counts": {
+      "match": 1584026,
+      "mismatch": 780,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 3529
+     }
+    },
+    "payment-before-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1588335,
+     "counts": {
+      "match": 1587550,
+      "mismatch": 785,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "ingredient-without-registered-technical-product": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 124299,
+     "counts": {
+      "match": 13218,
+      "mismatch": 0,
+      "key_not_found": 2247,
+      "missing_value": 57,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 108777
+     }
+    },
+    "seizure-coordinates-missing-or-zero": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 157955,
+     "counts": {
+      "match": 54033,
+      "mismatch": 4103,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 99819
+     }
+    },
+    "term-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 157955,
+     "counts": {
+      "match": 125274,
+      "mismatch": 0,
+      "key_not_found": 29,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 32652
+     }
+    },
+    "municipality-state": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 711112,
+      "mismatch": 0,
+      "key_not_found": 547,
+      "missing_value": 267,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    }
+   },
+   "sources": {
+    "dadosabertos.ibama.gov.br › siscites-licencas-de-fauna-e-flora-emitidas › Siscites": "ok",
+    "dados.mma.gov.br › especies-ameacadas › FAUNA - Lista de Espécies Ameaçadas - 2021.csv": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-embargo › Termos de embargo": "ok",
+    "dadosabertos.ibama.gov.br › sisfauna-plantel-exato › Sisfauna - Plantel Exato": "ok",
+    "dadosabertos.ibama.gov.br › sisfogo-roi › ROI formato csv": "ok",
+    "dadosabertos.ibama.gov.br › volumes-explorados-if-100 › Volumes Explorados - IF 100%": "ok",
+    "dadosabertos.ibama.gov.br › sinaflor-pmfs-amazonia-legal › PMFS Amazônia Legal": "ok",
+    "dados.florestal.gov.br › especies-florestais-madeireiras-comerciais › Dados_abertos_especies_madeireiras_SNIF_fonte_LPF_SFB": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - biomas": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - enquadramento legal": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-apreensao › Termo de apreensão": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - espécimes": "ok",
+    "dadosabertos.ibama.gov.br › ato-declaratorio-ambiental-ada › Ato Declaratório Ambiental (ADA)": "ok",
+    "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ...": "ok",
+    "dadosabertos.ibama.gov.br › julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama › Volume de Julgamento de Auto de Infração": "ok",
+    "dadosabertos.ibama.gov.br › arrecadacao-de-multas-ambientais-bens-tutelados › Arrecadação de Multas por Bens Tutelados": "ok",
+    "dadosabertos.ibama.gov.br › relatorios-de-comercializacao-de-agrotoxicos › Dados - CSV": "ok",
+    "dados.agricultura.gov.br › sistema-de-agrotoxicos-fitossanitarios-agrofit › Produto Técnico": "ok",
+    "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 16,
+     "bytes": 1358146721,
+     "seconds": 50.57,
+     "mb_per_s": 26.857
+    },
+    "secondary": {
+     "resources": 4,
+     "bytes": 1075377,
+     "seconds": 2.7,
+     "mb_per_s": 0.398
+    },
+    "processing": {
+     "bytes": 1359222098,
+     "seconds": 113.26,
+     "mb_per_s": 12.001
+    }
+   },
+   "timings": {
+    "download_s": 62.16,
+    "processing_s": 113.26,
+    "bytes_processed": 1359222098,
+    "outputs_s": 0.89
+   }
+  },
+  {
+   "run_id": "37937363972",
+   "environment": "github-actions",
+   "at": "2026-10-09T13:35:26+00:00",
+   "rules": {
+    "appendix-i-wild-commercial": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 258580,
+     "counts": {
+      "match": 243809,
+      "mismatch": 403,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 14368
+     }
+    },
+    "wild-commercial-threatened-species": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 258580,
+     "counts": {
+      "match": 103594,
+      "mismatch": 1714,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 153272
+     }
+    },
+    "embargo-date-implausible": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 116763,
+     "counts": {
+      "match": 116755,
+      "mismatch": 8,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "lifted-before-embargo": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 116763,
+     "counts": {
+      "match": 19667,
+      "mismatch": 16,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 97080
+     }
+    },
+    "stock-balance": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 173747,
+     "counts": {
+      "match": 173747,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "incident-milestones-order": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 418525,
+     "counts": {
+      "match": 417807,
+      "mismatch": 359,
+      "key_not_found": 0,
+      "missing_value": 359,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "exploration-outside-validity": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 2326024,
+      "mismatch": 60091,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "explored-volume-above-authorized": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 1513707,
+      "mismatch": 872408,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "pmfs-intensity-manual-over-10": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 10099,
+     "counts": {
+      "match": 57,
+      "mismatch": 28,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 10014
+     }
+    },
+    "pmfs-intensity-mechanized-over-30": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 10099,
+     "counts": {
+      "match": 4808,
+      "mismatch": 87,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 5204
+     }
+    },
+    "species-not-in-commercial-timber-list": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2386115,
+     "counts": {
+      "match": 1581314,
+      "mismatch": 0,
+      "key_not_found": 804797,
+      "missing_value": 4,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "act-end-before-start": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 85661,
+      "mismatch": 634,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 625631
+     }
+    },
+    "biomes-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 294563,
+     "counts": {
+      "match": 271330,
+      "mismatch": 0,
+      "key_not_found": 14462,
+      "missing_value": 8771,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "embargo-link-without-term": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 75223,
+      "mismatch": 0,
+      "key_not_found": 21538,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 615165
+     }
+    },
+    "fact-after-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 84192,
+      "mismatch": 2108,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 625626
+     }
+    },
+    "infraction-coordinates-missing-or-zero": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 217776,
+      "mismatch": 28345,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 465805
+     }
+    },
+    "issued-over-five-years-after-fact": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 82596,
+      "mismatch": 1596,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 627734
+     }
+    },
+    "legal-basis-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 689929,
+     "counts": {
+      "match": 655178,
+      "mismatch": 0,
+      "key_not_found": 24148,
+      "missing_value": 10603,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "notice-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 431173,
+      "mismatch": 1093,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 279660
+     }
+    },
+    "notice-date-implausible": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 711926,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "seizure-link-without-term": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 98925,
+      "mismatch": 0,
+      "key_not_found": 10633,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 602368
+     }
+    },
+    "species-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 38056,
+     "counts": {
+      "match": 34661,
+      "mismatch": 0,
+      "key_not_found": 7,
+      "missing_value": 3388,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "declared-areas-above-property": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 6206666,
+     "counts": {
+      "match": 6160160,
+      "mismatch": 29980,
+      "key_not_found": 0,
+      "missing_value": 16526,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "expiry-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 14242,
+      "mismatch": 52,
+      "key_not_found": 0,
+      "missing_value": 8,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "installation-licence-over-six-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 1429,
+      "mismatch": 5,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 12868
+     }
+    },
+    "operation-licence-over-ten-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 1590,
+      "mismatch": 2,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 12710
+     }
+    },
+    "preliminary-licence-over-five-years": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 14302,
+     "counts": {
+      "match": 790,
+      "mismatch": 8,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 13504
+     }
+    },
+    "appeal-before-main-judgment": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2917,
+     "counts": {
+      "match": 490,
+      "mismatch": 115,
+      "key_not_found": 0,
+      "missing_value": 71,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 2241
+     }
+    },
+    "main-judgment-before-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 2917,
+     "counts": {
+      "match": 1578,
+      "mismatch": 3,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1336
+     }
+    },
+    "paid-ten-times-original": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1588335,
+     "counts": {
+      "match": 1584026,
+      "mismatch": 780,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 3529
+     }
+    },
+    "payment-before-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1588335,
+     "counts": {
+      "match": 1587550,
+      "mismatch": 785,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "ingredient-without-registered-technical-product": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 124299,
+     "counts": {
+      "match": 13218,
+      "mismatch": 0,
+      "key_not_found": 2247,
+      "missing_value": 57,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 108777
+     }
+    },
+    "seizure-coordinates-missing-or-zero": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 157955,
+     "counts": {
+      "match": 54033,
+      "mismatch": 4103,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 99819
+     }
+    },
+    "term-without-infraction": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 157955,
+     "counts": {
+      "match": 125274,
+      "mismatch": 0,
+      "key_not_found": 29,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 32652
+     }
+    },
+    "municipality-state": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 711926,
+     "counts": {
+      "match": 711112,
+      "mismatch": 0,
+      "key_not_found": 547,
+      "missing_value": 267,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    }
+   },
+   "sources": {
+    "dadosabertos.ibama.gov.br › siscites-licencas-de-fauna-e-flora-emitidas › Siscites": "ok",
+    "dados.mma.gov.br › especies-ameacadas › FAUNA - Lista de Espécies Ameaçadas - 2021.csv": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-embargo › Termos de embargo": "ok",
+    "dadosabertos.ibama.gov.br › sisfauna-plantel-exato › Sisfauna - Plantel Exato": "ok",
+    "dadosabertos.ibama.gov.br › sisfogo-roi › ROI formato csv": "ok",
+    "dadosabertos.ibama.gov.br › volumes-explorados-if-100 › Volumes Explorados - IF 100%": "ok",
+    "dadosabertos.ibama.gov.br › sinaflor-pmfs-amazonia-legal › PMFS Amazônia Legal": "ok",
+    "dados.florestal.gov.br › especies-florestais-madeireiras-comerciais › Dados_abertos_especies_madeireiras_SNIF_fonte_LPF_SFB": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - biomas": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - enquadramento legal": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-termo-de-apreensao › Termo de apreensão": "ok",
+    "dadosabertos.ibama.gov.br › fiscalizacao-auto-de-infracao › Autos de infração - espécimes": "ok",
+    "dadosabertos.ibama.gov.br › ato-declaratorio-ambiental-ada › Ato Declaratório Ambiental (ADA)": "ok",
+    "dadosabertos.ibama.gov.br › licencas-ambientais-de-atividades-e-empreendimentos-licenciados-pelo-ibama › Licenças ambientais de atividades e ...": "ok",
+    "dadosabertos.ibama.gov.br › julgamentos-de-auto-de-infracao-realizado-no-ambito-do-ibama › Volume de Julgamento de Auto de Infração": "ok",
+    "dadosabertos.ibama.gov.br › arrecadacao-de-multas-ambientais-bens-tutelados › Arrecadação de Multas por Bens Tutelados": "ok",
+    "dadosabertos.ibama.gov.br › relatorios-de-comercializacao-de-agrotoxicos › Dados - CSV": "ok",
+    "dados.agricultura.gov.br › sistema-de-agrotoxicos-fitossanitarios-agrofit › Produto Técnico": "ok",
+    "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 16,
+     "bytes": 1358146721,
+     "seconds": 190.68,
+     "mb_per_s": 7.123
+    },
+    "secondary": {
+     "resources": 4,
+     "bytes": 1075377,
+     "seconds": 2.54,
+     "mb_per_s": 0.423
+    },
+    "processing": {
+     "bytes": 1359222098,
+     "seconds": 65.01,
+     "mb_per_s": 20.908
+    }
+   },
+   "timings": {
+    "download_s": 201.87,
+    "processing_s": 65.01,
+    "bytes_processed": 1359222098,
+    "outputs_s": 0.49
+   }
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+  "_comment": "Where Layer 5 reads the public summaries of Layers 1-4 for this portal (pull over HTTPS, no token). Another instance changes only the repositories. A repository that does not exist yet (for example a layer not deployed for this portal) is shown as a structural gap, never as a low score.",
+  "layers": {
+    "L1": {
+      "repository": "lsp3cesarschool/5ltep-layer1",
+      "files": {"summary": "results/layer1_summary.json", "validation": "results/validation.json"},
+      "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1/",
+      "workflow": "layer1.yml"
+    },
+    "L2": {
+      "repository": "lsp3cesarschool/5ltep-layer2",
+      "files": {"summary": "docs/data/layer2.json"},
+      "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2/",
+      "workflow": "layer2.yml"
+    },
+    "L3": {
+      "repository": "lsp3cesarschool/5ltep-layer3",
+      "files": {"index": "docs/data/index.json", "summary": "results/{profile}/layer3_summary.json"},
+      "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3/",
+      "workflow": "layer3.yml"
+    },
+    "L4": {
+      "repository": "lsp3cesarschool/5ltep-layer4",
+      "files": {"summary": "docs/data/layer4.json", "cross_check": "docs/data/cross_check.json", "hashes": "data/hash_store.json"},
+      "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4/",
+      "workflow": "monitor.yml"
+    }
+  }
+}
