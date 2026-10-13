@@ -1,0 +1,314 @@
+{
+ "dataset": {
+  "name": "censo-escolar-2020",
+  "title": "Censo Escolar 2020",
+  "id": "821abdb7-f805-4a4b-8bfc-50a71b8dc3e6",
+  "resources": 40,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/821abdb7-f805-4a4b-8bfc-50a71b8dc3e6#10fa53d11c7c",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/censo-escolar-2020"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.32858,
+  "high": 0.82858,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.4286,
+   "evaluated_at": "2026-10-03T16:01:58+00:00",
+   "current": true,
+   "facts": {
+    "level": 0,
+    "tables": 36,
+    "verifiable": 35,
+    "conformant": 15
+   },
+   "signals": [
+    {
+     "key": "L1:censo-escolar-2020",
+     "count": 20,
+     "en": "20 of 35 verifiable file(s) do not conform to the declared schema",
+     "pt": "20 de 35 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/821abdb7-f805-4a4b-8bfc-50a71b8dc3e6#10fa53d11c7c"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:censo-escolar-2020",
+   "count": 20,
+   "when": null,
+   "en": "20 of 35 verifiable file(s) do not conform to the declared schema",
+   "pt": "20 de 35 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:censo-escolar-2020",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 20,
+    "evaluated_at": "2026-10-03T16:01:58+00:00",
+    "status": "reported",
+    "en": "20 of 35 verifiable file(s) do not conform to the declared schema",
+    "pt": "20 de 35 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "3c798cc5-f8b4-4f31-b7cc-6b7e6c86b17c": "e961a6867d1451ba46acc1a0a6ade835e20cb8319ebcdf8827b0bb45eee4d739",
+     "efe57a0b-59ed-4ceb-b9f7-13da8d3e46c4": "e961a6867d1451ba46acc1a0a6ade835e20cb8319ebcdf8827b0bb45eee4d739",
+     "f4c3a349-9956-4294-9ac3-998aa420a92d": "e961a6867d1451ba46acc1a0a6ade835e20cb8319ebcdf8827b0bb45eee4d739",
+     "36dd66e9-5662-4902-8858-46aa8db9ce6d": "e961a6867d1451ba46acc1a0a6ade835e20cb8319ebcdf8827b0bb45eee4d739",
+     "232fd4ca-4b9c-49d4-97b7-29938a548039": "e961a6867d1451ba46acc1a0a6ade835e20cb8319ebcdf8827b0bb45eee4d739",
+     "769a6f91-6e5b-4ea6-b851-d6cff659a7da": "e961a6867d1451ba46acc1a0a6ade835e20cb8319ebcdf8827b0bb45eee4d739",
+     "1439ffee-f247-4c86-9357-06f96daa1ada": "e961a6867d1451ba46acc1a0a6ade835e20cb8319ebcdf8827b0bb45eee4d739",
+     "826d5c46-8cf6-4be9-811d-b8eb32839f57": "e961a6867d1451ba46acc1a0a6ade835e20cb8319ebcdf8827b0bb45eee4d739",
+     "a3cfa023-c016-4942-bdc8-c148feceac65": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+     "89e8f805-a54f-411e-b449-130d35a26ea3": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+     "f6f84a48-0415-48eb-a7bf-06242b9cb447": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+     "de6bf854-d2c4-40b2-844f-c7d52fac4a43": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+     "ffc97cee-8b37-49fb-930d-63e15ee24328": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+     "b4696fcf-5c75-4d61-99f4-71ca776faaf2": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+     "484bc575-b589-40a5-a5a0-890c09c69f24": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+     "3c171694-811e-47a2-9078-9f716a10ffb1": "33672cc0bcc4fe00031f43ee676d7fcb0d79c5e5bd08ba57a80910b4e0b09f80",
+     "63ceb66f-2557-47d4-a673-43ebc884d9ce": "03d74e7f290e9df9742748e147525b93d292ea43d4c1c2d5897bdee292d9a3f7",
+     "65d381f1-060d-4d08-9d6a-cbe99a8bc96e": "03d74e7f290e9df9742748e147525b93d292ea43d4c1c2d5897bdee292d9a3f7",
+     "f0bb7626-487c-4d9c-a12d-e30dd0747f8a": "03d74e7f290e9df9742748e147525b93d292ea43d4c1c2d5897bdee292d9a3f7",
+     "cfbce95a-6dc7-4fd2-9d1f-4fdc686d65ae": "03d74e7f290e9df9742748e147525b93d292ea43d4c1c2d5897bdee292d9a3f7",
+     "ff372e2e-f052-4a34-9083-e3af3f26f26b": "8737495553a7c4c227d361e899e34944a85200bb02f132bb929f64f18c07ddbb",
+     "41d63717-1e2e-4233-8857-be3917d8dae4": "8737495553a7c4c227d361e899e34944a85200bb02f132bb929f64f18c07ddbb",
+     "623aefd1-ba73-43cc-829c-47b6c21ac8f0": "8737495553a7c4c227d361e899e34944a85200bb02f132bb929f64f18c07ddbb",
+     "5705fb50-958e-4af3-a132-5457b36d8139": "8737495553a7c4c227d361e899e34944a85200bb02f132bb929f64f18c07ddbb",
+     "5741e020-7d93-4d6b-8cae-a5ce08a5b344": "0c26f884ee7ebcb0377bc0152709bd19c7ff0efd44021fd74552c1fc7251e928",
+     "6fdab6c2-1410-482e-acc2-cc293bbdb708": "0c26f884ee7ebcb0377bc0152709bd19c7ff0efd44021fd74552c1fc7251e928",
+     "cc4c0d7a-138c-46eb-ac16-eaa3a861616b": "0c26f884ee7ebcb0377bc0152709bd19c7ff0efd44021fd74552c1fc7251e928",
+     "3da9fcb9-86fb-4912-9eb4-478390636deb": "0c26f884ee7ebcb0377bc0152709bd19c7ff0efd44021fd74552c1fc7251e928",
+     "bb4f941b-fe84-44d8-ad30-15ea03d232cc": "db976de4103b302355a2b2d62c1cd8b5863928ea35cc7e8f53502d4f2333fa8a",
+     "e4962183-1c23-40b9-a674-e8e3f7baa2d5": "ee272262e1c19ae2de083baaac5d53e352f6e3b2919568e6c7daa0cb49dbfb37",
+     "de66e2ca-1e8f-4f44-bcb7-ba215746199c": "5767e6b009d1cf73eceb5de5d63a5347372aee761e444620858ffc08b8379728",
+     "8cc0e6aa-40cb-4307-8fc4-0fbd2eff2ce2": "02b8cbcc569f10a48a0de070e74da81b793c17795f06d4a202af3d5159531f78",
+     "c4d70ca5-b537-49f8-892b-d86f49414c24": "9bc8d719f55cb8f57c1ac43d4b4f1d195e3611d0304d9a77a691272c4622142e",
+     "0dcd6a24-a357-4661-8bae-097053678933": "3f2d64317e4ef91920a923b754dd3312d48d6c22c6754ec1c5f12ccb832ff096",
+     "81d89823-ce2c-4fac-814f-7e233c18153d": "691604f42845d9dc607c8d89220c48d8902bfbe28f1d7a4d396c143d23968390",
+     "fea3f914-af55-4b85-bfa9-7286ecee06c5": "adf08cf3fa8a5821ff0094a4e3f5f7432e979ef5df50f496e4403e77f62c53c0"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:58ac6341d3240a689c9dc401f08e1368f5e61bcf4563b01b364bbaab549db640",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-escolar-2020",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/censo-escolar-2020.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'censo-escolar-2020' (Recife), 2026-10-13, sha256:58ac6341d3240a68…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-escolar-2020",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'censo-escolar-2020' (Recife), 2026-10-13, sha256:58ac6341d3240a68…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-escolar-2020"
+  }
+ }
+}

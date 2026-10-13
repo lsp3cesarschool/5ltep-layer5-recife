@@ -1,0 +1,334 @@
+{
+ "dataset": {
+  "name": "acidentes-de-transito-com-e-sem-vitimas",
+  "title": "Chamados de Sinistros (Acidentes) de Trânsito com e sem vitimas 2015 a 2024",
+  "id": "fdd001d5-05ba-46cd-9edf-5c5a6b58351f",
+  "resources": 11,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f#da36bfaaa47a",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/acidentes-de-transito-com-e-sem-vitimas"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.8,
+  "valid_layers": [
+   "L1",
+   "L2",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.5892429108929063,
+  "high": 0.7892429108929062,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.3,
+   "evaluated_at": "2026-10-03T15:47:36+00:00",
+   "current": true,
+   "facts": {
+    "level": 3,
+    "tables": 10,
+    "verifiable": 10,
+    "conformant": 3
+   },
+   "signals": [
+    {
+     "key": "L1:acidentes-de-transito-com-e-sem-vitimas",
+     "count": 7,
+     "en": "7 of 10 verifiable file(s) do not conform to the declared schema",
+     "pt": "7 de 10 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.997476369643021,
+   "evaluated_at": "2026-10-09T13:36:55+00:00",
+   "current": true,
+   "facts": {
+    "rules": [
+     "fatal-victims-above-victims",
+     "no-victim-accident-with-victims"
+    ],
+    "checks": 21794,
+    "signals": 55,
+    "not_evaluated": []
+   },
+   "signals": [
+    {
+     "key": "L2:fatal-victims-above-victims",
+     "count": 55,
+     "en": "55 signal(s) of rule 'Fatal victims above the total number of victims' in 10897 check(s)",
+     "pt": "55 sinal(is) da regra 'Vítimas fatais acima do total de vítimas' em 10897 verificação(ões)"
+    }
+   ]
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/fdd001d5-05ba-46cd-9edf-5c5a6b58351f#da36bfaaa47a"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:acidentes-de-transito-com-e-sem-vitimas",
+   "count": 7,
+   "when": null,
+   "en": "7 of 10 verifiable file(s) do not conform to the declared schema",
+   "pt": "7 de 10 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L2",
+   "kind": "signal",
+   "key": "L2:fatal-victims-above-victims",
+   "count": 55,
+   "when": null,
+   "en": "55 signal(s) of rule 'Fatal victims above the total number of victims' in 10897 check(s)",
+   "pt": "55 sinal(is) da regra 'Vítimas fatais acima do total de vítimas' em 10897 verificação(ões)"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:acidentes-de-transito-com-e-sem-vitimas",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 7,
+    "evaluated_at": "2026-10-03T15:47:36+00:00",
+    "status": "reported",
+    "en": "7 of 10 verifiable file(s) do not conform to the declared schema",
+    "pt": "7 de 10 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "87ac4237-f5f9-44d2-bcf1-927aaa0a2d31": "375766319e81ba147f40d013c9706abfc91f9017ffa23277533cd23bf0e0d6bd",
+     "dbb9165a-7539-4fdd-943a-acffe12df3e0": "b7b799697908ea894e9c22709155d54586dbf77460ff1c123795db9032687846",
+     "c2281788-2e8c-472c-8812-67c4f85e9272": "b63341fc83ee98065f95498b75a8f118cd66aadbfdc8274a80842bca14c1b9b9",
+     "31ee35d9-6f8e-4694-9492-efe96e902b07": "a3d2951526ef37ac88a52fefabfc7f20b2c65e311698fb607491f61b122761cb",
+     "b2594588-2aa8-42c4-b96d-246102ecde3c": "54046149f0fdf7b59c05ea470ab943e3a2debc478fa1c2c30679edc4a2190e76",
+     "c9fe4a98-0f61-4e81-9c4b-a22f8dc6f1a2": "e4f2f2c7b8d2ed3cd507e920e7137ff9a57a376f70cfeb68a9e3af1cf5602d18",
+     "a7b72334-9229-4e52-a6cb-8006de4942e3": "cb5442d7d550ca127f7f3e8e2be50264479df228bdcefbf6687aacad1126fecc",
+     "d364e034-7e00-41a7-b557-0b16c21814e7": "b702af18392f6ed038c7b0914e8077c05384aa349c984d11850fb8bc2444969b",
+     "edc820d6-0f01-4fd2-b8a4-5a8c95f7e743": "3750d56981f264081ff7367b7357eaff42684c2b1f46a6be3751ada1c21f0261",
+     "58816e1f-18bc-4335-82bf-80ff080cb0e5": "19fd6bb6d2ec489daa0e74ee0554dcb0a6295cdaa0a0321361382c8f1c8afb01"
+    }
+   },
+   {
+    "key": "L2:fatal-victims-above-victims",
+    "layer": "L2",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 55,
+    "evaluated_at": "2026-10-09T13:36:55+00:00",
+    "status": "reported",
+    "en": "55 signal(s) of rule 'Fatal victims above the total number of victims' in 10897 check(s)",
+    "pt": "55 sinal(is) da regra 'Vítimas fatais acima do total de vítimas' em 10897 verificação(ões)",
+    "digests": {
+     "87ac4237-f5f9-44d2-bcf1-927aaa0a2d31": "375766319e81ba147f40d013c9706abfc91f9017ffa23277533cd23bf0e0d6bd",
+     "dbb9165a-7539-4fdd-943a-acffe12df3e0": "b7b799697908ea894e9c22709155d54586dbf77460ff1c123795db9032687846",
+     "c2281788-2e8c-472c-8812-67c4f85e9272": "b63341fc83ee98065f95498b75a8f118cd66aadbfdc8274a80842bca14c1b9b9",
+     "31ee35d9-6f8e-4694-9492-efe96e902b07": "a3d2951526ef37ac88a52fefabfc7f20b2c65e311698fb607491f61b122761cb",
+     "b2594588-2aa8-42c4-b96d-246102ecde3c": "54046149f0fdf7b59c05ea470ab943e3a2debc478fa1c2c30679edc4a2190e76",
+     "c9fe4a98-0f61-4e81-9c4b-a22f8dc6f1a2": "e4f2f2c7b8d2ed3cd507e920e7137ff9a57a376f70cfeb68a9e3af1cf5602d18",
+     "a7b72334-9229-4e52-a6cb-8006de4942e3": "cb5442d7d550ca127f7f3e8e2be50264479df228bdcefbf6687aacad1126fecc",
+     "d364e034-7e00-41a7-b557-0b16c21814e7": "b702af18392f6ed038c7b0914e8077c05384aa349c984d11850fb8bc2444969b",
+     "edc820d6-0f01-4fd2-b8a4-5a8c95f7e743": "3750d56981f264081ff7367b7357eaff42684c2b1f46a6be3751ada1c21f0261",
+     "58816e1f-18bc-4335-82bf-80ff080cb0e5": "19fd6bb6d2ec489daa0e74ee0554dcb0a6295cdaa0a0321361382c8f1c8afb01"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:db0aa36ffcacdf329b4c179e0179e3a21891dc266368bb5640cfdbb3282a306b",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-e-sem-vitimas",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/acidentes-de-transito-com-e-sem-vitimas.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'acidentes-de-transito-com-e-sem-vitimas' (Recife), 2026-10-13, sha256:db0aa36ffcacdf32…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-e-sem-vitimas",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'acidentes-de-transito-com-e-sem-vitimas' (Recife), 2026-10-13, sha256:db0aa36ffcacdf32…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-e-sem-vitimas"
+  }
+ }
+}

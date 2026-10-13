@@ -1,0 +1,279 @@
+{
+ "dataset": {
+  "name": "policlinicas",
+  "title": "Policlínicas",
+  "id": "774fb9e5-50b3-497a-a541-f4a181814849",
+  "resources": 2,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/774fb9e5-50b3-497a-a541-f4a181814849#c78ebc5f1da4",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/policlinicas"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.2,
+  "high": 0.7,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.0,
+   "evaluated_at": "2026-10-03T17:08:41+00:00",
+   "current": true,
+   "facts": {
+    "level": 3,
+    "tables": 1,
+    "verifiable": 1,
+    "conformant": 0
+   },
+   "signals": [
+    {
+     "key": "L1:policlinicas",
+     "count": 1,
+     "en": "1 of 1 verifiable file(s) do not conform to the declared schema",
+     "pt": "1 de 1 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/774fb9e5-50b3-497a-a541-f4a181814849#c78ebc5f1da4"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:policlinicas",
+   "count": 1,
+   "when": null,
+   "en": "1 of 1 verifiable file(s) do not conform to the declared schema",
+   "pt": "1 de 1 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:policlinicas",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 1,
+    "evaluated_at": "2026-10-03T17:08:41+00:00",
+    "status": "reported",
+    "en": "1 of 1 verifiable file(s) do not conform to the declared schema",
+    "pt": "1 de 1 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "d7a20815-c5f6-431e-9259-e3c2738a7708": "138be8a60bd1862b2623a8d258949f24d445571d662863c12a333d468face568"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:6e0991fa9d25aab55073afe20c8d377d6adf47c8351a79d196caf903ad6acf95",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=policlinicas",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/policlinicas.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'policlinicas' (Recife), 2026-10-13, sha256:6e0991fa9d25aab5…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=policlinicas",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'policlinicas' (Recife), 2026-10-13, sha256:6e0991fa9d25aab5…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=policlinicas"
+  }
+ }
+}

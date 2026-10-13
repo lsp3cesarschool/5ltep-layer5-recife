@@ -1,0 +1,303 @@
+{
+ "dataset": {
+  "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "title": "Velocidade das Vias - Quantitativo por Velocidade Média - 2021",
+  "id": "a44c68fa-6bb5-4bb6-8e14-5710c6bb5a64",
+  "resources": 27,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/a44c68fa-6bb5-4bb6-8e14-5710c6bb5a64#0b45cd7a4778",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/velocidade-das-vias-quantitativo-por-velocidade-media-2021"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.344,
+  "high": 0.844,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.48,
+   "evaluated_at": "2026-10-03T17:34:37+00:00",
+   "current": true,
+   "facts": {
+    "level": 2,
+    "tables": 25,
+    "verifiable": 25,
+    "conformant": 12
+   },
+   "signals": [
+    {
+     "key": "L1:velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+     "count": 13,
+     "en": "13 of 25 verifiable file(s) do not conform to the declared schema",
+     "pt": "13 de 25 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/a44c68fa-6bb5-4bb6-8e14-5710c6bb5a64#0b45cd7a4778"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+   "count": 13,
+   "when": null,
+   "en": "13 of 25 verifiable file(s) do not conform to the declared schema",
+   "pt": "13 de 25 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 13,
+    "evaluated_at": "2026-10-03T17:34:37+00:00",
+    "status": "reported",
+    "en": "13 of 25 verifiable file(s) do not conform to the declared schema",
+    "pt": "13 de 25 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "bf6e28b0-a0f3-46e5-9bcf-0dec3162e972": "f9e77a743743c6eef571a1f9a1d14e13074e3cc7bdfe5de9b800f3aeadf08438",
+     "31a89737-fa20-4ff6-b536-b09056dbfb53": "dfd1c1d7d0eb05ba9404a337368774115a902f22d20755fe09e1c9eb55ec9ec9",
+     "5e858ec9-0cc2-4bb4-881b-22b049182361": "78f5309bc966d6d48e1397853f3f05ea22788a11545fd41a7ed2090b23a2a64c",
+     "bba1eef0-1e98-4612-ab16-974a98d22235": "3a689d2c0d74787c58fd194edb2ef667cb3fc8488da5a86a07496fc2f1e29dcd",
+     "09d68ad5-765e-418c-b58f-abfb787d231a": "ed711002fc964a95488019e46859e196ec28683f5572ae7e2c7c50a627c91652",
+     "30eaab41-d384-49c5-a307-ca1c41353552": "2cf1cf2e910985133ecda10738faeebe539abb7d5838f5bff9f50a4e83523e09",
+     "695ff4aa-8261-4db9-803f-fd76cc0bba7b": "35b243eda850c29772db5cbde1e78e7332f2396b67cb5cf39b9c0faa90b6522e",
+     "cf236fb7-744c-49fb-aaf7-5b639901acdb": "61e0176db812df98d4d8fcaa759ac75988eef725ed90b3331e4735711eaca22c",
+     "8bdf9987-2fb2-4d75-8424-c31663fb9373": "a650f52418f417d22bd6bbe00bba169dcde83816c3913d7663b56aacb3b6a0d3",
+     "c0140f2f-9ec0-4df7-a3ee-3926f0bc0a2d": "5d1ac040879ae04c4bc90e0657de1904ef721d71a320b5a203a1cce9dfaa4903",
+     "518c68b5-1c82-45d1-a131-eb250f77b819": "42f20a464d2987a40715f1b4c46d171df690e991c04a115d3af5939391f702de",
+     "baac098c-e060-4a36-83ac-dfae23c1254f": "036a01a96da450190be66f149e6d11c9b50091395ce5219b91cdbe6746bf1d69",
+     "e16eef12-2d96-4403-ba4b-8e26fc539f5f": "5ee123af477ba16006b231d1557c5e24bc7277e78bd4f8e2e9ea8199d4c7116b",
+     "a180cc4a-14fc-4e9e-82ce-937048a85409": "d3b667b3c9936a5f5e41c1926f57d9c4ba4f2277392760878d18cf1249f9723c",
+     "e80bf7e1-54e7-412d-9923-a8ccbeb3f499": "d3a61ccba6a71d601d60d9bf0666f3e49cdb4e4fab048861b9b959f18f0ed7f8",
+     "abc6a3b2-fa9d-4a37-b567-9d1f2980d285": "e0862c6433d82c2fe57bde3f8492306db93e0579bafc50d5df4ed45bb3a327d5",
+     "9e05fa52-5387-422b-ba41-597b490a206c": "bb1117070fcfe805ae27dae3c70c6f89652cce6ec66a10aab8fb79053633da1e",
+     "ad8f22f2-59ad-4a92-bada-505d45e6fae4": "946af297e09d63e52ec5bdd68501e0a51727d42f03b0316c014f0c32472101dc",
+     "0520cb7c-ea24-4762-b042-1b556589ebfc": "61229445dc27803e8675a9477b6950dcd1d611969c7f474e17cf7f92417add80",
+     "f219563e-bf9f-40d8-9e54-6aa5f938fe79": "4db116638940ef908c57ce69e618dd941f4f2abecb26c77487fd0826174d7b91",
+     "315c8c58-807d-4cba-a332-2daf8a2afb81": "31dd192da3133704644a5a22981a3a331a659976f670b8f6fd2a69a169944c01",
+     "47177255-ceca-44cf-a10b-040247c6a3ea": "6a6d472faef1248e871778911355740680ad390b03ed5c5205166088c0e4dd5b",
+     "9fde3b84-c610-4d8d-8abc-cc8a5a149295": "7e36d7c11158715f2e36cb8264b861f68773dfa0e5e56b72cd75132d46f1be6d",
+     "addd20c3-e307-4dbb-b85f-cca390bc0057": "4e0c5c85a2e97209352ccfcaff48ec959b309a9a2d708990176282cd68071fe0",
+     "2a9693fe-ee56-42fd-9742-8ac8fd20b016": "200a1018edd175336bec28983b6b6b04d04260c45ad07763f8dded03c563a93a"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:faf5afc2482e1946efaaeb1dc3141ffd5c8eabd3c310b3386c75c2a745a5aded",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/velocidade-das-vias-quantitativo-por-velocidade-media-2021.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'velocidade-das-vias-quantitativo-por-velocidade-media-2021' (Recife), 2026-10-13, sha256:faf5afc2482e1946…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'velocidade-das-vias-quantitativo-por-velocidade-media-2021' (Recife), 2026-10-13, sha256:faf5afc2482e1946…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=velocidade-das-vias-quantitativo-por-velocidade-media-2021"
+  }
+ }
+}

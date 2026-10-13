@@ -1,0 +1,326 @@
+{
+ "dataset": {
+  "name": "pesagem-de-coletas-de-residuos",
+  "title": "Pesagem de Coletas de Resíduos",
+  "id": "1f8290e6-875c-4407-a390-17dd70be17e5",
+  "resources": 10,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/1f8290e6-875c-4407-a390-17dd70be17e5#f999193f4b06",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/pesagem-de-coletas-de-residuos"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.8,
+  "valid_layers": [
+   "L1",
+   "L2",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.6499996064314351,
+  "high": 0.849999606431435,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.5,
+   "evaluated_at": "2026-10-03T17:07:44+00:00",
+   "current": true,
+   "facts": {
+    "level": 3,
+    "tables": 6,
+    "verifiable": 6,
+    "conformant": 3
+   },
+   "signals": [
+    {
+     "key": "L1:pesagem-de-coletas-de-residuos",
+     "count": 3,
+     "en": "3 of 6 verifiable file(s) do not conform to the declared schema",
+     "pt": "3 de 6 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.9999986881047837,
+   "evaluated_at": "2026-10-09T13:36:57+00:00",
+   "current": true,
+   "facts": {
+    "rules": [
+     "weighing-end-before-start",
+     "weighing-net-weight-balance"
+    ],
+    "checks": 762256,
+    "signals": 1,
+    "not_evaluated": []
+   },
+   "signals": [
+    {
+     "key": "L2:weighing-net-weight-balance",
+     "count": 1,
+     "en": "1 signal(s) of rule 'Net weight different from initial minus final weight' in 381128 check(s)",
+     "pt": "1 sinal(is) da regra 'Peso útil diferente de peso inicial menos peso final' em 381128 verificação(ões)"
+    }
+   ]
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/1f8290e6-875c-4407-a390-17dd70be17e5#f999193f4b06"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:pesagem-de-coletas-de-residuos",
+   "count": 3,
+   "when": null,
+   "en": "3 of 6 verifiable file(s) do not conform to the declared schema",
+   "pt": "3 de 6 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L2",
+   "kind": "signal",
+   "key": "L2:weighing-net-weight-balance",
+   "count": 1,
+   "when": null,
+   "en": "1 signal(s) of rule 'Net weight different from initial minus final weight' in 381128 check(s)",
+   "pt": "1 sinal(is) da regra 'Peso útil diferente de peso inicial menos peso final' em 381128 verificação(ões)"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:pesagem-de-coletas-de-residuos",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 3,
+    "evaluated_at": "2026-10-03T17:07:44+00:00",
+    "status": "reported",
+    "en": "3 of 6 verifiable file(s) do not conform to the declared schema",
+    "pt": "3 de 6 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "45d0acc9-6fe0-4c4f-bce4-568a571beb0f": "bc9d5650b1e2b9621a57e2ff8abe2f4734cbda668e995ca83f0ef6826a060f5c",
+     "1c6901ad-863b-4ee7-9cc1-4b0afb6c6458": "9e16b405caec40ab11cded5331ab94b1cfe757877db7adac5b381bee20673a5f",
+     "97622c28-79dd-4273-89a6-9958bf398ade": "85c161d081bb479bd39582bce6861fc85ceaecd6f46ec3840b8241f18d1bc25f",
+     "bf281fbc-167b-4602-994b-30772b11987f": "1fd71c6ebccfb45b2b9f731320bc3d2d954c31187e360eb7c9d28f847cff19f6",
+     "c81ded9f-aeb1-4aca-9b68-0a1f72241b37": "7722e7473b87152e320d333c983ff45690cd4d758f2811257e7b2f67168079d6",
+     "63d0e1db-c07f-44a1-a8d2-9fd89fa75eb5": "f5e63b38e2159cdd5e6b5e8f56905d060fad9d74d5f66938961fb8c597725900"
+    }
+   },
+   {
+    "key": "L2:weighing-net-weight-balance",
+    "layer": "L2",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 1,
+    "evaluated_at": "2026-10-09T13:36:57+00:00",
+    "status": "reported",
+    "en": "1 signal(s) of rule 'Net weight different from initial minus final weight' in 381128 check(s)",
+    "pt": "1 sinal(is) da regra 'Peso útil diferente de peso inicial menos peso final' em 381128 verificação(ões)",
+    "digests": {
+     "45d0acc9-6fe0-4c4f-bce4-568a571beb0f": "bc9d5650b1e2b9621a57e2ff8abe2f4734cbda668e995ca83f0ef6826a060f5c",
+     "1c6901ad-863b-4ee7-9cc1-4b0afb6c6458": "9e16b405caec40ab11cded5331ab94b1cfe757877db7adac5b381bee20673a5f",
+     "97622c28-79dd-4273-89a6-9958bf398ade": "85c161d081bb479bd39582bce6861fc85ceaecd6f46ec3840b8241f18d1bc25f",
+     "bf281fbc-167b-4602-994b-30772b11987f": "1fd71c6ebccfb45b2b9f731320bc3d2d954c31187e360eb7c9d28f847cff19f6",
+     "c81ded9f-aeb1-4aca-9b68-0a1f72241b37": "7722e7473b87152e320d333c983ff45690cd4d758f2811257e7b2f67168079d6",
+     "63d0e1db-c07f-44a1-a8d2-9fd89fa75eb5": "f5e63b38e2159cdd5e6b5e8f56905d060fad9d74d5f66938961fb8c597725900"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:837d14593ec1800da67b6cdcb6f66fa9452008d03413ba9d9ad337c8ebc2e017",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesagem-de-coletas-de-residuos",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/pesagem-de-coletas-de-residuos.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'pesagem-de-coletas-de-residuos' (Recife), 2026-10-13, sha256:837d14593ec1800d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesagem-de-coletas-de-residuos",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'pesagem-de-coletas-de-residuos' (Recife), 2026-10-13, sha256:837d14593ec1800d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesagem-de-coletas-de-residuos"
+  }
+ }
+}

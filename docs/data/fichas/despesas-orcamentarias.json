@@ -1,0 +1,314 @@
+{
+ "dataset": {
+  "name": "despesas-orcamentarias",
+  "title": "Despesas Orçamentárias",
+  "id": "63f7941b-9a1e-4a49-893b-d5f16e2134d8",
+  "resources": 43,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/63f7941b-9a1e-4a49-893b-d5f16e2134d8#17c1b512b906",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/despesas-orcamentarias"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.25001,
+  "high": 0.7500100000000001,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.1667,
+   "evaluated_at": "2026-10-03T16:13:50+00:00",
+   "current": true,
+   "facts": {
+    "level": 2,
+    "tables": 36,
+    "verifiable": 36,
+    "conformant": 6
+   },
+   "signals": [
+    {
+     "key": "L1:despesas-orcamentarias",
+     "count": 30,
+     "en": "30 of 36 verifiable file(s) do not conform to the declared schema",
+     "pt": "30 de 36 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/63f7941b-9a1e-4a49-893b-d5f16e2134d8#17c1b512b906"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:despesas-orcamentarias",
+   "count": 30,
+   "when": null,
+   "en": "30 of 36 verifiable file(s) do not conform to the declared schema",
+   "pt": "30 de 36 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:despesas-orcamentarias",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 30,
+    "evaluated_at": "2026-10-03T16:13:50+00:00",
+    "status": "reported",
+    "en": "30 of 36 verifiable file(s) do not conform to the declared schema",
+    "pt": "30 de 36 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "c1f96596-830f-4933-9c14-d5199644471b": "57ed0871784faeb6ec0ce4da6ceb66949c73c5d1d3ff5234d941d7fecd72d792",
+     "0aad91e2-04b4-463a-8202-44e51a84f2f4": "28d1fa7fbccbf290491264d62b4281200c14fa96a2a630eee7666cf4b07c2d84",
+     "6e441aa8-23a7-427e-8971-2018fda922f1": "a1d4423c2dba4be51e5255e235f8739e8ba43ad6efb8db6975d7a02862c1d12a",
+     "a1a35923-f027-4e07-a6f5-04a164eb2dfd": "090f553d2948751d96427eaffc5402038bb1d0a6e8288871bfc064cd6c385c3b",
+     "700fdec2-31ff-4e9c-8fd1-a7b3c56331c7": "5f578384a044e7f9d21b5a4e8c3fc43150c9719d6cd7d2f8d61015f942e41657",
+     "2cb6a68c-c930-46ad-a0a6-635d486950c2": "cd00d30c03dcf5cc8408672a87cea4ecac3a50cbc9190f6f30c9402d6cb56823",
+     "ca3d1086-f36e-4cfc-9d5f-e9b79f1192ff": "fe230c36ce9fb2eeff0ebea0319dfc26dd3367529b36cf7d4f6c2383e2dffe7a",
+     "25416f0e-a0c0-4104-ba72-75d3390073fa": "b5c658c07838c18373a45a347eb5e19c29483ab6e537386f336fb7c335abf959",
+     "6808a3a2-7c0d-463e-8176-bc058cd43f95": "fd7878c6fe60a26ed85d81b07ea98cc3cdbbcfc4c10cc72c3f5f27b9c9806e2f",
+     "8da2af22-dc61-43a8-8854-2480eeb3decb": "3c531c12fe061d1682c67a35c24699a4692c8554a5defa7668c3e475ba45a1cc",
+     "9dca9a83-e033-4b4f-97d0-c194e8c2f4a5": "4583b575d4fd8f8153d33b6a33fa2b8eb469d57d00095266233218639006edde",
+     "4be4b148-c6d1-4b26-ac18-f66e6bce1429": "2e4fbf483366fc5c40cc267ae5ee279ddc0d3ece33eac12a07a551445881f696",
+     "69fa0c8a-27a5-4eb7-a9f3-5eef7c64c055": "83018a1ef46a9f05c3c40c8cbceba5e74b8c0d1fc7e3c609241ef3994ed4f204",
+     "e88761a1-5ce0-4389-83be-67ca865c3832": "3439cb354b0b917b48a6393bd1820ade88c309678fb3ee482c834c1a0c6b6ce7",
+     "9e562881-21d1-4ca2-a84c-1015b99a9569": "5150c93c6a190ca5ab530b76f38cfc841dbbe2b4c555a29ed68fdce092f60b03",
+     "bdc5103e-a34c-4530-8395-88362e4e18f5": "f7839d405c88e2bcef1895e87cd3d4f77b6d570f85a428c5f0a5551ec48346ba",
+     "a5b295c0-e2d5-4637-bc04-6e75352f72a3": "78b38dd4034c44764e3ab3d4a1716b843f10ab8025603755d3a76aa6e5c3cedc",
+     "120654a5-77ba-486b-a77f-6960de204ccd": "8b882bbe7d1a8d00804d1efe238164a86e041bb76ec279ada4fcd4161943fb85",
+     "993e972d-125a-4d38-a18b-3754cb30c660": "849dbe74f3417ce1d352ad6c8ebf3a2f04a032cbf9853a2c52135c32f0846adb",
+     "74acf548-e343-44dd-a708-fbb0a5cdd909": "c76cd316b81b44d34a65c0a540cf971ee4be909223cea8d29674e884b9426bbd",
+     "3d7b31ed-7def-4b8e-9a9b-09f22342d741": "c2fe9eaacee795f42157bbb35305926faa9155e633ae998721011cab008d8cfc",
+     "ba29bffc-6478-4dd7-80a4-4c3ab6157f59": "4445925692b24c33523e45bf02c52f01d0f2593a9fe1dcf93b8342986c80d36d",
+     "32880df9-87da-46fa-b77b-7fbfbf75aeaf": "120dbc1e1eb52f423dcd613b57050f6617470b73a50a508631ed99b791e361f1",
+     "a244ccea-d73a-4d1b-bdee-773069d31750": "5062e2ca79e21c72de545f6c0887cb8910b34b4a0bad89317d6072d609e8a0ba",
+     "71c89efd-012f-45bb-a3c4-aa091e5abe10": "b3d66ee8fdb44242fd9e72f5545dfbc59d87362e8979c58dff9a189b49ecbc50",
+     "b236d75e-75b9-4665-9432-66afc2469d10": "4e66c641ccbd3c2567384d220d21864b2fab51d8b8cc5c5e11aa7678afcb2d86",
+     "349f8b0a-8d51-4905-b3b3-eca817911b3e": "4e694619ffa8545b89a4671c004891ef4d1446899cf6e8a18d45a8440e88db88",
+     "bfa43808-ab22-411b-9105-1d6366a4d776": "c692dc194ef4233e6f73ae67f8c0aed106ecfa629856dd8696265a8107280b03",
+     "30f12ed2-89de-4d91-9bb6-f5ac760c198d": "ca897db2d0c79ed0fd897ccf8ab5cd732831249990cdd3be731f4ec94e77ef87",
+     "d6ebddce-bcf5-48ed-8596-f91ae56efb73": "5a33ca80b1d6594af8d9f30ebb10b5c268bd8cc9f589c1f223d71c4764ddb235",
+     "ec52d93a-e099-477e-a0fe-4b42e93b318a": "90e772a42fc24126a8ecb88e9a1e83d5cebb16ce4e8e810cb6893698ae371d3f",
+     "00dcc786-156d-4823-9ea4-d51fb15eb593": "79e5f99872873d269a105d5b70ac92f877721f80d2de7a817cfb7aa7ea73e415",
+     "c79d155c-5e02-4ce0-b9d4-54a1e7d16723": "ef8b501060f42e74b263b4034246d020b493a8907c7bfca30de2f495ee1b4677",
+     "f5060212-f6b4-404b-b0e7-ae8aaa1807a5": "14fcde9014440a08ea76fa6d941ffe4aecc2d5d24651d044a698134cc1ca0691",
+     "edfe9ed5-ab63-48a7-96bd-b1c28be02476": "723cffe8da751c1757cd4bc2affed027042af8328817075729a4b43436113b01",
+     "a59516cb-a2db-4859-a173-d04e8ab738b9": "dbf6f0b1e257f4ec83463ad48079add457a69a8fcba270e64cf9401a8a0c4191"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:23b06bb62b8158825e4e005d6114e3f2229e14677581e8b1d396b2159e38ced4",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=despesas-orcamentarias",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/despesas-orcamentarias.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'despesas-orcamentarias' (Recife), 2026-10-13, sha256:23b06bb62b815882…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=despesas-orcamentarias",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'despesas-orcamentarias' (Recife), 2026-10-13, sha256:23b06bb62b815882…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=despesas-orcamentarias"
+  }
+ }
+}

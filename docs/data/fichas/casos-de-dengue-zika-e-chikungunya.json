@@ -1,0 +1,326 @@
+{
+ "dataset": {
+  "name": "casos-de-dengue-zika-e-chikungunya",
+  "title": "Casos de Dengue, Zika e Chikungunya",
+  "id": "3c990c15-29ad-46e5-8fd2-1b83289bb9f5",
+  "resources": 49,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5#3eb8418a72fa",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/casos-de-dengue-zika-e-chikungunya"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.8,
+  "valid_layers": [
+   "L1",
+   "L2",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.515,
+  "high": 0.7150000000000001,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.05,
+   "evaluated_at": "2026-10-03T15:52:11+00:00",
+   "current": true,
+   "facts": {
+    "level": 2,
+    "tables": 40,
+    "verifiable": 40,
+    "conformant": 2
+   },
+   "signals": [
+    {
+     "key": "L1:casos-de-dengue-zika-e-chikungunya",
+     "count": 38,
+     "en": "38 of 40 verifiable file(s) do not conform to the declared schema",
+     "pt": "38 de 40 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-09T13:36:54+00:00",
+   "current": true,
+   "facts": {
+    "rules": [
+     "dengue-birth-after-notification",
+     "dengue-symptoms-after-notification"
+    ],
+    "checks": 45023,
+    "signals": 0,
+    "not_evaluated": []
+   },
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/3c990c15-29ad-46e5-8fd2-1b83289bb9f5#3eb8418a72fa"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:casos-de-dengue-zika-e-chikungunya",
+   "count": 38,
+   "when": null,
+   "en": "38 of 40 verifiable file(s) do not conform to the declared schema",
+   "pt": "38 de 40 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:casos-de-dengue-zika-e-chikungunya",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 38,
+    "evaluated_at": "2026-10-03T15:52:11+00:00",
+    "status": "reported",
+    "en": "38 of 40 verifiable file(s) do not conform to the declared schema",
+    "pt": "38 de 40 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "b300a634-1ab7-49fc-8592-4b45227822a8": "2951dceb1b93febf24c8a620d50e26fc7426e29f4eba19ef1788e81957afd80e",
+     "b0490f6f-f51a-4471-bc9e-a82c59b8e59e": "2a2ecd90a9b9a0f832c6c1ea46a1cc8115ba716dc20823e6aa45d6e8836d5873",
+     "79f9e050-3932-4512-9c9a-ef1e06381c38": "96c9743ff9500d0d54a4568f691ed00cd5f804099078dddf5e52bf050c88b0cd",
+     "ed13983e-8dbd-4c5e-9986-1cc4a859c687": "734a1e88278496958a45aed04bf1ffe529a9f2f4b206f227d0800bd5b8b86dfe",
+     "b37c959b-9a18-4781-9f44-3287c8ee29e6": "0b5c418712d3fb8bc705882bfe3ea923359a3e0465c563a8c1ac40a7861a249d",
+     "f0d2363a-5b8f-4a65-ab12-58d0015178e8": "1e3c4e44d9215f66ee166f1f5913d836a6782c50d32f468d49ba6efcca8b86a5",
+     "55ddeebc-7e15-431a-8136-5faf1fc3d788": "8da9bf51e75c375f7f61af462c9a765045520a12fda831598f6f9d1b10553140",
+     "a7efb4d3-1942-4497-95fc-7a88273b8500": "4a7dd0ca87772d627b62a2c691a3c3e2290147ea5f136635980f90475e539cce",
+     "99cf777e-2d1d-45bd-85a7-960dbdca7f9f": "2a313338536456259270392e1952c99e8edc17e5e9edcf2800d6d6ea35e7e82d",
+     "49028273-234c-4acf-9c3e-a0e1dd21a03a": "8c4c5ca1c02c229f8eba64c365c7b22fae9da0b43d815ef4fbe2884d0e69d5a2",
+     "7b1d7398-4e69-4e84-b912-144a93748ad2": "d2109c215947f5be867ece9b7b781c4f7956307f8a1d1c4c04b285af866c5a88",
+     "cf7dc2c4-a050-454f-9404-465458baa988": "db1d1277d0bf10d7861e0a22973ed1ad0e5598b38badc36442b5cd82ff00815a",
+     "a5bd9a51-57a3-48f4-bdc5-3af350bbc809": "869326ddf0d08a9bd523429409022796ef8d59df5cfc7629133bc204d5d1117f",
+     "8bc815dd-dc60-4716-a696-28d0bfc9569d": "92e8d829f4eb33c888571aea12e06977bdca0f5b4e256bd3132de8d421fa9480",
+     "a6333bda-a688-4935-b79a-8559b3e0e389": "00aea519a31a2e45301a2cba33f1fb3ae0ef23580cd49c1aa7ae891f46ce2adf",
+     "9dde377f-5370-404b-b14d-cefcfd2d03ad": "6a65d6a94ea73d37f560d1172c5cc90bd88c05c7a5882c6d1fe44876eb08b4f7",
+     "c02b0a3b-c41c-4eea-bd6b-0913e13b9da2": "68be3db4eb8d14848c5c7b06cffa778f1666e015a642b5ecee5b7c3e3c99f17d",
+     "3c99170a-22af-4394-80a3-94938be9e198": "938efb4cd4cc4a23c1ee0506b2e315491d44873caf132401512939dfa4acb143",
+     "c2f9c59d-0acc-4fde-8d86-30cf559342ea": "fee8b3dab121d4aa5046fc1755888a3c52928d93e19d1f5749ef7d629563597f",
+     "d58c9c98-c2f1-41b0-8bc7-d1ad141a766c": "6926bd9f0e105c6977e0943b84153e72e04e00ef1e9082de0399748b0239e6cf",
+     "5a96362e-01bc-494b-bcd9-f9afea342432": "1634d59f8e008452849ba0b2a9d76d13d8911ad570da78a47d60dda788439140",
+     "87fc0dd3-18d2-4881-af75-b885502d69e7": "0f30c670c41e8fa0a37d888ba9587fe6a31f28dd52252ebc9ad0878be445726b",
+     "45a675e2-d387-4019-bb6e-4b915b74b1bf": "b723a5f2186567e328377b83e733b2d88adb9f2d7d2e47749c91d3f8ce5fd5a9",
+     "7755fe11-48f0-4797-ac5a-78d6da0fc8d9": "44f5d1952d138b00d9bdacccbb3e913133c1f18ec7cd79c09dba0c98d040b4b5",
+     "18ffe3a6-9f3c-4259-8c85-f3dae9c8d8ae": "529345732689e8c0ba8c0566f1b9a9446ef2a663262ecf64c191616b11baa510",
+     "a727370f-b948-45f2-9eab-63de525e610e": "1d8846e400cd397c1ab659fdc20da865d2fd42015045f55dbfedfad7f954c09b",
+     "816b18c2-783e-4d18-b6c3-4bc4c83491ab": "de41bea29614f26da3c22e7c1341d422e235311f75c3037f26dc48ac069ad35a",
+     "c68598c9-abfc-4cc8-8f5b-4e24063a7923": "088c5e9edf26a6d82762bbb6896f85c02267c73ed2f1f12d16d691a8200dc818",
+     "9631a238-e0a7-4aba-af21-0ca429f04ae7": "3eb0675c5093db8fba9bc34879a434b1e604ba24b1641204db6848185e1a2511",
+     "2fc67253-7580-48a0-b0ba-618fdbbf7307": "cc0a826be0d71e00d04d4e39b8898c183656833e756c1de94ff7d0bbf3d8d1e6",
+     "174737d6-8d7e-49de-ad57-29a1eb983835": "631db8367eec5e4c1cef2dae72b7504839ee47024136921a704c1b651bd2752a",
+     "c5dd621b-2923-4a35-a599-a78d8e283938": "b3b8eaee8437ebcafbcb82fa1de19e944b376994855dbac730b9587caf82df8f",
+     "5dbe902b-cd0a-4029-a4ed-dc2e0e4960e9": "381e4e6c07d35ad21fe98acb1af7c0c1d0355f6df7107c2c46a87721901f1db2",
+     "f30d05cb-04e5-40ac-918f-6fb7659986eb": "6ff09c3c8265fc7d2794e7e0a6cadcbb0abb0e8f3d731ad122b378f8d16434e0",
+     "b59bab01-4b76-4328-b9d7-0d16dca20252": "df3f91a16fee50d97b33ef35a8097e55f4b18bea45a47cc76d3321cea603aa0a",
+     "0af97ed3-5b04-454b-810f-8e64344d2374": "2055c6cbbd5ea096325d0b9e5aae50b5f3f9bc26278207b51f85e584ab28032d",
+     "fabc97d8-8fa2-441d-824a-156a6980b270": "097b241bff41e2cb3688d250b02a609908045dd18295f2091f813919e3bff398",
+     "e23ef98a-7361-47de-8419-fc3b35e60a5e": "448b7435ac3a2ae7e7f625ddaa446962e2027403c1a50e406c278fc0c001fa67",
+     "66acaf24-e9bd-4096-bd5c-2a9fa53b4057": "38ec411e1f935ca5c9ae9d77aaad3e57abcdc1335655fa4d775ec9c808d5f34f",
+     "36b3cc67-8b06-4297-b7e4-db5a1abefaa6": "0df13da4c1848aac2548bae2823522c9a78a1810150bc5ec6e13c3f9c095cf05"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:1f0b3126bc73b868f6649d1913b2b7828d3dcdd17517c9f27380d13f8f1b75bd",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=casos-de-dengue-zika-e-chikungunya",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/casos-de-dengue-zika-e-chikungunya.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'casos-de-dengue-zika-e-chikungunya' (Recife), 2026-10-13, sha256:1f0b3126bc73b868…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=casos-de-dengue-zika-e-chikungunya",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'casos-de-dengue-zika-e-chikungunya' (Recife), 2026-10-13, sha256:1f0b3126bc73b868…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=casos-de-dengue-zika-e-chikungunya"
+  }
+ }
+}

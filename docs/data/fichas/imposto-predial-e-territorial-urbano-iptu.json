@@ -1,0 +1,308 @@
+{
+ "dataset": {
+  "name": "imposto-predial-e-territorial-urbano-iptu",
+  "title": "Imposto Predial e Territorial Urbano (IPTU)",
+  "id": "4a82b8b9-66a1-441c-aece-dfdf1dbbf994",
+  "resources": 23,
+  "last_change": "2026-10-03T05:08:54+00:00",
+  "last_type": "CONTENT_MOD",
+  "entity": "https://dados.recife.pe.gov.br/dataset/4a82b8b9-66a1-441c-aece-dfdf1dbbf994#559a7ffa85f1",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/imposto-predial-e-territorial-urbano-iptu"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.2,
+  "high": 0.7,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.0,
+   "evaluated_at": "2026-10-03T16:25:50+00:00",
+   "current": true,
+   "facts": {
+    "level": 2,
+    "tables": 22,
+    "verifiable": 22,
+    "conformant": 0
+   },
+   "signals": [
+    {
+     "key": "L1:imposto-predial-e-territorial-urbano-iptu",
+     "count": 22,
+     "en": "22 of 22 verifiable file(s) do not conform to the declared schema",
+     "pt": "22 de 22 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/4a82b8b9-66a1-441c-aece-dfdf1dbbf994#559a7ffa85f1"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:imposto-predial-e-territorial-urbano-iptu",
+   "count": 22,
+   "when": null,
+   "en": "22 of 22 verifiable file(s) do not conform to the declared schema",
+   "pt": "22 de 22 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L4",
+   "kind": "simultaneous",
+   "when": "2026-10-03T05:08:54+00:00",
+   "count": 3,
+   "en": "CONTENT_MOD in 3 datasets in the same monitoring cycle (probably one operational event)",
+   "pt": "CONTENT_MOD em 3 conjuntos no mesmo ciclo de monitoramento (provavelmente um único evento operacional)"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:imposto-predial-e-territorial-urbano-iptu",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 22,
+    "evaluated_at": "2026-10-03T16:25:50+00:00",
+    "status": "reported",
+    "en": "22 of 22 verifiable file(s) do not conform to the declared schema",
+    "pt": "22 de 22 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "9a847338-92a6-4b74-b3e8-c8f8b57aff2d": "7858b6679bd730a7b6fe93ca63eadf98a021497c0436a1f786dd30ba09b28bb8",
+     "a024c141-2095-48ac-a8fa-d0d8ac18bce8": "217cb6dc411324dde13c9caf1da27e7660d95fbf3033464ad57a6c5bcf5fd3e0",
+     "d012d6e9-dd6c-40be-8886-c6b553523db3": "1730812e5f3ec2d511b5e7f5626d8bf37379bf1e0e88d0c3f85d28a71a6a9aab",
+     "07f2d539-eebf-40ca-9c6b-b01212ae5a92": "13697032570cd08a383efa83eb9a3e513fdd2f396a52b62a29e72d0612309e9f",
+     "464f31b4-66e0-4403-8c91-137838b57176": "fddddb376da9d3b51f7e5438712440f73930b5f22160ffda2f100bbf27f60907",
+     "96d8d455-f66e-4c48-a237-7a802fbac9c6": "fe43997c176ba7c76702a3664d826e4f3e512c0a2558db8f8c12f4154c068b4e",
+     "ad921387-1166-4daa-a799-a5c2aa70b528": "c34d7a8ac8ba73eebb1fb354635b4e8d779391a5231cfa482374e3f87cf35873",
+     "fb792157-7fa6-42c2-86aa-62ef70080683": "4707b3b0598c7193dccdb718af47e2474b2d1742eeffb7877f1700b8b36104dc",
+     "c1e59583-772c-4745-9cd4-f02d97d630b5": "f546597a64253921f055d842a781cfee045532bb625e1abe103b5c9402b802c0",
+     "51899db8-628a-4901-a0e5-e0a9f57480a3": "3df67fc589ee4201d5e2a8347c8aa714fcaf604f3b0ad494c5e3ffbcad764662",
+     "e46769c9-0698-43fd-9514-f7e75107f633": "5f803f811e959f5d468748ce49cfa501c7e96a7c56999f9230765de18ffea6db",
+     "ae8883cf-2695-45fd-9560-641dbfe99a33": "cd0a5ac3d5d8def5576ed0c98786dfd8f1125960af1b7f9a5dcaeb543138e39b",
+     "a4fe319b-c8d1-4434-a6ea-f7b8fb12b100": "3abbd98e5795909a54863ea2aa4788bd95657b4d088b49e05f88fa39a2c946d4",
+     "887c85e0-7eb0-4497-935a-13b06aa07fa0": "5dde199c5a2ef5d62bcf21cb7aa845a2ca09ccc00eaede067f1f353fa53fd4e4",
+     "6b1e0eea-2194-471d-afce-ee14749555c5": "32d57569340d34de2a7b0bbb5e026f476a3d42ca7fb0c1af4bf90518a230e611",
+     "086445e7-a4a8-4f33-8741-95bef7692348": "2889fbdd8e7b999ba0113c13132d88adc66b52c4ac78610357529fa81b2a13d3",
+     "b936019a-740d-482b-940b-b43bd4c40c18": "db37208d9472ebc8fef8b94749c48360990cde5ab2329086c54f2efca6d6c1cb",
+     "a1b49b4e-7d06-4a10-894b-cfc83ecc6363": "c302d80bdcd9f2fc6a68fcf9c05063eea12e8485330c74d5e1077b3e38c389f3",
+     "f0688488-ecb3-4fd6-962f-d9a6fc024689": "5ebe904aea6a9f89e1b9eaa12f7d2c5527c13ff70373fd53d358b713da0c3571",
+     "2cf76cd6-db08-4e4a-9c11-84eb795e0c3b": "a2c35f9bd82a0d82f211bc2e73ebee2e5356e3671d21c6078a0ab602a06baf0e",
+     "0da535a5-d5ee-46dd-b7c6-b957d09a121c": "a2bfb1f855514d89490667e2c1f15b1f0881e9d2171b59153d1d96973e36ca83",
+     "f75b7017-e47f-498c-ad53-968b804e5747": "92eb6d536a17dbabd18abe7291d2cc64f2798beaabacb858a432578b25bc48c6"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:c2bc53a93d5d2960dff5e6075d558918c1907d0af94d90b4e8a21a1f5c65e705",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-predial-e-territorial-urbano-iptu",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/imposto-predial-e-territorial-urbano-iptu.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'imposto-predial-e-territorial-urbano-iptu' (Recife), 2026-10-13, sha256:c2bc53a93d5d2960…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-predial-e-territorial-urbano-iptu",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'imposto-predial-e-territorial-urbano-iptu' (Recife), 2026-10-13, sha256:c2bc53a93d5d2960…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-predial-e-territorial-urbano-iptu"
+  }
+ }
+}

@@ -1,0 +1,296 @@
+{
+ "dataset": {
+  "name": "manifestacoes-recebidas-via-ouvidoria",
+  "title": "Manifestações recebidas via Ouvidoria",
+  "id": "fef5b737-7bca-4f86-9f11-599e489967ee",
+  "resources": 18,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/fef5b737-7bca-4f86-9f11-599e489967ee#6a0c96f32794",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/manifestacoes-recebidas-via-ouvidoria"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.47999,
+  "high": 0.97999,
+  "band": "undetermined",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.9333,
+   "evaluated_at": "2026-10-03T16:29:01+00:00",
+   "current": true,
+   "facts": {
+    "level": 0,
+    "tables": 18,
+    "verifiable": 15,
+    "conformant": 14
+   },
+   "signals": [
+    {
+     "key": "L1:manifestacoes-recebidas-via-ouvidoria",
+     "count": 1,
+     "en": "1 of 15 verifiable file(s) do not conform to the declared schema",
+     "pt": "1 de 15 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/fef5b737-7bca-4f86-9f11-599e489967ee#6a0c96f32794"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:manifestacoes-recebidas-via-ouvidoria",
+   "count": 1,
+   "when": null,
+   "en": "1 of 15 verifiable file(s) do not conform to the declared schema",
+   "pt": "1 de 15 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:manifestacoes-recebidas-via-ouvidoria",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 1,
+    "evaluated_at": "2026-10-03T16:29:01+00:00",
+    "status": "reported",
+    "en": "1 of 15 verifiable file(s) do not conform to the declared schema",
+    "pt": "1 de 15 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "ba3ce5b3-f9aa-4d71-bffc-6e0bb95a957b": "70766e53982fc4553b1f4e8cafb921a5870c124c5797fcb09f58fa8335a5ae52",
+     "8dd4726e-6465-4f9d-9fb6-dd8f4f9efc18": "7aaf4b3b8e0a84c9741f947295c41873e59067e28b888cecd02362368c027078",
+     "fd1c4d5e-733b-4e2e-9c39-4cd3fef3984d": "cbe0b0b4a8ffb3ce451362c8102dfa407eac2e701e5d3362cc8a78cf51fbfb77",
+     "1b004750-c646-403e-8c9f-406e2dabe428": "4b803c42a743ab41d9e41b27eb04810d10b7817a63ade327e022306f2e1e91c0",
+     "7cf9a2df-d4d1-4a71-96ed-0c283e0b1b69": "4b803c42a743ab41d9e41b27eb04810d10b7817a63ade327e022306f2e1e91c0",
+     "7b93684c-2cc1-4197-b8ce-4d9ebd7d798e": "4b803c42a743ab41d9e41b27eb04810d10b7817a63ade327e022306f2e1e91c0",
+     "314bf542-f026-4e9b-8863-d73769ab99f1": "df5cb792e1c87b8745ec14650a750b72d808d81bf2518c679856f9cc1b9b4156",
+     "07410e34-2bd5-4f9e-9f05-7de5adbb22ab": "df5cb792e1c87b8745ec14650a750b72d808d81bf2518c679856f9cc1b9b4156",
+     "d0d164d8-0691-4676-ac5c-f05d7e5f9489": "df5cb792e1c87b8745ec14650a750b72d808d81bf2518c679856f9cc1b9b4156",
+     "a46ab770-5e71-43e3-8e19-f2aeb22a6d98": "0b6ea3d1b5c85a9b76e87699177dafc94f7e8137480f1e446f7eeb221bb12800",
+     "d125e1cd-9f9d-4ed7-8607-587f271b9870": "0b6ea3d1b5c85a9b76e87699177dafc94f7e8137480f1e446f7eeb221bb12800",
+     "f256add1-85e6-470e-be07-97a576fc59d0": "0b6ea3d1b5c85a9b76e87699177dafc94f7e8137480f1e446f7eeb221bb12800",
+     "428fbd33-d76b-42af-8e1a-2d69f6a7585b": "a8475f3dd37845322684fb5011c6ff8e5ab714fb185ef88906e85b5267c225b4",
+     "defc9f0e-70b0-45ee-b6fe-987f1142db79": "a8475f3dd37845322684fb5011c6ff8e5ab714fb185ef88906e85b5267c225b4",
+     "c9db4376-a896-4498-9c45-319be04dc41c": "a8475f3dd37845322684fb5011c6ff8e5ab714fb185ef88906e85b5267c225b4",
+     "653bffba-5aab-4f74-9c51-56089f498ee5": "b14a58d16d950bb3d8e1e34fd63fb5b75b047ddd0b9eb6c8a7868f523907a3fd",
+     "246fb36e-59b1-46b9-9989-e6e7c28fbd66": "b14a58d16d950bb3d8e1e34fd63fb5b75b047ddd0b9eb6c8a7868f523907a3fd",
+     "9e432161-b2c2-45a4-a97a-178dcc493146": "b14a58d16d950bb3d8e1e34fd63fb5b75b047ddd0b9eb6c8a7868f523907a3fd"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:6852c2a6299d6aeda798dff734de7c566af36a4badb734b0e75fa75f53c726af",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=manifestacoes-recebidas-via-ouvidoria",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/manifestacoes-recebidas-via-ouvidoria.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'manifestacoes-recebidas-via-ouvidoria' (Recife), 2026-10-13, sha256:6852c2a6299d6aed…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=manifestacoes-recebidas-via-ouvidoria",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'manifestacoes-recebidas-via-ouvidoria' (Recife), 2026-10-13, sha256:6852c2a6299d6aed…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=manifestacoes-recebidas-via-ouvidoria"
+  }
+ }
+}

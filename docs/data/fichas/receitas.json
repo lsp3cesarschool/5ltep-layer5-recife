@@ -1,0 +1,303 @@
+{
+ "dataset": {
+  "name": "receitas",
+  "title": "Receitas",
+  "id": "d620f79b-ab87-42ff-825c-0ce2a25694fe",
+  "resources": 27,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/d620f79b-ab87-42ff-825c-0ce2a25694fe#a395660b1c9a",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/receitas"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.464,
+  "high": 0.964,
+  "band": "undetermined",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.88,
+   "evaluated_at": "2026-10-03T17:10:57+00:00",
+   "current": true,
+   "facts": {
+    "level": 3,
+    "tables": 25,
+    "verifiable": 25,
+    "conformant": 22
+   },
+   "signals": [
+    {
+     "key": "L1:receitas",
+     "count": 3,
+     "en": "3 of 25 verifiable file(s) do not conform to the declared schema",
+     "pt": "3 de 25 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/d620f79b-ab87-42ff-825c-0ce2a25694fe#a395660b1c9a"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:receitas",
+   "count": 3,
+   "when": null,
+   "en": "3 of 25 verifiable file(s) do not conform to the declared schema",
+   "pt": "3 de 25 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:receitas",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 3,
+    "evaluated_at": "2026-10-03T17:10:57+00:00",
+    "status": "reported",
+    "en": "3 of 25 verifiable file(s) do not conform to the declared schema",
+    "pt": "3 de 25 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "9ea7be3e-595e-4763-a427-5364d871321a": "65b33e7a21afb63d1e131d4ec4f01d5ce1bc3594e28ade94c9e056a49c9d115c",
+     "b5361f41-98a2-4b41-9dc9-0b3ec6927cec": "dce41f86c956eae5c8d0fcc7a890974ca3cd9f5333d74e269215cd83c23b810a",
+     "4b99433d-082a-43c2-8897-91a4c40e22c3": "309a68d7a4fa62d9e2d3b1ccd565ebea55bec1966f3d641aa4586199e34bf959",
+     "58930e91-c8a8-432c-b9a2-568b9c6a0495": "2d1314584009d649afb7a8312f93cf5be13b892466cb515b49675ccfa2fbf26f",
+     "ad7052eb-239e-4848-a233-a030fee17bad": "17e5f2613fb775dabb250f7b352bf5471d90f346e5171c00b16a557aafdee23c",
+     "2797a465-9d65-4efe-9dd7-be7621d5ca8e": "14ef4a89bea3a32b2cfba6484c2236913880d333298ea9a1f15d56eff9269978",
+     "b4e6656b-7c01-48c9-96b6-57af4dd12070": "21b6eaf34193cbc97dfc4ea10aeef0db995aae25525e9bf5e766c3b57afa672e",
+     "c95f070c-1d3e-4dd8-8cf1-0b36b134b4eb": "0e195e2ea1f736e91153786a1573359fe62a58c82226b6e27f884639cc2e01bc",
+     "082bf657-2f34-47ae-928e-573befb025b0": "422f62b7d57ad056fe8d47bc0693a82787ea3959c1331cb2ddfb089e8ac7191a",
+     "a181ab4a-669d-493f-a26e-7dd71a31f71d": "ffa69f9e9c2d26aab3a9aa40ab4e0177a0dc20692092145a6e928305c9686abc",
+     "d14a6333-02d0-4c25-8ca9-84a85e9a72b0": "ad2ae8d24c6bc7cd122b93979ac453331d80accb3a1c7709791fede9de11e77f",
+     "fd0c6f4e-8632-420b-a6dd-bc87b74ad309": "9e0240d7914ab7e21a2a1f8dfb1aed272653c18a6042827eb2a66824b33c3510",
+     "34d0529b-b76d-4af4-a149-da2f69c8d9f7": "98e67d6c7a69597d698656c2d7f7cbb4115a5c96ddae611eef321a42596679e6",
+     "b049d350-d850-4777-bf34-3757665cdc30": "4a60741d06230b205d7d29f53816adb25cdd293886d7a589fd9770fd783b08af",
+     "0d192ef2-907f-43a1-b59b-938252f11faf": "f2683ac7082d6e2524033c9a577e830a36aaff39ea428e9d94e3f49d452594c9",
+     "011b166f-5509-4f82-9d25-211d49fc17ec": "77cee5de4b0011797e8f5f096b477b6c8990874982d736c4496c05854214fdc8",
+     "85ac34d9-77ae-49fe-8e44-05a5b4b72a78": "3797e62e172d6ccc92f4541b38f549a85331e718cee33be85c4880caa9c1c6c2",
+     "7c879ac7-b93a-4df5-b8fd-fb9c3fb22176": "b183d3cd13c72b8d449b777dc71b6649a73f3b2748b42cc86d79ee10df7359c0",
+     "bd0b74cf-32ec-4151-a5ef-131ce9e9b8bf": "0101b70937185ecd6a7dd88729f3e63a27d0bef475b054a788411c80c051a9e7",
+     "8b123bf2-2442-42e2-870e-3d8912d20f5c": "dd9697b328af525e122916e4ec24275cdd1b5993f8c4aa2993d342797989bbd8",
+     "a1b28cfe-1a02-4a02-9ea0-1375e094be61": "1a7194bb842fbd17d8a6239048c8d302821a9caf5fce630d35b36dc70b4bdd4b",
+     "614f2150-0bcc-48bf-9861-2671598c1b83": "9655474e96c9d42f3ea44195bc6ce7577734c00d710c4e7ad99bea8c4416650f",
+     "79026c79-2143-4d79-8925-0b981e872dba": "099f2f50dc226b36d5dfc4c2cf5397d024a07bb2d4fb70f93a6374c9d3d7e8df",
+     "9ece874b-740a-41ca-87c1-36440c6a2811": "312b2dd8942466a4fd6b4720fac9d5602b6e16326416973a4da1a2c4a7bbed6f",
+     "158eb450-9dc5-4f19-9fe5-21b7343fe7e7": "f4aec5c7e03d5c6e1e86523c29582bcf98fa5443940dc927e75218d910246d1d"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:5608f018c0540bba04d61a6a9f7253ae23388e5db6eeed67b8b5a611a12850f2",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=receitas",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/receitas.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'receitas' (Recife), 2026-10-13, sha256:5608f018c0540bba…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=receitas",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'receitas' (Recife), 2026-10-13, sha256:5608f018c0540bba…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=receitas"
+  }
+ }
+}

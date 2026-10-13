@@ -1,0 +1,302 @@
+{
+ "dataset": {
+  "name": "registro-de-atendimentos-da-defesa-civil",
+  "title": "Registro de Atendimentos da Defesa Civil",
+  "id": "ebda936c-f15a-4e0d-b8b6-5a9e270b0b67",
+  "resources": 24,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/ebda936c-f15a-4e0d-b8b6-5a9e270b0b67#3a1f09b6a978",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/registro-de-atendimentos-da-defesa-civil"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.33635000000000004,
+  "high": 0.83635,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.4545,
+   "evaluated_at": "2026-10-03T17:17:34+00:00",
+   "current": true,
+   "facts": {
+    "level": 0,
+    "tables": 24,
+    "verifiable": 11,
+    "conformant": 5
+   },
+   "signals": [
+    {
+     "key": "L1:registro-de-atendimentos-da-defesa-civil",
+     "count": 6,
+     "en": "6 of 11 verifiable file(s) do not conform to the declared schema",
+     "pt": "6 de 11 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/ebda936c-f15a-4e0d-b8b6-5a9e270b0b67#3a1f09b6a978"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:registro-de-atendimentos-da-defesa-civil",
+   "count": 6,
+   "when": null,
+   "en": "6 of 11 verifiable file(s) do not conform to the declared schema",
+   "pt": "6 de 11 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:registro-de-atendimentos-da-defesa-civil",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 6,
+    "evaluated_at": "2026-10-03T17:17:34+00:00",
+    "status": "reported",
+    "en": "6 of 11 verifiable file(s) do not conform to the declared schema",
+    "pt": "6 de 11 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "ef03b0e3-0c83-4eb8-a2fb-97867d195204": "a3bde6e605064761cca532b02244f01f72fd19ac9d9ab05352f25d44f52cb1e5",
+     "fed15150-ff77-41c6-9c1d-5055ae109903": "a3bde6e605064761cca532b02244f01f72fd19ac9d9ab05352f25d44f52cb1e5",
+     "f907decb-0fb6-491b-8b6c-0f53f277f413": "a3bde6e605064761cca532b02244f01f72fd19ac9d9ab05352f25d44f52cb1e5",
+     "bbd37e34-44f7-4c21-a906-e4a2f560a359": "2bd11da20a8c19ad1d6169a217b5741f97df182c874ed6f8ffc17fda4d21d434",
+     "6d5cf1e6-3249-4d87-bc0d-a57ff5ba43e1": "2bd11da20a8c19ad1d6169a217b5741f97df182c874ed6f8ffc17fda4d21d434",
+     "7c7bb871-3906-4d82-8993-857c9e6f137b": "2bd11da20a8c19ad1d6169a217b5741f97df182c874ed6f8ffc17fda4d21d434",
+     "0f276561-43c2-4233-a539-cbfdd1b38d16": "a51417a310b32e1bf8391746ae1d949f18de91b6029bd7ca5a8b838fb13cc029",
+     "63e420ef-fd85-4d07-a528-50a5b88c7edf": "a51417a310b32e1bf8391746ae1d949f18de91b6029bd7ca5a8b838fb13cc029",
+     "921d87c7-5ace-4856-9e3f-c31521259c36": "a51417a310b32e1bf8391746ae1d949f18de91b6029bd7ca5a8b838fb13cc029",
+     "71967fab-750b-44a9-8a86-405a99eb576c": "2b6738c5e2f97f691eacc3ec564816c29a61c14f6d56f3c6f3dd3d8c732d222f",
+     "4df5a2d2-507c-4ccf-8bdf-c7dc1f73fe59": "2b6738c5e2f97f691eacc3ec564816c29a61c14f6d56f3c6f3dd3d8c732d222f",
+     "10203dd4-9052-4a76-95eb-fd858aa053d4": "2b6738c5e2f97f691eacc3ec564816c29a61c14f6d56f3c6f3dd3d8c732d222f",
+     "3362394d-0b60-4607-8f35-06421f7ce15b": "ff5f7da5f71169f8f6f1306e8e4c4145852b4315de168c6046561bdecf1505af",
+     "b2deb71c-6a7a-4eda-9997-c04575de5eba": "ff5f7da5f71169f8f6f1306e8e4c4145852b4315de168c6046561bdecf1505af",
+     "bf6f5af8-3556-425c-bfec-0eddccdeeb73": "ff5f7da5f71169f8f6f1306e8e4c4145852b4315de168c6046561bdecf1505af",
+     "a2e18f69-9d10-4482-8f5f-04bc7bd2e8e7": "db105a62b09671ac180d946edb15965b3be5d4e409379efca4f6d6bdbc8217f6",
+     "aad476ff-be01-4543-9b7e-b0d62fee1903": "db105a62b09671ac180d946edb15965b3be5d4e409379efca4f6d6bdbc8217f6",
+     "559ce500-deab-467d-862e-cf50332a9c26": "db105a62b09671ac180d946edb15965b3be5d4e409379efca4f6d6bdbc8217f6",
+     "9bb859e1-19ae-4b95-9246-139b9273846f": "ac637a8b03aa8cca922267c9664f87b0d080ddd7f62e675edbf82a2587baab59",
+     "a3a25520-de12-4f56-ae05-6dc1ec4c6207": "11ac341344957d08e4d42a6c5907b24bda74320f8c5b1183eab5ff0a7185b5a1",
+     "40e0558f-dc49-4ec7-b5e6-5a791703ae34": "2de665e3d7dc6e66a1fad13e3bedb7c746ce5e280d93d30a788c0d356707a4e5",
+     "932fee1e-80fd-49f8-9ae3-6e8dd96e33a3": "b5b399d6ae6f888b536c9614b4b473c671315767458b21acc07370e534e06a0b",
+     "9a5103f7-6bd0-4694-90d6-7e776b1e372d": "fcf9d84cdc3e10e749005ec6ea52ede6e92a48d814647c2aac5882fc3b3b9f53",
+     "b81bf4cc-ae19-4a43-94a7-f11b3e0b662b": "5fcb19228a8fa28b081006d9ba857cb777bd7cbef73fc13971bf3baaa4fab1f5"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:866ea3e33c6c96522eda3a5c2a2a1af60e2e6f1ce5ecbe8a8ff8ab8c7328fb03",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-de-atendimentos-da-defesa-civil",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/registro-de-atendimentos-da-defesa-civil.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'registro-de-atendimentos-da-defesa-civil' (Recife), 2026-10-13, sha256:866ea3e33c6c9652…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-de-atendimentos-da-defesa-civil",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'registro-de-atendimentos-da-defesa-civil' (Recife), 2026-10-13, sha256:866ea3e33c6c9652…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-de-atendimentos-da-defesa-civil"
+  }
+ }
+}

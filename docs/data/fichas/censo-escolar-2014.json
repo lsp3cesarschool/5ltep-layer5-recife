@@ -1,0 +1,288 @@
+{
+ "dataset": {
+  "name": "censo-escolar-2014",
+  "title": "Censo Escolar 2014",
+  "id": "cfdd7814-fcbc-4a37-adc8-fdb8406171b7",
+  "resources": 21,
+  "last_change": null,
+  "last_type": null,
+  "entity": "https://dados.recife.pe.gov.br/dataset/cfdd7814-fcbc-4a37-adc8-fdb8406171b7#c52538cbcbc5",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/censo-escolar-2014"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.29000000000000004,
+  "high": 0.79,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.3,
+   "evaluated_at": "2026-10-03T15:55:11+00:00",
+   "current": true,
+   "facts": {
+    "level": 2,
+    "tables": 10,
+    "verifiable": 10,
+    "conformant": 3
+   },
+   "signals": [
+    {
+     "key": "L1:censo-escolar-2014",
+     "count": 7,
+     "en": "7 of 10 verifiable file(s) do not conform to the declared schema",
+     "pt": "7 de 10 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "current": true,
+   "facts": {
+    "observations": 35,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/cfdd7814-fcbc-4a37-adc8-fdb8406171b7#c52538cbcbc5"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:censo-escolar-2014",
+   "count": 7,
+   "when": null,
+   "en": "7 of 10 verifiable file(s) do not conform to the declared schema",
+   "pt": "7 de 10 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:censo-escolar-2014",
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 7,
+    "evaluated_at": "2026-10-03T15:55:11+00:00",
+    "status": "reported",
+    "en": "7 of 10 verifiable file(s) do not conform to the declared schema",
+    "pt": "7 de 10 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "155d2cdb-2e42-4c23-b89f-f6dff3895b9b": "8bb4261d211c203d5457a6af6b268664b34b839a74246e89f8e28bfdcf8bf68d",
+     "2ac0a4d0-6f74-4086-961c-18b0b88c1d2b": "68edc0001d75e6f047293b00f8870a7de1f9cd6ec22898c515d761feb260b38b",
+     "b4f66038-88ea-4b85-85fb-e8ff38fc1237": "f763b1a0fe062ec87fb7b47c0d5316f57f018f64330609c62b732c5507cf28d7",
+     "43bc9239-2a70-41ce-be2d-8ed632e77477": "1e3649691f6f2b39acecb7e53556a7bda10d19ff655972d3a0ffff10f5994592",
+     "99f75cce-f13b-444f-bd2e-a986643d60f0": "60812a1f671211955230355e43697d2f02f8b38b2decaab424766e5642bfa37d",
+     "32ded9c0-3d5b-421a-8792-d94bb2ecfa6b": "2f4fd18d0b9b2ef65226b6dc1791e628c6099ede9cb53618af4ec3507d8a8167",
+     "af7abe71-58e2-48dd-b5fe-91fa87967f16": "efeb52ac3b18ab51853058aec82275924463cb33bad6cfd79b7d8bef0dca18e6",
+     "392d5d76-0845-4066-bf27-68d0792d8cbe": "125bc19a7b58d6a7e75ffa9cb70f6b2c5d3f90222386e5b66374f2fd5bd1db69",
+     "f5d000dd-42d6-4cc2-8f47-9f0d4dbcc0ee": "04bd9fc70180dfef92f7b66cc706948786c701793a156f8220f067081cf4cf61",
+     "68b27e97-c22e-4a9d-8f5f-e1bd9f63645e": "d74e81069ee9ba10a20354bb4bcac3bccead292544c471ad74b7107366758834"
+    }
+   }
+  ],
+  "closed": []
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-12T11:31:20+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "12348edf1e6bfa3c02e744b7ca5ebd6ed63c6757",
+      "date": "2026-10-12T11:31:20Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T13:36:58+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
+      "date": "2026-10-09T13:37:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-09T19:41:07+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
+      "date": "2026-10-09T19:39:59Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
+      "date": "2026-10-09T19:41:07Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
+      "date": "2026-10-13T10:53:27Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
+      "date": "2026-10-13T14:05:11Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-10-13T19:19:31+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
+  "run_id": "38453909992"
+ },
+ "ficha": {
+  "id": "sha256:1733ffaf0c97eebd42f24d7b92dcd526e07e9ba4912d01a37cbc8783bf8bbf95",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-escolar-2014",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/censo-escolar-2014.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'censo-escolar-2014' (Recife), 2026-10-13, sha256:1733ffaf0c97eebd…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-escolar-2014",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'censo-escolar-2014' (Recife), 2026-10-13, sha256:1733ffaf0c97eebd…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-escolar-2014"
+  }
+ }
+}
