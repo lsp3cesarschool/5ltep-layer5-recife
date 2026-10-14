@@ -3,37 +3,29 @@
   "name": "conecta-recife",
   "title": "Conecta Recife Wifi",
   "id": "077c537f-49ef-47e6-b2bf-410f971dcd68",
-  "resources": 4,
-  "last_change": null,
-  "last_type": null,
-  "entity": "https://dados.recife.pe.gov.br/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68#9ea1c809eb84",
+  "resources": 5,
+  "last_change": "2026-10-13T22:38:15+00:00",
+  "last_type": "SCHEMA_DRIFT",
+  "entity": "https://dados.recife.pe.gov.br/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68#abe0f13b9d09",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/conecta-recife"
  },
  "qs": {
-  "kind": "partial",
+  "kind": "none",
   "factor": 1.0,
-  "coverage": 0.5,
+  "coverage": 0.2,
   "valid_layers": [
-   "L1",
    "L4"
   ],
   "integrity": [],
-  "low": 0.35,
-  "high": 0.85,
-  "band": "undetermined",
-  "eligible": false,
-  "missing_layers": [
-   "L2",
-   "L3"
-  ]
+  "band": null
  },
  "layers": {
   "L1": {
-   "status": "valid",
-   "reason": null,
+   "status": "out_of_scope",
+   "reason": "structure_changed_after",
    "rate": 0.5,
    "evaluated_at": "2026-10-03T16:07:23+00:00",
-   "current": true,
+   "current": null,
    "facts": {
     "level": 3,
     "tables": 2,
@@ -70,13 +62,13 @@
   "L4": {
    "status": "valid",
    "reason": null,
-   "rate": 1.0,
-   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "rate": 0.972972972972973,
+   "evaluated_at": "2026-10-14T04:44:08+00:00",
    "current": true,
    "facts": {
-    "observations": 35,
-    "critical_in_window": 0,
-    "entity": "https://dados.recife.pe.gov.br/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68#9ea1c809eb84"
+    "observations": 37,
+    "critical_in_window": 1,
+    "entity": "https://dados.recife.pe.gov.br/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68#abe0f13b9d09"
    },
    "signals": []
   }
@@ -90,6 +82,13 @@
    "when": null,
    "en": "1 of 2 verifiable file(s) do not conform to the declared schema",
    "pt": "1 de 2 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L4",
+   "kind": "scope",
+   "when": "2026-10-13T22:38:15+00:00",
+   "en": "the dataset structure changed (SCHEMA_DRIFT): earlier evaluations no longer cover it",
+   "pt": "a estrutura do conjunto mudou (SCHEMA_DRIFT): avaliações anteriores deixam de cobri-lo"
   }
  ],
  "outcomes": {
@@ -100,13 +99,14 @@
     "first_reported": "2026-10-13T19:19:31+00:00",
     "count": 1,
     "evaluated_at": "2026-10-03T16:07:23+00:00",
-    "status": "reported",
+    "status": "not_reassessed",
     "en": "1 of 2 verifiable file(s) do not conform to the declared schema",
     "pt": "1 de 2 arquivo(s) verificável(is) fora do esquema declarado",
     "digests": {
      "856c7213-1921-4238-9c83-befa69b9b68d": "2ba777ecd9dbd392e3657d8fa544761f7f2d4e4f437554e0411c7b079f6013f7",
      "6e5b6c56-c02e-4d3d-a308-99f47e7ccf69": "392bce65d6c1c61bc23efec8199b60e90e92bbe541276d3941b6b4651bacaccc"
-    }
+    },
+    "first_change_seen": "2026-10-14T10:07:43+00:00"
    }
   ],
   "closed": []
@@ -139,14 +139,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-09T13:36:58+00:00",
+   "generated_at": "2026-10-14T09:39:43+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
-      "date": "2026-10-09T13:37:11Z"
+      "sha": "fce20a9b622971c43a3e1cafe741d725554408f6",
+      "date": "2026-10-14T09:40:00Z"
      }
     }
    ],
@@ -187,30 +187,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "generated_at": "2026-10-14T04:45:13.262446+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
-      "date": "2026-10-13T14:05:11Z"
+      "sha": "c1d0b8de50166d85472debe7cb91be58ed01fd4b",
+      "date": "2026-10-14T04:45:13Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
-      "date": "2026-10-13T10:53:27Z"
+      "sha": "a7cb7abaf5c63a8ce8b3d6383a25877d54070fc7",
+      "date": "2026-10-14T08:56:23Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
-      "date": "2026-10-13T14:05:11Z"
+      "sha": "c1d0b8de50166d85472debe7cb91be58ed01fd4b",
+      "date": "2026-10-14T04:45:13Z"
      }
     }
    ],
@@ -262,19 +262,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-13T19:19:31+00:00",
+ "generated_at": "2026-10-14T10:07:43+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
-  "run_id": "38453909992"
+  "commit": "341491e5004bc66d2f2abb76ffd0cfdd6f90b89c",
+  "run_id": "38547361749"
  },
  "ficha": {
-  "id": "sha256:85864aa891ea1ff9472ed848b2510ab86135e054d67461dc3343f5207162a6b6",
+  "id": "sha256:5c8373da7c9e115524e8c4f6df6576ae4e7989b25828dccebd82c6ae4e4d906b",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/conecta-recife.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'conecta-recife' (Recife), 2026-10-13, sha256:85864aa891ea1ff9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'conecta-recife' (Recife), 2026-10-13, sha256:85864aa891ea1ff9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife"
+   "en": "5L-TEP Layer 5 record of 'conecta-recife' (Recife), 2026-10-14, sha256:5c8373da7c9e1155…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'conecta-recife' (Recife), 2026-10-14, sha256:5c8373da7c9e1155…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife"
   }
  }
 }

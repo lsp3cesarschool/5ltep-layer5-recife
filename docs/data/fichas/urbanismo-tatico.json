@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-13T14:03:58+00:00",
+   "evaluated_at": "2026-10-14T04:44:08+00:00",
    "current": true,
    "facts": {
-    "observations": 35,
+    "observations": 37,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/006e98cb-97b1-45c0-9a27-268a046acebb#b6cc6a2afe5c"
    },
@@ -100,7 +100,7 @@
     "first_reported": "2026-10-13T19:19:31+00:00",
     "count": 1,
     "evaluated_at": "2026-10-03T17:27:50+00:00",
-    "status": "reported",
+    "status": "not_reassessed",
     "en": "1 of 1 verifiable file(s) do not conform to the declared schema",
     "pt": "1 de 1 arquivo(s) verificável(is) fora do esquema declarado",
     "digests": {
@@ -138,14 +138,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-09T13:36:58+00:00",
+   "generated_at": "2026-10-14T09:39:43+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "0be5764217fd426c8edf60ec50b534ee1a83e85e",
-      "date": "2026-10-09T13:37:11Z"
+      "sha": "fce20a9b622971c43a3e1cafe741d725554408f6",
+      "date": "2026-10-14T09:40:00Z"
      }
     }
    ],
@@ -186,30 +186,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-13T14:05:11.032893+00:00",
+   "generated_at": "2026-10-14T04:45:13.262446+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
-      "date": "2026-10-13T14:05:11Z"
+      "sha": "c1d0b8de50166d85472debe7cb91be58ed01fd4b",
+      "date": "2026-10-14T04:45:13Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "8d92d769ecf2c1626d996484040970a682d96522",
-      "date": "2026-10-13T10:53:27Z"
+      "sha": "a7cb7abaf5c63a8ce8b3d6383a25877d54070fc7",
+      "date": "2026-10-14T08:56:23Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "93fa71ea909b265e630c49b1ed7820f3b8d4c674",
-      "date": "2026-10-13T14:05:11Z"
+      "sha": "c1d0b8de50166d85472debe7cb91be58ed01fd4b",
+      "date": "2026-10-14T04:45:13Z"
      }
     }
    ],
@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-13T19:19:31+00:00",
+ "generated_at": "2026-10-14T10:07:43+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "149035ad2c07ea9cc546871e10b11047adfdf473",
-  "run_id": "38453909992"
+  "commit": "341491e5004bc66d2f2abb76ffd0cfdd6f90b89c",
+  "run_id": "38547361749"
  },
  "ficha": {
-  "id": "sha256:5b2d355ff332940b35f6daa1361445b69c46adaa392e5984854311ef7b9acefa",
+  "id": "sha256:8485aac03100692f1c965a8867b8aef7456bc47f18249e5abed6071b3d8778e7",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=urbanismo-tatico",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/urbanismo-tatico.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'urbanismo-tatico' (Recife), 2026-10-13, sha256:5b2d355ff332940b…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=urbanismo-tatico",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'urbanismo-tatico' (Recife), 2026-10-13, sha256:5b2d355ff332940b…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=urbanismo-tatico"
+   "en": "5L-TEP Layer 5 record of 'urbanismo-tatico' (Recife), 2026-10-14, sha256:8485aac03100692f…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=urbanismo-tatico",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'urbanismo-tatico' (Recife), 2026-10-14, sha256:8485aac03100692f…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=urbanismo-tatico"
   }
  }
 }
