@@ -4,9 +4,9 @@
   "title": "Conecta Recife Wifi",
   "id": "077c537f-49ef-47e6-b2bf-410f971dcd68",
   "resources": 5,
-  "last_change": "2026-10-13T22:38:15+00:00",
-  "last_type": "SCHEMA_DRIFT",
-  "entity": "https://dados.recife.pe.gov.br/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68#abe0f13b9d09",
+  "last_change": "2026-10-14T21:36:03+00:00",
+  "last_type": "CONTENT_MOD",
+  "entity": "https://dados.recife.pe.gov.br/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68#24f151e312a3",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/conecta-recife"
  },
  "qs": {
@@ -62,15 +62,23 @@
   "L4": {
    "status": "valid",
    "reason": null,
-   "rate": 0.972972972972973,
-   "evaluated_at": "2026-10-14T04:44:08+00:00",
+   "rate": 0.975609756097561,
+   "evaluated_at": "2026-10-15T04:26:23+00:00",
    "current": true,
    "facts": {
-    "observations": 37,
+    "observations": 41,
     "critical_in_window": 1,
-    "entity": "https://dados.recife.pe.gov.br/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68#abe0f13b9d09"
+    "entity": "https://dados.recife.pe.gov.br/dataset/077c537f-49ef-47e6-b2bf-410f971dcd68#24f151e312a3"
    },
-   "signals": []
+   "signals": [
+    {
+     "key": "L4:access:2026-10-14T21:36:03+00:00",
+     "count": 1,
+     "when": "2026-10-14T21:36:03+00:00",
+     "en": "1 resource URL(s) changed (1 moved from dados.recife.pe.gov.br to dados.recife.pe.gov.br:443); file size updated; file date updated",
+     "pt": "1 URL(s) de recurso alterada(s) (1 movida(s) de dados.recife.pe.gov.br para dados.recife.pe.gov.br:443); tamanho do arquivo atualizado; data do arquivo atualizada"
+    }
+   ]
   }
  },
  "findings": [
@@ -82,6 +90,15 @@
    "when": null,
    "en": "1 of 2 verifiable file(s) do not conform to the declared schema",
    "pt": "1 de 2 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L4",
+   "kind": "signal",
+   "key": "L4:access:2026-10-14T21:36:03+00:00",
+   "count": 1,
+   "when": "2026-10-14T21:36:03+00:00",
+   "en": "1 resource URL(s) changed (1 moved from dados.recife.pe.gov.br to dados.recife.pe.gov.br:443); file size updated; file date updated",
+   "pt": "1 URL(s) de recurso alterada(s) (1 movida(s) de dados.recife.pe.gov.br para dados.recife.pe.gov.br:443); tamanho do arquivo atualizado; data do arquivo atualizada"
   },
   {
    "layer": "L4",
@@ -107,6 +124,20 @@
      "6e5b6c56-c02e-4d3d-a308-99f47e7ccf69": "392bce65d6c1c61bc23efec8199b60e90e92bbe541276d3941b6b4651bacaccc"
     },
     "first_change_seen": "2026-10-14T10:07:43+00:00"
+   },
+   {
+    "key": "L4:access:2026-10-14T21:36:03+00:00",
+    "layer": "L4",
+    "first_reported": "2026-10-15T09:50:12+00:00",
+    "count": 1,
+    "evaluated_at": "2026-10-15T04:26:23+00:00",
+    "status": "reported",
+    "en": "1 resource URL(s) changed (1 moved from dados.recife.pe.gov.br to dados.recife.pe.gov.br:443); file size updated; file date updated",
+    "pt": "1 URL(s) de recurso alterada(s) (1 movida(s) de dados.recife.pe.gov.br para dados.recife.pe.gov.br:443); tamanho do arquivo atualizado; data do arquivo atualizada",
+    "digests": {
+     "856c7213-1921-4238-9c83-befa69b9b68d": "2ba777ecd9dbd392e3657d8fa544761f7f2d4e4f437554e0411c7b079f6013f7",
+     "6e5b6c56-c02e-4d3d-a308-99f47e7ccf69": "392bce65d6c1c61bc23efec8199b60e90e92bbe541276d3941b6b4651bacaccc"
+    }
    }
   ],
   "closed": []
@@ -187,30 +218,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-14T04:45:13.262446+00:00",
+   "generated_at": "2026-10-15T04:27:46.393718+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "c1d0b8de50166d85472debe7cb91be58ed01fd4b",
-      "date": "2026-10-14T04:45:13Z"
+      "sha": "43d8ec8c8b1821978ae8dcf411242304c7a596f9",
+      "date": "2026-10-15T04:27:46Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "a7cb7abaf5c63a8ce8b3d6383a25877d54070fc7",
-      "date": "2026-10-14T08:56:23Z"
+      "sha": "1b72f9b353246a25b7a4cfd221930350afec2ed8",
+      "date": "2026-10-15T08:31:01Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "c1d0b8de50166d85472debe7cb91be58ed01fd4b",
-      "date": "2026-10-14T04:45:13Z"
+      "sha": "43d8ec8c8b1821978ae8dcf411242304c7a596f9",
+      "date": "2026-10-15T04:27:46Z"
      }
     }
    ],
@@ -262,19 +293,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-14T10:07:43+00:00",
+ "generated_at": "2026-10-15T09:50:12+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "341491e5004bc66d2f2abb76ffd0cfdd6f90b89c",
-  "run_id": "38547361749"
+  "commit": "b08a5088e36ac8051f6414eb240a5862eb2f1af7",
+  "run_id": "38715853270"
  },
  "ficha": {
-  "id": "sha256:5c8373da7c9e115524e8c4f6df6576ae4e7989b25828dccebd82c6ae4e4d906b",
+  "id": "sha256:a3fe3eb0f3f8cd14ba7e3eff28023f726985f7400e7b8c1b214943493c5ada0d",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/conecta-recife.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'conecta-recife' (Recife), 2026-10-14, sha256:5c8373da7c9e1155…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'conecta-recife' (Recife), 2026-10-14, sha256:5c8373da7c9e1155…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife"
+   "en": "5L-TEP Layer 5 record of 'conecta-recife' (Recife), 2026-10-15, sha256:a3fe3eb0f3f8cd14…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'conecta-recife' (Recife), 2026-10-15, sha256:a3fe3eb0f3f8cd14…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=conecta-recife"
   }
  }
 }

@@ -4,9 +4,9 @@
   "title": "Licenciamento Ambiental",
   "id": "75869ab7-ccce-40d6-aed6-4afca4c8cc82",
   "resources": 2,
-  "last_change": null,
-  "last_type": null,
-  "entity": "https://dados.recife.pe.gov.br/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82#b5d002fb20b5",
+  "last_change": "2026-10-14T17:02:55+00:00",
+  "last_type": "CONTENT_MOD",
+  "entity": "https://dados.recife.pe.gov.br/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82#3ab2b929a417",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/licenciamento-ambiental"
  },
  "qs": {
@@ -33,7 +33,7 @@
    "reason": null,
    "rate": 1.0,
    "evaluated_at": "2026-10-03T16:26:35+00:00",
-   "current": true,
+   "current": false,
    "facts": {
     "level": 4,
     "tables": 1,
@@ -47,7 +47,7 @@
    "reason": null,
    "rate": 0.9998101602247703,
    "evaluated_at": "2026-10-14T09:39:40+00:00",
-   "current": true,
+   "current": false,
    "facts": {
     "rules": [
      "enterprise-coordinates-outside-recife",
@@ -80,12 +80,12 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-14T04:44:08+00:00",
+   "evaluated_at": "2026-10-15T04:26:23+00:00",
    "current": true,
    "facts": {
-    "observations": 37,
+    "observations": 41,
     "critical_in_window": 0,
-    "entity": "https://dados.recife.pe.gov.br/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82#b5d002fb20b5"
+    "entity": "https://dados.recife.pe.gov.br/dataset/75869ab7-ccce-40d6-aed6-4afca4c8cc82#3ab2b929a417"
    },
    "signals": []
   }
@@ -99,6 +99,14 @@
    "when": null,
    "en": "15 signal(s) of rule 'Licence issued before the request was filed' in 17808 check(s)",
    "pt": "15 sinal(is) da regra 'Licença emitida antes da entrada do pedido' em 17808 verificação(ões)"
+  },
+  {
+   "layer": "L4",
+   "kind": "simultaneous",
+   "when": "2026-10-14T17:02:55+00:00",
+   "count": 3,
+   "en": "CONTENT_MOD in 3 datasets in the same monitoring cycle (probably one operational event)",
+   "pt": "CONTENT_MOD em 3 conjuntos no mesmo ciclo de monitoramento (provavelmente um único evento operacional)"
   }
  ],
  "outcomes": {
@@ -109,12 +117,13 @@
     "first_reported": "2026-10-13T19:19:31+00:00",
     "count": 15,
     "evaluated_at": "2026-10-09T13:36:55+00:00",
-    "status": "unchanged",
+    "status": "changed_signal_persists",
     "en": "15 signal(s) of rule 'Licence issued before the request was filed' in 17808 check(s)",
     "pt": "15 sinal(is) da regra 'Licença emitida antes da entrada do pedido' em 17808 verificação(ões)",
     "digests": {
      "982d6c85-906a-4ea8-90e0-31f55eac63f9": "17e41de87cd7b4d3d6d652fe26278d4266ecae6afb9459e4a8874af96faca0a2"
-    }
+    },
+    "first_change_seen": "2026-10-15T09:50:12+00:00"
    }
   ],
   "closed": []
@@ -195,30 +204,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-14T04:45:13.262446+00:00",
+   "generated_at": "2026-10-15T04:27:46.393718+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "c1d0b8de50166d85472debe7cb91be58ed01fd4b",
-      "date": "2026-10-14T04:45:13Z"
+      "sha": "43d8ec8c8b1821978ae8dcf411242304c7a596f9",
+      "date": "2026-10-15T04:27:46Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "a7cb7abaf5c63a8ce8b3d6383a25877d54070fc7",
-      "date": "2026-10-14T08:56:23Z"
+      "sha": "1b72f9b353246a25b7a4cfd221930350afec2ed8",
+      "date": "2026-10-15T08:31:01Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "c1d0b8de50166d85472debe7cb91be58ed01fd4b",
-      "date": "2026-10-14T04:45:13Z"
+      "sha": "43d8ec8c8b1821978ae8dcf411242304c7a596f9",
+      "date": "2026-10-15T04:27:46Z"
      }
     }
    ],
@@ -270,19 +279,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-14T10:07:43+00:00",
+ "generated_at": "2026-10-15T09:50:12+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "341491e5004bc66d2f2abb76ffd0cfdd6f90b89c",
-  "run_id": "38547361749"
+  "commit": "b08a5088e36ac8051f6414eb240a5862eb2f1af7",
+  "run_id": "38715853270"
  },
  "ficha": {
-  "id": "sha256:c50ebfb76c1e3fb403de8df9eff76e45eb968a58dd2fffcc271f1c37f0e0f972",
+  "id": "sha256:1df1069e0fa448704d5be6b33c36c45afd00c14e88627142af928cbcc633209f",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=licenciamento-ambiental",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/licenciamento-ambiental.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'licenciamento-ambiental' (Recife), 2026-10-14, sha256:c50ebfb76c1e3fb4…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=licenciamento-ambiental",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'licenciamento-ambiental' (Recife), 2026-10-14, sha256:c50ebfb76c1e3fb4…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=licenciamento-ambiental"
+   "en": "5L-TEP Layer 5 record of 'licenciamento-ambiental' (Recife), 2026-10-15, sha256:1df1069e0fa44870…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=licenciamento-ambiental",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'licenciamento-ambiental' (Recife), 2026-10-15, sha256:1df1069e0fa44870…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=licenciamento-ambiental"
   }
  }
 }
