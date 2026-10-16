@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-15T04:26:23+00:00",
+   "evaluated_at": "2026-10-16T04:21:15+00:00",
    "current": true,
    "facts": {
-    "observations": 41,
+    "observations": 45,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/b666164e-b813-4ab7-9842-f3bbdcdda07e#f807f47271a8"
    },
@@ -186,30 +186,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-15T04:27:46.393718+00:00",
+   "generated_at": "2026-10-16T04:22:30.198579+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "43d8ec8c8b1821978ae8dcf411242304c7a596f9",
-      "date": "2026-10-15T04:27:46Z"
+      "sha": "0b19b7b3dd79e07e7689c467f004f548f2976cec",
+      "date": "2026-10-16T04:22:30Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "1b72f9b353246a25b7a4cfd221930350afec2ed8",
-      "date": "2026-10-15T08:31:01Z"
+      "sha": "ecb1194fc1273cd963676904de99b1d4639fc934",
+      "date": "2026-10-16T08:24:06Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "43d8ec8c8b1821978ae8dcf411242304c7a596f9",
-      "date": "2026-10-15T04:27:46Z"
+      "sha": "0b19b7b3dd79e07e7689c467f004f548f2976cec",
+      "date": "2026-10-16T04:22:30Z"
      }
     }
    ],
@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-15T09:50:12+00:00",
+ "generated_at": "2026-10-16T09:43:14+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "b08a5088e36ac8051f6414eb240a5862eb2f1af7",
-  "run_id": "38715853270"
+  "commit": "a8182dec2935090c42c7b3560ad8c5d95d209f13",
+  "run_id": "38882369952"
  },
  "ficha": {
-  "id": "sha256:2f8bbb7e05ef624a0b346ce7b83e02ef0145c5e9de82b829ac3e3c40250af39d",
+  "id": "sha256:4364ea7e767fddc598e57f4d18f8f67ad48c2756458b34dbfdfa7dcfdb108882",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pontos-de-coleta-seletiva",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/pontos-de-coleta-seletiva.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'pontos-de-coleta-seletiva' (Recife), 2026-10-15, sha256:2f8bbb7e05ef624a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pontos-de-coleta-seletiva",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'pontos-de-coleta-seletiva' (Recife), 2026-10-15, sha256:2f8bbb7e05ef624a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pontos-de-coleta-seletiva"
+   "en": "5L-TEP Layer 5 record of 'pontos-de-coleta-seletiva' (Recife), 2026-10-16, sha256:4364ea7e767fddc5…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pontos-de-coleta-seletiva",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'pontos-de-coleta-seletiva' (Recife), 2026-10-16, sha256:4364ea7e767fddc5…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pontos-de-coleta-seletiva"
   }
  }
 }
