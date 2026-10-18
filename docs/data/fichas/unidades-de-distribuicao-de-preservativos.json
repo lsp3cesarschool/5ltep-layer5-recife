@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-17T04:13:53+00:00",
+   "evaluated_at": "2026-10-18T04:19:58+00:00",
    "current": true,
    "facts": {
-    "observations": 49,
+    "observations": 53,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/1548a26d-2ffa-463a-95af-79caeeca6105#cb2c92c8dc64"
    },
@@ -186,30 +186,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-17T04:15:06.993292+00:00",
+   "generated_at": "2026-10-18T04:21:11.071255+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "31035b08101cd249e8da031e9b0f7ac02eab5da1",
-      "date": "2026-10-17T04:15:07Z"
+      "sha": "5e448a09c511915a267e9a79148abe38ce587644",
+      "date": "2026-10-18T04:21:11Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "0124069a19ae7ac74029286bd4c1ecd4853b2908",
-      "date": "2026-10-17T07:58:54Z"
+      "sha": "14fc19c8c7b5ef406a8ae9aa4bd8b9bdd88fb1ce",
+      "date": "2026-10-18T08:14:20Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "31035b08101cd249e8da031e9b0f7ac02eab5da1",
-      "date": "2026-10-17T04:15:07Z"
+      "sha": "5e448a09c511915a267e9a79148abe38ce587644",
+      "date": "2026-10-18T04:21:11Z"
      }
     }
    ],
@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-17T09:17:04+00:00",
+ "generated_at": "2026-10-18T09:31:16+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "09eb47d748cdff3117b42b68fe6569db9d11f8c2",
-  "run_id": "39020528152"
+  "commit": "13159873c07d471980bc3b02ced8fbf1c2c5512f",
+  "run_id": "39115651615"
  },
  "ficha": {
-  "id": "sha256:eb6098cbb99de69ac75ccd801112458f8fc66a2142c12db7307e3998b10693e5",
+  "id": "sha256:6642f2d6826c4ef91a0b24686773368727a3e250427963ad395e97417e7b2197",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-distribuicao-de-preservativos",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/unidades-de-distribuicao-de-preservativos.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'unidades-de-distribuicao-de-preservativos' (Recife), 2026-10-17, sha256:eb6098cbb99de69a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-distribuicao-de-preservativos",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'unidades-de-distribuicao-de-preservativos' (Recife), 2026-10-17, sha256:eb6098cbb99de69a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-distribuicao-de-preservativos"
+   "en": "5L-TEP Layer 5 record of 'unidades-de-distribuicao-de-preservativos' (Recife), 2026-10-18, sha256:6642f2d6826c4ef9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-distribuicao-de-preservativos",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'unidades-de-distribuicao-de-preservativos' (Recife), 2026-10-18, sha256:6642f2d6826c4ef9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-distribuicao-de-preservativos"
   }
  }
 }
