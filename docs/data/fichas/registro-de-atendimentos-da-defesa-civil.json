@@ -4,9 +4,9 @@
   "title": "Registro de Atendimentos da Defesa Civil",
   "id": "ebda936c-f15a-4e0d-b8b6-5a9e270b0b67",
   "resources": 24,
-  "last_change": null,
-  "last_type": null,
-  "entity": "https://dados.recife.pe.gov.br/dataset/ebda936c-f15a-4e0d-b8b6-5a9e270b0b67#3a1f09b6a978",
+  "last_change": "2026-10-19T12:57:46+00:00",
+  "last_type": "CONTENT_MOD",
+  "entity": "https://dados.recife.pe.gov.br/dataset/ebda936c-f15a-4e0d-b8b6-5a9e270b0b67#ef1bc14e507e",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/registro-de-atendimentos-da-defesa-civil"
  },
  "qs": {
@@ -33,7 +33,7 @@
    "reason": null,
    "rate": 0.4545,
    "evaluated_at": "2026-10-03T17:17:34+00:00",
-   "current": true,
+   "current": false,
    "facts": {
     "level": 0,
     "tables": 24,
@@ -71,12 +71,12 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-19T04:29:48+00:00",
+   "evaluated_at": "2026-10-20T04:39:14+00:00",
    "current": true,
    "facts": {
-    "observations": 57,
+    "observations": 60,
     "critical_in_window": 0,
-    "entity": "https://dados.recife.pe.gov.br/dataset/ebda936c-f15a-4e0d-b8b6-5a9e270b0b67#3a1f09b6a978"
+    "entity": "https://dados.recife.pe.gov.br/dataset/ebda936c-f15a-4e0d-b8b6-5a9e270b0b67#ef1bc14e507e"
    },
    "signals": []
   }
@@ -128,7 +128,8 @@
      "932fee1e-80fd-49f8-9ae3-6e8dd96e33a3": "b5b399d6ae6f888b536c9614b4b473c671315767458b21acc07370e534e06a0b",
      "9a5103f7-6bd0-4694-90d6-7e776b1e372d": "fcf9d84cdc3e10e749005ec6ea52ede6e92a48d814647c2aac5882fc3b3b9f53",
      "b81bf4cc-ae19-4a43-94a7-f11b3e0b662b": "5fcb19228a8fa28b081006d9ba857cb777bd7cbef73fc13971bf3baaa4fab1f5"
-    }
+    },
+    "first_change_seen": "2026-10-20T09:58:47+00:00"
    }
   ],
   "closed": []
@@ -209,30 +210,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-19T04:31:10.383513+00:00",
+   "generated_at": "2026-10-20T04:41:00.629376+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "bb0fc1a79ef9fe2cf5405ad0f11741f260e32432",
-      "date": "2026-10-19T04:31:10Z"
+      "sha": "1ee5c5eb61f281457d471ca84ca02fd2ae79c94e",
+      "date": "2026-10-20T04:41:00Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "0aba3cd28a07cad53cab3fb10c60df6bb01ddd86",
-      "date": "2026-10-19T09:12:24Z"
+      "sha": "ec7b0c1475eb1523d8dddd5d5cbf963ccfcb140a",
+      "date": "2026-10-20T08:48:54Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "bb0fc1a79ef9fe2cf5405ad0f11741f260e32432",
-      "date": "2026-10-19T04:31:10Z"
+      "sha": "1ee5c5eb61f281457d471ca84ca02fd2ae79c94e",
+      "date": "2026-10-20T04:41:00Z"
      }
     }
    ],
@@ -284,19 +285,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-19T10:42:15+00:00",
+ "generated_at": "2026-10-20T09:58:47+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "4c45cf38367a86c2995862c0770a888adf0ba1da",
-  "run_id": "39239326413"
+  "commit": "ac9f5cc0f8c9844b662e046bc3e3b097fd751012",
+  "run_id": "39404597078"
  },
  "ficha": {
-  "id": "sha256:2714355696ed0444c21b33ec255cce1dac5be27a9ba2b3f9f7a5f9dd52352b11",
+  "id": "sha256:fc6ed77d00731fde16b0ceeebdeb483d44d1db253c43f90c1541476f67ca45e2",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-de-atendimentos-da-defesa-civil",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/registro-de-atendimentos-da-defesa-civil.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'registro-de-atendimentos-da-defesa-civil' (Recife), 2026-10-19, sha256:2714355696ed0444…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-de-atendimentos-da-defesa-civil",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'registro-de-atendimentos-da-defesa-civil' (Recife), 2026-10-19, sha256:2714355696ed0444…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-de-atendimentos-da-defesa-civil"
+   "en": "5L-TEP Layer 5 record of 'registro-de-atendimentos-da-defesa-civil' (Recife), 2026-10-20, sha256:fc6ed77d00731fde…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-de-atendimentos-da-defesa-civil",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'registro-de-atendimentos-da-defesa-civil' (Recife), 2026-10-20, sha256:fc6ed77d00731fde…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-de-atendimentos-da-defesa-civil"
   }
  }
 }
