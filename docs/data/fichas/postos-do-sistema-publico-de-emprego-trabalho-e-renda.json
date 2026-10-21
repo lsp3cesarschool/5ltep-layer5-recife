@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-20T04:39:14+00:00",
+   "evaluated_at": "2026-10-21T04:32:39+00:00",
    "current": true,
    "facts": {
-    "observations": 60,
+    "observations": 64,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/5b734bae-b96f-42eb-9590-d3ed794b3099#7c68cbd32651"
    },
@@ -139,14 +139,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-14T09:39:43+00:00",
+   "generated_at": "2026-10-21T09:30:01+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "fce20a9b622971c43a3e1cafe741d725554408f6",
-      "date": "2026-10-14T09:40:00Z"
+      "sha": "8329f46b74d30c7ac8ddaebd208459abe5566f38",
+      "date": "2026-10-21T09:30:18Z"
      }
     }
    ],
@@ -187,30 +187,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-20T04:41:00.629376+00:00",
+   "generated_at": "2026-10-21T04:34:00.619749+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "1ee5c5eb61f281457d471ca84ca02fd2ae79c94e",
-      "date": "2026-10-20T04:41:00Z"
+      "sha": "24b25a0d41ecbc2f076908f1570bffde81bfe738",
+      "date": "2026-10-21T04:34:00Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "ec7b0c1475eb1523d8dddd5d5cbf963ccfcb140a",
-      "date": "2026-10-20T08:48:54Z"
+      "sha": "bbf3e719958fe3c88e570c7a33eb0a248629fb08",
+      "date": "2026-10-21T08:49:31Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "1ee5c5eb61f281457d471ca84ca02fd2ae79c94e",
-      "date": "2026-10-20T04:41:00Z"
+      "sha": "24b25a0d41ecbc2f076908f1570bffde81bfe738",
+      "date": "2026-10-21T04:34:00Z"
      }
     }
    ],
@@ -262,19 +262,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-20T09:58:47+00:00",
+ "generated_at": "2026-10-21T10:04:26+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "ac9f5cc0f8c9844b662e046bc3e3b097fd751012",
-  "run_id": "39404597078"
+  "commit": "db514731a0454f56cd2bea29917bb9f68ce3d0db",
+  "run_id": "39581844488"
  },
  "ficha": {
-  "id": "sha256:211eea831794d26e085d9712fff1f910b9254470ae87b716dd07d813bd47f244",
+  "id": "sha256:1f1ddd7366c34f3b8f6967862ea605bea267b18683f33cc17ed2e48454b52146",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postos-do-sistema-publico-de-emprego-trabalho-e-renda",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/postos-do-sistema-publico-de-emprego-trabalho-e-renda.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'postos-do-sistema-publico-de-emprego-trabalho-e-renda' (Recife), 2026-10-20, sha256:211eea831794d26e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postos-do-sistema-publico-de-emprego-trabalho-e-renda",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'postos-do-sistema-publico-de-emprego-trabalho-e-renda' (Recife), 2026-10-20, sha256:211eea831794d26e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postos-do-sistema-publico-de-emprego-trabalho-e-renda"
+   "en": "5L-TEP Layer 5 record of 'postos-do-sistema-publico-de-emprego-trabalho-e-renda' (Recife), 2026-10-21, sha256:1f1ddd7366c34f3b…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postos-do-sistema-publico-de-emprego-trabalho-e-renda",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'postos-do-sistema-publico-de-emprego-trabalho-e-renda' (Recife), 2026-10-21, sha256:1f1ddd7366c34f3b…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postos-do-sistema-publico-de-emprego-trabalho-e-renda"
   }
  }
 }
