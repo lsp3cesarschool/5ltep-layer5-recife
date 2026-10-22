@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-21T04:32:39+00:00",
+   "evaluated_at": "2026-10-22T04:31:35+00:00",
    "current": true,
    "facts": {
-    "observations": 64,
+    "observations": 68,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/a44c68fa-6bb5-4bb6-8e14-5710c6bb5a64#0b45cd7a4778"
    },
@@ -210,30 +210,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-21T04:34:00.619749+00:00",
+   "generated_at": "2026-10-22T04:33:31.862916+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "24b25a0d41ecbc2f076908f1570bffde81bfe738",
-      "date": "2026-10-21T04:34:00Z"
+      "sha": "04f7e1ba72877ec18efe9a0561d11c3978b5d60b",
+      "date": "2026-10-22T04:33:32Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "bbf3e719958fe3c88e570c7a33eb0a248629fb08",
-      "date": "2026-10-21T08:49:31Z"
+      "sha": "a33c5a371d461f9d5211570dc12e8d450bb1816e",
+      "date": "2026-10-22T08:50:42Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "24b25a0d41ecbc2f076908f1570bffde81bfe738",
-      "date": "2026-10-21T04:34:00Z"
+      "sha": "04f7e1ba72877ec18efe9a0561d11c3978b5d60b",
+      "date": "2026-10-22T04:33:32Z"
      }
     }
    ],
@@ -285,19 +285,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-21T10:04:26+00:00",
+ "generated_at": "2026-10-22T10:05:53+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "db514731a0454f56cd2bea29917bb9f68ce3d0db",
-  "run_id": "39581844488"
+  "commit": "d82549ec4895f39c5a94fd5644eb00547975fc62",
+  "run_id": "39760496893"
  },
  "ficha": {
-  "id": "sha256:81e376b423a05884fd0893b3d8ee1845395d5fc6476bb9b5e10e1bb269881ccf",
+  "id": "sha256:5de6f72fa55d9d9268eb6f4ff856b6f143a1c70f19da4e3b8649754190057248",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=velocidade-das-vias-quantitativo-por-velocidade-media-2021",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/velocidade-das-vias-quantitativo-por-velocidade-media-2021.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'velocidade-das-vias-quantitativo-por-velocidade-media-2021' (Recife), 2026-10-21, sha256:81e376b423a05884…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=velocidade-das-vias-quantitativo-por-velocidade-media-2021",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'velocidade-das-vias-quantitativo-por-velocidade-media-2021' (Recife), 2026-10-21, sha256:81e376b423a05884…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=velocidade-das-vias-quantitativo-por-velocidade-media-2021"
+   "en": "5L-TEP Layer 5 record of 'velocidade-das-vias-quantitativo-por-velocidade-media-2021' (Recife), 2026-10-22, sha256:5de6f72fa55d9d92…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=velocidade-das-vias-quantitativo-por-velocidade-media-2021",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'velocidade-das-vias-quantitativo-por-velocidade-media-2021' (Recife), 2026-10-22, sha256:5de6f72fa55d9d92…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=velocidade-das-vias-quantitativo-por-velocidade-media-2021"
   }
  }
 }

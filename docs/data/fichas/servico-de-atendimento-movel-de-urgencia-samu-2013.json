@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-21T04:32:39+00:00",
+   "evaluated_at": "2026-10-22T04:31:35+00:00",
    "current": true,
    "facts": {
-    "observations": 64,
+    "observations": 68,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/9d58e9ab-6640-442e-b0fc-3429d0f8b2d2#f1c911e12eb2"
    },
@@ -192,30 +192,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-21T04:34:00.619749+00:00",
+   "generated_at": "2026-10-22T04:33:31.862916+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "24b25a0d41ecbc2f076908f1570bffde81bfe738",
-      "date": "2026-10-21T04:34:00Z"
+      "sha": "04f7e1ba72877ec18efe9a0561d11c3978b5d60b",
+      "date": "2026-10-22T04:33:32Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "bbf3e719958fe3c88e570c7a33eb0a248629fb08",
-      "date": "2026-10-21T08:49:31Z"
+      "sha": "a33c5a371d461f9d5211570dc12e8d450bb1816e",
+      "date": "2026-10-22T08:50:42Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "24b25a0d41ecbc2f076908f1570bffde81bfe738",
-      "date": "2026-10-21T04:34:00Z"
+      "sha": "04f7e1ba72877ec18efe9a0561d11c3978b5d60b",
+      "date": "2026-10-22T04:33:32Z"
      }
     }
    ],
@@ -267,19 +267,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-21T10:04:26+00:00",
+ "generated_at": "2026-10-22T10:05:53+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "db514731a0454f56cd2bea29917bb9f68ce3d0db",
-  "run_id": "39581844488"
+  "commit": "d82549ec4895f39c5a94fd5644eb00547975fc62",
+  "run_id": "39760496893"
  },
  "ficha": {
-  "id": "sha256:9669b6a1f0e6ce2a54edc35b0b13b17ba492566a9213fbd1f1a6544257e2045b",
+  "id": "sha256:a8da89d2e1ac7362258c1e9357824712a0fd93f3002cede9074586de518973e9",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2013",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/servico-de-atendimento-movel-de-urgencia-samu-2013.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'servico-de-atendimento-movel-de-urgencia-samu-2013' (Recife), 2026-10-21, sha256:9669b6a1f0e6ce2a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2013",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-atendimento-movel-de-urgencia-samu-2013' (Recife), 2026-10-21, sha256:9669b6a1f0e6ce2a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2013"
+   "en": "5L-TEP Layer 5 record of 'servico-de-atendimento-movel-de-urgencia-samu-2013' (Recife), 2026-10-22, sha256:a8da89d2e1ac7362…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2013",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-atendimento-movel-de-urgencia-samu-2013' (Recife), 2026-10-22, sha256:a8da89d2e1ac7362…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2013"
   }
  }
 }
