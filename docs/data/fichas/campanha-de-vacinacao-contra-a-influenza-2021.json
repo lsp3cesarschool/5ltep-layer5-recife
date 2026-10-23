@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-22T04:31:35+00:00",
+   "evaluated_at": "2026-10-22T11:40:45+00:00",
    "current": true,
    "facts": {
-    "observations": 68,
+    "observations": 69,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/49cb2153-3562-4404-8b6e-d427936d0d79#280b3269e4c3"
    },
@@ -186,30 +186,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-22T04:33:31.862916+00:00",
+   "generated_at": "2026-10-23T04:37:25.983670+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "04f7e1ba72877ec18efe9a0561d11c3978b5d60b",
-      "date": "2026-10-22T04:33:32Z"
+      "sha": "603e1a8b89fd8b8661928a652a469209ff148be7",
+      "date": "2026-10-23T04:37:26Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "a33c5a371d461f9d5211570dc12e8d450bb1816e",
-      "date": "2026-10-22T08:50:42Z"
+      "sha": "1fe7f3f6407bf6de3deed3b3e03384084cfcfc85",
+      "date": "2026-10-23T08:43:48Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "04f7e1ba72877ec18efe9a0561d11c3978b5d60b",
-      "date": "2026-10-22T04:33:32Z"
+      "sha": "451ed168f65cf91b86637c85601023e49a6d58f1",
+      "date": "2026-10-22T11:43:59Z"
      }
     }
    ],
@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-22T10:05:53+00:00",
+ "generated_at": "2026-10-23T09:59:45+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "d82549ec4895f39c5a94fd5644eb00547975fc62",
-  "run_id": "39760496893"
+  "commit": "a0b3e5e9e9ae9e2c7982b0840061e83797a476b0",
+  "run_id": "39935871690"
  },
  "ficha": {
-  "id": "sha256:f08c24e5cda23e624769dc4c9da1444bf4028a76213775c9cf9f22e1bc4b00c3",
+  "id": "sha256:df99b1e9ef196de3a251aa1a0c84d89149cafca3d9750517164193a6ff185a72",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=campanha-de-vacinacao-contra-a-influenza-2021",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/campanha-de-vacinacao-contra-a-influenza-2021.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'campanha-de-vacinacao-contra-a-influenza-2021' (Recife), 2026-10-22, sha256:f08c24e5cda23e62…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=campanha-de-vacinacao-contra-a-influenza-2021",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'campanha-de-vacinacao-contra-a-influenza-2021' (Recife), 2026-10-22, sha256:f08c24e5cda23e62…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=campanha-de-vacinacao-contra-a-influenza-2021"
+   "en": "5L-TEP Layer 5 record of 'campanha-de-vacinacao-contra-a-influenza-2021' (Recife), 2026-10-23, sha256:df99b1e9ef196de3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=campanha-de-vacinacao-contra-a-influenza-2021",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'campanha-de-vacinacao-contra-a-influenza-2021' (Recife), 2026-10-23, sha256:df99b1e9ef196de3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=campanha-de-vacinacao-contra-a-influenza-2021"
   }
  }
 }
