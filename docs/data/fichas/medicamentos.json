@@ -186,22 +186,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-24T04:27:01.952310+00:00",
+   "generated_at": "2026-10-25T04:30:49.281288+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "b4573b3de3bf345f1c2ac0511c926727baddc3c1",
-      "date": "2026-10-24T04:27:02Z"
+      "sha": "1a07e8f9ae42aa2de6c13456a855aa3e9f624058",
+      "date": "2026-10-25T04:30:49Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "24c45b5b31c9dbfefa1c268df4b7593e2f0665f4",
-      "date": "2026-10-24T08:18:46Z"
+      "sha": "0a99ee7e0c44278330d9b07d2b0e1a3e269a2984",
+      "date": "2026-10-25T08:36:40Z"
      }
     },
     {
@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-24T09:28:26+00:00",
+ "generated_at": "2026-10-25T09:46:03+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "1ff058a2367c3a86dba9953ee89eae3dfe658497",
-  "run_id": "40082076690"
+  "commit": "106de5bfc5ab5bb08476eac861ac1960537c2697",
+  "run_id": "40181995812"
  },
  "ficha": {
-  "id": "sha256:5f17ada1068bd3c3e60539bdcc6a1e35b3721b67cb0a6d41895255450564aced",
+  "id": "sha256:a826a5bccff481ea3caa8505ac99470e4e023f0e07fa39637992b2469ae43c51",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=medicamentos",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/medicamentos.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'medicamentos' (Recife), 2026-10-24, sha256:5f17ada1068bd3c3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=medicamentos",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'medicamentos' (Recife), 2026-10-24, sha256:5f17ada1068bd3c3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=medicamentos"
+   "en": "5L-TEP Layer 5 record of 'medicamentos' (Recife), 2026-10-25, sha256:a826a5bccff481ea…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=medicamentos",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'medicamentos' (Recife), 2026-10-25, sha256:a826a5bccff481ea…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=medicamentos"
   }
  }
 }
