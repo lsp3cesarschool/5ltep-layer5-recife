@@ -155,22 +155,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-25T04:30:49.281288+00:00",
+   "generated_at": "2026-10-26T04:35:03.043163+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "1a07e8f9ae42aa2de6c13456a855aa3e9f624058",
-      "date": "2026-10-25T04:30:49Z"
+      "sha": "a811629b390c3a2da95a2f21db21ed96eed41912",
+      "date": "2026-10-26T04:35:03Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "0a99ee7e0c44278330d9b07d2b0e1a3e269a2984",
-      "date": "2026-10-25T08:36:40Z"
+      "sha": "56159df7d47985873040d9461c2834f75ca6e0f8",
+      "date": "2026-10-26T09:13:14Z"
      }
     },
     {
@@ -230,19 +230,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-25T09:46:03+00:00",
+ "generated_at": "2026-10-26T11:01:01+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "106de5bfc5ab5bb08476eac861ac1960537c2697",
-  "run_id": "40181995812"
+  "commit": "e220b43fb6cf320ae3147190bf75b94d768d6486",
+  "run_id": "40311846758"
  },
  "ficha": {
-  "id": "sha256:e4604d9f1ceb2f98e9b15e54aea1e2be43b15c2b4117a1d2c1a12da6649335c4",
+  "id": "sha256:d4a81f40c9b84a7fa615d728c9d55214d19374c5033e281fd7520bccaef9f353",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=efetivo-da-defesa-civil",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/efetivo-da-defesa-civil.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'efetivo-da-defesa-civil' (Recife), 2026-10-25, sha256:e4604d9f1ceb2f98…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=efetivo-da-defesa-civil",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'efetivo-da-defesa-civil' (Recife), 2026-10-25, sha256:e4604d9f1ceb2f98…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=efetivo-da-defesa-civil"
+   "en": "5L-TEP Layer 5 record of 'efetivo-da-defesa-civil' (Recife), 2026-10-26, sha256:d4a81f40c9b84a7f…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=efetivo-da-defesa-civil",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'efetivo-da-defesa-civil' (Recife), 2026-10-26, sha256:d4a81f40c9b84a7f…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=efetivo-da-defesa-civil"
   }
  }
 }
