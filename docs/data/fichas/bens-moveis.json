@@ -147,22 +147,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-26T04:35:03.043163+00:00",
+   "generated_at": "2026-10-27T04:53:02.210052+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "a811629b390c3a2da95a2f21db21ed96eed41912",
-      "date": "2026-10-26T04:35:03Z"
+      "sha": "932f1d3caa63b48e40ae266ef41e7aecdbf6d11c",
+      "date": "2026-10-27T04:53:02Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "56159df7d47985873040d9461c2834f75ca6e0f8",
-      "date": "2026-10-26T09:13:14Z"
+      "sha": "2acfb0741a3b62dd536216c49849b611b7e160ac",
+      "date": "2026-10-27T09:13:38Z"
      }
     },
     {
@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-26T11:01:01+00:00",
+ "generated_at": "2026-10-27T10:29:19+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "e220b43fb6cf320ae3147190bf75b94d768d6486",
-  "run_id": "40311846758"
+  "commit": "044b2545097fff2e222527ef15fc79ffdc1dad1f",
+  "run_id": "40488834707"
  },
  "ficha": {
-  "id": "sha256:3c662a525cfcc4af58db80b521847054bbf2d4e03f043ae4283484dd987063ff",
+  "id": "sha256:1abda87f1da8c7267b7cb306c719c4cd462ba1b91dfabb06197ea9642c6fcb74",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=bens-moveis",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/bens-moveis.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'bens-moveis' (Recife), 2026-10-26, sha256:3c662a525cfcc4af…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=bens-moveis",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'bens-moveis' (Recife), 2026-10-26, sha256:3c662a525cfcc4af…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=bens-moveis"
+   "en": "5L-TEP Layer 5 record of 'bens-moveis' (Recife), 2026-10-27, sha256:1abda87f1da8c726…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=bens-moveis",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'bens-moveis' (Recife), 2026-10-27, sha256:1abda87f1da8c726…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=bens-moveis"
   }
  }
 }

@@ -1,11 +1,11 @@
 {
  "layer": 5,
  "run": {
-  "generated_at": "2026-10-26T11:01:01+00:00",
+  "generated_at": "2026-10-27T10:29:19+00:00",
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
   "version": "0.1.0",
-  "commit": "e220b43fb6cf320ae3147190bf75b94d768d6486",
-  "run_id": "40311846758"
+  "commit": "044b2545097fff2e222527ef15fc79ffdc1dad1f",
+  "run_id": "40488834707"
  },
  "portal": {
   "portal_url": "https://dados.recife.pe.gov.br",
@@ -59,7 +59,7 @@
    "reason": null,
    "detail": null,
    "generated_at": "2026-10-19T09:31:51+00:00",
-   "age_days": 7.06,
+   "age_days": 8.04,
    "validity_days": 14.0,
    "expired": false,
    "repository": "lsp3cesarschool/5ltep-layer1-recife",
@@ -102,7 +102,7 @@
    "reason": null,
    "detail": null,
    "generated_at": "2026-10-21T09:30:01+00:00",
-   "age_days": 5.06,
+   "age_days": 6.04,
    "validity_days": 14.0,
    "expired": false,
    "repository": "lsp3cesarschool/5ltep-layer2-recife",
@@ -132,7 +132,7 @@
    "reason": null,
    "detail": null,
    "generated_at": "2026-10-09T19:41:07+00:00",
-   "age_days": 16.64,
+   "age_days": 17.62,
    "validity_days": 62.0,
    "expired": false,
    "repository": "lsp3cesarschool/5ltep-layer3-recife",
@@ -171,8 +171,8 @@
    "status": "ok",
    "reason": null,
    "detail": null,
-   "generated_at": "2026-10-26T04:35:03.043163+00:00",
-   "age_days": 0.27,
+   "generated_at": "2026-10-27T04:53:02.210052+00:00",
+   "age_days": 0.23,
    "validity_days": 0.5,
    "expired": false,
    "repository": "lsp3cesarschool/5ltep-layer4-recife",
@@ -183,16 +183,16 @@
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "a811629b390c3a2da95a2f21db21ed96eed41912",
-      "date": "2026-10-26T04:35:03Z"
+      "sha": "932f1d3caa63b48e40ae266ef41e7aecdbf6d11c",
+      "date": "2026-10-27T04:53:02Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "56159df7d47985873040d9461c2834f75ca6e0f8",
-      "date": "2026-10-26T09:13:14Z"
+      "sha": "2acfb0741a3b62dd536216c49849b611b7e160ac",
+      "date": "2026-10-27T09:13:38Z"
      }
     },
     {
@@ -355,7 +355,7 @@
    "reported": 0
   },
   "median_days_to_first_change": null,
-  "rounds_observed": 14
+  "rounds_observed": 15
  },
  "datasets": [
   {
@@ -413,7 +413,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:902e788b03334ec69c3648d35e70c7fc57168c6042ebe5203c2b653196e24ecd"
+   "ficha_id": "sha256:9b7807a328ce58776bac8e4fb4d62a5ba91714ea6b2ae2dbe30bf1389067f156"
   },
   {
    "name": "academia-recife",
@@ -470,7 +470,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:7cb76a734720e024a0d0179158b230dafb09f16d85979394d594cf54ad3c8651"
+   "ficha_id": "sha256:0f755cb1d9e1884c85d9edd72599bb441af3aae9628fba4fa71d7f6e4dec2d4b"
   },
   {
    "name": "academias-da-cidade",
@@ -529,7 +529,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:d9b24b4997de95b4db1ce666caf01d6b6a75703a146f8bbfd0b27c4803cebac0"
+   "ficha_id": "sha256:0aecfb84f159adef8ad351e1c137d10d8fb1ff97268e30841343dfe6548d9c84"
   },
   {
    "name": "acessabilidade",
@@ -586,7 +586,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:5f0569794c0d0bd6aa9737b9ad38d7808a7b3b17f9b1d5c0ec2a734a0f03b377"
+   "ficha_id": "sha256:ebac4e4aa317d6a161ceeaf746eba010f45f1d649894dc2a7fdcd305fd51cef3"
   },
   {
    "name": "acidentes-de-transito-c-vitimas-2016",
@@ -645,7 +645,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:f85e4dde90969f968c8aad64875083e14eb0f48ff2784c30305217c254cd8ded"
+   "ficha_id": "sha256:6c131d63913ac502e7e24c312c66dfa1a8ce75378c03d82744e4bd7a1f532eb1"
   },
   {
    "name": "acidentes-de-transito-com-e-sem-vitimas",
@@ -704,7 +704,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:087c54b42559191aa79f7fdb520688aca17e93b7cec8996670978a31d7dc36b8"
+   "ficha_id": "sha256:f37af3f74a1661bd6c4d3d356cc14f5fb2c423e285181a2abab1c2275ab7ada3"
   },
   {
    "name": "acidentes-de-transito-com-vitimas-2014",
@@ -753,7 +753,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:bc012f7957f0264ebeb6f9ff3030c8aab84dbd5ef36abe433e43ff6afb9ea1cf"
+   "ficha_id": "sha256:483affdbfa85bf82e08c659e266e4e1c12a5dae135d55c216ab6f6a030acbe84"
   },
   {
    "name": "acidentes-de-transito-com-vitimas-2015",
@@ -812,7 +812,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:575fc7d41c4a1f28859ead7a673a4b9d5119f4153375fd886bde6e88a688e4d3"
+   "ficha_id": "sha256:0ef73114a58fe5025c6bd48c9e5a79e71eb7347a9bcda4bec2dc9545d3f8abe7"
   },
   {
    "name": "acoes-e-programas-para-emprego-e-renda",
@@ -869,7 +869,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:dd07a0045be94f3bdb11c027e8d650139628d3660dba2a6e87d805ce053063b3"
+   "ficha_id": "sha256:f154d105c4386e70a57a76ff27e0222cb593c3f5bc45bec04a812776ffa32dea"
   },
   {
    "name": "agremiacoes-carnavalescas",
@@ -928,7 +928,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:d2e717c4587a86cb6320355d88d383bf6ae31dd4b28816fbe956eccf1ae91727"
+   "ficha_id": "sha256:bb569194bff1f7a0c92365b59bfc3eadfeb8bb2a6e372a2fe62f11a021df9b5e"
   },
   {
    "name": "alunos-matriculados-2023",
@@ -985,7 +985,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:0b350454e16f233af46efb963342863e88a62a4fdb449dca6bf931fa832ec62a"
+   "ficha_id": "sha256:d5d20a26ddb85328c43183150f10adba1990818968dbb06771b7074148e3ce8d"
   },
   {
    "name": "ambulatorios",
@@ -1044,7 +1044,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:85f90811516b27c2f20cb63ef1a555180619d9628fb16a987e9d3e3e8c0ae9c4"
+   "ficha_id": "sha256:d98b3de5e2553d4706e7e91ceffa3bc19f5a5b9b82ba93090bd55f0f0842ff81"
   },
   {
    "name": "amostra-de-fluxo-de-veiculos-a-cada-15-minutos",
@@ -1103,7 +1103,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:44cc496c48b58847ed6f7006cce3ed4015b429422bb23b5c889b98c69cfc51e2"
+   "ficha_id": "sha256:410d3e77675b47010c84c0b933f6578454a410015dcbc8d85f4593036371a1a0"
   },
   {
    "name": "area-urbana",
@@ -1160,7 +1160,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:c6c7d943655f5f04c7dad230ea04b42fa3be1115aa6abccb8c89cbdaa27710b2"
+   "ficha_id": "sha256:b0f69eca3f57932358f0d4e2e89dd687d39cca59bd5d312d61c00884de7ad63e"
   },
   {
    "name": "arvores-tombadas",
@@ -1219,7 +1219,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:91aa288dd6f1cc49a2ac1763081fb4dca9ed171d820f07af709fef7ef1716c14"
+   "ficha_id": "sha256:1aa0891b4255cd46c3d85ecbcf224b96b6ecc70bdd31ef00435f9f99364ed733"
   },
   {
    "name": "atendimentos_cultura",
@@ -1276,7 +1276,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:d59fa498022382cfa9b11c3b406c9c9c46c26eff3c9f2d11a6daedc5f75935a2"
+   "ficha_id": "sha256:5b05afdb23dbaa9d56eaf1b4afc0a6d92b175738551ea109a7780abbbbd9c347"
   },
   {
    "name": "atendimentos_turismo",
@@ -1325,7 +1325,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:619092a1f4a6b7e6081b3d69fa6fcb4f9054b6d49d60bfbeea6c46f9e662cb22"
+   "ficha_id": "sha256:b8924c2e0241e031d81f6528a60f39343f7527c28092dadd402b718519a18112"
   },
   {
    "name": "atribuicao-de-aulas",
@@ -1382,7 +1382,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:a0d46f771e692a842cb0deb87759d4cb5d50a5e40d707e615fd43129508ce177"
+   "ficha_id": "sha256:e84a4c31853299d59f689290077ae1134fc381f5e4dc667f8ea491a2f32525a1"
   },
   {
    "name": "autos-de-infracao-ambiental",
@@ -1439,7 +1439,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:e57f73cb89a23b18818f976dbf07330242028c80a107cccb1002ab897cac21e4"
+   "ficha_id": "sha256:f95a868ff5a3f26f9d21120d46c343c9542a278f46a3869ae1b468354c0e353a"
   },
   {
    "name": "bares-e-restaurantes",
@@ -1496,7 +1496,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:d10a1240fcd392978a32fe21e793d19580e336771f01730be73055e79ea64a1b"
+   "ficha_id": "sha256:2fca7658ff6412493ade7219e523755738137cd22cbfb3c6e4af42aae14ed14f"
   },
   {
    "name": "bens-moveis",
@@ -1545,7 +1545,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:3c662a525cfcc4af58db80b521847054bbf2d4e03f043ae4283484dd987063ff"
+   "ficha_id": "sha256:1abda87f1da8c7267b7cb306c719c4cd462ba1b91dfabb06197ea9642c6fcb74"
   },
   {
    "name": "cadastro-unico-para-programas-sociais",
@@ -1594,7 +1594,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:385a63e4e6b7427ba2ffa1b99459449ac98fa6568854af09679d9b4db0b4f15c"
+   "ficha_id": "sha256:4fc3d10c11bfb92b7ad1e75ed8ca194db10678c25c802bf4f0fdae0dda963b27"
   },
   {
    "name": "calcadas",
@@ -1643,7 +1643,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:2637f512397cade9d4a97a4da82a36f2f3361e306c3248f555f8a82497ca4b00"
+   "ficha_id": "sha256:41162fe2f636421c5f783f34216ed9de2f3ee341c1b8a6a2f4811ec1cd33085a"
   },
   {
    "name": "calcadas-dos-corredores-de-transporte-metropolitano",
@@ -1700,7 +1700,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:9232d280244005783f69b4e7620bdcd0539b670b8dfadc8b1a82116d8086937d"
+   "ficha_id": "sha256:04639be24733a3f9befe33d681bfa782448971200206da3b77f4cbfa422e38b6"
   },
   {
    "name": "calcadas-recuperadas-da-cidade-do-recife",
@@ -1757,7 +1757,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:d9a6acf22ba12bbf7149a7828933dc1f5d73f0fe4dbf3f1b66085ec76efe66b4"
+   "ficha_id": "sha256:5cfd88f10e08d84fd2b96c722f22e0882d582323a7af09b787ec6ac18da1a3a2"
   },
   {
    "name": "calendario-de-vacinacao",
@@ -1816,7 +1816,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:78358fc7bb2c4520c29bd9e317c7c495f5fb25a842329c7f580d18d5067226c5"
+   "ficha_id": "sha256:3e9f994103afb0c8d6d23c7f774a3c6815ef2720f65c86eed4d5868f256b1628"
   },
   {
    "name": "campanha-de-vacinacao-contra-a-influenza",
@@ -1875,7 +1875,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:de6531cd92a9866cfe7de240c7c9c1a69ddd18860f764c965c427eec36b46eff"
+   "ficha_id": "sha256:9f2020bdebb6caeb89e62a40b2b6fe7edb6f2a80f71454b18db5a0aab263caa0"
   },
   {
    "name": "campanha-de-vacinacao-contra-a-influenza-2021",
@@ -1934,7 +1934,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:02a70f32a94b160619b0cbe0722e83c1d93957aa73154a2e0bf6ca5e0b15933f"
+   "ficha_id": "sha256:606433e79f5dc41321b98f63c5837eb0a9c2ca32dcd3dca869feef8f35c2d29a"
   },
   {
    "name": "campanha-de-vacinacao-covid-19",
@@ -1993,7 +1993,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:3278906a37182ea0c055fe25832d7ad3c561c55c77b7f0a9b9075b4311efa51e"
+   "ficha_id": "sha256:f8c77d716230dd1505d31e425d7215320c60aa20f69fabdcd056bb80fc039077"
   },
   {
    "name": "canais-de-atendimento",
@@ -2052,7 +2052,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:7f05bfa6eafb5c3303337c2fb5d731cfde16c421af6929d2dc984915c12347ce"
+   "ficha_id": "sha256:767751cee03821ea0657f9687e8c48fb5e80f1cc95d275e60d76222099d22546"
   },
   {
    "name": "casos-de-dengue-zika-e-chikungunya",
@@ -2111,7 +2111,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:65c4da2317cccdc191797fd167fec1b31cd26a35f1920e993fffa731f28d14e4"
+   "ficha_id": "sha256:1913003a7b24007112d1b4938769684ddadedf8960fbc7ebe2ba046d5c265709"
   },
   {
    "name": "casos-graves-covid-19",
@@ -2168,7 +2168,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:95b77d4ec2b4ff53a17bca29bd2fa83268ace353b89da6919de93608880d3024"
+   "ficha_id": "sha256:be13a46ea8a559bd215924676dbdc8e7d04beb1bf29f346575a71e058c04af06"
   },
   {
    "name": "casos-leves-covid-19",
@@ -2225,7 +2225,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:957d2259ca8426f43fe76821dbdf77fc89695429e610b445cd533eddd459a9f5"
+   "ficha_id": "sha256:174d1be859ebb0cafc7d6155bb50c9cc69fa55daa7555b1441e3095a1fb95032"
   },
   {
    "name": "cemiterios",
@@ -2282,7 +2282,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:f16e6478a33a1d738fc2306593cafaa57156e145ebb6b47ce58b7d4d90b51cdc"
+   "ficha_id": "sha256:cac382605461a0b46dd95e94abadf535e6472206464e9c4b94c572f4d63303df"
   },
   {
    "name": "censo-arboreo",
@@ -2331,7 +2331,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:543c27531de1855571ea65be6e446beba1e4fee30acfd9aec89b4dc9f87e3061"
+   "ficha_id": "sha256:82071a91decbf400eae2f3e0d03681f8a0b2716de0304dd49ed1d43b9591be57"
   },
   {
    "name": "censo-escolar-2009",
@@ -2390,7 +2390,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:8f0142ca263819dd6aed10872438ff91164a5d907cf9d03b6ce4beed44018b74"
+   "ficha_id": "sha256:9a9db0aa43f35ed64297d007733e4b4fd2c64c9e96dcde131c4e9e61ca6a42d4"
   },
   {
    "name": "censo-escolar-2010",
@@ -2449,7 +2449,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:4288e2954f07558649c8c977c971407171189a257b9ed0c158d470e5078a72dc"
+   "ficha_id": "sha256:15c82222c0ce84a002a6afd523327c837e4cac9fce157ad8549afe6e093820bd"
   },
   {
    "name": "censo-escolar-2011",
@@ -2508,7 +2508,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:bcbeec14b7214fc4077435b7971a628b24d2ecfbb6c2188a3a6852d067701459"
+   "ficha_id": "sha256:dae8bf3a8b6c9660bcb0a8d0d9af512526512ac09e2ad773dfd91cd8f2c30cf3"
   },
   {
    "name": "censo-escolar-2012",
@@ -2567,7 +2567,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:759fc416281c941181928e5542aa22de1626f96687fbc478299cc068fa671305"
+   "ficha_id": "sha256:edf000b94c9b20db679171e403a81aa081c043bc438753821691741f9e6ec0dc"
   },
   {
    "name": "censo-escolar-2013",
@@ -2626,7 +2626,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:84ad6e8d1d2af86cea21f3b93bfe01a022e3cfb546007b3e42204546e542e0b4"
+   "ficha_id": "sha256:44ba0ab8e49a2401d3bf8910b675995d64651e90d1619e324376e0a350d06d2a"
   },
   {
    "name": "censo-escolar-2014",
@@ -2685,7 +2685,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:84c41b87e8eba987b72596c9dd991e0fc4569092b17bfda022de2251f54c299c"
+   "ficha_id": "sha256:ae4c48649d54d78c6ec0a231e0d7304e83c88fd3adf25d1de78eb7c2770cf360"
   },
   {
    "name": "censo-escolar-2015",
@@ -2744,7 +2744,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:2ec05df4d523f9b6dd6441bb8dfa56581496d16d9cd0c7d1ff7b51990327556c"
+   "ficha_id": "sha256:689665dd091d03bbd867abaca69fd42bc7c20eb28d25d258c883be5319e6fa0f"
   },
   {
    "name": "censo-escolar-2016",
@@ -2801,7 +2801,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:52e899bf9b68b456010716aaef792f89b108455fb45c16b00847aa715c307a8d"
+   "ficha_id": "sha256:cc0328c680f594b8feaab29164f1297be25fbc4d5faaf177f20da47672a2e3df"
   },
   {
    "name": "censo-escolar-2017",
@@ -2858,7 +2858,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:49560d119c017f4a90074b669aff3744d798ce15a71d7a825c360dfc33f649e0"
+   "ficha_id": "sha256:0546bb9e74249599bc3b2aecbe1d77b3de6bf02ee1a69703e31fb628a8c2abe0"
   },
   {
    "name": "censo-escolar-2018",
@@ -2917,7 +2917,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:6561a231676ef1ec944a2ec68267e850f2ea861edf970941ce6d1fc403cb18b4"
+   "ficha_id": "sha256:22f200544651399f33bea6d2e92d46256682a462f5259c068bf29e7d0adbc471"
   },
   {
    "name": "censo-escolar-2019",
@@ -2976,7 +2976,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:3395153c5d8ae8edbbd8950e93df2ac8a4cd8a2c37a7b1d09ca9fcd681bfece8"
+   "ficha_id": "sha256:870715f22a122162ff8c84102f9741de05d2f7566f5d84e729ae24515ba50929"
   },
   {
    "name": "censo-escolar-2020",
@@ -3035,7 +3035,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:297c332fa76428e291f45c19b11706f5979fcc7f333fed71ff8dfce1ab9f0995"
+   "ficha_id": "sha256:c32b94807b1b978e35aaa8fd1d64e77ab680a83ddd699eb033ca6a57361247b9"
   },
   {
    "name": "censo-socioassistencial-2024",
@@ -3094,7 +3094,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:83d1fa98fce3eccf89918926a3793576c99d85bf4d436ef5d6520a2ef7b5f28a"
+   "ficha_id": "sha256:372a8a5153d0b691a745461215c4803f1388f37d63c0556a553829900ceb626b"
   },
   {
    "name": "central-de-atendimento-de-servicos-da-emlurb-156",
@@ -3153,7 +3153,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:15964962a8ac156ff8760bb5ae493634f9605d6c271254a36f7d99b543e27d01"
+   "ficha_id": "sha256:a34300a8a77205bff823dc3ce2d570ab75b8f46b1e23ec469df41aab0da71372"
   },
   {
    "name": "centro-comunitario-da-paz-compaz",
@@ -3210,7 +3210,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:3969c535417f6c218449df4d56dae8c8d0de6763135054573b10e5030b25d156"
+   "ficha_id": "sha256:967eea60624cd52846d549c5c1e240cc05ce921d52d6d015bf47317c0cedc4ab"
   },
   {
    "name": "centro-de-atencao-psicossocial-caps",
@@ -3269,7 +3269,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:13821306765cbe28d5028a99da0a42081701c9ea0f0da316c0323644c14f54db"
+   "ficha_id": "sha256:82ee7e9c210848581049e2131714565d490875236d9ea742d5083194914490c1"
   },
   {
    "name": "centro-de-testagem-e-aconselhamento-em-ist-aids",
@@ -3328,7 +3328,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:f7607e0a2d4961c83e046280d30d3fcbbafba4f435716f54db1ce80d8f99c58b"
+   "ficha_id": "sha256:01b47267a1ace4a35a7639ee247ddda408aba079e3bec20d440c22ea70535bd4"
   },
   {
    "name": "centros-de-especialidades-odontologicas",
@@ -3387,7 +3387,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:ae7e93ba79f00ed9ea6fa77a4f289b914c7920769d52092bfd2e81acde920e90"
+   "ficha_id": "sha256:92552b2a7c3035298e806c3126a9dcadaf1d34392698378331b58d33a4d6c130"
   },
   {
    "name": "centros-de-referencias",
@@ -3446,7 +3446,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:09394fd007e7085ab727bc1b70e1ea3cbc30b17724cf0035b43854badb8f1376"
+   "ficha_id": "sha256:3fc15a02dd711634cfdb7724fb97c7fa991cb2f4622a0ad0aba9a09fd42d80c4"
   },
   {
    "name": "ciclovias-ciclofaixas-estacoes-de-aluguel-de-bikes-e-rotas",
@@ -3505,7 +3505,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:5732cff803de349ea310c2008725ce94f4f56fe4d6629a61b069d6a1a058f754"
+   "ficha_id": "sha256:bd25ccf301769c821c6e430cc20cb360eca8a321792ca99d3e34137041f8822a"
   },
   {
    "name": "classificacao-nacional-de-atividades-economicas-cnae",
@@ -3564,7 +3564,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:0be263426ea2e4dbb3e6f01d311c228374ac651f92df0ea8ba0ba5107e79e0c1"
+   "ficha_id": "sha256:a86de3e04337346c27ee7dfe7109e984d17f20fe084c86912e5b457103bdf584"
   },
   {
    "name": "cobertura-da-terra",
@@ -3613,7 +3613,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:6cb4d6d06ec8e8d42c2203266e62a975483bc2dfd9b524c0c740ad81f44732aa"
+   "ficha_id": "sha256:1eebc5418d1d9ddfde9377275db43cd4d438551f84bc3a2a51365d0449d8a850"
   },
   {
    "name": "conecta-recife",
@@ -3673,7 +3673,7 @@
     "scope",
     "signal"
    ],
-   "ficha_id": "sha256:c54bc64b8566f82351ccfbfdf6823e48f40679b9a7c49f8f546909e644590b9d"
+   "ficha_id": "sha256:b299bdcbcdbbf6f7fbe23638dafaf126950b21d681139cc81fef57a34563a47d"
   },
   {
    "name": "conjuntos-habitacionais",
@@ -3730,7 +3730,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:c337060daca73f7b9126cd53812e02f49b610ac5787f9d3343f36c59959317f1"
+   "ficha_id": "sha256:5be986aba68d0823b30550c03aaa38741ccf576828ae33aac153781555603dd4"
   },
   {
    "name": "consultas-e-procedimentos-de-saude",
@@ -3787,7 +3787,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:5c2bac7e10b5f844ba84780f3297f3a7e6655db61030da87d52e3bdbd547c04d"
+   "ficha_id": "sha256:d1e09099dfea197773d4d8673919d2c52d608d30c19e857b98db58c8d36d92f9"
   },
   {
    "name": "consultorio-na-rua",
@@ -3846,7 +3846,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:f266a8cc6c6c927a53b4f9e01a013411e4b1539099261703b22bddc1a3729959"
+   "ficha_id": "sha256:eee5f6ae9ab918ad0bc8fa22ee7befeb5c1473ef1afa681f5d924c0a4816927f"
   },
   {
    "name": "contratos",
@@ -3905,7 +3905,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:de5c23dcaa615a7fff49ceb06c5daa3d0c483800bfc492c9b0de19e44f801d69"
+   "ficha_id": "sha256:9efd4189ec8f317415f3e7486f7e98376a92e486da6c8bc860b855bf9080eac9"
   },
   {
    "name": "contratos-de-gestao",
@@ -3964,7 +3964,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:e666c32c578690a46cd552055ab28bbe8c52d65986af7fedc30f220d1c596427"
+   "ficha_id": "sha256:ace0b646a52a6f3ad50d15f842176bd1bd6e58cdb89aee19fd4e88fc0fa50b4d"
   },
   {
    "name": "conviva-feiras-e-mercados",
@@ -4023,7 +4023,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:7355db8bee2c1baaa50e2c33510ef5fe7d542b325d59d9f55bf47fda6031659b"
+   "ficha_id": "sha256:ac485d9f1d33112c81472178319b04912f71dab0d3269305f971cada3bdf48b8"
   },
   {
    "name": "cuidados-integra",
@@ -4082,7 +4082,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:a1d5b7e4c888a4400b51832afe27f021b8fd58a0cdf25b5259f58e14dfc528c4"
+   "ficha_id": "sha256:506d33ca70c6c17cd506bb053803d27f82b323fa663b9972e7b25211f31bb43b"
   },
   {
    "name": "defesa-civil",
@@ -4141,7 +4141,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:a9813830a67b47768bf442b324a1d317764243456c1e206b98179623ee835b7a"
+   "ficha_id": "sha256:65547ecb5831366de90231c214a83e90aad0b13606b050c15e0d0076dca07f01"
   },
   {
    "name": "demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja",
@@ -4198,7 +4198,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:d3c6b17b6854523b3cf2c5085d38f6bdbca57e8b456b74701c9d2e66c6d3dbc2"
+   "ficha_id": "sha256:a05d5e108b5d300add5596e746c39bcaf57821f58254e6234c63bf50900be009"
   },
   {
    "name": "demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
@@ -4257,7 +4257,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:44c25d5cd4ab6f03401b7fc43f3a23ea2a84a98ae2ebdba6c29d13af907285b0"
+   "ficha_id": "sha256:a7fc27911e6d96e08b47b18f24f87dfd0793615bf27c6c3c9f29560a84fb192c"
   },
   {
    "name": "despesas-orcamentarias",
@@ -4316,7 +4316,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:240700688d2d90b0977f02db24e97a1d4041485f238f216707467340e132497a"
+   "ficha_id": "sha256:8bd4c235877fb0f8b53da20d3e233606ad8d9a79abe8a42df11c57212d85a618"
   },
   {
    "name": "destinacao-de-residuos-solidos",
@@ -4375,7 +4375,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:f0812b1b4da0274761462f0b5f89d338aa79b1ddd1f46bfae9d412f20ffeebc7"
+   "ficha_id": "sha256:53b76923486a535c81779433b08fd5f28a9c2ed24aa160951c91ad3335647c38"
   },
   {
    "name": "diario-oficial",
@@ -4434,7 +4434,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:94c282fdb890ffe5b07bf781d468c7efdd2c1b9e915f91bcd4d1560fe49fbd7d"
+   "ficha_id": "sha256:876bb314583dcd27a8bb2c5a68683e9661fa4f5da8e0c0617e02b3c76e7f3eaf"
   },
   {
    "name": "distritos-sanitarios",
@@ -4493,7 +4493,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:ca722d919a74de3e8b2530ace80ab75a53ea75acf6e369878156f5116239d112"
+   "ficha_id": "sha256:c0d40e0db0648a4965f55d1ee9fff669f3e08152c6db87062b2b16efafb3a61e"
   },
   {
    "name": "efetivo",
@@ -4550,7 +4550,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:ed74520be68724c3e0e36d4e373bdf4e21b294a7abc41c88a823d8cfb47fde5e"
+   "ficha_id": "sha256:7aa2af766e70842d695ece72f3074bb3f394241b4612ba6118f6116e5e70fe20"
   },
   {
    "name": "efetivo-da-defesa-civil",
@@ -4607,7 +4607,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:d4a81f40c9b84a7fa615d728c9d55214d19374c5033e281fd7520bccaef9f353"
+   "ficha_id": "sha256:8b3b618a0291e2d2597304ce0906fb926304466640db65e561697c08b6ebec88"
   },
   {
    "name": "eleicao-do-conselho-tutelar-2023",
@@ -4664,7 +4664,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:4efabf821a5fd0d1f9cc4f3053af14eba55c76523691f7040214829f64a40c27"
+   "ficha_id": "sha256:b8f04ecb034f0ea7a65ca112f6a2ee7794da3db96c173275ac70d76a0bf5704f"
   },
   {
    "name": "empresas-da-cidade-do-recife",
@@ -4724,7 +4724,7 @@
     "signal",
     "simultaneous"
    ],
-   "ficha_id": "sha256:3d884759616d5d67cea80f28e639c1e4afc539bd186682789a41dc3bbf687d8e"
+   "ficha_id": "sha256:afb5ffc84eb72ee9e284b79b84f19bf66b389e63b5c72fc09785c1e503bdaa3b"
   },
   {
    "name": "equipamentos-culturais",
@@ -4781,7 +4781,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:e76142c6d375acab2916230a6d33012e5fd8638b27f8e32a6cf2186efd4fc305"
+   "ficha_id": "sha256:dc07d101cb969a398832f0f1c6cab865401734775ae484e4993c34869e1f3fd1"
   },
   {
    "name": "equipamentos-de-monitoramento-e-fiscalizacao-de-transito",
@@ -4840,7 +4840,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:124a0396cab0fe2bffc00e867125ae2a1b7a04b38eeeaa6b3aa95b58a78de55d"
+   "ficha_id": "sha256:80ef3eb7d188d52bc2af14a29024ea7e5a53b8e897de5c953c4a12a558cd8166"
   },
   {
    "name": "equipamentos-esportivos",
@@ -4899,7 +4899,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:697d3826d6432d992a4962c5de6a01e1c649c34a2a3d46bc9582bfa0b10e5371"
+   "ficha_id": "sha256:917571f5e71991e7fc3789acb7537d17eaac9f8bfa5bf415c383d21d5ce443ee"
   },
   {
    "name": "equipamentos-publicos",
@@ -4948,7 +4948,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:8e7612b100e90992802ab0a8971ba4d2e44e11201dc16d80c668493d4b744aaa"
+   "ficha_id": "sha256:4051e8ad86ded82de58547f61c0324df1d987d89f3e5b274695407f6a6a039e3"
   },
   {
    "name": "equipes-de-saude-da-familia",
@@ -5005,7 +5005,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:656273e4f85f96b131f31a8a8acd84dc5c60e01cc5d0348f71c0b3d1a9d3bcc7"
+   "ficha_id": "sha256:4e0cacf629e38f1e91fefea5e56e49525213397c8a3b88508b55b469426643b5"
   },
   {
    "name": "especies-de-aves-presentes-no-recife",
@@ -5054,7 +5054,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:76399568fbc68d55c780e4a73b8c7d0bc5b03c1022729ec62ed10bb6534d32f4"
+   "ficha_id": "sha256:92e3e2c1b19135e890e5390ea369328e6e13e90312626bf6b52b6be81eb08ecb"
   },
   {
    "name": "estacoes-de-reparo-de-bike-projeto-salva-bike",
@@ -5113,7 +5113,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:5551331106a5a68f0e56c7f2ddd038bbff09d45fa399f947e2e1c32d5fe75715"
+   "ficha_id": "sha256:3fe988a692dca792e0e4fe7dedd1bca49eacc7cca855207188d69e6ff6fe6a01"
   },
   {
    "name": "estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
@@ -5172,7 +5172,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:bc4516520c60ca0a96b22aa73a21e24e470afba8c1500b401c3ed11c5d489ac2"
+   "ficha_id": "sha256:17fb9e1301fb81e820ad4bba72d4e8b756d9eed20f05f33b8d4c743023bd57b1"
   },
   {
    "name": "faixas-e-corredores-de-onibus",
@@ -5231,7 +5231,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:82d33d01ed58830d370c0d4fbf78963660ab4282485912cc4329763d5d23b88d"
+   "ficha_id": "sha256:aa0439ae9c911b52a538ea0c1bf08dd097de47c2f2debb9e38a338f60908ed75"
   },
   {
    "name": "faixas-marginais-dos-recursos-hidricos",
@@ -5280,7 +5280,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:4bc8274cb0adec3d57cc8188f0ce20a65cc3aef68f1c43bd3cbbac321196e8da"
+   "ficha_id": "sha256:a0af7ed160d435d732dd75db733b7d40dad26bcfe16c5e3f9cea621f22bc40dc"
   },
   {
    "name": "farmacias-da-familia",
@@ -5339,7 +5339,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:d9e71020486842a93a87453b149c9705c9cb4c9f55f444dd9ed0acc2e9a18b03"
+   "ficha_id": "sha256:e497d62f400fc427aad827b4fbb12aaf6cbfe2f02a8d929b0097a1926aa7b50f"
   },
   {
    "name": "fiscalizacao_sesau",
@@ -5396,7 +5396,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:01da3b7ceae636eb3baf8d25f6309c56c1744750751d17421ff6154b9413a691"
+   "ficha_id": "sha256:0640dbf771e379130b1787a9657660cc0d779249f9c7b648b040909c73897eb8"
   },
   {
    "name": "fluxo-de-veiculo-por-hora",
@@ -5455,7 +5455,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:d2cd2083198fc3f53231fdee0cbfd4976991052237276ed834a59c95c1ae9628"
+   "ficha_id": "sha256:742a798b255cc1520a978cdfc3045ef840719b77c38a5970ccb12f66f6cc4ea7"
   },
   {
    "name": "fms-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades",
@@ -5512,7 +5512,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:8dbbf593b397653597592854b0cce2ae82d0502dcfe1537a17f62b9dd73ac7e9"
+   "ficha_id": "sha256:b054b2d5d1ce2bd4907c29f9264d625eeae2de5f7069ac584e22bdf706aa7376"
   },
   {
    "name": "gabpe-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
@@ -5571,7 +5571,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:768e75065c36db95bb9cda08d0f7e178a1d5434e83287415fb5a3bbc9ed971fe"
+   "ficha_id": "sha256:5f6d12061a9ea4970eebea338eba21bd377303438bf5099ab4a07b104454e2b0"
   },
   {
    "name": "gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
@@ -5630,7 +5630,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:b10f4b270362e839b6c31923477eb9f2d54d892a260714094e3bf713e6fdfee9"
+   "ficha_id": "sha256:882562e2f18efd79feabd1b89359264a63bd4cd494983a1bc2df9703a5f284af"
   },
   {
    "name": "gestao-de-dados-abertos",
@@ -5679,7 +5679,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:26a2c6eeae8620b9464ea48ec8939a18d361bc0456ab6a5bd3b0a09fec428310"
+   "ficha_id": "sha256:7e17ef5365bb854e677ad101791673f507ecc43f58260f40a4b12ba3988501eb"
   },
   {
    "name": "guia-de-politicas-publicas-de-juventude",
@@ -5736,7 +5736,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:da682886a3e07dcd53f533a8f3534d4970f1cde59bf3cc9404a65b3ba815d6ff"
+   "ficha_id": "sha256:646777e40b69f1b6cfb9c0d87c4592f779f51b9f7d2604c0778cf996d7103a7a"
   },
   {
    "name": "hospitais",
@@ -5795,7 +5795,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:a4c2f53551a203056b3b0d888cf860e7fc3d444c0fcfe2de79e4be7bcf216e98"
+   "ficha_id": "sha256:9461cd98e67a37b00ce2a07d913c15aa9bef0c658dcb9e4c23a543f83bd07c1c"
   },
   {
    "name": "hoteis",
@@ -5852,7 +5852,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:243e351c94d9d2068cb606351bb786e126ad5d37c9b65744c8452c25a2d8f7ca"
+   "ficha_id": "sha256:14a187e26a311a7fd06be1d72436b8ff89b610aadc24b5dacfec71f35df2858c"
   },
   {
    "name": "imoveis-da-administracao-publica-municipal",
@@ -5911,7 +5911,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:0c92fecf23386b2b27bf97af45d2c623b46193229e1007e4f8430cad602e49dc"
+   "ficha_id": "sha256:8b4e02a8caaa594826ddf2941345640b53aa37b66197fae1f7c55f20d2d55386"
   },
   {
    "name": "imoveis-especiais-de-preservacao-ieps",
@@ -5968,7 +5968,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:9203d747642eaff3cac6a597188558b90322ec99a4d35c6d5772ce7f663291d5"
+   "ficha_id": "sha256:a5cf1b1b024b6af00c45c7bcc5bad1ac8a89d671c2bf44c7d6036e05973b19e0"
   },
   {
    "name": "imovel-de-protecao-de-area-verde-ipav",
@@ -6017,7 +6017,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:86216fdb7484aa0cf3abd3b774cc055daa851bb18567eda44abf0ff47a59da62"
+   "ficha_id": "sha256:a929a646e01d46b87aaf47040ff6bc0dd18f90a538d362f6503a10b1535d20dc"
   },
   {
    "name": "imposto-predial-e-territorial-urbano-iptu",
@@ -6077,7 +6077,7 @@
     "signal",
     "simultaneous"
    ],
-   "ficha_id": "sha256:dd9ba8fe40d712cb7988d1feeb66fc6bcb76368001ac43559e6f82d7c9f9ad9e"
+   "ficha_id": "sha256:71694f6ebc7507348dcb3e576031c47830f5bb2fdd02e33af6507d2f22e08762"
   },
   {
    "name": "imposto-sobre-transmissao-de-bens-imoveis-itbi",
@@ -6137,7 +6137,7 @@
     "signal",
     "simultaneous"
    ],
-   "ficha_id": "sha256:dd3a841bcf68785de1c395fd6d571f2c9b94c3980703524a721ec31991d7cbac"
+   "ficha_id": "sha256:28f8dbf69508f2ded26d2f3f1b9b28babe2fcfb1c7ca288d201e3bb85998a967"
   },
   {
    "name": "informacoes-contratuais-e-de-execucao",
@@ -6194,7 +6194,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:c4926a6a98da16d61921ddfe1c4f244b0772b0e61bb0ac10b0eaf180760748f1"
+   "ficha_id": "sha256:6fc07363bc4b417a1f59bf3cc2ed1c4fc867013c33ec2aaa4b0244bdffeb52ed"
   },
   {
    "name": "ldo-lei-das-diretrizes-orcamentarias",
@@ -6243,7 +6243,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:a12ebdab0d35283369571103031b4bd3c2bd292d3130dbcf946085f1661034aa"
+   "ficha_id": "sha256:d4a5d47d8bb72f0d11ef1d0c0b6b888127c3165216c79d6b95d4bbf9eca477d8"
   },
   {
    "name": "leis-municipais",
@@ -6300,7 +6300,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:4c660593fa86da661bfd0a7003c31d3a7f87043280063f78c12290a0d5beb11d"
+   "ficha_id": "sha256:e18fd8ac21e0f91dd7aeccdd2d9e8cb6c16066641678cc57674fe4c6810e1468"
   },
   {
    "name": "licenciamento-ambiental",
@@ -6360,7 +6360,7 @@
     "signal",
     "simultaneous"
    ],
-   "ficha_id": "sha256:f96b2ffbcbba3e652eea23de4ca29dad487ba2473d7b033724cd74bccf681d21"
+   "ficha_id": "sha256:797bfde4295e0ee3a90156d054cf0b6a8c261f32f14bffae123e24c1d6267dec"
   },
   {
    "name": "licenciamento-sanitario",
@@ -6419,7 +6419,7 @@
    "finding_kinds": [
     "simultaneous"
    ],
-   "ficha_id": "sha256:4c74b71dbb5b3fbffe49b10779a44e66c425707836a32ca1221515f7d22cd30c"
+   "ficha_id": "sha256:75a332b25fd321601b9f26d1eb430e8f327b3a3b7e812037e5ca651ea94300a0"
   },
   {
    "name": "licenciamento-urbanistico",
@@ -6478,7 +6478,7 @@
    "finding_kinds": [
     "simultaneous"
    ],
-   "ficha_id": "sha256:61568b9d58b22c53a30b7bc11f3a7d838b29df9e4e912e27ca764446cdb0bee5"
+   "ficha_id": "sha256:55c834a559281c608bd2461d9031f65fb5f3de1701c54a27aa0a0d69f8e17748"
   },
   {
    "name": "licitacoes",
@@ -6537,7 +6537,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:7dcad77930c4be5a4e0df91b0b1b6dd3822fee618a33d034c39f2797ebb7864e"
+   "ficha_id": "sha256:ec8edcd59bc66ebe73a5f49feb4c6603871e184dbc73fcb01b240bc765507d46"
   },
   {
    "name": "localizacao-dos-semaforos",
@@ -6596,7 +6596,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:58edbcb84dcde610be585add8df8c8bc401bd4b088f721d25491006e706a9b0e"
+   "ficha_id": "sha256:5384e026955bb4f399b2dc13f504d767ca4cfe343310f0890065b8209c721988"
   },
   {
    "name": "mae-coruja",
@@ -6655,7 +6655,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:8f083aeab3050dfcdbdf84aa87dadb74f7f9e1b5e2340c33e5d7b80df3e5c18f"
+   "ficha_id": "sha256:0cb99d71f01e64ab2ea27fcc9869006a8eb6edc9b8d98e1176aab2201ac7270e"
   },
   {
    "name": "malha-cicloviaria-do-recife",
@@ -6714,7 +6714,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:1072048226a48ccce5646638c17d52785c5babe9ea21bf329180c66e0fc099c0"
+   "ficha_id": "sha256:e5069f1ced8351147c32281f40c0618f07a69531969b548a07c16e627530938c"
   },
   {
    "name": "malha-viaria-de-trens-do-grande-recife",
@@ -6763,7 +6763,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:24fe6303c5f97120783c2c30ceaef956fbcf376692ac6156c8524bd792cf2a2d"
+   "ficha_id": "sha256:6518f95756df3c4e8f076c326a7ec3145ac218c16ef72da94a3a3375b0f0a86b"
   },
   {
    "name": "manifestacoes-recebidas-via-ouvidoria",
@@ -6822,7 +6822,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:1a633824f6d2f1da32d287f78190b2e93c4d719e179c8e283fb35434eb1124ea"
+   "ficha_id": "sha256:e441bde390f3813450b82f44297204ed2a01eac78c7cebe5ac53c18fd7fefc9f"
   },
   {
    "name": "mapas-de-limites-e-divisoes-territoriais",
@@ -6871,7 +6871,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:1dca1d801de3334c13a85dc952003c88e6f9f968a572d427b019d7a1e90d441a"
+   "ficha_id": "sha256:b608c4fcb932687d78b8798f56c65b5022a93dbec8ea03d605e76c858a876ac1"
   },
   {
    "name": "maternidades",
@@ -6930,7 +6930,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:c902035a3dce163d73b3ba2ace093aacef14da8d937332265086339124e3df0e"
+   "ficha_id": "sha256:e712a6571a9ea267dd1d57a8a5c05d99bf0a0f3b9c524179ce2bcda625188041"
   },
   {
    "name": "matriculas-na-rede-municipal",
@@ -6979,7 +6979,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:ce818d5b059c88655fcfd38de1af900a9298160213c834cb19ee859945e7229d"
+   "ficha_id": "sha256:8c6993c6a1661ae66af6e893a07116ac37b0a63e8a6d2d120de5fdea14918875"
   },
   {
    "name": "medicamentos",
@@ -7038,7 +7038,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:7238a6f92ebf7458c19044704a84449c9013ce6be822056604b5398d0dd1d261"
+   "ficha_id": "sha256:34c3da55b6c2b86a3da854b0e6a2de832622f79308a21270493e6d592d83e63f"
   },
   {
    "name": "monitoramento-da-politica-urbana-e-plano-diretor",
@@ -7087,7 +7087,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:410e4b2cc810d37136993aa9e65d04b9ca962bcfb9d644affe57c47d28134e9e"
+   "ficha_id": "sha256:b8c3151f76146ac93c05ec3a4c880ab6efdbac6e70428f4a434e6b2b92589089"
   },
   {
    "name": "naufragios-do-recife",
@@ -7146,7 +7146,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:5bf0dba732fe00f3bf5f70c595d002cba97a1ff30ccaff8dcca911f38bde6e81"
+   "ficha_id": "sha256:8ed14a122c0534d111d774fdaa5f7cd6ce7a8740222ea610b7ef7133651ac028"
   },
   {
    "name": "nucleos-urbanizados",
@@ -7195,7 +7195,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:1b52e16ff389e9c0c9e7c1564f40b96991b2efdc1b1d591310d5e52a3c8b6645"
+   "ficha_id": "sha256:8a026d307ed5a6d5d7c92dbec3a5eb0bdb354679c942aed41f1b7da3e86b369d"
   },
   {
    "name": "obras-publicas",
@@ -7254,7 +7254,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:57efc14666d606df2e34b375a5406bcfa26b7c2222bc303fd5307926c3d7ada1"
+   "ficha_id": "sha256:86ceb455fb599f20e202a04485731bf508f51322d722603ed952948b92e8f69d"
   },
   {
    "name": "ocorrencias",
@@ -7303,7 +7303,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:f57b6137a9a54b4e416e479ab8297d51e0bed5613e9ab33df00b923362601b58"
+   "ficha_id": "sha256:23fcf154f1e3ded6c02791f1080329c4b4a970946d42a4fbd0e5573a39638951"
   },
   {
    "name": "oferta-de-alimentacao-escolar",
@@ -7360,7 +7360,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:94ba61376bf888802c9681d688b6645ce5487510b890291e70d7aa4849bb5013"
+   "ficha_id": "sha256:74655b40d92bbf1e0f44da5d776658e13bd70d6500622fd453f471aee5de2967"
   },
   {
    "name": "operacoes",
@@ -7419,7 +7419,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:ff8ebecd7a2f6b866801cc4b9a40c95f9f7cb16a99b98105da039464ce10aabf"
+   "ficha_id": "sha256:632fdb0ee1ea89c490982fb48c50a9e57bcb53a0617cecab2f6ca8e0f7533e00"
   },
   {
    "name": "orgaos-municipais",
@@ -7476,7 +7476,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:53f80004b92643b6d810414ee90758358594fd16bea91faf248faa63ab6a0f67"
+   "ficha_id": "sha256:4efaaefb87a8410bd757ffffb0f88ad83918e9c4082470d90610098357c9d77c"
   },
   {
    "name": "orientacao-ao-viajante",
@@ -7535,7 +7535,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:e59ee7cd40e71c205f59a50d044703786550fea55b0c8d6787c7e822322d5d4a"
+   "ficha_id": "sha256:663f3e23f3a6f51f31ca8ff5cdbda337ca4bc660b824b67ce0e0485fe1e366fd"
   },
   {
    "name": "outorga-onerosa-do-direito-de-construir",
@@ -7594,7 +7594,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:c0cf7e250b6cc8c6184352a29b0d2928373ed7f69d8116bb1fe625088f0d12e2"
+   "ficha_id": "sha256:f2caa35bd874abc46e879c0d8b700671fb51b4749016862b40be3b899b39c03d"
   },
   {
    "name": "paraciclos-do-recife",
@@ -7651,7 +7651,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:d662c543b28a62093cd9a881a026a7ed87c279540b4df94c62b7eda741a7cd27"
+   "ficha_id": "sha256:d3ae116ee6482711f81fe32f8f1ebebd08442add57952b6a8a937597a895db1a"
   },
   {
    "name": "parcerias-e-informacoes-contratuais",
@@ -7708,7 +7708,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:ba7c0b85f0c5ef862ef9cffff14bda5f24bd4cc27d34f1a05e7faef3c3bd2e01"
+   "ficha_id": "sha256:5ec411c898c2e25dc15c88771625a34567de3123f371ade6effaea577c762980"
   },
   {
    "name": "parcerias-publico-privadas-e-concessoes",
@@ -7765,7 +7765,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:86998e08449aa445783128d15ea51569609904c64a78ced9fac93e6654f6b420"
+   "ficha_id": "sha256:64e4c271c1b011ad1b24b0a55fd92a159acd824d13c2cea9ab08d8d9a2f853c6"
   },
   {
    "name": "parques-e-pracas",
@@ -7824,7 +7824,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:48a724d4e375d4af05e740d47801b9a0306011a3595631e1372f2568264305e2"
+   "ficha_id": "sha256:c0ea890d025d8326db6b1017561c9e6c056f238532bf9dad85fa5f18ae606507"
   },
   {
    "name": "passaporte-da-vacina-relacao-dos-estabelecimentos-com-descontos",
@@ -7883,7 +7883,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:4616344b28871d08fdbce583ed5960e2e8ff478e87b0fcf0945e1df2782027ed"
+   "ficha_id": "sha256:c9ec0e6601fa94b961c8e9a9236dc6389f03f129ab244c0165fa325a5a28c195"
   },
   {
    "name": "patinetes",
@@ -7932,7 +7932,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:ab0dbd81c7c906468ea1d93134ab9e5ab6cb77af8a35cfd66b582e1dbf28e996"
+   "ficha_id": "sha256:f5f9e87f723a1868cb48a559885066c1fa2328912e78336a3500cb7363d7cfca"
   },
   {
    "name": "pedidos-ao-portal-da-transparencia",
@@ -7989,7 +7989,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:94051ff761f57e67bc54ece60df911e47b4d3c28108b1fba9530d6d013461796"
+   "ficha_id": "sha256:76b54bc3bf53faf62bab52857b71debee414593cd336343650440291f37972c2"
   },
   {
    "name": "perfil-das-pessoas-vacinadas-covid-19",
@@ -8048,7 +8048,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:24bd9018e185e51102be36530fdd72db10e9720e65c98c7c0890f91bfb6bc033"
+   "ficha_id": "sha256:a9667ee8742578db97529e61a8cd2f356721343f1d293e0beecdc8cb69f4be00"
   },
   {
    "name": "perfil-de-profissionais",
@@ -8105,7 +8105,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:cc4ba7260f3810dc33324bfc58e5f74c120e1231db288eb7195053e70d7853a5"
+   "ficha_id": "sha256:c743a8386037e70d715fa1dca9a162b6aa168349bbbedc33f93d218f460f9bad"
   },
   {
    "name": "perfil-do-publico-atendido",
@@ -8162,7 +8162,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:5c56a28dd967d598b671c489e642e667b7c1c718a3bb7e162739d7e8720cfb18"
+   "ficha_id": "sha256:dd3555ba2147accf9f77d00807ac64e4417455459bbcd66895e53d2dd1d7b7bc"
   },
   {
    "name": "perimetro-do-porto-digital",
@@ -8211,7 +8211,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:ebafdb460c8d98e94a1d0902f80a684dadb33d605aafff36d5b3b3e88f8e6cc9"
+   "ficha_id": "sha256:a3e8bee3208e2bf259677b0c9779c9abc135cc0c5ce97ea25eb71b7ce9fec407"
   },
   {
    "name": "pesagem-de-coletas-de-residuos",
@@ -8270,7 +8270,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:ab381c6dabc37d44ea4b218594dcda51fa9256a0b5b46f2eeaba88c441df19a3"
+   "ficha_id": "sha256:638af122ab0b5ffc421a913b8b2da255bf1fc603a960f1448a13875bba923f36"
   },
   {
    "name": "pesquisa-origem-destino",
@@ -8319,7 +8319,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:a56da6ae1c2e89f9ffc5296eef6c5c4f40c74235b26aff8830328857c19569e3"
+   "ficha_id": "sha256:707192c4925476962ae0f8f78040dd35daaad6a65ef10b868aa2f858c43a84be"
   },
   {
    "name": "pesquisa-origemdestino-metropolitana-2018",
@@ -8368,7 +8368,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:64a7d4a4a219248b553d403debb5fd074f3db003fd27fcdfff8db54aa3bb7186"
+   "ficha_id": "sha256:fe4397d77d7bbf94f8950fe7bf06a485b6c885a6b7a3b59216050254f90846ef"
   },
   {
    "name": "podas-e-extracoes",
@@ -8427,7 +8427,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:a72a67e4538ead9b80abaeb641c65eb98d465a12d72b20b6353392b929235068"
+   "ficha_id": "sha256:d0cbb7d7197d6503dafb2b92843f5a4f7f84a84cdb6341ae0540650dbccb7ba3"
   },
   {
    "name": "policlinicas",
@@ -8486,7 +8486,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:f5a09949e6ed9ae9c63ba514a023618c40d6ca5a985d5fd84b2bcf8316ac4256"
+   "ficha_id": "sha256:9e32dd2c1f1f148095b5a8a7fb81bb215becc1c19e213f7dd8cfbc00c60a5ef3"
   },
   {
    "name": "pontos-de-coleta-seletiva",
@@ -8545,7 +8545,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:3de8227e1d9a9f0e6c035c6e003ab2f856ce34a4f7275c5df2c251feab8e3850"
+   "ficha_id": "sha256:ab6b85db46f1431855310748d522b8550df34dacc7e43bcbe931a04eb45a0f56"
   },
   {
    "name": "postes-iluminacao-publica-do-recife",
@@ -8604,7 +8604,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:2cec3a28e116e12a9497cf819a9877d32c523cca468876e4e6fb5270f9111d9f"
+   "ficha_id": "sha256:c643ad71d81be9bdb051f3ce8d0cc03ad1222454ecdaa77d2869c1b7ec3bd063"
   },
   {
    "name": "postos-do-sistema-publico-de-emprego-trabalho-e-renda",
@@ -8663,7 +8663,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:46fb946b1254561749dcc90ff15fe02f50ad014758bd137d570ae9bb04e6cc11"
+   "ficha_id": "sha256:cdf436979eccba58157813994c47a4949ac1617053b5e0c6ce07d7ed9d8c9563"
   },
   {
    "name": "ppa-e-loa",
@@ -8720,7 +8720,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:ad5e2b72b8ef2abe2254e1381796b9efc1f695aa21cd6c031cad9f1c5e538fab"
+   "ficha_id": "sha256:ad48b2cb2475e8835a2b1c9ef52a183327b2d676a113dde1a714619379c48f3e"
   },
   {
    "name": "prevencao-de-ist-aids",
@@ -8777,7 +8777,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:305c407dade7d744f6d4402f02e2ab4c5b87eaf370ed314768d966f1431ba8c7"
+   "ficha_id": "sha256:40c3613cc34e66c18c66d90eabb60c4be3d7965a6468d26d684d59cf66bf23be"
   },
   {
    "name": "processos-licitatorios",
@@ -8834,7 +8834,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:7d9a355b65a8d4f9396272be33b22c572a25219a6a958c6c3f2897342ebdee71"
+   "ficha_id": "sha256:4fc0a12dc53f03efd00ab5f40ac349353c67220ce08b74a2fa3e894dfeab5c92"
   },
   {
    "name": "programas-de-habitacao-popular",
@@ -8891,7 +8891,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:3c8f0c176bbf3e66b8f35603c01ba2c7cdc3373d225ee28f5df77beba5dbd645"
+   "ficha_id": "sha256:f6f1fb955de0756be4035b2286a04fc84274bb630894357617f86f87e87b6d4f"
   },
   {
    "name": "projetos-fomentados",
@@ -8948,7 +8948,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:62460e23a398a1ad556556414ec43866c7ae72cd4c56dfc0d4d685b11855a44e"
+   "ficha_id": "sha256:cb9099a4959e628c8962a46420561d5cd4e894212052d43705aff8a176eb36e0"
   },
   {
    "name": "proprios-municipais",
@@ -9007,7 +9007,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:66869df4a9799f320aa15ce42c8ef87db14d51954a5f55a25a5c43400b7777b6"
+   "ficha_id": "sha256:b4893f4a9eafa410a830a4a25b51922949dc06d0a43e1e0747f3a47b5d757307"
   },
   {
    "name": "quadro-de-profissionais-necessarios",
@@ -9064,7 +9064,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:cf5312b4fd369fa87c83858c6ac67c81e77d4991d8ba9e0f101fb1500997d108"
+   "ficha_id": "sha256:7c31bf5627a34544f1c551302f7996b558f7d040250abc54afadc39ba9bd8615"
   },
   {
    "name": "receitas",
@@ -9123,7 +9123,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:023c22a42e0c07a0852e0b97a53692727bdc803027d25b680aa5c09da0bd971e"
+   "ficha_id": "sha256:d460db3cb80af67502a9acf6a7742bcda9a814f33d51f3db3708546a4e84ec6c"
   },
   {
    "name": "recife-bom-de-bola",
@@ -9182,7 +9182,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:6536005128e0448d6963615add1418e93329246fe2c0f3c9526445f6019ef3bf"
+   "ficha_id": "sha256:20eb2af32c4cf9b8ee72b3d2554af61b130701562cd3255a4257a8658f0d6aa9"
   },
   {
    "name": "rede-credenciada",
@@ -9239,7 +9239,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:08189d92842d782b50e7774508cb9286e2fafa6ac20763687c771d1d79859550"
+   "ficha_id": "sha256:bee37d47227fa8d831b8ab84e299245cc42f69fa6949f2529be38008af81af26"
   },
   {
    "name": "rede-de-atencao-a-saude-no-recife",
@@ -9298,7 +9298,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:6d1265bc6a8a62c41ebd0cab95096d902388924c289f4a80919495582c83fc71"
+   "ficha_id": "sha256:a7a542d3e4859102765a21001c620736f1ec0eac311147bf797300ee3a0e4bba"
   },
   {
    "name": "rede-de-bibliotecas-pela-paz",
@@ -9355,7 +9355,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:5d31cc4e333b72a9598c2c3f1b370e4dbcb6ffb16768d3436a67197199d73598"
+   "ficha_id": "sha256:e2114e96bda8eb6554e3ff3390e016a613f721869467c82b9ac3d6a9d6ae5427"
   },
   {
    "name": "rede-de-educacao-municipal",
@@ -9412,7 +9412,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:9493933bf30d55f33b8b405c200cd8e9ddb730d15e0da651b4a848d3af8ee1ee"
+   "ficha_id": "sha256:d311182b6ad3935473be6f6554e91c94951f4cabbee9bc01c359af9395f1c27e"
   },
   {
    "name": "rede-de-protecao-de-direitos-humanos",
@@ -9461,7 +9461,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:f26893ec74f3a61ad5b1e4f14d5d979821c84549ad250f500991d15896ac7a37"
+   "ficha_id": "sha256:f0c83776dd4c2e64c906c39daeba1fbfe976c05d8e3bd04a89868dbba8c08166"
   },
   {
    "name": "rede-de-saude-municipal",
@@ -9510,7 +9510,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:f0d1f87bf904f20c8caa43b9893e96a8a8e116978bb401f6453ac7c45156a42b"
+   "ficha_id": "sha256:e2f8bb768dca0430a8db156cf08989525e22a754bdfb2add4487e351b83a0aae"
   },
   {
    "name": "registro-das-infracoes-de-transito",
@@ -9569,7 +9569,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:0deff6bcd380b75188cb7deccc81dd5c9718e8e139457ed7974efa72fe03c321"
+   "ficha_id": "sha256:e7e525f936456549c95d69540eacd6d4bfc6f50958d8f68ece4d88bd3e476e80"
   },
   {
    "name": "registro-de-atendimentos-da-defesa-civil",
@@ -9628,7 +9628,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:e7298120561afbb65f4a7d06600a57c55ba40552d7af35abe63ee1c53cf19d13"
+   "ficha_id": "sha256:bd8cb58d3a27b17aea23956ad3a9dfecfb9ff42285c3e2edfba9ec764952e22f"
   },
   {
    "name": "registro-de-chamados-atendidos-pela-cttu",
@@ -9687,7 +9687,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:bf85dcaf8976fff301345eef0fd543b2e106a4ade7eaf59f98ffef174623dea3"
+   "ficha_id": "sha256:166bd6dbe70227f61a9b951ee4077dff4ab6ca363d521bfc4a3837410730ab9e"
   },
   {
    "name": "registro-de-velocidade-das-vias",
@@ -9746,7 +9746,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:05bc77cc871c2bf9511fbb40f19160d1f93f4d10b78dc9c2b6d23bd162c7f8ef"
+   "ficha_id": "sha256:475177ec7ca1afbef7ba052c00b49ff403441a4206b81821eba9ee5babcd675a"
   },
   {
    "name": "relacao-das-favelas-corticos-e-loteamentos-irregulares",
@@ -9795,7 +9795,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:b8c981303c62e95cd5215276f7a208d56cbb75653597daee1a151feef24ae568"
+   "ficha_id": "sha256:ee4fed9b466b14084b315927ef9c67a2d862ef807f86e982dba886adc5a00cca"
   },
   {
    "name": "relacao-de-pessoas-vacinadas-covid-19",
@@ -9854,7 +9854,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:8c0a7c7d87bec862492f56b698f37c26308f289423d3ec4f77c878941aa45946"
+   "ficha_id": "sha256:a85c08a71df738af45fedf89d7e0eb8ab6e838b23adc4479abe03f687c0437ba"
   },
   {
    "name": "roteiro-de-coleta",
@@ -9911,7 +9911,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:715e536f6021aebe95f58dabd69b89b8960a6dcade901629a0740a9b7670648e"
+   "ficha_id": "sha256:a89771a55e3f6946c5dc981a9614e823ba41f741e94c668506eb3fb41f42199b"
   },
   {
    "name": "roteiros-culturais-turismo-e-lazer",
@@ -9970,7 +9970,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:ff7d69f11edfb38fbc98ec3998b98103802e090a4b87600f0ad07f1aad4c1459"
+   "ficha_id": "sha256:6becc2c70db502acede8f2ea5dad0a9a2fd5a0cf0dd2a187c820635936936ffe"
   },
   {
    "name": "seduc-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
@@ -10027,7 +10027,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:63ed1ce5ba87aa75654245f378bdcb1900f590a0725635c51d0c16f6b01b4986"
+   "ficha_id": "sha256:62d941f821f061a720261b24b132b7fd16bfa0bd7c713311c36c5791f09d89b0"
   },
   {
    "name": "segov-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades-covid-19",
@@ -10084,7 +10084,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:29884192ebd67bb16182bd2b0d87eb0197c829d236e4f5968090409d61a9d513"
+   "ficha_id": "sha256:5ba7eba4a13056ac35985ad8d028357f47e58ac0da974342756e19e5bf3fccac"
   },
   {
    "name": "seinfra-processos-de-aquisicoes-de-bens-e-servicos-oriundos-de-dispensas-ou-inexigibilidades",
@@ -10141,7 +10141,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:1c7c05a663bb14af66e21240a509407355e7be37c0df5c98d7bbf8e2008044dd"
+   "ficha_id": "sha256:b9bee0197eb2d533cef71b9fa047ae11bb4a4efa9aaf24ce7c0846ee802c6ed0"
   },
   {
    "name": "servico-de-apoio-diagnostico-e-terapeutico-sadt",
@@ -10200,7 +10200,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:66a77288731f5d84991d3055a8478e45ace376aebfe92da0ad850b02e6559644"
+   "ficha_id": "sha256:5f28a2d787d4fbbf54436460adf3b2f2966009f124ee88b118b60ccdc185f08c"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2011",
@@ -10259,7 +10259,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:e371a05dc6b43559b6c64ff73eff20100420284f120fa3d51c6b0d33c52df1bb"
+   "ficha_id": "sha256:db108898479dd15a7bf6bc183dd765217c82610b620cbcb828393ea91e33dbaf"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2012",
@@ -10318,7 +10318,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:17cef776e308be0695971fc9f12bee49983e6367a3fcaf1dbba0accf8aa9ef4f"
+   "ficha_id": "sha256:a063e31c593443e17baa6485731a2a7def351ef2601f4f51a1ed0a4827919df2"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2013",
@@ -10377,7 +10377,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:4dc2095e0b8f726aae5a501788c8ec29bdd99e4d10f6cca8fc71d7245a160e09"
+   "ficha_id": "sha256:2d64b9e998d108a1ec435c19943f34b2d0eeee1ea1e44fe652dd6e041e7fd7ab"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2014",
@@ -10436,7 +10436,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:dec2913c7f1cf27099ebe18b231b7fb2a96e5cdd73fd8127bc9b0f1cc3400cb2"
+   "ficha_id": "sha256:b2d0b1878afac45d275f69e2296c6bfddf39626f7b2c46f44f8798fc739d79e3"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2015",
@@ -10495,7 +10495,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:a50b818e66c52fff096544b685736e1668977bc4384753f68fee6e236aa8fa35"
+   "ficha_id": "sha256:78fd3d0d9c486afef341c5c6d0f4c21a702e4e2f20d7e6cf078c74a89fcb0b2c"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2016",
@@ -10554,7 +10554,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:811e2cdaf70d116a7cccecb0bef5ad5bf7f18dbe95245a02012fbde742159c1e"
+   "ficha_id": "sha256:7cf7f214eb365027acd3fc2f3eaa3fa7748cb5707f142612692e85108fd4b21d"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2017",
@@ -10613,7 +10613,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:dd055273e6501237aca95971dbcf20da9d779a6f138c0c366013bca553185d86"
+   "ficha_id": "sha256:a5ac6f1c67e2c71fb820dbe1e15b42c103d69decc9f8be8150e4d83bcdfe9730"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2018",
@@ -10672,7 +10672,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:225f207ca87542bc26497537f0420b35a80ab40cf782b1a50f995809a3ea356f"
+   "ficha_id": "sha256:e7298c94cadd0f00a0e82fe0dcb45dcc36d87f50e7aadc7edec966043484975f"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2019",
@@ -10731,7 +10731,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:e3dd8603841b90e38c6b543e930ad0f898220f3d1e487e9d4461fb983040abc8"
+   "ficha_id": "sha256:bdf15b9eb103eeb698180b79ccaa3e545704b5a54aadea28f5b0f46c4639be6c"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2020",
@@ -10790,7 +10790,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:46ce0a8abedaa55aa559de38f2cb580f4a0ab06ad495b416e12aa8339fec9065"
+   "ficha_id": "sha256:f0e61e482e4c98e09ec300a11a9505f89d5e19dc6afad8d6f128b9ee78ec4a21"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2021",
@@ -10849,7 +10849,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:c78835ae8fef528355d0c6df3fe64fcf8b68a5fa400c1f890910ffb1d7274dca"
+   "ficha_id": "sha256:830c7d56f3abd1ae404ee74a7e6f008f6ee69e516285c53d8637d1c761c63c1b"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2022",
@@ -10908,7 +10908,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:bfb61bc5fb991eea0aaaaa2ece41a93402affb2789cf2c07b1cb0683fc93c1ad"
+   "ficha_id": "sha256:0e71d1cbdaad32921cd14392d91d5ac881d5914feb9f1ef4a75b576d6a16f35a"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2023",
@@ -10967,7 +10967,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:4fb349333edfa2e3f4a8ba60ca3701142fda06dc4697b8b89c480b5e0097d849"
+   "ficha_id": "sha256:a6100fa63671e9a458700a7b8b64fb80efa5ee46a825f825f9325ffdaa3cf1ae"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2024",
@@ -11026,7 +11026,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:fbeadbcc06008cf4638d79726cc57115cfd27518abb6c424816347af8fa45827"
+   "ficha_id": "sha256:39f10bdb2f098e4989aac5857d86978cbf151f06d7c2ee47b2b9835b0340db1e"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2025",
@@ -11085,7 +11085,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:ebe5aa967e0d0624691de4f00da2489d200921dc9149f8e6d6d8b4e57f4add4b"
+   "ficha_id": "sha256:73c917b92185cd480dfcd227510dd96530ae045a8c8daec802dc27c2d949b9b9"
   },
   {
    "name": "servico-de-atendimento-movel-de-urgencia-samu-2026",
@@ -11144,7 +11144,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:f5b1ff5f0bf07739940bfa81f52a1222ff1ff0905967a57510b1533bce78029a"
+   "ficha_id": "sha256:6ca5787505ec0027c97943bc4ebb039d937a7303d874bf52e235c799648da4c4"
   },
   {
    "name": "servico-de-pronto-atendimento-spa",
@@ -11203,7 +11203,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:f41481687aa870aebd232ae9ce09226fc6116b24abd92ddf81793a92e39308e8"
+   "ficha_id": "sha256:5e0d926f52ff1431f903f57af746daa68aa515835a827a616c7dd8103d7669a5"
   },
   {
    "name": "servidores",
@@ -11262,7 +11262,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:66a354c006a65cd3bc32d58098ffd79585c8d29e599077615ea92d7232fd13b5"
+   "ficha_id": "sha256:0c2f11e05ad228897456dcb5b4ac8e6d4ce87745e97763ae998473dc6c02da0d"
   },
   {
    "name": "situacao-final-dos-alunos-por-periodo-letivo",
@@ -11319,7 +11319,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:183ba24e646b3b5b761dca4bdb36c70bc1822f92248c6350d9140a29c6f48c5c"
+   "ficha_id": "sha256:1dcdf9190b768fab8a4fc6ea4ed09270092ba5aba77c8673136343e84de0f457"
   },
   {
    "name": "telecentros",
@@ -11376,7 +11376,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:302591129fa8175b52275cce3389e5b68f98b1dcd5518db9e8e16232b20fe1f4"
+   "ficha_id": "sha256:e72eb2614d5f45b7943b9a0bf9b3ed537db596db2a6fbbebdf7dc9b434cee10f"
   },
   {
    "name": "transferencia-de-recursos",
@@ -11433,7 +11433,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:e8ef778ed7f36682dfea541695a38c16fc90bd5f7e28f2538ba3227390c62e1a"
+   "ficha_id": "sha256:b8f08125c9db3ae35ac09bc103dc3b5a22f09477e895c22de1d7d0482055b3ae"
   },
   {
    "name": "transporte-escolar-gratuito",
@@ -11490,7 +11490,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:9f43875c47d90ce78b07126a7c00d2dd4ce4cc0808aaa854369bfcad1f1ad4a5"
+   "ficha_id": "sha256:a65d20bdafb7d9805960dd65b3ec1995e3b92e5ff3d341673b240563190ae9bd"
   },
   {
    "name": "unidade-conservacao-da-natureza",
@@ -11539,7 +11539,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:ff4d3b3cf196a4fbeb2c45708cc48e26ef27fb32702d2b4e2fde77bfd22f9ff9"
+   "ficha_id": "sha256:e62bd4f3e661622b9645e5e33bb685cbfee081bbe3a4bc4480c5d6af11d14dca"
   },
   {
    "name": "unidade-de-tratamento-soropositivo",
@@ -11598,7 +11598,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:7cde57c5de8e161b7d3014f03168c0d2ee05e0381e425da7fecce8245ae480fe"
+   "ficha_id": "sha256:c95e8b01778d3eaa0781fe4044bf49713e881eb3e086f869176f0cce5c64a4f5"
   },
   {
    "name": "unidades-basica-de-saude",
@@ -11657,7 +11657,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:ce3988efec4909dc47dbc5314b4262b3f0701b195339f2662c487c2edc3fc760"
+   "ficha_id": "sha256:92a25a3f02c805078cd0ec55840176c47627f5cee44fedcb181250aae06e503d"
   },
   {
    "name": "unidades-de-distribuicao-de-preservativos",
@@ -11716,7 +11716,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:02de1de53a501b709bef33f10d36ec3ab3afeb9937b5e2565ce6b35e31270781"
+   "ficha_id": "sha256:8805afffb3f587e5ce56a4f837471d8ef85d7710ad9feb8eb93eea73e76799da"
   },
   {
    "name": "unidades-de-recebimento-de-pequenos-volumes",
@@ -11773,7 +11773,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:5d844e8353e2b2a48ce0530091a7749d9a8d87421e2b573f6e5bff72e404c179"
+   "ficha_id": "sha256:ade094032b448cb790964ab675b065a5cfdaff353d18254173805f6d402fe16c"
   },
   {
    "name": "unidades-de-saude",
@@ -11832,7 +11832,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:a989993ca5bbf04a3c1d78d3413abaa60e01cb8319ae9abcc7afb763980762ea"
+   "ficha_id": "sha256:7b3372007fac3229147604b06db20efdfd1e0b73f9d68478f99458bb59c352bc"
   },
   {
    "name": "unidades-de-seguranca-publica-no-municipio",
@@ -11881,7 +11881,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:5bebe0aa192423b316cfbad2848231fdbba580cac52a6c7c014763da71e24a1a"
+   "ficha_id": "sha256:bdd187bd6b7bc9041654beac9e38a92d5fcb7ac6f263d5ccb10640ccb4b8d406"
   },
   {
    "name": "unidades-educacionais-no-municipio",
@@ -11938,7 +11938,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:494302ef848985907b480d82df49112e51bc3bb681ab8556dbaf24854860f350"
+   "ficha_id": "sha256:82bf9517f1fd700a328b2adebdd387ce5741a21a0281d8501ce9d5fae4a9df83"
   },
   {
    "name": "unidades-especializadas",
@@ -11997,7 +11997,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:2a2ee9275d5d4053f31edfeb01ed2cef4362e46770e8f06ba7c9d398b3a5116d"
+   "ficha_id": "sha256:c7a3dcc6de51abd770474f246e73ba81e63f582cc17ab8b901fd9136da8060b4"
   },
   {
    "name": "unidades-protegidas-do-recife",
@@ -12046,7 +12046,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:fbfc473032474cf4900c41f6c6e550dcdb0f662030d3f5b0768f969ea50d7f5f"
+   "ficha_id": "sha256:9987005285c067582b9b8524149cd17af333d60bd3c401a7b5456f1f6554bdfc"
   },
   {
    "name": "unidades-saude-da-familia-usf",
@@ -12105,7 +12105,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:f91d4b9b978c03f8ed5fb5c261df483da18ceace20655220764aad4ec5c842e2"
+   "ficha_id": "sha256:299c999ac1786e9c6e0fa1751362d6f57373ff0393839b06b599ba623504fdc6"
   },
   {
    "name": "unidades-ubt-e-usf-por-logradouro",
@@ -12162,7 +12162,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:8b2937d9c3bb26d2e154234d6ba95a17a66288bed5cbab07ee14de45bb20b828"
+   "ficha_id": "sha256:c8b6b5822fa99d60ad96a385cd5adc5cc10843e344d5ed62e9aa2f44e4bfcc0b"
   },
   {
    "name": "urbanismo-tatico",
@@ -12221,7 +12221,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:e6fc316b5c3f8fb44e5087c7dcee9070d3ca7728917ecd985a78643b45a97bf5"
+   "ficha_id": "sha256:0a81fdd4f1d2cacf4bc91f723f38e47d91860a986f834eaedb8cab5d7d755ddb"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media",
@@ -12280,7 +12280,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:dbe2096737a066036acfe7e071167a390a7f9cd7f3ddde155a7660f49e418e87"
+   "ficha_id": "sha256:9ef8841a08f001c2625665069883325eb36ab6850667575b96cd4b21705df153"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2016",
@@ -12339,7 +12339,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:85a06586587d1ce798b99e7a6a56f896687a3612da033fda6765286f4f290e04"
+   "ficha_id": "sha256:02ae518604744da1bf09d0e8aa6c5909b712a22fdfa4e3bc476aa86b24f6d5f0"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2017",
@@ -12398,7 +12398,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:7daffa9cfc04af1bf47ee2aaa91ac63baebb85e2b63bf91acd56a3ac8f9145b0"
+   "ficha_id": "sha256:ff091bd7f1f4111b125e270fb0e3be0b4e6f1fb4812a99cf5f972dc326a192dd"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2019",
@@ -12457,7 +12457,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:befc224c5f9c746460ce9a839dd933aa5232be5e73a25eb25466f87f3fec1b6d"
+   "ficha_id": "sha256:492450031585fc22638cf300dad903e2d186df98d4dd2d53986b669f6cdbb7e5"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2020",
@@ -12516,7 +12516,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:1bb34c423e7057c5ff297279fa363cbc92120ee3b1a33f85dbe9a1ca3eef7224"
+   "ficha_id": "sha256:0daf6fae2f913e463ffdd82ce81ff21d045c2556e56100246b1ce46bef2f5079"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2021",
@@ -12575,7 +12575,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:e3f6406e8d17e81d6922e01aa06de114280b4037680df8fd5920c93fe3412a9c"
+   "ficha_id": "sha256:84435213e713ddfab05beb9e9d87142e6ec77b532bc49fe4c7af85d508240051"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2022",
@@ -12634,7 +12634,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:6a79f3a33f1b9669ccd5b8828cd8d0ad589ddfaa66a2e4f73b5a35cfc33e00a4"
+   "ficha_id": "sha256:6ccfa7d6fd4c66c96ca383395394339142e987cc56f1c51f430f8e8ee55ca70d"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2023",
@@ -12693,7 +12693,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:b0aae46ae57bfbc943717092f525c0d438385df9fd6b7a548d9d490513967953"
+   "ficha_id": "sha256:ae6a626da3701fac06722e25ee70a6982fd1e180b703195eda5bb9c3a1601836"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2024",
@@ -12752,7 +12752,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:50f25f6e38498d82bec645d91d92e8d851217535727e4e04274c2ab87fd7dc4c"
+   "ficha_id": "sha256:0b51fa8e671c5c3d1c85d7527d81c6f0ece5dbcb37ec0bdd905434eacd1fcd30"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2025",
@@ -12811,7 +12811,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:6302c21cad9acf523a43bfea8d802872e5aeeb106823ac4aa575046e0c4ff00a"
+   "ficha_id": "sha256:1be59745c6bbb90ef0fbb1daed484f8d19891fd75c48563398d74ede9b1cbbd4"
   },
   {
    "name": "velocidade-das-vias-quantitativo-por-velocidade-media-2026",
@@ -12870,7 +12870,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:9c37f2e7af6aa38658cbf4dec07bc12053bfc697541c34ff073a6d1aa30bc200"
+   "ficha_id": "sha256:0e78154c0ee2a84b6aff0e84608d54ce2fc38006a766d053d2b78863a0b36328"
   },
   {
    "name": "vigilancia-de-zoonoses",
@@ -12929,7 +12929,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:c4485d011610eaa76f7672acc92c7657214637facc03095486dd1b20ce8bd5e2"
+   "ficha_id": "sha256:26b94da68b890b9495d98cf7775b74e1bdb50c70931ac45d11c00d7e11adc0d4"
   },
   {
    "name": "vigilancia-sanitaria",
@@ -12988,7 +12988,7 @@
    "finding_kinds": [
     "signal"
    ],
-   "ficha_id": "sha256:2e0c097e80aaa93270d9d1f6bce80350b2c1454c883e62df2d659747077f02b4"
+   "ficha_id": "sha256:1b88931bed2a6e3e179fd0c586e20a5e7d011edb7b891fc247afa43e1503ff10"
   },
   {
    "name": "zona-azul-eletronico",
@@ -13045,7 +13045,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:a3152173625eac507c5cc5babaf1e33dc311cfd3516d49200e5aa4513686ba0a"
+   "ficha_id": "sha256:aadfbc75d3b126fc4c6777aa5951206bc0e11326a755a2530d23b556f545d6fe"
   },
   {
    "name": "zoneamento",
@@ -13094,7 +13094,7 @@
    },
    "findings": 0,
    "finding_kinds": [],
-   "ficha_id": "sha256:5670afdea6bfd785bd3d40e4237434d8c7b15cadd6897ce963954ad96db7f800"
+   "ficha_id": "sha256:6675dcda4ee4c46a5cc992b664d005e8e8d59630e3f2971b74500217dee0fa46"
   }
  ]
 }
