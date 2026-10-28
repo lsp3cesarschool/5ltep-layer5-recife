@@ -12,18 +12,18 @@
  "qs": {
   "kind": "partial",
   "factor": 1.0,
-  "coverage": 0.8,
+  "coverage": 0.5,
   "valid_layers": [
    "L1",
-   "L2",
    "L4"
   ],
   "integrity": [],
-  "low": 0.5995739614109135,
-  "high": 0.7995739614109134,
+  "low": 0.29999,
+  "high": 0.79999,
   "band": "alert",
   "eligible": false,
   "missing_layers": [
+   "L2",
    "L3"
   ]
  },
@@ -50,35 +50,31 @@
    ]
   },
   "L2": {
-   "status": "valid",
-   "reason": null,
-   "rate": 0.9986132047030449,
-   "evaluated_at": "2026-10-21T09:29:57+00:00",
-   "current": true,
+   "status": "missing",
+   "reason": "l2_not_evaluated",
+   "rate": null,
+   "evaluated_at": "2026-10-28T11:05:01+00:00",
+   "current": null,
    "facts": {
-    "rules": [
-     "amendment-end-before-start",
-     "amendment-without-contract",
-     "contract-end-before-start"
-    ],
-    "checks": 33170,
-    "signals": 46,
-    "not_evaluated": []
+    "rules": [],
+    "checks": 0,
+    "signals": 0,
+    "not_evaluated": [
+     {
+      "rule": "amendment-end-before-start",
+      "reason": "source_portal_unreachable"
+     },
+     {
+      "rule": "amendment-without-contract",
+      "reason": "source_portal_unreachable"
+     },
+     {
+      "rule": "contract-end-before-start",
+      "reason": "source_portal_unreachable"
+     }
+    ]
    },
-   "signals": [
-    {
-     "key": "L2:amendment-end-before-start",
-     "count": 40,
-     "en": "40 signal(s) of rule 'Amendment ending before it starts' in 11875 check(s)",
-     "pt": "40 sinal(is) da regra 'Fim da vigência do aditivo anterior ao início' em 11875 verificação(ões)"
-    },
-    {
-     "key": "L2:contract-end-before-start",
-     "count": 6,
-     "en": "6 signal(s) of rule 'Contract ending before it starts' in 7905 check(s)",
-     "pt": "6 sinal(is) da regra 'Fim da vigência do contrato anterior ao início' em 7905 verificação(ões)"
-    }
-   ]
+   "signals": []
   },
   "L3": {
    "status": "missing",
@@ -115,21 +111,11 @@
   },
   {
    "layer": "L2",
-   "kind": "signal",
-   "key": "L2:amendment-end-before-start",
-   "count": 40,
-   "when": null,
-   "en": "40 signal(s) of rule 'Amendment ending before it starts' in 11875 check(s)",
-   "pt": "40 sinal(is) da regra 'Fim da vigência do aditivo anterior ao início' em 11875 verificação(ões)"
-  },
-  {
-   "layer": "L2",
-   "kind": "signal",
-   "key": "L2:contract-end-before-start",
-   "count": 6,
-   "when": null,
-   "en": "6 signal(s) of rule 'Contract ending before it starts' in 7905 check(s)",
-   "pt": "6 sinal(is) da regra 'Fim da vigência do contrato anterior ao início' em 7905 verificação(ões)"
+   "kind": "evidence_lost",
+   "when": "2026-10-28T11:17:23+00:00",
+   "reason": "l2_not_evaluated",
+   "en": "L2 had evidence on this dataset and no longer has it",
+   "pt": "a L2 tinha evidência sobre este conjunto e deixou de ter"
   }
  ],
  "outcomes": {
@@ -148,39 +134,46 @@
      "145f5c46-10ea-4c02-ba26-21333ded8ae9": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
      "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859": "49eefd42185ffd97c789e9de92ff9d7441660cf9ef7bbc2d85f74c3da7c6c826"
     }
-   },
+   }
+  ],
+  "closed": [
    {
-    "key": "L2:amendment-end-before-start",
     "layer": "L2",
     "first_reported": "2026-10-13T19:19:31+00:00",
     "count": 40,
     "evaluated_at": "2026-10-09T13:36:53+00:00",
-    "status": "unchanged",
+    "status": "cleared_without_data_change",
     "en": "40 signal(s) of rule 'Amendment ending before it starts' in 11875 check(s)",
     "pt": "40 sinal(is) da regra 'Fim da vigência do aditivo anterior ao início' em 11875 verificação(ões)",
     "digests": {
      "a72e7175-8fcd-40bd-82ef-056a621a6165": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
      "145f5c46-10ea-4c02-ba26-21333ded8ae9": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
      "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859": "49eefd42185ffd97c789e9de92ff9d7441660cf9ef7bbc2d85f74c3da7c6c826"
-    }
+    },
+    "key": "L2:amendment-end-before-start",
+    "dataset": "contratos",
+    "outcome": "cleared_without_data_change",
+    "at": "2026-10-28T11:17:23+00:00"
    },
    {
-    "key": "L2:contract-end-before-start",
     "layer": "L2",
     "first_reported": "2026-10-13T19:19:31+00:00",
     "count": 6,
     "evaluated_at": "2026-10-09T13:36:53+00:00",
-    "status": "unchanged",
+    "status": "cleared_without_data_change",
     "en": "6 signal(s) of rule 'Contract ending before it starts' in 7905 check(s)",
     "pt": "6 sinal(is) da regra 'Fim da vigência do contrato anterior ao início' em 7905 verificação(ões)",
     "digests": {
      "a72e7175-8fcd-40bd-82ef-056a621a6165": "c129b37e30ed4eebe052bdf5789c7dbbba8ef23e464dbc7545dd4fd907b07a44",
      "145f5c46-10ea-4c02-ba26-21333ded8ae9": "c879c54a5f5ae297e9d33b693b3447a0fa89255ecba702d0a7f604ab01258550",
      "acb67bb7-7cdb-4ffc-96ab-7aeedd13e859": "49eefd42185ffd97c789e9de92ff9d7441660cf9ef7bbc2d85f74c3da7c6c826"
-    }
+    },
+    "key": "L2:contract-end-before-start",
+    "dataset": "contratos",
+    "outcome": "cleared_without_data_change",
+    "at": "2026-10-28T11:17:23+00:00"
    }
-  ],
-  "closed": []
+  ]
  },
  "sources": {
   "L1": {
@@ -210,14 +203,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-21T09:30:01+00:00",
+   "generated_at": "2026-10-28T11:05:01+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "8329f46b74d30c7ac8ddaebd208459abe5566f38",
-      "date": "2026-10-21T09:30:18Z"
+      "sha": "25af13452934de335c6a91f9f160c8544a197b24",
+      "date": "2026-10-28T11:05:17Z"
      }
     }
    ],
@@ -258,22 +251,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-27T04:53:02.210052+00:00",
+   "generated_at": "2026-10-28T05:28:17.545800+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "932f1d3caa63b48e40ae266ef41e7aecdbf6d11c",
-      "date": "2026-10-27T04:53:02Z"
+      "sha": "81310171c46887630d2ea85cc0d44161356ac45f",
+      "date": "2026-10-28T05:28:17Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "2acfb0741a3b62dd536216c49849b611b7e160ac",
-      "date": "2026-10-27T09:13:38Z"
+      "sha": "87c1ffcba63503519bb5862991b930219a96f1af",
+      "date": "2026-10-28T09:54:17Z"
      }
     },
     {
@@ -333,19 +326,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-27T10:29:19+00:00",
+ "generated_at": "2026-10-28T11:17:23+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "044b2545097fff2e222527ef15fc79ffdc1dad1f",
-  "run_id": "40488834707"
+  "commit": "a38cfd33247e06d24b5e46c216e1ad7d0c8c05b7",
+  "run_id": "40678768689"
  },
  "ficha": {
-  "id": "sha256:9efd4189ec8f317415f3e7486f7e98376a92e486da6c8bc860b855bf9080eac9",
+  "id": "sha256:4ab0077b538fa2aded2aba75c9124bb260c72ed2e83e5db531f2fad909f39ff2",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=contratos",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/contratos.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'contratos' (Recife), 2026-10-27, sha256:9efd4189ec8f3174…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=contratos",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'contratos' (Recife), 2026-10-27, sha256:9efd4189ec8f3174…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=contratos"
+   "en": "5L-TEP Layer 5 record of 'contratos' (Recife), 2026-10-28, sha256:4ab0077b538fa2ad…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=contratos",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'contratos' (Recife), 2026-10-28, sha256:4ab0077b538fa2ad…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=contratos"
   }
  }
 }

@@ -107,14 +107,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-21T09:30:01+00:00",
+   "generated_at": "2026-10-28T11:05:01+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "8329f46b74d30c7ac8ddaebd208459abe5566f38",
-      "date": "2026-10-21T09:30:18Z"
+      "sha": "25af13452934de335c6a91f9f160c8544a197b24",
+      "date": "2026-10-28T11:05:17Z"
      }
     }
    ],
@@ -155,22 +155,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-27T04:53:02.210052+00:00",
+   "generated_at": "2026-10-28T05:28:17.545800+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "932f1d3caa63b48e40ae266ef41e7aecdbf6d11c",
-      "date": "2026-10-27T04:53:02Z"
+      "sha": "81310171c46887630d2ea85cc0d44161356ac45f",
+      "date": "2026-10-28T05:28:17Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "2acfb0741a3b62dd536216c49849b611b7e160ac",
-      "date": "2026-10-27T09:13:38Z"
+      "sha": "87c1ffcba63503519bb5862991b930219a96f1af",
+      "date": "2026-10-28T09:54:17Z"
      }
     },
     {
@@ -230,19 +230,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-27T10:29:19+00:00",
+ "generated_at": "2026-10-28T11:17:23+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "044b2545097fff2e222527ef15fc79ffdc1dad1f",
-  "run_id": "40488834707"
+  "commit": "a38cfd33247e06d24b5e46c216e1ad7d0c8c05b7",
+  "run_id": "40678768689"
  },
  "ficha": {
-  "id": "sha256:ade094032b448cb790964ab675b065a5cfdaff353d18254173805f6d402fe16c",
+  "id": "sha256:50bc5885135f3b4e127daacdcd4b691651e19c72e13af96dbdc0a17e18c27ac2",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-recebimento-de-pequenos-volumes",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/unidades-de-recebimento-de-pequenos-volumes.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'unidades-de-recebimento-de-pequenos-volumes' (Recife), 2026-10-27, sha256:ade094032b448cb7…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-recebimento-de-pequenos-volumes",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'unidades-de-recebimento-de-pequenos-volumes' (Recife), 2026-10-27, sha256:ade094032b448cb7…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-recebimento-de-pequenos-volumes"
+   "en": "5L-TEP Layer 5 record of 'unidades-de-recebimento-de-pequenos-volumes' (Recife), 2026-10-28, sha256:50bc5885135f3b4e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-recebimento-de-pequenos-volumes",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'unidades-de-recebimento-de-pequenos-volumes' (Recife), 2026-10-28, sha256:50bc5885135f3b4e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-de-recebimento-de-pequenos-volumes"
   }
  }
 }

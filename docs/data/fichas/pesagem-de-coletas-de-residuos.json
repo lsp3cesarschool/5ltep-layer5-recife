@@ -12,18 +12,18 @@
  "qs": {
   "kind": "partial",
   "factor": 1.0,
-  "coverage": 0.8,
+  "coverage": 0.5,
   "valid_layers": [
    "L1",
-   "L2",
    "L4"
   ],
   "integrity": [],
-  "low": 0.6499996064314351,
-  "high": 0.849999606431435,
-  "band": "alert",
+  "low": 0.35,
+  "high": 0.85,
+  "band": "undetermined",
   "eligible": false,
   "missing_layers": [
+   "L2",
    "L3"
   ]
  },
@@ -50,28 +50,27 @@
    ]
   },
   "L2": {
-   "status": "valid",
-   "reason": null,
-   "rate": 0.9999986881047837,
-   "evaluated_at": "2026-10-21T09:30:00+00:00",
-   "current": true,
+   "status": "missing",
+   "reason": "l2_not_evaluated",
+   "rate": null,
+   "evaluated_at": "2026-10-28T11:05:01+00:00",
+   "current": null,
    "facts": {
-    "rules": [
-     "weighing-end-before-start",
-     "weighing-net-weight-balance"
-    ],
-    "checks": 762256,
-    "signals": 1,
-    "not_evaluated": []
+    "rules": [],
+    "checks": 0,
+    "signals": 0,
+    "not_evaluated": [
+     {
+      "rule": "weighing-end-before-start",
+      "reason": "source_portal_unreachable"
+     },
+     {
+      "rule": "weighing-net-weight-balance",
+      "reason": "source_portal_unreachable"
+     }
+    ]
    },
-   "signals": [
-    {
-     "key": "L2:weighing-net-weight-balance",
-     "count": 1,
-     "en": "1 signal(s) of rule 'Net weight different from initial minus final weight' in 381128 check(s)",
-     "pt": "1 sinal(is) da regra 'Peso útil diferente de peso inicial menos peso final' em 381128 verificação(ões)"
-    }
-   ]
+   "signals": []
   },
   "L3": {
    "status": "missing",
@@ -108,12 +107,11 @@
   },
   {
    "layer": "L2",
-   "kind": "signal",
-   "key": "L2:weighing-net-weight-balance",
-   "count": 1,
-   "when": null,
-   "en": "1 signal(s) of rule 'Net weight different from initial minus final weight' in 381128 check(s)",
-   "pt": "1 sinal(is) da regra 'Peso útil diferente de peso inicial menos peso final' em 381128 verificação(ões)"
+   "kind": "evidence_lost",
+   "when": "2026-10-28T11:17:23+00:00",
+   "reason": "l2_not_evaluated",
+   "en": "L2 had evidence on this dataset and no longer has it",
+   "pt": "a L2 tinha evidência sobre este conjunto e deixou de ter"
   }
  ],
  "outcomes": {
@@ -135,14 +133,15 @@
      "c81ded9f-aeb1-4aca-9b68-0a1f72241b37": "7722e7473b87152e320d333c983ff45690cd4d758f2811257e7b2f67168079d6",
      "63d0e1db-c07f-44a1-a8d2-9fd89fa75eb5": "f5e63b38e2159cdd5e6b5e8f56905d060fad9d74d5f66938961fb8c597725900"
     }
-   },
+   }
+  ],
+  "closed": [
    {
-    "key": "L2:weighing-net-weight-balance",
     "layer": "L2",
     "first_reported": "2026-10-13T19:19:31+00:00",
     "count": 1,
     "evaluated_at": "2026-10-09T13:36:57+00:00",
-    "status": "unchanged",
+    "status": "cleared_without_data_change",
     "en": "1 signal(s) of rule 'Net weight different from initial minus final weight' in 381128 check(s)",
     "pt": "1 sinal(is) da regra 'Peso útil diferente de peso inicial menos peso final' em 381128 verificação(ões)",
     "digests": {
@@ -152,10 +151,13 @@
      "bf281fbc-167b-4602-994b-30772b11987f": "1fd71c6ebccfb45b2b9f731320bc3d2d954c31187e360eb7c9d28f847cff19f6",
      "c81ded9f-aeb1-4aca-9b68-0a1f72241b37": "7722e7473b87152e320d333c983ff45690cd4d758f2811257e7b2f67168079d6",
      "63d0e1db-c07f-44a1-a8d2-9fd89fa75eb5": "f5e63b38e2159cdd5e6b5e8f56905d060fad9d74d5f66938961fb8c597725900"
-    }
+    },
+    "key": "L2:weighing-net-weight-balance",
+    "dataset": "pesagem-de-coletas-de-residuos",
+    "outcome": "cleared_without_data_change",
+    "at": "2026-10-28T11:17:23+00:00"
    }
-  ],
-  "closed": []
+  ]
  },
  "sources": {
   "L1": {
@@ -185,14 +187,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-21T09:30:01+00:00",
+   "generated_at": "2026-10-28T11:05:01+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "8329f46b74d30c7ac8ddaebd208459abe5566f38",
-      "date": "2026-10-21T09:30:18Z"
+      "sha": "25af13452934de335c6a91f9f160c8544a197b24",
+      "date": "2026-10-28T11:05:17Z"
      }
     }
    ],
@@ -233,22 +235,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-27T04:53:02.210052+00:00",
+   "generated_at": "2026-10-28T05:28:17.545800+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "932f1d3caa63b48e40ae266ef41e7aecdbf6d11c",
-      "date": "2026-10-27T04:53:02Z"
+      "sha": "81310171c46887630d2ea85cc0d44161356ac45f",
+      "date": "2026-10-28T05:28:17Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "2acfb0741a3b62dd536216c49849b611b7e160ac",
-      "date": "2026-10-27T09:13:38Z"
+      "sha": "87c1ffcba63503519bb5862991b930219a96f1af",
+      "date": "2026-10-28T09:54:17Z"
      }
     },
     {
@@ -308,19 +310,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-27T10:29:19+00:00",
+ "generated_at": "2026-10-28T11:17:23+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "044b2545097fff2e222527ef15fc79ffdc1dad1f",
-  "run_id": "40488834707"
+  "commit": "a38cfd33247e06d24b5e46c216e1ad7d0c8c05b7",
+  "run_id": "40678768689"
  },
  "ficha": {
-  "id": "sha256:638af122ab0b5ffc421a913b8b2da255bf1fc603a960f1448a13875bba923f36",
+  "id": "sha256:3383117428339c3fe0e452f897f743daca1a094560019a729ef58a8c57ae577b",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesagem-de-coletas-de-residuos",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/pesagem-de-coletas-de-residuos.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'pesagem-de-coletas-de-residuos' (Recife), 2026-10-27, sha256:638af122ab0b5ffc…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesagem-de-coletas-de-residuos",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'pesagem-de-coletas-de-residuos' (Recife), 2026-10-27, sha256:638af122ab0b5ffc…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesagem-de-coletas-de-residuos"
+   "en": "5L-TEP Layer 5 record of 'pesagem-de-coletas-de-residuos' (Recife), 2026-10-28, sha256:3383117428339c3f…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesagem-de-coletas-de-residuos",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'pesagem-de-coletas-de-residuos' (Recife), 2026-10-28, sha256:3383117428339c3f…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesagem-de-coletas-de-residuos"
   }
  }
 }
