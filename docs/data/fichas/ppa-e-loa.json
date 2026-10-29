@@ -155,22 +155,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-28T05:28:17.545800+00:00",
+   "generated_at": "2026-10-29T05:37:16.025825+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "81310171c46887630d2ea85cc0d44161356ac45f",
-      "date": "2026-10-28T05:28:17Z"
+      "sha": "91881551823617a241c0a659b130c3a78af8c71a",
+      "date": "2026-10-29T05:37:16Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "87c1ffcba63503519bb5862991b930219a96f1af",
-      "date": "2026-10-28T09:54:17Z"
+      "sha": "92a52aee4bdb8778f8b85ecc562207c25abedf72",
+      "date": "2026-10-29T10:16:51Z"
      }
     },
     {
@@ -230,19 +230,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-28T11:17:23+00:00",
+ "generated_at": "2026-10-29T11:28:52+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "a38cfd33247e06d24b5e46c216e1ad7d0c8c05b7",
-  "run_id": "40678768689"
+  "commit": "053851ed1b5c6a0de94a4ff202a96ab83240da28",
+  "run_id": "40865696922"
  },
  "ficha": {
-  "id": "sha256:966a9e0188b52c7493c12ff7cfb25dcae93492c94aea45f927edaf8f6f5c06bf",
+  "id": "sha256:adf741975bfb3d729c6bee0625a74baa40021b356a1ea7afe33e8abca22f2a2e",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=ppa-e-loa",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/ppa-e-loa.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'ppa-e-loa' (Recife), 2026-10-28, sha256:966a9e0188b52c74…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=ppa-e-loa",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'ppa-e-loa' (Recife), 2026-10-28, sha256:966a9e0188b52c74…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=ppa-e-loa"
+   "en": "5L-TEP Layer 5 record of 'ppa-e-loa' (Recife), 2026-10-29, sha256:adf741975bfb3d72…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=ppa-e-loa",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'ppa-e-loa' (Recife), 2026-10-29, sha256:adf741975bfb3d72…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=ppa-e-loa"
   }
  }
 }
