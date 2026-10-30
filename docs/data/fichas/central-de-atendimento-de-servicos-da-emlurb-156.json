@@ -209,22 +209,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-29T05:37:16.025825+00:00",
+   "generated_at": "2026-10-30T05:36:27.621461+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "91881551823617a241c0a659b130c3a78af8c71a",
-      "date": "2026-10-29T05:37:16Z"
+      "sha": "9d5338f1806b385a20ddc8e35f02f42f8e28fb10",
+      "date": "2026-10-30T05:36:27Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "92a52aee4bdb8778f8b85ecc562207c25abedf72",
-      "date": "2026-10-29T10:16:51Z"
+      "sha": "17ddc57d1f11caa2a12eb39dc2ccd3261d49885c",
+      "date": "2026-10-30T10:18:27Z"
      }
     },
     {
@@ -284,19 +284,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-29T11:28:52+00:00",
+ "generated_at": "2026-10-30T11:21:11+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "053851ed1b5c6a0de94a4ff202a96ab83240da28",
-  "run_id": "40865696922"
+  "commit": "05ed37335e50ab616f0d13d8ddec72a46c7c8ca3",
+  "run_id": "41047458895"
  },
  "ficha": {
-  "id": "sha256:ba97383be39372af1e4f80e2041d4cedf8c5dd33497623119a10aa450c066562",
+  "id": "sha256:ecf1ba7216accfadc05b558cc07c08b0a079170428b4dc9926ca846c60af3fee",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=central-de-atendimento-de-servicos-da-emlurb-156",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/central-de-atendimento-de-servicos-da-emlurb-156.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'central-de-atendimento-de-servicos-da-emlurb-156' (Recife), 2026-10-29, sha256:ba97383be39372af…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=central-de-atendimento-de-servicos-da-emlurb-156",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'central-de-atendimento-de-servicos-da-emlurb-156' (Recife), 2026-10-29, sha256:ba97383be39372af…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=central-de-atendimento-de-servicos-da-emlurb-156"
+   "en": "5L-TEP Layer 5 record of 'central-de-atendimento-de-servicos-da-emlurb-156' (Recife), 2026-10-30, sha256:ecf1ba7216accfad…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=central-de-atendimento-de-servicos-da-emlurb-156",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'central-de-atendimento-de-servicos-da-emlurb-156' (Recife), 2026-10-30, sha256:ecf1ba7216accfad…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=central-de-atendimento-de-servicos-da-emlurb-156"
   }
  }
 }
