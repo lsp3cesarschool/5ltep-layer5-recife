@@ -187,22 +187,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-30T05:36:27.621461+00:00",
+   "generated_at": "2026-10-31T05:25:31.375558+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "9d5338f1806b385a20ddc8e35f02f42f8e28fb10",
-      "date": "2026-10-30T05:36:27Z"
+      "sha": "6dc7e0224499c5d6c8545a166d1f725f2d24d7f9",
+      "date": "2026-10-31T05:25:31Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "17ddc57d1f11caa2a12eb39dc2ccd3261d49885c",
-      "date": "2026-10-30T10:18:27Z"
+      "sha": "a08f6ff23794b4ff2a0d2eb2b965fc6a7402245e",
+      "date": "2026-10-31T09:51:34Z"
      }
     },
     {
@@ -262,19 +262,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-10-30T11:21:11+00:00",
+ "generated_at": "2026-10-31T10:53:27+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "05ed37335e50ab616f0d13d8ddec72a46c7c8ca3",
-  "run_id": "41047458895"
+  "commit": "31966b57b7300eea58da44248e2a273ca9812857",
+  "run_id": "41194565766"
  },
  "ficha": {
-  "id": "sha256:9044880062ff3dca7e54fb68dfed4561bceb5ffecf6fa0f7c52f588aa84c4db8",
+  "id": "sha256:7e04b228ec2904697b02d1b1d7bf6495a9d7ded5dacb694172d185541eaf2ab6",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=parques-e-pracas",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/parques-e-pracas.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'parques-e-pracas' (Recife), 2026-10-30, sha256:9044880062ff3dca…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=parques-e-pracas",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'parques-e-pracas' (Recife), 2026-10-30, sha256:9044880062ff3dca…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=parques-e-pracas"
+   "en": "5L-TEP Layer 5 record of 'parques-e-pracas' (Recife), 2026-10-31, sha256:7e04b228ec290469…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=parques-e-pracas",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'parques-e-pracas' (Recife), 2026-10-31, sha256:7e04b228ec290469…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=parques-e-pracas"
   }
  }
 }
