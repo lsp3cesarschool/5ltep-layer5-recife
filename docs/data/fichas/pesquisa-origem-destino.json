@@ -59,7 +59,7 @@
    "evaluated_at": "2026-10-22T11:40:45+00:00",
    "current": true,
    "facts": {
-    "observations": 69,
+    "observations": 65,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/8eed6404-a20a-4e5e-8cdb-630a49a84fb8#316fcf098d31"
    },
@@ -147,22 +147,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-01T05:51:29.992296+00:00",
+   "generated_at": "2026-11-02T05:52:17.154919+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "7dfea02f8b3ca6d883d57f2c4336459e78ed4279",
-      "date": "2026-11-01T05:51:30Z"
+      "sha": "42010d4a68d15d5ae4a59e505c33eb8878d7484b",
+      "date": "2026-11-02T05:52:17Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "362884c1ffa27b2c72f38a5f190964e1df04ea32",
-      "date": "2026-11-01T10:42:16Z"
+      "sha": "b6ed56509cca8c2b33d2902c22b152c7ef3f1011",
+      "date": "2026-11-02T11:30:34Z"
      }
     },
     {
@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-01T11:48:16+00:00",
+ "generated_at": "2026-11-02T13:26:18+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "34935871d8872a613d29c0e4955db3ce5607bc66",
-  "run_id": "41303495938"
+  "commit": "1f65dfdf1d8936c7196f9bb908bf4e7b029fbb8f",
+  "run_id": "41452961671"
  },
  "ficha": {
-  "id": "sha256:00c069a4f2d31a4dd67513fbdaa4c4d1caaa210da659e0e3b52a5149ec370a5c",
+  "id": "sha256:cda90c55f127d3efb2e5826acf4331f3f34f55e282b73bb658b5349399043c44",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesquisa-origem-destino",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/pesquisa-origem-destino.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'pesquisa-origem-destino' (Recife), 2026-11-01, sha256:00c069a4f2d31a4d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesquisa-origem-destino",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'pesquisa-origem-destino' (Recife), 2026-11-01, sha256:00c069a4f2d31a4d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesquisa-origem-destino"
+   "en": "5L-TEP Layer 5 record of 'pesquisa-origem-destino' (Recife), 2026-11-02, sha256:cda90c55f127d3ef…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesquisa-origem-destino",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'pesquisa-origem-destino' (Recife), 2026-11-02, sha256:cda90c55f127d3ef…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=pesquisa-origem-destino"
   }
  }
 }

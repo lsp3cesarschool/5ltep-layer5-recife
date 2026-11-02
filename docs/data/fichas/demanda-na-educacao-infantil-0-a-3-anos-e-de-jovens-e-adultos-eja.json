@@ -10,30 +10,22 @@
   "portal_page": "https://dados.recife.pe.gov.br/dataset/demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja"
  },
  "qs": {
-  "kind": "partial",
+  "kind": "none",
   "factor": 1.0,
-  "coverage": 0.5,
+  "coverage": 0.2,
   "valid_layers": [
-   "L1",
    "L4"
   ],
   "integrity": [],
-  "low": 0.5,
-  "high": 1.0,
-  "band": "undetermined",
-  "eligible": false,
-  "missing_layers": [
-   "L2",
-   "L3"
-  ]
+  "band": null
  },
  "layers": {
   "L1": {
-   "status": "valid",
-   "reason": null,
+   "status": "expired",
+   "reason": "summary_too_old",
    "rate": 1.0,
    "evaluated_at": "2026-10-03T16:07:59+00:00",
-   "current": true,
+   "current": null,
    "facts": {
     "level": 4,
     "tables": 1,
@@ -67,7 +59,7 @@
    "evaluated_at": "2026-10-22T11:40:45+00:00",
    "current": true,
    "facts": {
-    "observations": 69,
+    "observations": 65,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/643220d4-f0b5-437c-8823-5c8183e2841b#aea020313176"
    },
@@ -155,22 +147,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-01T05:51:29.992296+00:00",
+   "generated_at": "2026-11-02T05:52:17.154919+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "7dfea02f8b3ca6d883d57f2c4336459e78ed4279",
-      "date": "2026-11-01T05:51:30Z"
+      "sha": "42010d4a68d15d5ae4a59e505c33eb8878d7484b",
+      "date": "2026-11-02T05:52:17Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "362884c1ffa27b2c72f38a5f190964e1df04ea32",
-      "date": "2026-11-01T10:42:16Z"
+      "sha": "b6ed56509cca8c2b33d2902c22b152c7ef3f1011",
+      "date": "2026-11-02T11:30:34Z"
      }
     },
     {
@@ -230,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-01T11:48:16+00:00",
+ "generated_at": "2026-11-02T13:26:18+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "34935871d8872a613d29c0e4955db3ce5607bc66",
-  "run_id": "41303495938"
+  "commit": "1f65dfdf1d8936c7196f9bb908bf4e7b029fbb8f",
+  "run_id": "41452961671"
  },
  "ficha": {
-  "id": "sha256:e0934bedd1f3192e0acd0606913708120176ab7ec4b3965d75368b293d095a48",
+  "id": "sha256:8b753e60ef4150d990ec9f236e8be7cbff33da400a0da37206b8d6745ef2287c",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja' (Recife), 2026-11-01, sha256:e0934bedd1f3192e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja' (Recife), 2026-11-01, sha256:e0934bedd1f3192e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja"
+   "en": "5L-TEP Layer 5 record of 'demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja' (Recife), 2026-11-02, sha256:8b753e60ef4150d9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja' (Recife), 2026-11-02, sha256:8b753e60ef4150d9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demanda-na-educacao-infantil-0-a-3-anos-e-de-jovens-e-adultos-eja"
   }
  }
 }
