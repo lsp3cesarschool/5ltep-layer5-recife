@@ -66,7 +66,7 @@
    "evaluated_at": "2026-10-22T11:40:45+00:00",
    "current": true,
    "facts": {
-    "observations": 65,
+    "observations": 61,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/8eba5c3e-62d7-44a4-8397-baa1441fca34#0e6a4506dc7e"
    },
@@ -178,22 +178,22 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-02T05:52:17.154919+00:00",
+   "generated_at": "2026-11-03T00:54:33.424165+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "42010d4a68d15d5ae4a59e505c33eb8878d7484b",
-      "date": "2026-11-02T05:52:17Z"
+      "sha": "fbd2674d173736d0056b14a617c79d49d8f4b4f3",
+      "date": "2026-11-03T00:54:33Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "b6ed56509cca8c2b33d2902c22b152c7ef3f1011",
-      "date": "2026-11-02T11:30:34Z"
+      "sha": "4743e7f607ef4b695a693f0e51064257946cc411",
+      "date": "2026-11-03T11:09:58Z"
      }
     },
     {
@@ -253,19 +253,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-02T13:26:18+00:00",
+ "generated_at": "2026-11-03T12:44:13+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "1f65dfdf1d8936c7196f9bb908bf4e7b029fbb8f",
-  "run_id": "41452961671"
+  "commit": "3150467d3157c209aa1c81f498cbc6f8720e3b1d",
+  "run_id": "41638207751"
  },
  "ficha": {
-  "id": "sha256:5f4b5559b922b1ba34bf71be19db42631135fd58779ae7a08b6d94790d28a724",
+  "id": "sha256:c4d2037c9b44cafa346da18d0728012f52c7bfaceb85df473d0c49930b0562ac",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/servico-de-atendimento-movel-de-urgencia-samu-2023.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'servico-de-atendimento-movel-de-urgencia-samu-2023' (Recife), 2026-11-02, sha256:5f4b5559b922b1ba…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-atendimento-movel-de-urgencia-samu-2023' (Recife), 2026-11-02, sha256:5f4b5559b922b1ba…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023"
+   "en": "5L-TEP Layer 5 record of 'servico-de-atendimento-movel-de-urgencia-samu-2023' (Recife), 2026-11-03, sha256:c4d2037c9b44cafa…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-atendimento-movel-de-urgencia-samu-2023' (Recife), 2026-11-03, sha256:c4d2037c9b44cafa…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023"
   }
  }
 }
