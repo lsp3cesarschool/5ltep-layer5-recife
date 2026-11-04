@@ -4,9 +4,9 @@
   "title": "Imposto sobre Transmissão de Bens Imóveis (ITBI)",
   "id": "ae32808e-ab98-4fe4-bacf-a72b2ac14551",
   "resources": 13,
-  "last_change": "2026-10-03T05:08:54+00:00",
+  "last_change": "2026-11-03T23:13:29+00:00",
   "last_type": "CONTENT_MOD",
-  "entity": "https://dados.recife.pe.gov.br/dataset/ae32808e-ab98-4fe4-bacf-a72b2ac14551#1fbabb22cb1e",
+  "entity": "https://dados.recife.pe.gov.br/dataset/ae32808e-ab98-4fe4-bacf-a72b2ac14551#e8c77ffc809b",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/imposto-sobre-transmissao-de-bens-imoveis-itbi"
  },
  "qs": {
@@ -63,12 +63,12 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-22T11:40:45+00:00",
+   "evaluated_at": "2026-11-04T06:03:21+00:00",
    "current": true,
    "facts": {
-    "observations": 61,
+    "observations": 60,
     "critical_in_window": 0,
-    "entity": "https://dados.recife.pe.gov.br/dataset/ae32808e-ab98-4fe4-bacf-a72b2ac14551#1fbabb22cb1e"
+    "entity": "https://dados.recife.pe.gov.br/dataset/ae32808e-ab98-4fe4-bacf-a72b2ac14551#e8c77ffc809b"
    },
    "signals": []
   }
@@ -82,6 +82,14 @@
    "when": null,
    "en": "12 of 12 verifiable file(s) do not conform to the declared schema",
    "pt": "12 de 12 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L4",
+   "kind": "simultaneous",
+   "when": "2026-11-03T23:13:29+00:00",
+   "count": 7,
+   "en": "CONTENT_MOD in 7 datasets in the same monitoring cycle (probably one operational event)",
+   "pt": "CONTENT_MOD em 7 conjuntos no mesmo ciclo de monitoramento (provavelmente um único evento operacional)"
   },
   {
    "layer": "L4",
@@ -116,7 +124,8 @@
      "53617998-09e8-420c-9399-75d859c8528e": "6b82eb65821645b7d1a0e6c0e5f6cea3074f4415c2605de6502005997c60c100",
      "210db9b0-4ea5-49cb-8084-135ebfca848d": "79f35cc1f1ba927f5a76907bc6dbea3b056809fa16dc60807ec8fb8fda0593a7",
      "87caf0ce-5f05-4952-abe5-83fa46eece4c": "c197678315a7bd7555c92462a0eb3980a68e9b28ebc9b22d9b951fa4c9826ef8"
-    }
+    },
+    "first_change_seen": "2026-11-04T12:57:01+00:00"
    }
   ],
   "closed": []
@@ -149,14 +158,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-28T11:05:01+00:00",
+   "generated_at": "2026-11-04T12:44:39+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "25af13452934de335c6a91f9f160c8544a197b24",
-      "date": "2026-10-28T11:05:17Z"
+      "sha": "a9eb8e5674a08c2001859244ec4acd55b000f5d0",
+      "date": "2026-11-04T12:44:57Z"
      }
     }
    ],
@@ -197,30 +206,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-03T00:54:33.424165+00:00",
+   "generated_at": "2026-11-04T06:04:25.398681+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "fbd2674d173736d0056b14a617c79d49d8f4b4f3",
-      "date": "2026-11-03T00:54:33Z"
+      "sha": "a390f7bbca4428a3d8fb1e1d8dd0f7d3edd20fb4",
+      "date": "2026-11-04T06:04:25Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "4743e7f607ef4b695a693f0e51064257946cc411",
-      "date": "2026-11-03T11:09:58Z"
+      "sha": "6cb62f165c880af67a7ae3a2ca56dec0bdd336cb",
+      "date": "2026-11-04T11:21:27Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "451ed168f65cf91b86637c85601023e49a6d58f1",
-      "date": "2026-10-22T11:43:59Z"
+      "sha": "a390f7bbca4428a3d8fb1e1d8dd0f7d3edd20fb4",
+      "date": "2026-11-04T06:04:25Z"
      }
     }
    ],
@@ -272,19 +281,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-03T12:44:13+00:00",
+ "generated_at": "2026-11-04T12:57:01+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "3150467d3157c209aa1c81f498cbc6f8720e3b1d",
-  "run_id": "41638207751"
+  "commit": "666ab10e3c32068b3358f80ea5944d14cc4408f2",
+  "run_id": "41833667081"
  },
  "ficha": {
-  "id": "sha256:a6f0be61c5b82796b1a3180545cd401cdffbf69aae23cd480561024fc400f4eb",
+  "id": "sha256:c2a5fe637e56ae08670414e2a6c0077520dbdc5c927424a4162ea3e4b3bd744d",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/imposto-sobre-transmissao-de-bens-imoveis-itbi.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'imposto-sobre-transmissao-de-bens-imoveis-itbi' (Recife), 2026-11-03, sha256:a6f0be61c5b82796…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'imposto-sobre-transmissao-de-bens-imoveis-itbi' (Recife), 2026-11-03, sha256:a6f0be61c5b82796…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi"
+   "en": "5L-TEP Layer 5 record of 'imposto-sobre-transmissao-de-bens-imoveis-itbi' (Recife), 2026-11-04, sha256:c2a5fe637e56ae08…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'imposto-sobre-transmissao-de-bens-imoveis-itbi' (Recife), 2026-11-04, sha256:c2a5fe637e56ae08…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi"
   }
  }
 }

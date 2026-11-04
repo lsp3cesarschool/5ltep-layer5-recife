@@ -4,9 +4,9 @@
   "title": "Estoque dos medicamentos nas farmácias da Rede Municipal de Saúde",
   "id": "c68396ad-ad0f-4255-a57a-84c97054dd37",
   "resources": 9,
-  "last_change": "2026-10-22T11:40:45+00:00",
+  "last_change": "2026-11-03T23:13:29+00:00",
   "last_type": "CONTENT_MOD",
-  "entity": "https://dados.recife.pe.gov.br/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37#b3e77bb57a45",
+  "entity": "https://dados.recife.pe.gov.br/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37#db088d2b3ce4",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude"
  },
  "qs": {
@@ -63,14 +63,21 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-10-22T11:40:45+00:00",
+   "evaluated_at": "2026-11-04T06:03:21+00:00",
    "current": true,
    "facts": {
-    "observations": 61,
+    "observations": 60,
     "critical_in_window": 0,
-    "entity": "https://dados.recife.pe.gov.br/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37#b3e77bb57a45"
+    "entity": "https://dados.recife.pe.gov.br/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37#db088d2b3ce4"
    },
-   "signals": []
+   "signals": [
+    {
+     "key": "L4:cross_check:estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+     "count": 1,
+     "en": "unreconciled divergence in the independent cross-check",
+     "pt": "divergência não reconciliada no cross-check independente"
+    }
+   ]
   }
  },
  "findings": [
@@ -82,6 +89,23 @@
    "when": null,
    "en": "8 of 8 verifiable file(s) do not conform to the declared schema",
    "pt": "8 de 8 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L4",
+   "kind": "signal",
+   "key": "L4:cross_check:estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+   "count": 1,
+   "when": null,
+   "en": "unreconciled divergence in the independent cross-check",
+   "pt": "divergência não reconciliada no cross-check independente"
+  },
+  {
+   "layer": "L4",
+   "kind": "simultaneous",
+   "when": "2026-11-03T23:13:29+00:00",
+   "count": 7,
+   "en": "CONTENT_MOD in 7 datasets in the same monitoring cycle (probably one operational event)",
+   "pt": "CONTENT_MOD em 7 conjuntos no mesmo ciclo de monitoramento (provavelmente um único evento operacional)"
   }
  ],
  "outcomes": {
@@ -106,6 +130,26 @@
      "2e411ebc-0bef-4e03-ae34-2b792b5468c2": "bdf4e5e9d6dff1ee296b06a1d2dcf71ed56cb44678a20b678640782c30016962"
     },
     "first_change_seen": "2026-10-21T10:04:26+00:00"
+   },
+   {
+    "key": "L4:cross_check:estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+    "layer": "L4",
+    "first_reported": "2026-11-04T12:57:01+00:00",
+    "count": 1,
+    "evaluated_at": "2026-11-04T06:03:21+00:00",
+    "status": "reported",
+    "en": "unreconciled divergence in the independent cross-check",
+    "pt": "divergência não reconciliada no cross-check independente",
+    "digests": {
+     "537f0b95-4eb7-4912-9d7c-32caf9fd68ac": "b823bcdc1f171589ff1bbc9057d7f38c218e2e86f3a1d33acd55f4aaaa493570",
+     "30e87813-b5a3-4cbd-b35e-b09156f52698": "0f11978e495e811dc836b86dc18102a1bb8061b05ea296380c5a21ade9b9d7de",
+     "832ae42d-0163-45e8-82c1-a4e00a5ec1b6": "fac9cb17d35ca52917bc726b2b8388db11d4909920c3f6623c31cfcd0eaa53fe",
+     "a4d419a8-4355-4ae9-b116-9cc35b914f50": "520fe177759508d20e117a62956cfe27d739285dbac0c52d3882b0180d81e97a",
+     "77040c32-2a39-4416-ba93-5c7386b46dcb": "42f5c89740827db3c2b021151dfc231d6151b868cfb12c66c360b23dc42ec04f",
+     "ac869f94-a655-4388-871b-9957b0a642a4": "5de497579803b5689de7d6e3539918ea5ab56d25a1051db4e0ae364f017f5ce9",
+     "97109f18-a189-4084-acaf-b3aff6e65d51": "751e556b144989212669c07af598208bde2d996815b5b89fc92bff0067623455",
+     "2e411ebc-0bef-4e03-ae34-2b792b5468c2": "bdf4e5e9d6dff1ee296b06a1d2dcf71ed56cb44678a20b678640782c30016962"
+    }
    }
   ],
   "closed": []
@@ -138,14 +182,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-28T11:05:01+00:00",
+   "generated_at": "2026-11-04T12:44:39+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "25af13452934de335c6a91f9f160c8544a197b24",
-      "date": "2026-10-28T11:05:17Z"
+      "sha": "a9eb8e5674a08c2001859244ec4acd55b000f5d0",
+      "date": "2026-11-04T12:44:57Z"
      }
     }
    ],
@@ -186,30 +230,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-03T00:54:33.424165+00:00",
+   "generated_at": "2026-11-04T06:04:25.398681+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "fbd2674d173736d0056b14a617c79d49d8f4b4f3",
-      "date": "2026-11-03T00:54:33Z"
+      "sha": "a390f7bbca4428a3d8fb1e1d8dd0f7d3edd20fb4",
+      "date": "2026-11-04T06:04:25Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "4743e7f607ef4b695a693f0e51064257946cc411",
-      "date": "2026-11-03T11:09:58Z"
+      "sha": "6cb62f165c880af67a7ae3a2ca56dec0bdd336cb",
+      "date": "2026-11-04T11:21:27Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "451ed168f65cf91b86637c85601023e49a6d58f1",
-      "date": "2026-10-22T11:43:59Z"
+      "sha": "a390f7bbca4428a3d8fb1e1d8dd0f7d3edd20fb4",
+      "date": "2026-11-04T06:04:25Z"
      }
     }
    ],
@@ -261,19 +305,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-03T12:44:13+00:00",
+ "generated_at": "2026-11-04T12:57:01+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "3150467d3157c209aa1c81f498cbc6f8720e3b1d",
-  "run_id": "41638207751"
+  "commit": "666ab10e3c32068b3358f80ea5944d14cc4408f2",
+  "run_id": "41833667081"
  },
  "ficha": {
-  "id": "sha256:ed57fe9b0d844666c10ccab6a93bedd00f0a7ecb977f02f5131911cad8393f26",
+  "id": "sha256:14f09dda2bffed7d0f8104efd69f87fd1aebb9ba7d45f71a58396272c2d1e01f",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude' (Recife), 2026-11-03, sha256:ed57fe9b0d844666…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude' (Recife), 2026-11-03, sha256:ed57fe9b0d844666…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude"
+   "en": "5L-TEP Layer 5 record of 'estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude' (Recife), 2026-11-04, sha256:14f09dda2bffed7d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude' (Recife), 2026-11-04, sha256:14f09dda2bffed7d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude"
   }
  }
 }

@@ -4,9 +4,9 @@
   "title": "Servidores",
   "id": "4af3f483-53f6-4e5a-91c4-8d486449e183",
   "resources": 15,
-  "last_change": null,
-  "last_type": null,
-  "entity": "https://dados.recife.pe.gov.br/dataset/4af3f483-53f6-4e5a-91c4-8d486449e183#4585c2acdae9",
+  "last_change": "2026-11-03T23:13:29+00:00",
+  "last_type": "SCHEMA_DRIFT",
+  "entity": "https://dados.recife.pe.gov.br/dataset/4af3f483-53f6-4e5a-91c4-8d486449e183#9fb561462653",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/servidores"
  },
  "qs": {
@@ -62,13 +62,13 @@
   "L4": {
    "status": "valid",
    "reason": null,
-   "rate": 1.0,
-   "evaluated_at": "2026-10-22T11:40:45+00:00",
+   "rate": 0.9833333333333333,
+   "evaluated_at": "2026-11-04T06:03:21+00:00",
    "current": true,
    "facts": {
-    "observations": 61,
-    "critical_in_window": 0,
-    "entity": "https://dados.recife.pe.gov.br/dataset/4af3f483-53f6-4e5a-91c4-8d486449e183#4585c2acdae9"
+    "observations": 60,
+    "critical_in_window": 1,
+    "entity": "https://dados.recife.pe.gov.br/dataset/4af3f483-53f6-4e5a-91c4-8d486449e183#9fb561462653"
    },
    "signals": []
   }
@@ -82,6 +82,13 @@
    "when": null,
    "en": "14 of 14 verifiable file(s) do not conform to the declared schema",
    "pt": "14 de 14 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L4",
+   "kind": "scope",
+   "when": "2026-11-03T23:13:29+00:00",
+   "en": "the dataset structure changed (SCHEMA_DRIFT): earlier evaluations no longer cover it",
+   "pt": "a estrutura do conjunto mudou (SCHEMA_DRIFT): avaliações anteriores deixam de cobri-lo"
   }
  ],
  "outcomes": {
@@ -110,7 +117,8 @@
      "3d2c19b7-245b-413c-a3da-3d40b2662428": "5608177d553f7b29bc3c58f3b380ff080ff71d42160b30e929931f19e6068006",
      "cd7e81d0-86c1-4e43-afbc-f0a01e4c447b": "6f10f21e9df00bc0337607f8caa89ad50baf37ff0a265b4c12f90dc7d73714c7",
      "15e85078-7832-4791-99c7-b46af52a2c1d": "a134fb32af52b0b6d76b35e1ff8fd7fe5d0a36d0c31eccbd22922180d86372ff"
-    }
+    },
+    "first_change_seen": "2026-11-04T12:57:01+00:00"
    }
   ],
   "closed": []
@@ -143,14 +151,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-28T11:05:01+00:00",
+   "generated_at": "2026-11-04T12:44:39+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "25af13452934de335c6a91f9f160c8544a197b24",
-      "date": "2026-10-28T11:05:17Z"
+      "sha": "a9eb8e5674a08c2001859244ec4acd55b000f5d0",
+      "date": "2026-11-04T12:44:57Z"
      }
     }
    ],
@@ -191,30 +199,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-03T00:54:33.424165+00:00",
+   "generated_at": "2026-11-04T06:04:25.398681+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "fbd2674d173736d0056b14a617c79d49d8f4b4f3",
-      "date": "2026-11-03T00:54:33Z"
+      "sha": "a390f7bbca4428a3d8fb1e1d8dd0f7d3edd20fb4",
+      "date": "2026-11-04T06:04:25Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "4743e7f607ef4b695a693f0e51064257946cc411",
-      "date": "2026-11-03T11:09:58Z"
+      "sha": "6cb62f165c880af67a7ae3a2ca56dec0bdd336cb",
+      "date": "2026-11-04T11:21:27Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "451ed168f65cf91b86637c85601023e49a6d58f1",
-      "date": "2026-10-22T11:43:59Z"
+      "sha": "a390f7bbca4428a3d8fb1e1d8dd0f7d3edd20fb4",
+      "date": "2026-11-04T06:04:25Z"
      }
     }
    ],
@@ -266,19 +274,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-03T12:44:13+00:00",
+ "generated_at": "2026-11-04T12:57:01+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "3150467d3157c209aa1c81f498cbc6f8720e3b1d",
-  "run_id": "41638207751"
+  "commit": "666ab10e3c32068b3358f80ea5944d14cc4408f2",
+  "run_id": "41833667081"
  },
  "ficha": {
-  "id": "sha256:6bbd6d04806c31e38011af420265b3811308e1f1af4697ae7a211c24275a7116",
+  "id": "sha256:b67cd6bca86004f9c50c2acbf4d524e551a8238f7b95647266c56095a25d8853",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servidores",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/servidores.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'servidores' (Recife), 2026-11-03, sha256:6bbd6d04806c31e3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servidores",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'servidores' (Recife), 2026-11-03, sha256:6bbd6d04806c31e3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servidores"
+   "en": "5L-TEP Layer 5 record of 'servidores' (Recife), 2026-11-04, sha256:b67cd6bca86004f9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servidores",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'servidores' (Recife), 2026-11-04, sha256:b67cd6bca86004f9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servidores"
   }
  }
 }
