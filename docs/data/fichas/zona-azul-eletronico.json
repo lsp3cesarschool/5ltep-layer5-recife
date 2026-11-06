@@ -56,7 +56,7 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-05T06:31:33+00:00",
+   "evaluated_at": "2026-11-06T06:26:31+00:00",
    "current": true,
    "facts": {
     "observations": 60,
@@ -115,30 +115,30 @@
   "L3": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-09T19:41:07+00:00",
+   "generated_at": "2026-11-05T13:49:45+00:00",
    "files": [
     {
      "path": "docs/data/index.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
      "commit": {
-      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
-      "date": "2026-10-09T19:41:07Z"
+      "sha": "d0bcd1267f6d3c77eefb8512c637a4b5a2ab28dc",
+      "date": "2026-11-05T13:49:46Z"
      }
     },
     {
      "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
      "commit": {
-      "sha": "60e2f3edc649b1e44f14efcac9164d94422bd689",
-      "date": "2026-10-09T19:39:59Z"
+      "sha": "695a54601def6ad9d86ee9f05298847f795a4eb2",
+      "date": "2026-11-05T13:48:47Z"
      }
     },
     {
      "path": "results/recife-infracoes-transito/layer3_summary.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
      "commit": {
-      "sha": "1d2363bdaf0a530ab9a244e5b7741731c2673019",
-      "date": "2026-10-09T19:41:07Z"
+      "sha": "d0bcd1267f6d3c77eefb8512c637a4b5a2ab28dc",
+      "date": "2026-11-05T13:49:46Z"
      }
     }
    ],
@@ -147,30 +147,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-05T06:33:04.207168+00:00",
+   "generated_at": "2026-11-06T06:27:30.457429+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "c8a3d798bf1984cff7005d86c20ccdb85dce8d39",
-      "date": "2026-11-05T06:33:04Z"
+      "sha": "40292bf248f042312c0f6a277b4f3e17e6367998",
+      "date": "2026-11-06T06:27:30Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "18b3abbb337f0c88feef63969cd723036b442f70",
-      "date": "2026-11-05T11:19:43Z"
+      "sha": "665daea173bb96ba945ddb20bd2e9a48d059cd8c",
+      "date": "2026-11-06T11:16:54Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "c8a3d798bf1984cff7005d86c20ccdb85dce8d39",
-      "date": "2026-11-05T06:33:04Z"
+      "sha": "40292bf248f042312c0f6a277b4f3e17e6367998",
+      "date": "2026-11-06T06:27:30Z"
      }
     }
    ],
@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-05T13:08:15+00:00",
+ "generated_at": "2026-11-06T12:54:03+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "68a5783a27bdf78ed4a7abe0c72a5d0c2a6480a0",
-  "run_id": "42033076333"
+  "commit": "4496d2ed42aa599709b002f98674bf0c623c8168",
+  "run_id": "42221181792"
  },
  "ficha": {
-  "id": "sha256:4e081a4e9fd72486cb7ee6eab72a66ee44d63d0a3f12f925ec025350699d89df",
+  "id": "sha256:dcf5229321ff44dd236c6436a7566d6b742c4f611f47be7dc3c0da305f24732d",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=zona-azul-eletronico",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/zona-azul-eletronico.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'zona-azul-eletronico' (Recife), 2026-11-05, sha256:4e081a4e9fd72486…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=zona-azul-eletronico",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'zona-azul-eletronico' (Recife), 2026-11-05, sha256:4e081a4e9fd72486…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=zona-azul-eletronico"
+   "en": "5L-TEP Layer 5 record of 'zona-azul-eletronico' (Recife), 2026-11-06, sha256:dcf5229321ff44dd…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=zona-azul-eletronico",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'zona-azul-eletronico' (Recife), 2026-11-06, sha256:dcf5229321ff44dd…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=zona-azul-eletronico"
   }
  }
 }
