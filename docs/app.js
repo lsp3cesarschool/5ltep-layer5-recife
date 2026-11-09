@@ -6,6 +6,7 @@
 
   const TEXT = {
     en: {
+      cupim: "← CUPIM platform",
       run: "Aggregate now ↗", policy_btn: "Policy ↗",
       intro: "Every day this repository reads what Layers 1 to 4 already publish about each dataset of the portal and puts it side by side: how far each layer reaches, what is missing, the quality score where the four layers meet, and what can already be checked where they do not.",
       sources_h: "Layers and their evidence",
@@ -70,6 +71,7 @@
       cov_text: "{v} valid · {r} reached, not valid now · {g} not evaluated",
     },
     pt: {
+      cupim: "← Plataforma CUPIM",
       run: "Agregar agora ↗", policy_btn: "Política ↗",
       intro: "Todo dia este repositório lê o que as Camadas 1 a 4 já publicam sobre cada conjunto de dados do portal e coloca lado a lado: até onde cada camada chega, o que falta, a nota de qualidade onde as quatro se encontram e o que já dá para conferir onde não se encontram.",
       sources_h: "As camadas e sua evidência",
@@ -143,6 +145,7 @@
   const PAGE = 40;
 
   function i18n() {
+    document.getElementById("cupim-link").href = `https://5ltep-cupim.github.io/?lang=${lang}`;
     document.querySelectorAll("[data-i18n]").forEach((n) => { n.textContent = tt(n.dataset.i18n); });
     document.querySelectorAll("[data-i18n-placeholder]").forEach((n) => { n.placeholder = tt(n.dataset.i18nPlaceholder); });
   }

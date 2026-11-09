@@ -1,6 +1,6 @@
 # 5L-TEP Camada 5: Governança e Publicação
 
-[Read in English](README.md) · [Painel](https://lsp3cesarschool.github.io/5ltep-layer5-recife/?lang=pt) ·
+[← Plataforma CUPIM](https://5ltep-cupim.github.io/?lang=pt) · [Read in English](README.md) · [Painel](https://lsp3cesarschool.github.io/5ltep-layer5-recife/?lang=pt) ·
 ![Camada 5](https://img.shields.io/endpoint?url=https%3A%2F%2Flsp3cesarschool.github.io%2F5ltep-layer5-recife%2Fdata%2Fstatus.pt.json)
 
 Camada 5 da Pirâmide de Engenharia da Confiança em Cinco Camadas (5L-TEP, SOFTENG 2026) para dados

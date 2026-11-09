@@ -1,6 +1,6 @@
 # 5L-TEP Layer 5: Governance and Publication
 
-[Leia em português](LEIAME.md) · [Dashboard](https://lsp3cesarschool.github.io/5ltep-layer5-recife/) ·
+[← CUPIM platform](https://5ltep-cupim.github.io/?lang=en) · [Leia em português](LEIAME.md) · [Dashboard](https://lsp3cesarschool.github.io/5ltep-layer5-recife/) ·
 ![Layer 5](https://img.shields.io/endpoint?url=https%3A%2F%2Flsp3cesarschool.github.io%2F5ltep-layer5-recife%2Fdata%2Fstatus.json)
 
 Layer 5 of the Five-Layer Trust Engineering Pyramid (5L-TEP, SOFTENG 2026) for open government data
