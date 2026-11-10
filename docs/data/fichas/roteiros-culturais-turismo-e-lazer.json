@@ -10,22 +10,30 @@
   "portal_page": "https://dados.recife.pe.gov.br/dataset/roteiros-culturais-turismo-e-lazer"
  },
  "qs": {
-  "kind": "none",
+  "kind": "partial",
   "factor": 1.0,
-  "coverage": 0.2,
+  "coverage": 0.5,
   "valid_layers": [
+   "L1",
    "L4"
   ],
   "integrity": [],
-  "band": null
+  "low": 0.275,
+  "high": 0.775,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
  },
  "layers": {
   "L1": {
-   "status": "expired",
-   "reason": "summary_too_old",
+   "status": "valid",
+   "reason": null,
    "rate": 0.25,
-   "evaluated_at": "2026-10-03T17:19:37+00:00",
-   "current": null,
+   "evaluated_at": "2026-11-09T16:13:18+00:00",
+   "current": true,
    "facts": {
     "level": 3,
     "tables": 4,
@@ -63,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-09T06:06:07+00:00",
+   "evaluated_at": "2026-11-10T01:26:46+00:00",
    "current": true,
    "facts": {
-    "observations": 59,
+    "observations": 58,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/21eb894b-ebb7-4e83-aad9-ce84eaf744dd#56490686e030"
    },
@@ -92,7 +100,7 @@
     "first_reported": "2026-10-13T19:19:31+00:00",
     "count": 3,
     "evaluated_at": "2026-10-03T17:19:37+00:00",
-    "status": "not_reassessed",
+    "status": "unchanged",
     "en": "3 of 4 verifiable file(s) do not conform to the declared schema",
     "pt": "3 de 4 arquivo(s) verificável(is) fora do esquema declarado",
     "digests": {
@@ -109,22 +117,22 @@
   "L1": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-10-19T09:31:51+00:00",
+   "generated_at": "2026-11-09T16:29:19+00:00",
    "files": [
     {
      "path": "results/layer1_summary.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
      "commit": {
-      "sha": "9b08d93a5fbeade1ad10c07162f6985ebf2de361",
-      "date": "2026-10-19T09:31:51Z"
+      "sha": "b4d10041fc889e38e8585752ceda6870fe9b8d41",
+      "date": "2026-11-09T16:29:19Z"
      }
     },
     {
      "path": "results/validation.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
      "commit": {
-      "sha": "9b08d93a5fbeade1ad10c07162f6985ebf2de361",
-      "date": "2026-10-19T09:31:51Z"
+      "sha": "b4d10041fc889e38e8585752ceda6870fe9b8d41",
+      "date": "2026-11-09T16:29:19Z"
      }
     }
    ],
@@ -133,14 +141,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-04T12:44:39+00:00",
+   "generated_at": "2026-11-10T12:00:32+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "a9eb8e5674a08c2001859244ec4acd55b000f5d0",
-      "date": "2026-11-04T12:44:57Z"
+      "sha": "e3f02a7f19ae5ac3f4ca818249edf064f5f79a7e",
+      "date": "2026-11-10T12:00:47Z"
      }
     }
    ],
@@ -181,30 +189,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-09T06:07:05.279578+00:00",
+   "generated_at": "2026-11-10T01:28:00.622320+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "ef54d8c67220cc01d0b7a28d8a4fbe8ef5a8b253",
-      "date": "2026-11-09T06:07:05Z"
+      "sha": "fcf0991c797fdfbbda8abf9968fd12ec9845d62c",
+      "date": "2026-11-10T01:28:01Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "7c72c2c637432959c32f8f534b0f1727f39ee40c",
-      "date": "2026-11-09T11:57:44Z"
+      "sha": "61c0e36b407e38e7685f70147cc310bbffb9b1a7",
+      "date": "2026-11-10T11:30:03Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "ef54d8c67220cc01d0b7a28d8a4fbe8ef5a8b253",
-      "date": "2026-11-09T06:07:05Z"
+      "sha": "fcf0991c797fdfbbda8abf9968fd12ec9845d62c",
+      "date": "2026-11-10T01:28:01Z"
      }
     }
    ],
@@ -256,19 +264,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-09T13:50:03+00:00",
+ "generated_at": "2026-11-10T12:09:38+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "98efa5ef87434d60cfd04d5b89902e2eb60f629b",
-  "run_id": "42628923176"
+  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
+  "run_id": "42813356703"
  },
  "ficha": {
-  "id": "sha256:6972f8facf4dc6444e8cf0257c27d18f11ec9a63ea232aea3e3c578b14b98c0b",
+  "id": "sha256:736afafbe9fd4b8110102ce60adeae6ab4d180b3a87fbb1c2ca91381fc33d10a",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=roteiros-culturais-turismo-e-lazer",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/roteiros-culturais-turismo-e-lazer.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'roteiros-culturais-turismo-e-lazer' (Recife), 2026-11-09, sha256:6972f8facf4dc644…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=roteiros-culturais-turismo-e-lazer",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'roteiros-culturais-turismo-e-lazer' (Recife), 2026-11-09, sha256:6972f8facf4dc644…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=roteiros-culturais-turismo-e-lazer"
+   "en": "5L-TEP Layer 5 record of 'roteiros-culturais-turismo-e-lazer' (Recife), 2026-11-10, sha256:736afafbe9fd4b81…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=roteiros-culturais-turismo-e-lazer",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'roteiros-culturais-turismo-e-lazer' (Recife), 2026-11-10, sha256:736afafbe9fd4b81…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=roteiros-culturais-turismo-e-lazer"
   }
  }
 }
