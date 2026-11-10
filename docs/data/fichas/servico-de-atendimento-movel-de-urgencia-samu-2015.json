@@ -267,19 +267,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:b300bf3ed3111cf4d3dc005ef73184be17b7ade617043a6a2d495a631dc54e92",
+  "id": "sha256:119504460f622e76b9910a4f25e34ff98c778662a9da4db183cd0a27b44f07c5",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2015",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/servico-de-atendimento-movel-de-urgencia-samu-2015.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'servico-de-atendimento-movel-de-urgencia-samu-2015' (Recife), 2026-11-10, sha256:b300bf3ed3111cf4…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2015",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-atendimento-movel-de-urgencia-samu-2015' (Recife), 2026-11-10, sha256:b300bf3ed3111cf4…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2015"
+   "en": "5L-TEP Layer 5 record of 'servico-de-atendimento-movel-de-urgencia-samu-2015' (Recife), 2026-11-10, sha256:119504460f622e76…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2015",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-atendimento-movel-de-urgencia-samu-2015' (Recife), 2026-11-10, sha256:119504460f622e76…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2015"
   }
  }
 }

@@ -230,19 +230,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:1a89bc225682b5a30723eb35d4aa7c18cf248476203ec256139112a13fee2c4f",
+  "id": "sha256:ee57d919f77c369210a310fe3df20980be0abc4dd60ad039880461de2889e2ab",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=guia-de-politicas-publicas-de-juventude",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/guia-de-politicas-publicas-de-juventude.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'guia-de-politicas-publicas-de-juventude' (Recife), 2026-11-10, sha256:1a89bc225682b5a3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=guia-de-politicas-publicas-de-juventude",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'guia-de-politicas-publicas-de-juventude' (Recife), 2026-11-10, sha256:1a89bc225682b5a3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=guia-de-politicas-publicas-de-juventude"
+   "en": "5L-TEP Layer 5 record of 'guia-de-politicas-publicas-de-juventude' (Recife), 2026-11-10, sha256:ee57d919f77c3692…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=guia-de-politicas-publicas-de-juventude",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'guia-de-politicas-publicas-de-juventude' (Recife), 2026-11-10, sha256:ee57d919f77c3692…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=guia-de-politicas-publicas-de-juventude"
   }
  }
 }

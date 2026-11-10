@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:a35598608b36e6919b0f390c3d88c6cfe2768ed2fca92a6ca05210cc1a0dacc8",
+  "id": "sha256:fbb43e4ac7fa56b64e800cad7d76f457ef31dc6fdb63088e1d7a8bf05ceb6dfb",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=mapas-de-limites-e-divisoes-territoriais",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/mapas-de-limites-e-divisoes-territoriais.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'mapas-de-limites-e-divisoes-territoriais' (Recife), 2026-11-10, sha256:a35598608b36e691…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=mapas-de-limites-e-divisoes-territoriais",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'mapas-de-limites-e-divisoes-territoriais' (Recife), 2026-11-10, sha256:a35598608b36e691…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=mapas-de-limites-e-divisoes-territoriais"
+   "en": "5L-TEP Layer 5 record of 'mapas-de-limites-e-divisoes-territoriais' (Recife), 2026-11-10, sha256:fbb43e4ac7fa56b6…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=mapas-de-limites-e-divisoes-territoriais",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'mapas-de-limites-e-divisoes-territoriais' (Recife), 2026-11-10, sha256:fbb43e4ac7fa56b6…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=mapas-de-limites-e-divisoes-territoriais"
   }
  }
 }

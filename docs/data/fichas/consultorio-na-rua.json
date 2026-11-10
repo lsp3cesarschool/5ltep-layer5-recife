@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:51d89d80ab6ce36df7ba2ddc572b3e14d53dde4470e49bec3710fe69ced77066",
+  "id": "sha256:98fcca8047bdac1ae9e8c37359f166a92b82d3ffadaff0f54a7e2d0ee05c26cf",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=consultorio-na-rua",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/consultorio-na-rua.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'consultorio-na-rua' (Recife), 2026-11-10, sha256:51d89d80ab6ce36d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=consultorio-na-rua",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'consultorio-na-rua' (Recife), 2026-11-10, sha256:51d89d80ab6ce36d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=consultorio-na-rua"
+   "en": "5L-TEP Layer 5 record of 'consultorio-na-rua' (Recife), 2026-11-10, sha256:98fcca8047bdac1a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=consultorio-na-rua",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'consultorio-na-rua' (Recife), 2026-11-10, sha256:98fcca8047bdac1a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=consultorio-na-rua"
   }
  }
 }

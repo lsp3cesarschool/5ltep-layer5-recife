@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:3f59f9fa543420f2824d402679c8fa92f6f988115bbb80c30046db33048b396b",
+  "id": "sha256:9ac2cbf2f98c08a5de4cf6093390f00d0db2b95d460e83bc5a0df80856cc06b0",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=vigilancia-de-zoonoses",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/vigilancia-de-zoonoses.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'vigilancia-de-zoonoses' (Recife), 2026-11-10, sha256:3f59f9fa543420f2…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=vigilancia-de-zoonoses",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'vigilancia-de-zoonoses' (Recife), 2026-11-10, sha256:3f59f9fa543420f2…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=vigilancia-de-zoonoses"
+   "en": "5L-TEP Layer 5 record of 'vigilancia-de-zoonoses' (Recife), 2026-11-10, sha256:9ac2cbf2f98c08a5…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=vigilancia-de-zoonoses",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'vigilancia-de-zoonoses' (Recife), 2026-11-10, sha256:9ac2cbf2f98c08a5…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=vigilancia-de-zoonoses"
   }
  }
 }

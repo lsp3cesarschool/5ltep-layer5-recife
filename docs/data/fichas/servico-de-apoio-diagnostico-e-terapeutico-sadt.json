@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:eebfb1a9fee89c93db89ccb74be7fb31878c9b027f62a12f31ff7e540eb6cdfd",
+  "id": "sha256:770cf1d8b7a3beac349d2f83f43f81072d2c4490e00126c4d3bafbc74330383a",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-apoio-diagnostico-e-terapeutico-sadt",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/servico-de-apoio-diagnostico-e-terapeutico-sadt.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'servico-de-apoio-diagnostico-e-terapeutico-sadt' (Recife), 2026-11-10, sha256:eebfb1a9fee89c93…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-apoio-diagnostico-e-terapeutico-sadt",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-apoio-diagnostico-e-terapeutico-sadt' (Recife), 2026-11-10, sha256:eebfb1a9fee89c93…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-apoio-diagnostico-e-terapeutico-sadt"
+   "en": "5L-TEP Layer 5 record of 'servico-de-apoio-diagnostico-e-terapeutico-sadt' (Recife), 2026-11-10, sha256:770cf1d8b7a3beac…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-apoio-diagnostico-e-terapeutico-sadt",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-apoio-diagnostico-e-terapeutico-sadt' (Recife), 2026-11-10, sha256:770cf1d8b7a3beac…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-apoio-diagnostico-e-terapeutico-sadt"
   }
  }
 }

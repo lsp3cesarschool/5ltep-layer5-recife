@@ -146,7 +146,7 @@
     "first_reported": "2026-11-10T12:09:38+00:00",
     "count": 55,
     "evaluated_at": "2026-11-10T12:00:31+00:00",
-    "status": "reported",
+    "status": "not_reassessed",
     "en": "55 signal(s) of rule 'Fatal victims above the total number of victims' in 10897 check(s)",
     "pt": "55 sinal(is) da regra 'Vítimas fatais acima do total de vítimas' em 10897 verificação(ões)",
     "digests": {
@@ -342,19 +342,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:94eef8ce856cdfd9d29f053d1b8359eb51c4d000310ac71bfd0efb584c8ab12a",
+  "id": "sha256:8a0649c286cfccf37128548bf1484be2a66a55a0f44cc73cc8890ff85c9c82ab",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-e-sem-vitimas",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/acidentes-de-transito-com-e-sem-vitimas.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'acidentes-de-transito-com-e-sem-vitimas' (Recife), 2026-11-10, sha256:94eef8ce856cdfd9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-e-sem-vitimas",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'acidentes-de-transito-com-e-sem-vitimas' (Recife), 2026-11-10, sha256:94eef8ce856cdfd9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-e-sem-vitimas"
+   "en": "5L-TEP Layer 5 record of 'acidentes-de-transito-com-e-sem-vitimas' (Recife), 2026-11-10, sha256:8a0649c286cfccf3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-e-sem-vitimas",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'acidentes-de-transito-com-e-sem-vitimas' (Recife), 2026-11-10, sha256:8a0649c286cfccf3…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-e-sem-vitimas"
   }
  }
 }

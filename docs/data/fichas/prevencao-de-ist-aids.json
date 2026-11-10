@@ -230,19 +230,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:5721fa608b244298d58fa82d27dc0622dd9fd629edbee87362359541e4feb727",
+  "id": "sha256:7748fe19a64b56e9bd2cb1d5204a007efbb7b795a1fd8d2a1d462a9bcdd3d693",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=prevencao-de-ist-aids",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/prevencao-de-ist-aids.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'prevencao-de-ist-aids' (Recife), 2026-11-10, sha256:5721fa608b244298…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=prevencao-de-ist-aids",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'prevencao-de-ist-aids' (Recife), 2026-11-10, sha256:5721fa608b244298…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=prevencao-de-ist-aids"
+   "en": "5L-TEP Layer 5 record of 'prevencao-de-ist-aids' (Recife), 2026-11-10, sha256:7748fe19a64b56e9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=prevencao-de-ist-aids",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'prevencao-de-ist-aids' (Recife), 2026-11-10, sha256:7748fe19a64b56e9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=prevencao-de-ist-aids"
   }
  }
 }

@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:d597f69ad048d3262c3f4c769e952a84e7c9c82d4778e8e7fd76033fd1ec68aa",
+  "id": "sha256:1f8953c8e733fcfe18c99501db613cc1bae5520d6048e606238d6efac446c663",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=operacoes",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/operacoes.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'operacoes' (Recife), 2026-11-10, sha256:d597f69ad048d326…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=operacoes",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'operacoes' (Recife), 2026-11-10, sha256:d597f69ad048d326…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=operacoes"
+   "en": "5L-TEP Layer 5 record of 'operacoes' (Recife), 2026-11-10, sha256:1f8953c8e733fcfe…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=operacoes",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'operacoes' (Recife), 2026-11-10, sha256:1f8953c8e733fcfe…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=operacoes"
   }
  }
 }

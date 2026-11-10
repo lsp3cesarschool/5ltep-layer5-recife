@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:b2e2eb589634147aec61dba536f408355b45a8b05ca590271beb620bef5b43fa",
+  "id": "sha256:ca0e3390f2af3f522a233ca1ef88cafe13f22f8adc0dc5bed66aad76e5b20db8",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-arboreo",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/censo-arboreo.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'censo-arboreo' (Recife), 2026-11-10, sha256:b2e2eb589634147a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-arboreo",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'censo-arboreo' (Recife), 2026-11-10, sha256:b2e2eb589634147a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-arboreo"
+   "en": "5L-TEP Layer 5 record of 'censo-arboreo' (Recife), 2026-11-10, sha256:ca0e3390f2af3f52…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-arboreo",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'censo-arboreo' (Recife), 2026-11-10, sha256:ca0e3390f2af3f52…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=censo-arboreo"
   }
  }
 }

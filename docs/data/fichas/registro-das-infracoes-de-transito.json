@@ -288,19 +288,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:45cad70e58b742a80c24a3093bbfa48f6256cccdb914f8f4ccf2bb103a539297",
+  "id": "sha256:2e74070b638234c8d34e5cdc7653633f24b1915dd7bfd08f77d36f0ea0a95e7d",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-das-infracoes-de-transito",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/registro-das-infracoes-de-transito.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'registro-das-infracoes-de-transito' (Recife), 2026-11-10, sha256:45cad70e58b742a8…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-das-infracoes-de-transito",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'registro-das-infracoes-de-transito' (Recife), 2026-11-10, sha256:45cad70e58b742a8…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-das-infracoes-de-transito"
+   "en": "5L-TEP Layer 5 record of 'registro-das-infracoes-de-transito' (Recife), 2026-11-10, sha256:2e74070b638234c8…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-das-infracoes-de-transito",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'registro-das-infracoes-de-transito' (Recife), 2026-11-10, sha256:2e74070b638234c8…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=registro-das-infracoes-de-transito"
   }
  }
 }

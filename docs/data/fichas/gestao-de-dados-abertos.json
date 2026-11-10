@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-10T12:09:38+00:00",
+ "generated_at": "2026-11-10T13:25:20+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "c66481d4bacee383a10159eb5837f6f3b315bf35",
-  "run_id": "42813356703"
+  "commit": "d41fd7ca60f8297ba7d9111dd4d5166e3e12927a",
+  "run_id": "42824347433"
  },
  "ficha": {
-  "id": "sha256:d406b9c853550485d615f346226604725c22728355a339d3c0f7a2719a44b2cb",
+  "id": "sha256:54b8e050366755f09def377cdd026e8fcdc7758989e8eef6e4b6ea0909dff2e9",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=gestao-de-dados-abertos",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/gestao-de-dados-abertos.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'gestao-de-dados-abertos' (Recife), 2026-11-10, sha256:d406b9c853550485…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=gestao-de-dados-abertos",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'gestao-de-dados-abertos' (Recife), 2026-11-10, sha256:d406b9c853550485…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=gestao-de-dados-abertos"
+   "en": "5L-TEP Layer 5 record of 'gestao-de-dados-abertos' (Recife), 2026-11-10, sha256:54b8e050366755f0…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=gestao-de-dados-abertos",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'gestao-de-dados-abertos' (Recife), 2026-11-10, sha256:54b8e050366755f0…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=gestao-de-dados-abertos"
   }
  }
 }
