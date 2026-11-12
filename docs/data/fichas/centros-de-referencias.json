@@ -12,19 +12,19 @@
  "qs": {
   "kind": "partial",
   "factor": 1.0,
-  "coverage": 0.5,
+  "coverage": 0.3,
   "valid_layers": [
-   "L1",
-   "L4"
+   "L1"
   ],
   "integrity": [],
-  "low": 0.2,
+  "low": 0.0,
   "high": 0.7,
   "band": "alert",
   "eligible": false,
   "missing_layers": [
    "L2",
-   "L3"
+   "L3",
+   "L4"
   ]
  },
  "layers": {
@@ -68,11 +68,11 @@
    "signals": []
   },
   "L4": {
-   "status": "valid",
-   "reason": null,
+   "status": "expired",
+   "reason": "summary_too_old",
    "rate": 1.0,
-   "evaluated_at": "2026-11-11T05:58:11+00:00",
-   "current": true,
+   "evaluated_at": "2026-11-12T00:31:31+00:00",
+   "current": null,
    "facts": {
     "observations": 58,
     "critical_in_window": 0,
@@ -186,30 +186,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-11T05:59:15.551383+00:00",
+   "generated_at": "2026-11-12T00:33:01.016329+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "e5cd7dd4ecfc78e2fd1c8053cbbafecc4d72a197",
-      "date": "2026-11-11T05:59:15Z"
+      "sha": "a6fdeba0e773b6d377156601dd80af2fad094136",
+      "date": "2026-11-12T00:33:01Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "e6c78e5612f87b8a1cda5accf49124d555d5ba8d",
-      "date": "2026-11-11T11:19:36Z"
+      "sha": "8def14ed8797770a2b30e0f6df9b76c401e9ab0e",
+      "date": "2026-11-12T11:37:42Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "e5cd7dd4ecfc78e2fd1c8053cbbafecc4d72a197",
-      "date": "2026-11-11T05:59:15Z"
+      "sha": "a6fdeba0e773b6d377156601dd80af2fad094136",
+      "date": "2026-11-12T00:33:01Z"
      }
     }
    ],
@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-11T12:40:15+00:00",
+ "generated_at": "2026-11-12T13:42:56+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "b1d5e883b17f9713cb290b7a646f3250ca5baa0d",
-  "run_id": "43022327827"
+  "commit": "3e0d3ecb093793898545df7ce28fae089da3f081",
+  "run_id": "43229913637"
  },
  "ficha": {
-  "id": "sha256:3032f56326d6dfe1793aa7b1c3f9132e2287130ea94fb85259f8c5116db233e8",
+  "id": "sha256:a2cd2dee5d380035e5b43bd3af20bac8d247003c087ee542677d6a38d18936d2",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=centros-de-referencias",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/centros-de-referencias.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'centros-de-referencias' (Recife), 2026-11-11, sha256:3032f56326d6dfe1…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=centros-de-referencias",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'centros-de-referencias' (Recife), 2026-11-11, sha256:3032f56326d6dfe1…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=centros-de-referencias"
+   "en": "5L-TEP Layer 5 record of 'centros-de-referencias' (Recife), 2026-11-12, sha256:a2cd2dee5d380035…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=centros-de-referencias",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'centros-de-referencias' (Recife), 2026-11-12, sha256:a2cd2dee5d380035…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=centros-de-referencias"
   }
  }
 }

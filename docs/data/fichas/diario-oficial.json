@@ -4,18 +4,16 @@
   "title": "Diário Oficial",
   "id": "12578535-6cf0-4097-94fa-ff6ec3d51988",
   "resources": 35,
-  "last_change": "2026-11-10T23:11:07+00:00",
-  "last_type": "SCHEMA_DRIFT",
-  "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#d249c7d903fb",
+  "last_change": "2026-11-12T00:31:31+00:00",
+  "last_type": "CONTENT_MOD",
+  "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#96e096e542cb",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/diario-oficial"
  },
  "qs": {
   "kind": "none",
   "factor": 1.0,
-  "coverage": 0.2,
-  "valid_layers": [
-   "L4"
-  ],
+  "coverage": 0,
+  "valid_layers": [],
   "integrity": [],
   "band": null
  },
@@ -60,15 +58,15 @@
    "signals": []
   },
   "L4": {
-   "status": "valid",
-   "reason": null,
+   "status": "expired",
+   "reason": "summary_too_old",
    "rate": 0.9310344827586207,
-   "evaluated_at": "2026-11-11T05:58:11+00:00",
-   "current": true,
+   "evaluated_at": "2026-11-12T00:31:31+00:00",
+   "current": null,
    "facts": {
     "observations": 58,
     "critical_in_window": 4,
-    "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#d249c7d903fb"
+    "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#96e096e542cb"
    },
    "signals": [
     {
@@ -77,12 +75,6 @@
      "when": "2026-11-10T14:45:54+00:00",
      "en": "2 resource URL(s) changed (2 moved from ? to dados.recife.pe.gov.br:443; 1 plain file → zip); file size updated; file date updated",
      "pt": "2 URL(s) de recurso alterada(s) (2 movida(s) de ? para dados.recife.pe.gov.br:443; 1 arquivo simples → zip); tamanho do arquivo atualizado; data do arquivo atualizada"
-    },
-    {
-     "key": "L4:cross_check:diario-oficial",
-     "count": 1,
-     "en": "unreconciled divergence in the independent cross-check",
-     "pt": "divergência não reconciliada no cross-check independente"
     }
    ]
   }
@@ -105,15 +97,6 @@
    "when": "2026-11-10T14:45:54+00:00",
    "en": "2 resource URL(s) changed (2 moved from ? to dados.recife.pe.gov.br:443; 1 plain file → zip); file size updated; file date updated",
    "pt": "2 URL(s) de recurso alterada(s) (2 movida(s) de ? para dados.recife.pe.gov.br:443; 1 arquivo simples → zip); tamanho do arquivo atualizado; data do arquivo atualizada"
-  },
-  {
-   "layer": "L4",
-   "kind": "signal",
-   "key": "L4:cross_check:diario-oficial",
-   "count": 1,
-   "when": null,
-   "en": "unreconciled divergence in the independent cross-check",
-   "pt": "divergência não reconciliada no cross-check independente"
   },
   {
    "layer": "L4",
@@ -196,7 +179,7 @@
     "first_reported": "2026-11-11T12:40:15+00:00",
     "count": 2,
     "evaluated_at": "2026-11-11T05:58:11+00:00",
-    "status": "reported",
+    "status": "changed_signal_persists",
     "en": "2 resource URL(s) changed (2 moved from ? to dados.recife.pe.gov.br:443; 1 plain file → zip); file size updated; file date updated",
     "pt": "2 URL(s) de recurso alterada(s) (2 movida(s) de ? para dados.recife.pe.gov.br:443; 1 arquivo simples → zip); tamanho do arquivo atualizado; data do arquivo atualizada",
     "digests": {
@@ -231,15 +214,17 @@
      "d29bc2a3-fa02-43e4-a18c-8063d6c2fc09": "7de37e1b4e751c4e8c72b1bfc3a356344625d1ab1947a18a79601eb9433d25ae",
      "ab1c29fe-767a-47d4-a3b4-679a27f89230": "0d155a836c36c422403dc581220043adf3995897622811675a1db2727155e479",
      "aec03057-2861-4fac-b3d3-fcaadaadb1ff": "edd713d8ccad6634da79a858f947e442b7f56c14276f3ad3a8189883acaf9182"
-    }
-   },
+    },
+    "first_change_seen": "2026-11-12T13:42:56+00:00"
+   }
+  ],
+  "closed": [
    {
-    "key": "L4:cross_check:diario-oficial",
     "layer": "L4",
     "first_reported": "2026-11-11T12:40:15+00:00",
     "count": 1,
     "evaluated_at": "2026-11-11T05:58:11+00:00",
-    "status": "reported",
+    "status": "remediated_observed",
     "en": "unreconciled divergence in the independent cross-check",
     "pt": "divergência não reconciliada no cross-check independente",
     "digests": {
@@ -274,10 +259,14 @@
      "d29bc2a3-fa02-43e4-a18c-8063d6c2fc09": "7de37e1b4e751c4e8c72b1bfc3a356344625d1ab1947a18a79601eb9433d25ae",
      "ab1c29fe-767a-47d4-a3b4-679a27f89230": "0d155a836c36c422403dc581220043adf3995897622811675a1db2727155e479",
      "aec03057-2861-4fac-b3d3-fcaadaadb1ff": "edd713d8ccad6634da79a858f947e442b7f56c14276f3ad3a8189883acaf9182"
-    }
+    },
+    "first_change_seen": "2026-11-12T13:42:56+00:00",
+    "key": "L4:cross_check:diario-oficial",
+    "dataset": "diario-oficial",
+    "outcome": "remediated_observed",
+    "at": "2026-11-12T13:42:56+00:00"
    }
-  ],
-  "closed": []
+  ]
  },
  "sources": {
   "L1": {
@@ -355,30 +344,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-11T05:59:15.551383+00:00",
+   "generated_at": "2026-11-12T00:33:01.016329+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "e5cd7dd4ecfc78e2fd1c8053cbbafecc4d72a197",
-      "date": "2026-11-11T05:59:15Z"
+      "sha": "a6fdeba0e773b6d377156601dd80af2fad094136",
+      "date": "2026-11-12T00:33:01Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "e6c78e5612f87b8a1cda5accf49124d555d5ba8d",
-      "date": "2026-11-11T11:19:36Z"
+      "sha": "8def14ed8797770a2b30e0f6df9b76c401e9ab0e",
+      "date": "2026-11-12T11:37:42Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "e5cd7dd4ecfc78e2fd1c8053cbbafecc4d72a197",
-      "date": "2026-11-11T05:59:15Z"
+      "sha": "a6fdeba0e773b6d377156601dd80af2fad094136",
+      "date": "2026-11-12T00:33:01Z"
      }
     }
    ],
@@ -430,19 +419,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-11T12:40:15+00:00",
+ "generated_at": "2026-11-12T13:42:56+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "b1d5e883b17f9713cb290b7a646f3250ca5baa0d",
-  "run_id": "43022327827"
+  "commit": "3e0d3ecb093793898545df7ce28fae089da3f081",
+  "run_id": "43229913637"
  },
  "ficha": {
-  "id": "sha256:3d6c7a63fd7638170083d6ba62e649f6e421d530d039e9ce83b70e541b3a61c5",
+  "id": "sha256:2c5b58eb51aa1a718de4f16574989467b19d85c2e21763189b3ccb5bb696fd23",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/diario-oficial.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'diario-oficial' (Recife), 2026-11-11, sha256:3d6c7a63fd763817…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'diario-oficial' (Recife), 2026-11-11, sha256:3d6c7a63fd763817…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial"
+   "en": "5L-TEP Layer 5 record of 'diario-oficial' (Recife), 2026-11-12, sha256:2c5b58eb51aa1a71…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'diario-oficial' (Recife), 2026-11-12, sha256:2c5b58eb51aa1a71…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial"
   }
  }
 }
