@@ -12,19 +12,19 @@
  "qs": {
   "kind": "partial",
   "factor": 1.0,
-  "coverage": 0.3,
+  "coverage": 0.5,
   "valid_layers": [
-   "L1"
+   "L1",
+   "L4"
   ],
   "integrity": [],
-  "low": 0.3,
+  "low": 0.5,
   "high": 1.0,
   "band": "undetermined",
   "eligible": false,
   "missing_layers": [
    "L2",
-   "L3",
-   "L4"
+   "L3"
   ]
  },
  "layers": {
@@ -61,11 +61,11 @@
    "signals": []
   },
   "L4": {
-   "status": "expired",
-   "reason": "summary_too_old",
+   "status": "valid",
+   "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-12T00:31:31+00:00",
-   "current": null,
+   "evaluated_at": "2026-11-13T06:27:15+00:00",
+   "current": true,
    "facts": {
     "observations": 58,
     "critical_in_window": 0,
@@ -155,30 +155,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-12T00:33:01.016329+00:00",
+   "generated_at": "2026-11-13T06:28:42.715696+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "a6fdeba0e773b6d377156601dd80af2fad094136",
-      "date": "2026-11-12T00:33:01Z"
+      "sha": "59a002abc7e0e08a7736fadcc06209d3e8dca730",
+      "date": "2026-11-13T06:28:43Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "8def14ed8797770a2b30e0f6df9b76c401e9ab0e",
-      "date": "2026-11-12T11:37:42Z"
+      "sha": "4eef1e5e2b0f2114fe61847c84a6bc9d2b82727f",
+      "date": "2026-11-13T11:24:02Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "a6fdeba0e773b6d377156601dd80af2fad094136",
-      "date": "2026-11-12T00:33:01Z"
+      "sha": "59a002abc7e0e08a7736fadcc06209d3e8dca730",
+      "date": "2026-11-13T06:28:43Z"
      }
     }
    ],
@@ -230,19 +230,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-12T13:42:56+00:00",
+ "generated_at": "2026-11-13T13:02:02+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "3e0d3ecb093793898545df7ce28fae089da3f081",
-  "run_id": "43229913637"
+  "commit": "b72d48526a806b98eaa77b6c8eb15b130514f5a7",
+  "run_id": "43430142110"
  },
  "ficha": {
-  "id": "sha256:4f37e6a477670e2e6caee28fd0bd9909fead1f5a647d48d7e7373bf715298d8e",
+  "id": "sha256:98c9c9f9e21ea650def693843022e28ca9bb8d1711f54369272e717ef0d9c54c",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=transferencia-de-recursos",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/transferencia-de-recursos.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'transferencia-de-recursos' (Recife), 2026-11-12, sha256:4f37e6a477670e2e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=transferencia-de-recursos",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'transferencia-de-recursos' (Recife), 2026-11-12, sha256:4f37e6a477670e2e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=transferencia-de-recursos"
+   "en": "5L-TEP Layer 5 record of 'transferencia-de-recursos' (Recife), 2026-11-13, sha256:98c9c9f9e21ea650…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=transferencia-de-recursos",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'transferencia-de-recursos' (Recife), 2026-11-13, sha256:98c9c9f9e21ea650…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=transferencia-de-recursos"
   }
  }
 }
