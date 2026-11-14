@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-13T06:27:15+00:00",
+   "evaluated_at": "2026-11-14T06:07:34+00:00",
    "current": true,
    "facts": {
-    "observations": 58,
+    "observations": 56,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/ae32808e-ab98-4fe4-bacf-a72b2ac14551#e8c77ffc809b"
    },
@@ -214,30 +214,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-13T06:28:42.715696+00:00",
+   "generated_at": "2026-11-14T06:14:04.090677+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "59a002abc7e0e08a7736fadcc06209d3e8dca730",
-      "date": "2026-11-13T06:28:43Z"
+      "sha": "ceff572389bb315ee74bb8a82ac3fa809bfbcf67",
+      "date": "2026-11-14T06:14:04Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "4eef1e5e2b0f2114fe61847c84a6bc9d2b82727f",
-      "date": "2026-11-13T11:24:02Z"
+      "sha": "6e0c6c5ac167a365ed2262cb874aebd09efca776",
+      "date": "2026-11-14T10:46:41Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "59a002abc7e0e08a7736fadcc06209d3e8dca730",
-      "date": "2026-11-13T06:28:43Z"
+      "sha": "ceff572389bb315ee74bb8a82ac3fa809bfbcf67",
+      "date": "2026-11-14T06:14:04Z"
      }
     }
    ],
@@ -289,19 +289,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-13T13:02:02+00:00",
+ "generated_at": "2026-11-14T12:07:07+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "b72d48526a806b98eaa77b6c8eb15b130514f5a7",
-  "run_id": "43430142110"
+  "commit": "46cb425bf745911b6625d4551335293a6337f253",
+  "run_id": "43593211469"
  },
  "ficha": {
-  "id": "sha256:166f6f219e7b9644f9d3ad88d90e421fea37940e53fe96cccfe49a2a5c9d660c",
+  "id": "sha256:a6a6da9c1893d5758be6e0e92b2d3f8964ca17fec00e8374c09165041deca7a7",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/imposto-sobre-transmissao-de-bens-imoveis-itbi.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'imposto-sobre-transmissao-de-bens-imoveis-itbi' (Recife), 2026-11-13, sha256:166f6f219e7b9644…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'imposto-sobre-transmissao-de-bens-imoveis-itbi' (Recife), 2026-11-13, sha256:166f6f219e7b9644…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi"
+   "en": "5L-TEP Layer 5 record of 'imposto-sobre-transmissao-de-bens-imoveis-itbi' (Recife), 2026-11-14, sha256:a6a6da9c1893d575…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'imposto-sobre-transmissao-de-bens-imoveis-itbi' (Recife), 2026-11-14, sha256:a6a6da9c1893d575…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=imposto-sobre-transmissao-de-bens-imoveis-itbi"
   }
  }
 }
