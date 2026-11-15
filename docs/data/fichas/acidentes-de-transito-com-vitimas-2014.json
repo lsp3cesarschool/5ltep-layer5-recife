@@ -56,10 +56,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-14T06:07:34+00:00",
+   "evaluated_at": "2026-11-15T06:14:09+00:00",
    "current": true,
    "facts": {
-    "observations": 56,
+    "observations": 55,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/05a9f1ee-5d99-4540-8d2c-96c888c7fefb#bfb24829f1b9"
    },
@@ -147,30 +147,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-14T06:14:04.090677+00:00",
+   "generated_at": "2026-11-15T06:15:27.737444+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "ceff572389bb315ee74bb8a82ac3fa809bfbcf67",
-      "date": "2026-11-14T06:14:04Z"
+      "sha": "5ed3be22fab5cc69f0d705e71fdbc203ccf421fd",
+      "date": "2026-11-15T06:15:28Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "6e0c6c5ac167a365ed2262cb874aebd09efca776",
-      "date": "2026-11-14T10:46:41Z"
+      "sha": "18aa403a0fec5e0afef9040dc421eb0eaeccc4c3",
+      "date": "2026-11-15T11:21:09Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "ceff572389bb315ee74bb8a82ac3fa809bfbcf67",
-      "date": "2026-11-14T06:14:04Z"
+      "sha": "5ed3be22fab5cc69f0d705e71fdbc203ccf421fd",
+      "date": "2026-11-15T06:15:28Z"
      }
     }
    ],
@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-14T12:07:07+00:00",
+ "generated_at": "2026-11-15T12:41:24+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "46cb425bf745911b6625d4551335293a6337f253",
-  "run_id": "43593211469"
+  "commit": "a7277cc6c2d4e33e42c9b405656140342db1ac73",
+  "run_id": "43715112310"
  },
  "ficha": {
-  "id": "sha256:0d70615488974615d992da749981bf172849cabb6cdd67cca01e5c3782f204f0",
+  "id": "sha256:55c0c7d50ffb26528fb295545754597e54750b342f0aee14aeb1bf5b2808b511",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-vitimas-2014",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/acidentes-de-transito-com-vitimas-2014.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'acidentes-de-transito-com-vitimas-2014' (Recife), 2026-11-14, sha256:0d70615488974615…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-vitimas-2014",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'acidentes-de-transito-com-vitimas-2014' (Recife), 2026-11-14, sha256:0d70615488974615…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-vitimas-2014"
+   "en": "5L-TEP Layer 5 record of 'acidentes-de-transito-com-vitimas-2014' (Recife), 2026-11-15, sha256:55c0c7d50ffb2652…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-vitimas-2014",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'acidentes-de-transito-com-vitimas-2014' (Recife), 2026-11-15, sha256:55c0c7d50ffb2652…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=acidentes-de-transito-com-vitimas-2014"
   }
  }
 }
