@@ -10,34 +10,42 @@
   "portal_page": "https://dados.recife.pe.gov.br/dataset/diario-oficial"
  },
  "qs": {
-  "kind": "none",
+  "kind": "partial",
   "factor": 1.0,
-  "coverage": 0.2,
+  "coverage": 0.5,
   "valid_layers": [
+   "L1",
    "L4"
   ],
   "integrity": [],
-  "band": null
+  "low": 0.23915538461538463,
+  "high": 0.7391553846153847,
+  "band": "alert",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
  },
  "layers": {
   "L1": {
-   "status": "out_of_scope",
-   "reason": "structure_changed_after",
-   "rate": 0.0,
-   "evaluated_at": "2026-11-09T15:19:22+00:00",
-   "current": null,
+   "status": "valid",
+   "reason": null,
+   "rate": 0.1818,
+   "evaluated_at": "2026-11-16T12:11:53+00:00",
+   "current": true,
    "facts": {
     "level": 2,
-    "tables": 31,
-    "verifiable": 31,
-    "conformant": 0
+    "tables": 33,
+    "verifiable": 33,
+    "conformant": 6
    },
    "signals": [
     {
      "key": "L1:diario-oficial",
-     "count": 31,
-     "en": "31 of 31 verifiable file(s) do not conform to the declared schema",
-     "pt": "31 de 31 arquivo(s) verificável(is) fora do esquema declarado"
+     "count": 27,
+     "en": "27 of 33 verifiable file(s) do not conform to the declared schema",
+     "pt": "27 de 33 arquivo(s) verificável(is) fora do esquema declarado"
     }
    ]
   },
@@ -62,11 +70,11 @@
   "L4": {
    "status": "valid",
    "reason": null,
-   "rate": 0.9272727272727272,
-   "evaluated_at": "2026-11-15T06:14:09+00:00",
+   "rate": 0.9230769230769231,
+   "evaluated_at": "2026-11-15T18:45:41+00:00",
    "current": true,
    "facts": {
-    "observations": 55,
+    "observations": 52,
     "critical_in_window": 4,
     "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#96e096e542cb"
    },
@@ -86,10 +94,10 @@
    "layer": "L1",
    "kind": "signal",
    "key": "L1:diario-oficial",
-   "count": 31,
+   "count": 27,
    "when": null,
-   "en": "31 of 31 verifiable file(s) do not conform to the declared schema",
-   "pt": "31 de 31 arquivo(s) verificável(is) fora do esquema declarado"
+   "en": "27 of 33 verifiable file(s) do not conform to the declared schema",
+   "pt": "27 de 33 arquivo(s) verificável(is) fora do esquema declarado"
   },
   {
    "layer": "L4",
@@ -274,22 +282,22 @@
   "L1": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-09T16:29:19+00:00",
+   "generated_at": "2026-11-16T12:16:07+00:00",
    "files": [
     {
      "path": "results/layer1_summary.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
      "commit": {
-      "sha": "b4d10041fc889e38e8585752ceda6870fe9b8d41",
-      "date": "2026-11-09T16:29:19Z"
+      "sha": "8463b2f4cf147d6235de38daa0f48d9bddd6d23f",
+      "date": "2026-11-16T12:16:07Z"
      }
     },
     {
      "path": "results/validation.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
      "commit": {
-      "sha": "b4d10041fc889e38e8585752ceda6870fe9b8d41",
-      "date": "2026-11-09T16:29:19Z"
+      "sha": "a83fa4638e41d5cfb7be41e065f19bd6ab8b5fe9",
+      "date": "2026-11-16T12:13:04Z"
      }
     }
    ],
@@ -346,14 +354,14 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-15T06:15:27.737444+00:00",
+   "generated_at": "2026-11-16T06:12:40.106904+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "5ed3be22fab5cc69f0d705e71fdbc203ccf421fd",
-      "date": "2026-11-15T06:15:28Z"
+      "sha": "093950f7946330640275fd0bfec5fa906fdf39f3",
+      "date": "2026-11-16T06:12:40Z"
      }
     },
     {
@@ -368,8 +376,8 @@
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "5ed3be22fab5cc69f0d705e71fdbc203ccf421fd",
-      "date": "2026-11-15T06:15:28Z"
+      "sha": "fb6f76f8718008507638531573f54839c45f7dd1",
+      "date": "2026-11-15T18:48:38Z"
      }
     }
    ],
@@ -421,19 +429,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-15T12:41:24+00:00",
+ "generated_at": "2026-11-16T13:34:30+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "a7277cc6c2d4e33e42c9b405656140342db1ac73",
-  "run_id": "43715112310"
+  "commit": "0a631111b94be18a17aba837c09d755825a2eb36",
+  "run_id": "43877036172"
  },
  "ficha": {
-  "id": "sha256:a01fb8c39ff6b6d96b2447bc1c70b66644d9d3a156a9850c8cda9d2846ae477d",
+  "id": "sha256:c8771129f258fa4a77e58612c5d6b598bb76a061c0df6672ab1efe250dafa95e",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/diario-oficial.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'diario-oficial' (Recife), 2026-11-15, sha256:a01fb8c39ff6b6d9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'diario-oficial' (Recife), 2026-11-15, sha256:a01fb8c39ff6b6d9…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial"
+   "en": "5L-TEP Layer 5 record of 'diario-oficial' (Recife), 2026-11-16, sha256:c8771129f258fa4a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'diario-oficial' (Recife), 2026-11-16, sha256:c8771129f258fa4a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial"
   }
  }
 }
