@@ -1,0 +1,298 @@
+{
+ "dataset": {
+  "name": "gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+  "title": "Gerência de Promoção e Defesa dos Direitos Humanos Divisão da Pessoa com Deficiência",
+  "id": "9e33ec31-9406-44a6-84c9-8923088a9151",
+  "resources": 4,
+  "last_change": "2026-11-15T18:45:41+00:00",
+  "last_type": "REMOVED",
+  "entity": "https://dados.recife.pe.gov.br/dataset/9e33ec31-9406-44a6-84c9-8923088a9151#a1b1eafbf816",
+  "portal_page": "https://dados.recife.pe.gov.br/dataset/gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia"
+ },
+ "qs": {
+  "kind": "partial",
+  "factor": 1.0,
+  "coverage": 0.5,
+  "valid_layers": [
+   "L1",
+   "L4"
+  ],
+  "integrity": [],
+  "low": 0.35,
+  "high": 0.85,
+  "band": "undetermined",
+  "eligible": false,
+  "missing_layers": [
+   "L2",
+   "L3"
+  ]
+ },
+ "layers": {
+  "L1": {
+   "status": "valid",
+   "reason": null,
+   "rate": 0.5,
+   "evaluated_at": "2026-11-09T15:19:49+00:00",
+   "current": false,
+   "facts": {
+    "level": 2,
+    "tables": 2,
+    "verifiable": 2,
+    "conformant": 1
+   },
+   "signals": [
+    {
+     "key": "L1:gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+     "count": 1,
+     "en": "1 of 2 verifiable file(s) do not conform to the declared schema",
+     "pt": "1 de 2 arquivo(s) verificável(is) fora do esquema declarado"
+    }
+   ]
+  },
+  "L2": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L3": {
+   "status": "missing",
+   "reason": "not_reached",
+   "rate": null,
+   "evaluated_at": null,
+   "current": null,
+   "facts": {},
+   "signals": []
+  },
+  "L4": {
+   "status": "valid",
+   "reason": null,
+   "rate": 1.0,
+   "evaluated_at": "2026-11-17T07:45:34+00:00",
+   "current": true,
+   "facts": {
+    "observations": 2,
+    "critical_in_window": 0,
+    "entity": "https://dados.recife.pe.gov.br/dataset/9e33ec31-9406-44a6-84c9-8923088a9151#a1b1eafbf816"
+   },
+   "signals": []
+  }
+ },
+ "findings": [
+  {
+   "layer": "L1",
+   "kind": "signal",
+   "key": "L1:gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+   "count": 1,
+   "when": null,
+   "en": "1 of 2 verifiable file(s) do not conform to the declared schema",
+   "pt": "1 de 2 arquivo(s) verificável(is) fora do esquema declarado"
+  }
+ ],
+ "outcomes": {
+  "open": [
+   {
+    "key": "L1:gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+    "layer": "L1",
+    "first_reported": "2026-11-17T14:18:41+00:00",
+    "count": 1,
+    "evaluated_at": "2026-11-09T15:19:49+00:00",
+    "status": "reported",
+    "en": "1 of 2 verifiable file(s) do not conform to the declared schema",
+    "pt": "1 de 2 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "08275679-ce74-4aac-82d9-34a5fc823839": "a8c89fee09cd4231ad0a59cc103625f57cb9afa0cf2358421e9b306b35f298ca",
+     "4998c7fd-3c17-409a-9757-de7903379c9c": "a6ad1350e65d2dc523bce7745281e46ef1be035c8ac80be4a72493b2378a858c"
+    }
+   }
+  ],
+  "closed": [
+   {
+    "layer": "L1",
+    "first_reported": "2026-10-13T19:19:31+00:00",
+    "count": 1,
+    "evaluated_at": "2026-10-03T16:19:49+00:00",
+    "status": "unchanged",
+    "en": "1 of 2 verifiable file(s) do not conform to the declared schema",
+    "pt": "1 de 2 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "08275679-ce74-4aac-82d9-34a5fc823839": "a8c89fee09cd4231ad0a59cc103625f57cb9afa0cf2358421e9b306b35f298ca",
+     "4998c7fd-3c17-409a-9757-de7903379c9c": "a6ad1350e65d2dc523bce7745281e46ef1be035c8ac80be4a72493b2378a858c"
+    },
+    "key": "L1:gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+    "dataset": "gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+    "outcome": "withdrawn_observed",
+    "at": "2026-11-16T13:34:30+00:00"
+   }
+  ]
+ },
+ "sources": {
+  "L1": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-11-16T12:16:07+00:00",
+   "files": [
+    {
+     "path": "results/layer1_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
+     "commit": {
+      "sha": "8463b2f4cf147d6235de38daa0f48d9bddd6d23f",
+      "date": "2026-11-16T12:16:07Z"
+     }
+    },
+    {
+     "path": "results/validation.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
+     "commit": {
+      "sha": "a83fa4638e41d5cfb7be41e065f19bd6ab8b5fe9",
+      "date": "2026-11-16T12:13:04Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer1-recife/"
+  },
+  "L2": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-11-11T12:00:59+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer2.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
+     "commit": {
+      "sha": "6d82fd5641e5688dea9379efaf987c3ecc4b9a97",
+      "date": "2026-11-11T12:01:15Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer2-recife/"
+  },
+  "L3": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-11-05T13:49:45+00:00",
+   "files": [
+    {
+     "path": "docs/data/index.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/docs/data/index.json",
+     "commit": {
+      "sha": "d0bcd1267f6d3c77eefb8512c637a4b5a2ab28dc",
+      "date": "2026-11-05T13:49:46Z"
+     }
+    },
+    {
+     "path": "results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-autos-infracao-ambiental/layer3_summary.json",
+     "commit": {
+      "sha": "695a54601def6ad9d86ee9f05298847f795a4eb2",
+      "date": "2026-11-05T13:48:47Z"
+     }
+    },
+    {
+     "path": "results/recife-infracoes-transito/layer3_summary.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer3-recife/main/results/recife-infracoes-transito/layer3_summary.json",
+     "commit": {
+      "sha": "d0bcd1267f6d3c77eefb8512c637a4b5a2ab28dc",
+      "date": "2026-11-05T13:49:46Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer3-recife/"
+  },
+  "L4": {
+   "status": "ok",
+   "reason": null,
+   "generated_at": "2026-11-17T07:46:45.474271+00:00",
+   "files": [
+    {
+     "path": "docs/data/layer4.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
+     "commit": {
+      "sha": "54aa205f3647dc70d5c011ab2560abbbefefae9b",
+      "date": "2026-11-17T07:46:45Z"
+     }
+    },
+    {
+     "path": "docs/data/cross_check.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
+     "commit": {
+      "sha": "edab6c94c12dbfadb63ce5ca6b705ceb3b2fd97e",
+      "date": "2026-11-17T12:14:34Z"
+     }
+    },
+    {
+     "path": "data/hash_store.json",
+     "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
+     "commit": {
+      "sha": "54aa205f3647dc70d5c011ab2560abbbefefae9b",
+      "date": "2026-11-17T07:46:45Z"
+     }
+    }
+   ],
+   "dashboard": "https://lsp3cesarschool.github.io/5ltep-layer4-recife/"
+  }
+ },
+ "policy": {
+  "policy_version": "1.1.0",
+  "aggregation": "arithmetic",
+  "weights": {
+   "L1": 0.3,
+   "L2": 0.3,
+   "L3": 0.2,
+   "L4": 0.2
+  },
+  "cutoff": 0.85,
+  "critical_floor": 0.7,
+  "integrity_factor": 0.5,
+  "integrity_types": [
+   "RETRO_ALTER"
+  ],
+  "scope_types": [
+   "SCHEMA_DRIFT"
+  ],
+  "unrecorded_change": "finding",
+  "cadence_days": {
+   "L1": 7,
+   "L2": 7,
+   "L3": 31,
+   "L4": 0.25
+  },
+  "validity_days": {
+   "L1": 14.0,
+   "L2": 14.0,
+   "L3": 62.0,
+   "L4": 0.5
+  },
+  "l4_window_days": 30,
+  "findings_window_days": 90,
+  "simultaneous_event_min_datasets": 3
+ },
+ "portal": {
+  "portal_url": "https://dados.recife.pe.gov.br",
+  "name": "Recife",
+  "title": "Recife open data portal (Dados Recife)",
+  "repository": "lsp3cesarschool/5ltep-layer5-recife"
+ },
+ "notice": {
+  "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
+  "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
+ },
+ "generated_at": "2026-11-17T14:18:41+00:00",
+ "engine": {
+  "repository": "lsp3cesarschool/5ltep-layer5-recife",
+  "commit": "16d95b7e993392ac96f64a4a49183d685d69d57c",
+  "run_id": "44101687868"
+ },
+ "ficha": {
+  "id": "sha256:1d6e8d4fba25f35da57ddeb0c9fce7dd967054ed34d6dd77180c9c0831429a17",
+  "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+  "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia.json",
+  "how_to_cite": {
+   "en": "5L-TEP Layer 5 record of 'gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia' (Recife), 2026-11-17, sha256:1d6e8d4fba25f35d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia' (Recife), 2026-11-17, sha256:1d6e8d4fba25f35d…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=gerencia-de-promocao-e-defesa-dos-direitos-humanos-divisao-da-pessoa-com-deficiencia"
+  }
+ }
+}
