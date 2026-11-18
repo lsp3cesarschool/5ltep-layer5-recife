@@ -56,10 +56,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-17T07:45:34+00:00",
+   "evaluated_at": "2026-11-18T07:12:45+00:00",
    "current": true,
    "facts": {
-    "observations": 50,
+    "observations": 48,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/0a319b1a-d4ef-4fdb-9c62-8eb350d9f1b1#8d522f907339"
    },
@@ -99,14 +99,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-11T12:00:59+00:00",
+   "generated_at": "2026-11-18T13:18:29+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "6d82fd5641e5688dea9379efaf987c3ecc4b9a97",
-      "date": "2026-11-11T12:01:15Z"
+      "sha": "1d685e0740de5d540392d5427882176d4d5c02cc",
+      "date": "2026-11-18T13:18:51Z"
      }
     }
    ],
@@ -147,30 +147,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-17T07:46:45.474271+00:00",
+   "generated_at": "2026-11-18T07:13:38.878566+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "54aa205f3647dc70d5c011ab2560abbbefefae9b",
-      "date": "2026-11-17T07:46:45Z"
+      "sha": "6cbe6b406cf93bdd5c0ccd5a03d31a3d3e73d433",
+      "date": "2026-11-18T07:13:39Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "edab6c94c12dbfadb63ce5ca6b705ceb3b2fd97e",
-      "date": "2026-11-17T12:14:34Z"
+      "sha": "45270574bbfdf3d60cef9a31a23fa92c27570d8d",
+      "date": "2026-11-18T12:02:54Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "54aa205f3647dc70d5c011ab2560abbbefefae9b",
-      "date": "2026-11-17T07:46:45Z"
+      "sha": "6cbe6b406cf93bdd5c0ccd5a03d31a3d3e73d433",
+      "date": "2026-11-18T07:13:39Z"
      }
     }
    ],
@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-17T14:18:41+00:00",
+ "generated_at": "2026-11-18T13:53:15+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "16d95b7e993392ac96f64a4a49183d685d69d57c",
-  "run_id": "44101687868"
+  "commit": "3b0b1f1caebb3a2f0d6905a855703fbfd66d425f",
+  "run_id": "44318288631"
  },
  "ficha": {
-  "id": "sha256:7380a954ad24fb07bd3208d39ecb2bc6993cc27b4ce132a597172190a9b84978",
+  "id": "sha256:27949cf5022acf91d0433164786fa2bb0f1a9314c72654da3d6593b4d71956ac",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=especies-de-aves-presentes-no-recife",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/especies-de-aves-presentes-no-recife.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'especies-de-aves-presentes-no-recife' (Recife), 2026-11-17, sha256:7380a954ad24fb07…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=especies-de-aves-presentes-no-recife",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'especies-de-aves-presentes-no-recife' (Recife), 2026-11-17, sha256:7380a954ad24fb07…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=especies-de-aves-presentes-no-recife"
+   "en": "5L-TEP Layer 5 record of 'especies-de-aves-presentes-no-recife' (Recife), 2026-11-18, sha256:27949cf5022acf91…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=especies-de-aves-presentes-no-recife",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'especies-de-aves-presentes-no-recife' (Recife), 2026-11-18, sha256:27949cf5022acf91…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=especies-de-aves-presentes-no-recife"
   }
  }
 }
