@@ -71,7 +71,7 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-21T06:56:06+00:00",
+   "evaluated_at": "2026-11-22T06:33:09+00:00",
    "current": true,
    "facts": {
     "observations": 43,
@@ -186,30 +186,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-21T06:57:26.412715+00:00",
+   "generated_at": "2026-11-22T06:36:00.181934+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "d5726ba1ceba8ebd6b76f3b46ba9c7b13048a9cd",
-      "date": "2026-11-21T06:57:26Z"
+      "sha": "aa43be26f691b607e0f5e450a1f9480dc9dced58",
+      "date": "2026-11-22T06:36:00Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "4da2b3e23adc383fda34202dc1436c6c22fcb570",
-      "date": "2026-11-21T11:34:53Z"
+      "sha": "be3332f8b6d6146e9413ccd4f13e1e79ce5e3590",
+      "date": "2026-11-22T11:46:52Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "d5726ba1ceba8ebd6b76f3b46ba9c7b13048a9cd",
-      "date": "2026-11-21T06:57:26Z"
+      "sha": "aa43be26f691b607e0f5e450a1f9480dc9dced58",
+      "date": "2026-11-22T06:36:00Z"
      }
     }
    ],
@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-21T13:25:23+00:00",
+ "generated_at": "2026-11-22T13:16:40+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "74f82738ba8902e1ff2d0371f28519670b0d4f5c",
-  "run_id": "44908772259"
+  "commit": "a21237a1b7065271aaa48f70346a1e40d05d5739",
+  "run_id": "45026611406"
  },
  "ficha": {
-  "id": "sha256:1025c291edbf9082325024c8c2126462a84cc9fa068629edf9f274ed18d78a5d",
+  "id": "sha256:71150223e1f13ec812765e5a8bf25d75934e6919a87816238ed6e9c2dbb01dab",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/servico-de-atendimento-movel-de-urgencia-samu-2023.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'servico-de-atendimento-movel-de-urgencia-samu-2023' (Recife), 2026-11-21, sha256:1025c291edbf9082…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-atendimento-movel-de-urgencia-samu-2023' (Recife), 2026-11-21, sha256:1025c291edbf9082…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023"
+   "en": "5L-TEP Layer 5 record of 'servico-de-atendimento-movel-de-urgencia-samu-2023' (Recife), 2026-11-22, sha256:71150223e1f13ec8…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'servico-de-atendimento-movel-de-urgencia-samu-2023' (Recife), 2026-11-22, sha256:71150223e1f13ec8…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=servico-de-atendimento-movel-de-urgencia-samu-2023"
   }
  }
 }
