@@ -24,7 +24,7 @@
    "status": "missing",
    "reason": "l1_nothing_verifiable",
    "rate": null,
-   "evaluated_at": "2026-11-16T12:16:07+00:00",
+   "evaluated_at": "2026-11-23T14:09:55+00:00",
    "current": null,
    "facts": {
     "level": null,
@@ -56,10 +56,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-22T06:33:09+00:00",
+   "evaluated_at": "2026-11-23T07:22:57+00:00",
    "current": true,
    "facts": {
-    "observations": 43,
+    "observations": 45,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/5c0444cb-c2cb-4243-9bdd-bf099e9147f9#cff0d894b067"
    },
@@ -75,22 +75,22 @@
   "L1": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-16T12:16:07+00:00",
+   "generated_at": "2026-11-23T14:09:55+00:00",
    "files": [
     {
      "path": "results/layer1_summary.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
      "commit": {
-      "sha": "8463b2f4cf147d6235de38daa0f48d9bddd6d23f",
-      "date": "2026-11-16T12:16:07Z"
+      "sha": "ee293eed8c397723dbb8bdaf23caa89e8d1cf885",
+      "date": "2026-11-23T14:09:56Z"
      }
     },
     {
      "path": "results/validation.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
      "commit": {
-      "sha": "a83fa4638e41d5cfb7be41e065f19bd6ab8b5fe9",
-      "date": "2026-11-16T12:13:04Z"
+      "sha": "ee293eed8c397723dbb8bdaf23caa89e8d1cf885",
+      "date": "2026-11-23T14:09:56Z"
      }
     }
    ],
@@ -147,30 +147,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-22T06:36:00.181934+00:00",
+   "generated_at": "2026-11-23T07:25:56.508116+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "aa43be26f691b607e0f5e450a1f9480dc9dced58",
-      "date": "2026-11-22T06:36:00Z"
+      "sha": "ae86eea4e4e3036c17afc16c3fb3a375d9d49093",
+      "date": "2026-11-23T07:25:56Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "be3332f8b6d6146e9413ccd4f13e1e79ce5e3590",
-      "date": "2026-11-22T11:46:52Z"
+      "sha": "a742e4a287ad8b20f3504174e32d1aeb2d5e811b",
+      "date": "2026-11-23T13:36:56Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "aa43be26f691b607e0f5e450a1f9480dc9dced58",
-      "date": "2026-11-22T06:36:00Z"
+      "sha": "ae86eea4e4e3036c17afc16c3fb3a375d9d49093",
+      "date": "2026-11-23T07:25:56Z"
      }
     }
    ],
@@ -222,19 +222,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-22T13:16:40+00:00",
+ "generated_at": "2026-11-23T15:54:38+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "a21237a1b7065271aaa48f70346a1e40d05d5739",
-  "run_id": "45026611406"
+  "commit": "be9661f8d7672e10f11a762e15e38967bdc92a82",
+  "run_id": "45210469683"
  },
  "ficha": {
-  "id": "sha256:6e04953a41abac504c36d8eecf034e1850c7723c1467d76b5816aa40761569a4",
+  "id": "sha256:a523c711fcfc4edd36f11c0e0dd3753b23697458ecc4b4d22d84c28925654c33",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=monitoramento-da-politica-urbana-e-plano-diretor",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/monitoramento-da-politica-urbana-e-plano-diretor.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'monitoramento-da-politica-urbana-e-plano-diretor' (Recife), 2026-11-22, sha256:6e04953a41abac50…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=monitoramento-da-politica-urbana-e-plano-diretor",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'monitoramento-da-politica-urbana-e-plano-diretor' (Recife), 2026-11-22, sha256:6e04953a41abac50…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=monitoramento-da-politica-urbana-e-plano-diretor"
+   "en": "5L-TEP Layer 5 record of 'monitoramento-da-politica-urbana-e-plano-diretor' (Recife), 2026-11-23, sha256:a523c711fcfc4edd…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=monitoramento-da-politica-urbana-e-plano-diretor",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'monitoramento-da-politica-urbana-e-plano-diretor' (Recife), 2026-11-23, sha256:a523c711fcfc4edd…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=monitoramento-da-politica-urbana-e-plano-diretor"
   }
  }
 }

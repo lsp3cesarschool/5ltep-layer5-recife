@@ -32,10 +32,10 @@
    "status": "valid",
    "reason": null,
    "rate": 0.0,
-   "evaluated_at": "2026-11-16T12:11:59+00:00",
-   "current": false,
+   "evaluated_at": "2026-11-23T14:09:13+00:00",
+   "current": true,
    "facts": {
-    "level": 3,
+    "level": 2,
     "tables": 8,
     "verifiable": 8,
     "conformant": 0
@@ -71,14 +71,21 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-22T06:33:09+00:00",
+   "evaluated_at": "2026-11-23T07:22:57+00:00",
    "current": true,
    "facts": {
-    "observations": 43,
+    "observations": 45,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/c68396ad-ad0f-4255-a57a-84c97054dd37#329585392709"
    },
-   "signals": []
+   "signals": [
+    {
+     "key": "L4:cross_check:estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+     "count": 1,
+     "en": "unreconciled divergence in the independent cross-check",
+     "pt": "divergência não reconciliada no cross-check independente"
+    }
+   ]
   }
  },
  "findings": [
@@ -90,6 +97,15 @@
    "when": null,
    "en": "8 of 8 verifiable file(s) do not conform to the declared schema",
    "pt": "8 de 8 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L4",
+   "kind": "signal",
+   "key": "L4:cross_check:estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+   "count": 1,
+   "when": null,
+   "en": "unreconciled divergence in the independent cross-check",
+   "pt": "divergência não reconciliada no cross-check independente"
   },
   {
    "layer": "L4",
@@ -130,6 +146,26 @@
      "2e411ebc-0bef-4e03-ae34-2b792b5468c2": "bdf4e5e9d6dff1ee296b06a1d2dcf71ed56cb44678a20b678640782c30016962"
     },
     "first_change_seen": "2026-10-21T10:04:26+00:00"
+   },
+   {
+    "key": "L4:cross_check:estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+    "layer": "L4",
+    "first_reported": "2026-11-23T15:54:38+00:00",
+    "count": 1,
+    "evaluated_at": "2026-11-23T07:22:57+00:00",
+    "status": "reported",
+    "en": "unreconciled divergence in the independent cross-check",
+    "pt": "divergência não reconciliada no cross-check independente",
+    "digests": {
+     "537f0b95-4eb7-4912-9d7c-32caf9fd68ac": "8a225aa2e035b9bbbe7a54f06248bc30d3bdc6f111c24bfca1c679a7640824d1",
+     "30e87813-b5a3-4cbd-b35e-b09156f52698": "de47bd94825289d7fe98ec87a3ec063899e633ddd311e9902d4a7220efd31f61",
+     "832ae42d-0163-45e8-82c1-a4e00a5ec1b6": "e9828b396d6a50fe8a185f82efed41fb102db5ded3d1adaa17325c0644a4b241",
+     "a4d419a8-4355-4ae9-b116-9cc35b914f50": "e6e48cfcd8f3bd678942e8a82788b67180a8badfc53c505f5a55d31b18833932",
+     "77040c32-2a39-4416-ba93-5c7386b46dcb": "822cb81c41fb8d8ea2d2a5014a81ab69666ac0596b31c666eecce78d2f94b898",
+     "ac869f94-a655-4388-871b-9957b0a642a4": "82f05ab737df8a537fffed61ff4b8bff0e97d7a9737703b25c38842cbd833447",
+     "97109f18-a189-4084-acaf-b3aff6e65d51": "27035e20fe7a0f1ec3250fe1b24faa92314ccbb7e367b3db770a17f15d02e175",
+     "2e411ebc-0bef-4e03-ae34-2b792b5468c2": "d5e2e1d97e7299a90263d0685b56971dd3d1031f58363d6220675d1bee7f1828"
+    }
    }
   ],
   "closed": [
@@ -211,22 +247,22 @@
   "L1": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-16T12:16:07+00:00",
+   "generated_at": "2026-11-23T14:09:55+00:00",
    "files": [
     {
      "path": "results/layer1_summary.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/layer1_summary.json",
      "commit": {
-      "sha": "8463b2f4cf147d6235de38daa0f48d9bddd6d23f",
-      "date": "2026-11-16T12:16:07Z"
+      "sha": "ee293eed8c397723dbb8bdaf23caa89e8d1cf885",
+      "date": "2026-11-23T14:09:56Z"
      }
     },
     {
      "path": "results/validation.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer1-recife/main/results/validation.json",
      "commit": {
-      "sha": "a83fa4638e41d5cfb7be41e065f19bd6ab8b5fe9",
-      "date": "2026-11-16T12:13:04Z"
+      "sha": "ee293eed8c397723dbb8bdaf23caa89e8d1cf885",
+      "date": "2026-11-23T14:09:56Z"
      }
     }
    ],
@@ -283,30 +319,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-22T06:36:00.181934+00:00",
+   "generated_at": "2026-11-23T07:25:56.508116+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "aa43be26f691b607e0f5e450a1f9480dc9dced58",
-      "date": "2026-11-22T06:36:00Z"
+      "sha": "ae86eea4e4e3036c17afc16c3fb3a375d9d49093",
+      "date": "2026-11-23T07:25:56Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "be3332f8b6d6146e9413ccd4f13e1e79ce5e3590",
-      "date": "2026-11-22T11:46:52Z"
+      "sha": "a742e4a287ad8b20f3504174e32d1aeb2d5e811b",
+      "date": "2026-11-23T13:36:56Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "aa43be26f691b607e0f5e450a1f9480dc9dced58",
-      "date": "2026-11-22T06:36:00Z"
+      "sha": "ae86eea4e4e3036c17afc16c3fb3a375d9d49093",
+      "date": "2026-11-23T07:25:56Z"
      }
     }
    ],
@@ -358,19 +394,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-22T13:16:40+00:00",
+ "generated_at": "2026-11-23T15:54:38+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "a21237a1b7065271aaa48f70346a1e40d05d5739",
-  "run_id": "45026611406"
+  "commit": "be9661f8d7672e10f11a762e15e38967bdc92a82",
+  "run_id": "45210469683"
  },
  "ficha": {
-  "id": "sha256:82201ff773484230f549742b59023ae8f7172e1b9e56358da848d8dfcef4de20",
+  "id": "sha256:28b2218028e3bf422f5831670002712410fcb689873708ba2ce1f7d9f2d0e2a3",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude' (Recife), 2026-11-22, sha256:82201ff773484230…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude' (Recife), 2026-11-22, sha256:82201ff773484230…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude"
+   "en": "5L-TEP Layer 5 record of 'estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude' (Recife), 2026-11-23, sha256:28b2218028e3bf42…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude' (Recife), 2026-11-23, sha256:28b2218028e3bf42…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=estoque-dos-medicamentos-nas-farmacias-da-rede-municipal-de-saude"
   }
  }
 }
