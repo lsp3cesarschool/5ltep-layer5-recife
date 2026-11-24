@@ -4,9 +4,9 @@
   "title": "Diário Oficial",
   "id": "12578535-6cf0-4097-94fa-ff6ec3d51988",
   "resources": 35,
-  "last_change": "2026-11-19T20:27:26+00:00",
+  "last_change": "2026-11-23T23:46:37+00:00",
   "last_type": "CONTENT_MOD",
-  "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#85eadec353c4",
+  "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#043971ae068f",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/diario-oficial"
  },
  "qs": {
@@ -18,8 +18,8 @@
    "L4"
   ],
   "integrity": [],
-  "low": 0.21858222222222223,
-  "high": 0.7185822222222222,
+  "low": 0.21933872340425534,
+  "high": 0.7193387234042553,
   "band": "alert",
   "eligible": false,
   "missing_layers": [
@@ -33,7 +33,7 @@
    "reason": null,
    "rate": 0.1212,
    "evaluated_at": "2026-11-23T14:09:06+00:00",
-   "current": true,
+   "current": false,
    "facts": {
     "level": 2,
     "tables": 33,
@@ -70,13 +70,13 @@
   "L4": {
    "status": "valid",
    "reason": null,
-   "rate": 0.9111111111111111,
-   "evaluated_at": "2026-11-23T07:22:57+00:00",
+   "rate": 0.9148936170212766,
+   "evaluated_at": "2026-11-24T09:43:06+00:00",
    "current": true,
    "facts": {
-    "observations": 45,
+    "observations": 47,
     "critical_in_window": 4,
-    "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#85eadec353c4"
+    "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#043971ae068f"
    },
    "signals": [
     {
@@ -85,12 +85,6 @@
      "when": "2026-11-10T14:45:54+00:00",
      "en": "2 resource URL(s) changed (2 moved from ? to dados.recife.pe.gov.br:443; 1 plain file → zip); file size updated; file date updated",
      "pt": "2 URL(s) de recurso alterada(s) (2 movida(s) de ? para dados.recife.pe.gov.br:443; 1 arquivo simples → zip); tamanho do arquivo atualizado; data do arquivo atualizada"
-    },
-    {
-     "key": "L4:cross_check:diario-oficial",
-     "count": 1,
-     "en": "unreconciled divergence in the independent cross-check",
-     "pt": "divergência não reconciliada no cross-check independente"
     }
    ]
   }
@@ -113,15 +107,6 @@
    "when": "2026-11-10T14:45:54+00:00",
    "en": "2 resource URL(s) changed (2 moved from ? to dados.recife.pe.gov.br:443; 1 plain file → zip); file size updated; file date updated",
    "pt": "2 URL(s) de recurso alterada(s) (2 movida(s) de ? para dados.recife.pe.gov.br:443; 1 arquivo simples → zip); tamanho do arquivo atualizado; data do arquivo atualizada"
-  },
-  {
-   "layer": "L4",
-   "kind": "signal",
-   "key": "L4:cross_check:diario-oficial",
-   "count": 1,
-   "when": null,
-   "en": "unreconciled divergence in the independent cross-check",
-   "pt": "divergência não reconciliada no cross-check independente"
   },
   {
    "layer": "L4",
@@ -249,51 +234,6 @@
      "aec03057-2861-4fac-b3d3-fcaadaadb1ff": "edd713d8ccad6634da79a858f947e442b7f56c14276f3ad3a8189883acaf9182"
     },
     "first_change_seen": "2026-11-12T13:42:56+00:00"
-   },
-   {
-    "key": "L4:cross_check:diario-oficial",
-    "layer": "L4",
-    "first_reported": "2026-11-23T15:54:38+00:00",
-    "count": 1,
-    "evaluated_at": "2026-11-23T07:22:57+00:00",
-    "status": "reported",
-    "en": "unreconciled divergence in the independent cross-check",
-    "pt": "divergência não reconciliada no cross-check independente",
-    "digests": {
-     "06708c01-80b7-4814-a774-4e7a7418c8ac": "6b9fbe36dc315c81992304350b9853061d6687e3679f6bfa3b9e19f49ff0fb32",
-     "78d671d6-0e28-415d-be89-d197dbf401a4": "b43c2c06c86af83b2039b0a7e13e1f480308584d2bb97fccb113823e9416b926",
-     "49e49892-8598-49c1-8630-6e61b16299e7": "c38faa5f537e324a99090acf9264996a2a2a047f93a66a975afad85529e6ebce",
-     "5bd39b23-fb66-4a48-b9ae-94dac73f168d": "ef3826a31cd20c382240354c0ed7c27ca94624d4ba93300024520ad89a309783",
-     "e3e0a453-4075-44d1-9d58-3f952f7f6a23": "2ca9d13b1cb17618f0e466e2b7193b1a973676b027dfe3177f8b6b991a84d544",
-     "ab5068fa-5372-4eea-952e-8557ac2f7059": "94f458e3d767fa3193999749459424c9642767036de76bc2febc3c1ed2c8578d",
-     "ceeedc40-3b52-42ad-b958-ffba048b8843": "1e6bfcc7c3c159acded75e717c3c5387ca51b4ec67235b2f1cd398528a48f917",
-     "df507523-10a9-4921-b14b-ed260f68b4e3": "32cf62abd147c9387464df39df1c6c964045bcee00d050d1c048c9538d633c4e",
-     "53e4b83a-e7ea-4a5b-bab9-39a0c76926ac": "598666362e069fe07ac3dae47762294c84fce0771a50fcfe3fef422fbc34e8ad",
-     "2bfcdcbb-30db-47be-b7ee-97420159cc67": "543080b5201e59f80acfe30c54db3b20a65616503b7e5fc7c6277af3edbbec10",
-     "081b4049-bfe5-4872-b4c2-fa2e12780442": "1f67298038763ef83eb648de1f52f25f11f26bb5c12a97b8aa1a3e793426e302",
-     "e4a171fa-1489-4b9a-af09-3d61c541e36d": "6f7e308ef82b3006cc6c0ba8271189972f413ca2f3e88a299093a75cd035940e",
-     "0cbc93d4-fe60-46db-9620-efdcda7c4e18": "54a0a78980d07bcddf2548e08b048768e2c1bc7a0c97a14e5131a61271500f5a",
-     "8ab1e248-e5b6-4321-8484-ee2f12e7111c": "0051b5aba8e8f3703d8dbcbb529057bbc6e3dcb43ce1412e11047b845193607d",
-     "90183a08-0247-4f86-be00-b8c709057e7f": "bbb8fa744b90763051207c6113c26a23d9302424d62e8652aad0977f5f30d379",
-     "86830258-6e6e-4bcc-a47f-d98d705a4174": "9db53ccad4849a80a5e6365e3582751159bcd32e1c7a72d9cc5a4a9fcc65a4e0",
-     "e09a63d9-421e-43b6-b9ff-8341556dee9a": "bbdac5c5d75384eb9906fade0d913a67a68f5fd6a2b6c05218877335573db6cb",
-     "076593d3-c103-414c-b9f1-30f254a7503a": "5cbef2c346dfd2230d02a6346ab7e2dc16720ade40a7bd0c97ec2f71bf667d6d",
-     "70fb3e0f-7aec-4256-adfe-b714b1eb57d3": "3ef25ccb6a44a034a53517c84731f65f5538206a4a5de63b16577791ba3b6161",
-     "b4725b1b-a19a-4338-8401-f7f0f29703a1": "997648945f4ae681922f694767e4fa531516350c8ba2298c8908843c3a976437",
-     "924216b5-0b2b-4085-b70f-32d76e682eac": "4cb437ee5a6e67900fc2f37ed1325c75c516fdf09ac41f50ee1a44383e528fc6",
-     "5f8abfed-6978-4fa3-890a-7ec51075f66a": "ac230157be16234fcea75054d31a402b87b9b9863dfd5a8e5f6f591bc18f370b",
-     "7d7714ad-bf14-4ef2-8a61-96e6df568dec": "61656c8d32943298bb672ff6fe898a30b01d553a0f113b3ba23390c119f84324",
-     "27861405-af21-4a6d-8ae8-52614eec01ae": "affe34ec5599183aea20c392a647201eb0a16087325c3f42adff409355c07aca",
-     "a645e96d-8ec1-41f1-b09c-c092b8d53ae0": "d08cd4f929a911731449e2ea2c491b2d02106d7818827395e9f4e4de59b8520f",
-     "33018403-f6f7-4773-b257-b7e95fccba31": "fb2543505de1c25e2e1bbea50d380b30e358e6988a32ad81434bb26ee30af40f",
-     "0939e31d-75fe-497e-a966-01dfcb157756": "363f1f9299425376f006e95a7b6bf9723665788a15cc6b3de29454f8012ea9c7",
-     "dad55da6-d905-4d6a-a9e8-2c8d157c428e": "8cf917b4a39e8b687cb06aa3e21917737bcb8e2ab3a696ccc9238ff6bed31b24",
-     "d29bc2a3-fa02-43e4-a18c-8063d6c2fc09": "6337380a02e834f9c928dcbd2a11a41cd2909778071fbd7ee5365b1bd7241777",
-     "ab1c29fe-767a-47d4-a3b4-679a27f89230": "2466972181e98e5b6e710920b343345108634da6c4bd22960a35fc8638bd7b55",
-     "aec03057-2861-4fac-b3d3-fcaadaadb1ff": "edd713d8ccad6634da79a858f947e442b7f56c14276f3ad3a8189883acaf9182",
-     "fb65802b-ba52-47bb-9df4-ce5406c7a845": "79d9b93e95c53d4af755f40aecde7c144d4496d0561d91d85eaaa38d0f0c4bd2",
-     "5a489776-3ab8-45c7-9ca1-725aa6ac0876": "772955fecdbd5ac291f368ae8f29b475ba97604d19d0ca5b04dc99233eb2569c"
-    }
    }
   ],
   "closed": [
@@ -343,6 +283,55 @@
     "dataset": "diario-oficial",
     "outcome": "remediated_observed",
     "at": "2026-11-12T13:42:56+00:00"
+   },
+   {
+    "layer": "L4",
+    "first_reported": "2026-11-23T15:54:38+00:00",
+    "count": 1,
+    "evaluated_at": "2026-11-23T07:22:57+00:00",
+    "status": "remediated_observed",
+    "en": "unreconciled divergence in the independent cross-check",
+    "pt": "divergência não reconciliada no cross-check independente",
+    "digests": {
+     "06708c01-80b7-4814-a774-4e7a7418c8ac": "6b9fbe36dc315c81992304350b9853061d6687e3679f6bfa3b9e19f49ff0fb32",
+     "78d671d6-0e28-415d-be89-d197dbf401a4": "b43c2c06c86af83b2039b0a7e13e1f480308584d2bb97fccb113823e9416b926",
+     "49e49892-8598-49c1-8630-6e61b16299e7": "c38faa5f537e324a99090acf9264996a2a2a047f93a66a975afad85529e6ebce",
+     "5bd39b23-fb66-4a48-b9ae-94dac73f168d": "ef3826a31cd20c382240354c0ed7c27ca94624d4ba93300024520ad89a309783",
+     "e3e0a453-4075-44d1-9d58-3f952f7f6a23": "2ca9d13b1cb17618f0e466e2b7193b1a973676b027dfe3177f8b6b991a84d544",
+     "ab5068fa-5372-4eea-952e-8557ac2f7059": "94f458e3d767fa3193999749459424c9642767036de76bc2febc3c1ed2c8578d",
+     "ceeedc40-3b52-42ad-b958-ffba048b8843": "1e6bfcc7c3c159acded75e717c3c5387ca51b4ec67235b2f1cd398528a48f917",
+     "df507523-10a9-4921-b14b-ed260f68b4e3": "32cf62abd147c9387464df39df1c6c964045bcee00d050d1c048c9538d633c4e",
+     "53e4b83a-e7ea-4a5b-bab9-39a0c76926ac": "598666362e069fe07ac3dae47762294c84fce0771a50fcfe3fef422fbc34e8ad",
+     "2bfcdcbb-30db-47be-b7ee-97420159cc67": "543080b5201e59f80acfe30c54db3b20a65616503b7e5fc7c6277af3edbbec10",
+     "081b4049-bfe5-4872-b4c2-fa2e12780442": "1f67298038763ef83eb648de1f52f25f11f26bb5c12a97b8aa1a3e793426e302",
+     "e4a171fa-1489-4b9a-af09-3d61c541e36d": "6f7e308ef82b3006cc6c0ba8271189972f413ca2f3e88a299093a75cd035940e",
+     "0cbc93d4-fe60-46db-9620-efdcda7c4e18": "54a0a78980d07bcddf2548e08b048768e2c1bc7a0c97a14e5131a61271500f5a",
+     "8ab1e248-e5b6-4321-8484-ee2f12e7111c": "0051b5aba8e8f3703d8dbcbb529057bbc6e3dcb43ce1412e11047b845193607d",
+     "90183a08-0247-4f86-be00-b8c709057e7f": "bbb8fa744b90763051207c6113c26a23d9302424d62e8652aad0977f5f30d379",
+     "86830258-6e6e-4bcc-a47f-d98d705a4174": "9db53ccad4849a80a5e6365e3582751159bcd32e1c7a72d9cc5a4a9fcc65a4e0",
+     "e09a63d9-421e-43b6-b9ff-8341556dee9a": "bbdac5c5d75384eb9906fade0d913a67a68f5fd6a2b6c05218877335573db6cb",
+     "076593d3-c103-414c-b9f1-30f254a7503a": "5cbef2c346dfd2230d02a6346ab7e2dc16720ade40a7bd0c97ec2f71bf667d6d",
+     "70fb3e0f-7aec-4256-adfe-b714b1eb57d3": "3ef25ccb6a44a034a53517c84731f65f5538206a4a5de63b16577791ba3b6161",
+     "b4725b1b-a19a-4338-8401-f7f0f29703a1": "997648945f4ae681922f694767e4fa531516350c8ba2298c8908843c3a976437",
+     "924216b5-0b2b-4085-b70f-32d76e682eac": "4cb437ee5a6e67900fc2f37ed1325c75c516fdf09ac41f50ee1a44383e528fc6",
+     "5f8abfed-6978-4fa3-890a-7ec51075f66a": "ac230157be16234fcea75054d31a402b87b9b9863dfd5a8e5f6f591bc18f370b",
+     "7d7714ad-bf14-4ef2-8a61-96e6df568dec": "61656c8d32943298bb672ff6fe898a30b01d553a0f113b3ba23390c119f84324",
+     "27861405-af21-4a6d-8ae8-52614eec01ae": "affe34ec5599183aea20c392a647201eb0a16087325c3f42adff409355c07aca",
+     "a645e96d-8ec1-41f1-b09c-c092b8d53ae0": "d08cd4f929a911731449e2ea2c491b2d02106d7818827395e9f4e4de59b8520f",
+     "33018403-f6f7-4773-b257-b7e95fccba31": "fb2543505de1c25e2e1bbea50d380b30e358e6988a32ad81434bb26ee30af40f",
+     "0939e31d-75fe-497e-a966-01dfcb157756": "363f1f9299425376f006e95a7b6bf9723665788a15cc6b3de29454f8012ea9c7",
+     "dad55da6-d905-4d6a-a9e8-2c8d157c428e": "8cf917b4a39e8b687cb06aa3e21917737bcb8e2ab3a696ccc9238ff6bed31b24",
+     "d29bc2a3-fa02-43e4-a18c-8063d6c2fc09": "6337380a02e834f9c928dcbd2a11a41cd2909778071fbd7ee5365b1bd7241777",
+     "ab1c29fe-767a-47d4-a3b4-679a27f89230": "2466972181e98e5b6e710920b343345108634da6c4bd22960a35fc8638bd7b55",
+     "aec03057-2861-4fac-b3d3-fcaadaadb1ff": "edd713d8ccad6634da79a858f947e442b7f56c14276f3ad3a8189883acaf9182",
+     "fb65802b-ba52-47bb-9df4-ce5406c7a845": "79d9b93e95c53d4af755f40aecde7c144d4496d0561d91d85eaaa38d0f0c4bd2",
+     "5a489776-3ab8-45c7-9ca1-725aa6ac0876": "772955fecdbd5ac291f368ae8f29b475ba97604d19d0ca5b04dc99233eb2569c"
+    },
+    "first_change_seen": "2026-11-24T15:47:25+00:00",
+    "key": "L4:cross_check:diario-oficial",
+    "dataset": "diario-oficial",
+    "outcome": "remediated_observed",
+    "at": "2026-11-24T15:47:25+00:00"
    }
   ]
  },
@@ -422,30 +411,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-23T07:25:56.508116+00:00",
+   "generated_at": "2026-11-24T09:44:22.376761+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "ae86eea4e4e3036c17afc16c3fb3a375d9d49093",
-      "date": "2026-11-23T07:25:56Z"
+      "sha": "3a641fe57c64327545cbc225a80f87b10aa8b345",
+      "date": "2026-11-24T09:44:22Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "a742e4a287ad8b20f3504174e32d1aeb2d5e811b",
-      "date": "2026-11-23T13:36:56Z"
+      "sha": "3b40e737f732876f180df084221741f46cc7c235",
+      "date": "2026-11-24T14:16:16Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "ae86eea4e4e3036c17afc16c3fb3a375d9d49093",
-      "date": "2026-11-23T07:25:56Z"
+      "sha": "3a641fe57c64327545cbc225a80f87b10aa8b345",
+      "date": "2026-11-24T09:44:22Z"
      }
     }
    ],
@@ -497,19 +486,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-23T15:54:38+00:00",
+ "generated_at": "2026-11-24T15:47:25+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "be9661f8d7672e10f11a762e15e38967bdc92a82",
-  "run_id": "45210469683"
+  "commit": "80a708284a4128102a34dbfc5a1089c39badff79",
+  "run_id": "45429539091"
  },
  "ficha": {
-  "id": "sha256:180703dce86ddb079f4161fd465cb85330022ae0338910bd15b1edc2b740e0e5",
+  "id": "sha256:8b375a9f0477cb4b0898ad58aab398e3db940e0fe986e83144f45d3056e593f3",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/diario-oficial.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'diario-oficial' (Recife), 2026-11-23, sha256:180703dce86ddb07…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'diario-oficial' (Recife), 2026-11-23, sha256:180703dce86ddb07…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial"
+   "en": "5L-TEP Layer 5 record of 'diario-oficial' (Recife), 2026-11-24, sha256:8b375a9f0477cb4b…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'diario-oficial' (Recife), 2026-11-24, sha256:8b375a9f0477cb4b…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial"
   }
  }
 }

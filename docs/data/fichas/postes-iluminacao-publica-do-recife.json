@@ -3,37 +3,29 @@
   "name": "postes-iluminacao-publica-do-recife",
   "title": "Postes- iluminação pública do Recife",
   "id": "cb834849-e07e-43a1-a101-204b599aaebb",
-  "resources": 5,
-  "last_change": null,
-  "last_type": null,
-  "entity": "https://dados.recife.pe.gov.br/dataset/cb834849-e07e-43a1-a101-204b599aaebb#ac15a4e3e483",
+  "resources": 9,
+  "last_change": "2026-11-23T23:46:37+00:00",
+  "last_type": "SCHEMA_DRIFT",
+  "entity": "https://dados.recife.pe.gov.br/dataset/cb834849-e07e-43a1-a101-204b599aaebb#c0b6d2507578",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/postes-iluminacao-publica-do-recife"
  },
  "qs": {
-  "kind": "partial",
+  "kind": "none",
   "factor": 1.0,
-  "coverage": 0.5,
+  "coverage": 0.2,
   "valid_layers": [
-   "L1",
    "L4"
   ],
   "integrity": [],
-  "low": 0.2,
-  "high": 0.7,
-  "band": "alert",
-  "eligible": false,
-  "missing_layers": [
-   "L2",
-   "L3"
-  ]
+  "band": null
  },
  "layers": {
   "L1": {
-   "status": "valid",
-   "reason": null,
+   "status": "out_of_scope",
+   "reason": "structure_changed_after",
    "rate": 0.0,
    "evaluated_at": "2026-11-09T16:06:51+00:00",
-   "current": true,
+   "current": null,
    "facts": {
     "level": 2,
     "tables": 4,
@@ -70,15 +62,22 @@
   "L4": {
    "status": "valid",
    "reason": null,
-   "rate": 1.0,
-   "evaluated_at": "2026-11-23T07:22:57+00:00",
+   "rate": 0.9787234042553191,
+   "evaluated_at": "2026-11-24T09:43:06+00:00",
    "current": true,
    "facts": {
-    "observations": 45,
-    "critical_in_window": 0,
-    "entity": "https://dados.recife.pe.gov.br/dataset/cb834849-e07e-43a1-a101-204b599aaebb#ac15a4e3e483"
+    "observations": 47,
+    "critical_in_window": 1,
+    "entity": "https://dados.recife.pe.gov.br/dataset/cb834849-e07e-43a1-a101-204b599aaebb#c0b6d2507578"
    },
-   "signals": []
+   "signals": [
+    {
+     "key": "L4:cross_check:postes-iluminacao-publica-do-recife",
+     "count": 1,
+     "en": "unreconciled divergence in the independent cross-check",
+     "pt": "divergência não reconciliada no cross-check independente"
+    }
+   ]
   }
  },
  "findings": [
@@ -90,6 +89,22 @@
    "when": null,
    "en": "4 of 4 verifiable file(s) do not conform to the declared schema",
    "pt": "4 de 4 arquivo(s) verificável(is) fora do esquema declarado"
+  },
+  {
+   "layer": "L4",
+   "kind": "signal",
+   "key": "L4:cross_check:postes-iluminacao-publica-do-recife",
+   "count": 1,
+   "when": null,
+   "en": "unreconciled divergence in the independent cross-check",
+   "pt": "divergência não reconciliada no cross-check independente"
+  },
+  {
+   "layer": "L4",
+   "kind": "scope",
+   "when": "2026-11-23T23:46:37+00:00",
+   "en": "the dataset structure changed (SCHEMA_DRIFT): earlier evaluations no longer cover it",
+   "pt": "a estrutura do conjunto mudou (SCHEMA_DRIFT): avaliações anteriores deixam de cobri-lo"
   }
  ],
  "outcomes": {
@@ -100,9 +115,26 @@
     "first_reported": "2026-10-13T19:19:31+00:00",
     "count": 4,
     "evaluated_at": "2026-10-03T17:09:08+00:00",
-    "status": "unchanged",
+    "status": "changed_signal_persists",
     "en": "4 of 4 verifiable file(s) do not conform to the declared schema",
     "pt": "4 de 4 arquivo(s) verificável(is) fora do esquema declarado",
+    "digests": {
+     "76cb7e65-1362-4ea7-ac04-453d67e41c64": "68281c9f2a168155a1b16c26541a73013ca6575998b40dfd8b74530034de9abf",
+     "bd06d29e-ede2-4f0c-99ad-09dbb98a526c": "78c137f75c5710d6fb9a872955faf879d78f9a7a63af6883f98f80cd0e871b67",
+     "1ba72563-ff6c-4704-9675-cff6cfc5e8b0": "7307fce634ca7242eea3432c1d3738a04dd813e54b9ec382054167ed60d0b496",
+     "b062bad8-e130-4706-9a0c-1049ae92425c": "26261e2da5085c0982510fe4cc5ab53e3ebbfbfce4cfdca7361bfd1bc75e631f"
+    },
+    "first_change_seen": "2026-11-24T15:47:25+00:00"
+   },
+   {
+    "key": "L4:cross_check:postes-iluminacao-publica-do-recife",
+    "layer": "L4",
+    "first_reported": "2026-11-24T15:47:25+00:00",
+    "count": 1,
+    "evaluated_at": "2026-11-24T09:43:06+00:00",
+    "status": "reported",
+    "en": "unreconciled divergence in the independent cross-check",
+    "pt": "divergência não reconciliada no cross-check independente",
     "digests": {
      "76cb7e65-1362-4ea7-ac04-453d67e41c64": "68281c9f2a168155a1b16c26541a73013ca6575998b40dfd8b74530034de9abf",
      "bd06d29e-ede2-4f0c-99ad-09dbb98a526c": "78c137f75c5710d6fb9a872955faf879d78f9a7a63af6883f98f80cd0e871b67",
@@ -189,30 +221,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-23T07:25:56.508116+00:00",
+   "generated_at": "2026-11-24T09:44:22.376761+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "ae86eea4e4e3036c17afc16c3fb3a375d9d49093",
-      "date": "2026-11-23T07:25:56Z"
+      "sha": "3a641fe57c64327545cbc225a80f87b10aa8b345",
+      "date": "2026-11-24T09:44:22Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "a742e4a287ad8b20f3504174e32d1aeb2d5e811b",
-      "date": "2026-11-23T13:36:56Z"
+      "sha": "3b40e737f732876f180df084221741f46cc7c235",
+      "date": "2026-11-24T14:16:16Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "ae86eea4e4e3036c17afc16c3fb3a375d9d49093",
-      "date": "2026-11-23T07:25:56Z"
+      "sha": "3a641fe57c64327545cbc225a80f87b10aa8b345",
+      "date": "2026-11-24T09:44:22Z"
      }
     }
    ],
@@ -264,19 +296,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-23T15:54:38+00:00",
+ "generated_at": "2026-11-24T15:47:25+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "be9661f8d7672e10f11a762e15e38967bdc92a82",
-  "run_id": "45210469683"
+  "commit": "80a708284a4128102a34dbfc5a1089c39badff79",
+  "run_id": "45429539091"
  },
  "ficha": {
-  "id": "sha256:d4ce9c5d34df8c0ac02b26c78531476133a631c3b647bbadf4ad41a298895183",
+  "id": "sha256:143cb10da4c184b672bb091fbde6171b6063af857fb42dda610f500b0f1a5f90",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postes-iluminacao-publica-do-recife",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/postes-iluminacao-publica-do-recife.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'postes-iluminacao-publica-do-recife' (Recife), 2026-11-23, sha256:d4ce9c5d34df8c0a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postes-iluminacao-publica-do-recife",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'postes-iluminacao-publica-do-recife' (Recife), 2026-11-23, sha256:d4ce9c5d34df8c0a…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postes-iluminacao-publica-do-recife"
+   "en": "5L-TEP Layer 5 record of 'postes-iluminacao-publica-do-recife' (Recife), 2026-11-24, sha256:143cb10da4c184b6…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postes-iluminacao-publica-do-recife",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'postes-iluminacao-publica-do-recife' (Recife), 2026-11-24, sha256:143cb10da4c184b6…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=postes-iluminacao-publica-do-recife"
   }
  }
 }
