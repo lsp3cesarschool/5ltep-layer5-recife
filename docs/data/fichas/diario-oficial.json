@@ -3,37 +3,29 @@
   "name": "diario-oficial",
   "title": "Diário Oficial",
   "id": "12578535-6cf0-4097-94fa-ff6ec3d51988",
-  "resources": 35,
-  "last_change": "2026-11-23T23:46:37+00:00",
+  "resources": 36,
+  "last_change": "2026-11-25T08:18:12+00:00",
   "last_type": "CONTENT_MOD",
-  "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#043971ae068f",
+  "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#54cc8e90e43e",
   "portal_page": "https://dados.recife.pe.gov.br/dataset/diario-oficial"
  },
  "qs": {
-  "kind": "partial",
+  "kind": "none",
   "factor": 1.0,
-  "coverage": 0.5,
+  "coverage": 0.2,
   "valid_layers": [
-   "L1",
    "L4"
   ],
   "integrity": [],
-  "low": 0.21933872340425534,
-  "high": 0.7193387234042553,
-  "band": "alert",
-  "eligible": false,
-  "missing_layers": [
-   "L2",
-   "L3"
-  ]
+  "band": null
  },
  "layers": {
   "L1": {
-   "status": "valid",
-   "reason": null,
+   "status": "out_of_scope",
+   "reason": "structure_changed_after",
    "rate": 0.1212,
    "evaluated_at": "2026-11-23T14:09:06+00:00",
-   "current": false,
+   "current": null,
    "facts": {
     "level": 2,
     "tables": 33,
@@ -70,13 +62,13 @@
   "L4": {
    "status": "valid",
    "reason": null,
-   "rate": 0.9148936170212766,
-   "evaluated_at": "2026-11-24T09:43:06+00:00",
+   "rate": 0.8979591836734694,
+   "evaluated_at": "2026-11-25T08:18:12+00:00",
    "current": true,
    "facts": {
-    "observations": 47,
-    "critical_in_window": 4,
-    "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#043971ae068f"
+    "observations": 49,
+    "critical_in_window": 5,
+    "entity": "https://dados.recife.pe.gov.br/dataset/12578535-6cf0-4097-94fa-ff6ec3d51988#54cc8e90e43e"
    },
    "signals": [
     {
@@ -133,6 +125,13 @@
    "layer": "L4",
    "kind": "scope",
    "when": "2026-11-10T23:11:07+00:00",
+   "en": "the dataset structure changed (SCHEMA_DRIFT): earlier evaluations no longer cover it",
+   "pt": "a estrutura do conjunto mudou (SCHEMA_DRIFT): avaliações anteriores deixam de cobri-lo"
+  },
+  {
+   "layer": "L4",
+   "kind": "scope",
+   "when": "2026-11-24T22:18:43+00:00",
    "en": "the dataset structure changed (SCHEMA_DRIFT): earlier evaluations no longer cover it",
    "pt": "a estrutura do conjunto mudou (SCHEMA_DRIFT): avaliações anteriores deixam de cobri-lo"
   },
@@ -363,14 +362,14 @@
   "L2": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-18T13:18:29+00:00",
+   "generated_at": "2026-11-25T14:47:20+00:00",
    "files": [
     {
      "path": "docs/data/layer2.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer2-recife/main/docs/data/layer2.json",
      "commit": {
-      "sha": "1d685e0740de5d540392d5427882176d4d5c02cc",
-      "date": "2026-11-18T13:18:51Z"
+      "sha": "7e678d0de9cdd1cc830d562e79fad468ef5d9211",
+      "date": "2026-11-25T14:47:44Z"
      }
     }
    ],
@@ -411,30 +410,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-24T09:44:22.376761+00:00",
+   "generated_at": "2026-11-25T08:19:40.447757+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "3a641fe57c64327545cbc225a80f87b10aa8b345",
-      "date": "2026-11-24T09:44:22Z"
+      "sha": "8dff57dc33ef9c26bd10394e98481395ab212ca5",
+      "date": "2026-11-25T08:19:40Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "3b40e737f732876f180df084221741f46cc7c235",
-      "date": "2026-11-24T14:16:16Z"
+      "sha": "246d7c21473afbc75f03f0015e69de226e90c9b0",
+      "date": "2026-11-25T13:18:35Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "3a641fe57c64327545cbc225a80f87b10aa8b345",
-      "date": "2026-11-24T09:44:22Z"
+      "sha": "8dff57dc33ef9c26bd10394e98481395ab212ca5",
+      "date": "2026-11-25T08:19:40Z"
      }
     }
    ],
@@ -486,19 +485,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-24T15:47:25+00:00",
+ "generated_at": "2026-11-25T15:31:17+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "80a708284a4128102a34dbfc5a1089c39badff79",
-  "run_id": "45429539091"
+  "commit": "55ea8bc3571972a2c2d32e9389b73e8c48edc0a4",
+  "run_id": "45646062253"
  },
  "ficha": {
-  "id": "sha256:8b375a9f0477cb4b0898ad58aab398e3db940e0fe986e83144f45d3056e593f3",
+  "id": "sha256:27be8705f25d114cf6cac749b44d9d316e88d044bdd4a86ee6161009e6dcccc5",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/diario-oficial.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'diario-oficial' (Recife), 2026-11-24, sha256:8b375a9f0477cb4b…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'diario-oficial' (Recife), 2026-11-24, sha256:8b375a9f0477cb4b…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial"
+   "en": "5L-TEP Layer 5 record of 'diario-oficial' (Recife), 2026-11-25, sha256:27be8705f25d114c…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'diario-oficial' (Recife), 2026-11-25, sha256:27be8705f25d114c…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=diario-oficial"
   }
  }
 }
