@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-25T08:18:12+00:00",
+   "evaluated_at": "2026-11-26T08:03:43+00:00",
    "current": true,
    "facts": {
-    "observations": 49,
+    "observations": 51,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/bdab4128-9a12-4e1b-8460-bf14152a1e5b#2db3ab4a3ac6"
    },
@@ -193,30 +193,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-25T08:19:40.447757+00:00",
+   "generated_at": "2026-11-26T08:05:00.195249+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "8dff57dc33ef9c26bd10394e98481395ab212ca5",
-      "date": "2026-11-25T08:19:40Z"
+      "sha": "75727489dc84349d80b5bf71c664f09117c8998c",
+      "date": "2026-11-26T08:05:00Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "246d7c21473afbc75f03f0015e69de226e90c9b0",
-      "date": "2026-11-25T13:18:35Z"
+      "sha": "8355a2fe0421bb7ebabb343d278f30b3e0dc68e1",
+      "date": "2026-11-26T12:59:14Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "8dff57dc33ef9c26bd10394e98481395ab212ca5",
-      "date": "2026-11-25T08:19:40Z"
+      "sha": "75727489dc84349d80b5bf71c664f09117c8998c",
+      "date": "2026-11-26T08:05:00Z"
      }
     }
    ],
@@ -268,19 +268,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-25T15:31:17+00:00",
+ "generated_at": "2026-11-26T15:04:40+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "55ea8bc3571972a2c2d32e9389b73e8c48edc0a4",
-  "run_id": "45646062253"
+  "commit": "4f67a3814f54fc104012cfeeccc6692a5ad34f8f",
+  "run_id": "45845389657"
  },
  "ficha": {
-  "id": "sha256:5a4a45e2f4d63b96e867fc51ce34861c1db3150d46f44aa2b0e1c2f039930587",
+  "id": "sha256:ee58f092a6240b0e135ee657a5d9e75580c8acbc227c603d5c1e71ad1ccd9a2f",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/demandas-dos-cidadaos-e-servicos-dados-vivos-recife.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'demandas-dos-cidadaos-e-servicos-dados-vivos-recife' (Recife), 2026-11-25, sha256:5a4a45e2f4d63b96…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'demandas-dos-cidadaos-e-servicos-dados-vivos-recife' (Recife), 2026-11-25, sha256:5a4a45e2f4d63b96…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demandas-dos-cidadaos-e-servicos-dados-vivos-recife"
+   "en": "5L-TEP Layer 5 record of 'demandas-dos-cidadaos-e-servicos-dados-vivos-recife' (Recife), 2026-11-26, sha256:ee58f092a6240b0e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demandas-dos-cidadaos-e-servicos-dados-vivos-recife",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'demandas-dos-cidadaos-e-servicos-dados-vivos-recife' (Recife), 2026-11-26, sha256:ee58f092a6240b0e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=demandas-dos-cidadaos-e-servicos-dados-vivos-recife"
   }
  }
 }
