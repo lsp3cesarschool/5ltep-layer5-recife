@@ -71,10 +71,10 @@
    "status": "valid",
    "reason": null,
    "rate": 1.0,
-   "evaluated_at": "2026-11-26T08:03:43+00:00",
+   "evaluated_at": "2026-11-27T08:10:34+00:00",
    "current": true,
    "facts": {
-    "observations": 51,
+    "observations": 53,
     "critical_in_window": 0,
     "entity": "https://dados.recife.pe.gov.br/dataset/af30af9d-52e3-4f62-bd3b-dd3764958952#12814ddf25bd"
    },
@@ -186,30 +186,30 @@
   "L4": {
    "status": "ok",
    "reason": null,
-   "generated_at": "2026-11-26T08:05:00.195249+00:00",
+   "generated_at": "2026-11-27T08:11:54.501186+00:00",
    "files": [
     {
      "path": "docs/data/layer4.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/layer4.json",
      "commit": {
-      "sha": "75727489dc84349d80b5bf71c664f09117c8998c",
-      "date": "2026-11-26T08:05:00Z"
+      "sha": "38e0fe481944a26978434c0a691a69d501fe9727",
+      "date": "2026-11-27T08:11:54Z"
      }
     },
     {
      "path": "docs/data/cross_check.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/docs/data/cross_check.json",
      "commit": {
-      "sha": "8355a2fe0421bb7ebabb343d278f30b3e0dc68e1",
-      "date": "2026-11-26T12:59:14Z"
+      "sha": "89e72834b15cb1a0e0ec6a12ed206e0f9edcfcd3",
+      "date": "2026-11-27T12:55:13Z"
      }
     },
     {
      "path": "data/hash_store.json",
      "url": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer4-recife/main/data/hash_store.json",
      "commit": {
-      "sha": "75727489dc84349d80b5bf71c664f09117c8998c",
-      "date": "2026-11-26T08:05:00Z"
+      "sha": "38e0fe481944a26978434c0a691a69d501fe9727",
+      "date": "2026-11-27T08:11:54Z"
      }
     }
    ],
@@ -261,19 +261,19 @@
   "en": "Layer 5 informs; it does not decide. The publication decision, if any, happens in the agency's own systems. Signals are things to check, never verdicts; a gap is missing evidence, never a low score. Outcomes after a report are observations, with no attribution of cause.",
   "pt": "A Camada 5 informa; não decide. A decisão de publicação, se houver, acontece nos sistemas do próprio órgão. Sinais são itens a conferir, nunca vereditos; lacuna é falta de evidência, nunca nota baixa. Desfechos depois de um relato são observações, sem atribuição de causa."
  },
- "generated_at": "2026-11-26T15:04:40+00:00",
+ "generated_at": "2026-11-27T14:57:55+00:00",
  "engine": {
   "repository": "lsp3cesarschool/5ltep-layer5-recife",
-  "commit": "4f67a3814f54fc104012cfeeccc6692a5ad34f8f",
-  "run_id": "45845389657"
+  "commit": "631ec6bb5f8d6c7bf33177b8146f3d3634b54819",
+  "run_id": "46020599733"
  },
  "ficha": {
-  "id": "sha256:38d308ad136ce022a092362b4d333a7779c331f8678819581e77a684359debd0",
+  "id": "sha256:81eb5b99a71a2c7e33dc7b93b58e71935045bf00b491264229d1d165076c4e59",
   "page": "https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-saude-da-familia-usf",
   "data": "https://raw.githubusercontent.com/lsp3cesarschool/5ltep-layer5-recife/main/docs/data/fichas/unidades-saude-da-familia-usf.json",
   "how_to_cite": {
-   "en": "5L-TEP Layer 5 record of 'unidades-saude-da-familia-usf' (Recife), 2026-11-26, sha256:38d308ad136ce022…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-saude-da-familia-usf",
-   "pt": "Ficha da Camada 5 do 5L-TEP para 'unidades-saude-da-familia-usf' (Recife), 2026-11-26, sha256:38d308ad136ce022…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-saude-da-familia-usf"
+   "en": "5L-TEP Layer 5 record of 'unidades-saude-da-familia-usf' (Recife), 2026-11-27, sha256:81eb5b99a71a2c7e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-saude-da-familia-usf",
+   "pt": "Ficha da Camada 5 do 5L-TEP para 'unidades-saude-da-familia-usf' (Recife), 2026-11-27, sha256:81eb5b99a71a2c7e…, https://lsp3cesarschool.github.io/5ltep-layer5-recife/ficha.html?d=unidades-saude-da-familia-usf"
   }
  }
 }
